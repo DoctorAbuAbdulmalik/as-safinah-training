@@ -1,0 +1,334 @@
+{
+  "direction": "shared",
+  "lang": "tr",
+  "status": "draft",
+  "modules": [
+    {
+      "id": "m5",
+      "number": 5,
+      "title": "Yenilenmenin Örüntüleri",
+      "tagline": "Gelgit, mürettebat, rakip yelken ve dönen hava",
+      "foundation": {
+        "verses": [
+          { "ar": "وَتِلْكَ الْأَيَّامُ نُدَاوِلُهَا بَيْنَ النَّاسِ", "text": "Ve o günleri insanlar arasında döndürür dururuz.", "ref": "Kur’ân-ı Kerîm, Âl-i İmrân Sûresi 3:140" },
+          { "ar": "إِذَا وُسِّدَ الْأَمْرُ إِلَى غَيْرِ أَهْلِهِ فَانْتَظِرِ السَّاعَةَ", "text": "İş ehli olmayana verildiğinde kıyameti bekle.", "ref": "Ebû Hüreyre rivayet etmiştir — Sahîh-i Buhârî 59" }
+        ],
+        "why": [
+          "Bu modül, işin kendisinden çok işin altında yatan örüntüleri ele alır ve iki metin de bunlardan birini adlandırır. Âyet, Kur’an’da hiçbir hâlin kalıcı olmadığının en açık ifadesidir: günler insanlar arasında döndürülür. Bu da tam olarak 13.4’ün istediği disiplindir — ister güçlü ister zayıf bir yılda olun, bugünkü mevsimi hikâyenin tamamı sanmayın. Hadis ise 13.2’nin arkasındaki uyarıdır: İşi ehli olmayana vermek yalnızca verimsizlik değildir; bir emanetin kaybolmasının belirtisi olarak anılır ve zarar tek bir göreve değil, bütün gemiye dokunur. İkisinin arasında, klasik âlimlerin tedâfu‘ dediği fikir durur — Bakara Sûresi 2:251’in yeryüzünü fesattan koruyan şey olarak sunduğu, toplulukların birbirini itmesi. 13.3 bunu gündelik yönetim biçimiyle ele alır: Alanında kimsenin rekabet etmediği kurum, standartlarının fark edilmeden düşmesine en açık olan kurumdur."
+        ]
+      },
+      "sections": [
+        {
+          "id": "s13",
+          "number": 13,
+          "title": "Yenilenmenin Örüntüleri",
+          "ship": {
+            "title": "Haritaların göstermedikleri",
+            "body": ["Harita size kayaların nerede olduğunu ve kanalın nereden geçtiğini söyler. Ama mürettebatın bu geçişe yüreğinin yetip yetmediğini, hangi tayfanın hangi vardiyaya uygun olduğunu, bu sularda başka kimlerin çalıştığını ya da tadını çıkardığınız sükûnetin sürüp sürmeyeceğini söylemez. Bu, haritanın kusuru değildir — başka türden bir bilgidir; dümen odasındaki her haritaya hâkim bir kaptan bile bu daha eski soruları hiç sormadığı için batabilir."],
+            "claim": "",
+            "question": "Bu bölümdeki dört örüntüden — hazırlık, mürettebat, rakip yelkenler, hava — kendi biriminiz için hiç durup kontrol etmediğinizi söyleyin."
+          },
+          "intro": [
+            "1’den 12’ye kadar olan bölümler dijital sistemleri iyi kullanmak ve kurmakla ilgilidir: onları anlamak, güvenceye almak, onlarla üretmek ve onlar aracılığıyla değişime öncülük etmek. Bu gereklidir, ama resmin tamamı değildir. Mekanizmaların altında her kurum ve içindeki her çaba, daha az görünür bir dizi örüntüden geçer: İşi taşıyan insanlar harekete geçmeye gerçekten hazır mı, işin ulaştığı aşama için doğru türden kişi yerinde mi, aynı alanda yarışan diğerleri işi nasıl şekillendiriyor ve iş kendi talihinin dönmesine hazır mı? Bu örüntüler uygulanacak ek teknikler değildir; tekniklerin içinde işlediği koşullardır — ve kâğıt üzerinde doğru görünen planların, kadro kararlarının ve stratejilerin bazen yine de başarısız olmasının nedeni bunları ihmal etmektir.",
+            "Onları anlamak, ardından gelecek olana da bir köprüdür. 14. Bölümdeki Nihai Başarı Formülü, kalıcı mükemmelliğin dışarıdan nasıl göründüğünü anlatır. Bu bölüm ise oraya ulaşmak için içinden geçilmesi gereken “iç havanın” bir kısmını anlatır."
+          ],
+          "subsections": [
+            {
+              "id": "13.1",
+              "title": "Plandan Önce Hazırlık",
+              "ship": {
+                "title": "Gelgiti beklemek",
+                "body": ["Bir gemi erzakı yüklenmiş, mürettebatı tamamlanmış ve liman ağzına çevrilmiş olabilir; yine de hiçbir yere gitmez, çünkü gelgit henüz dönmemiştir. Gelgite karşı demir alan kaptan, bir saat sonra onları bedavaya dışarı taşıyacak olan suyla boğuşarak mürettebatın gücünü tüketir. Hazırlık, temkin kılığına girmiş bir erteleme değildir — gelgitle kendi sabırsızlığınız arasındaki farkı ayırt etmektir."],
+                "claim": "",
+                "question": "Biriminizde şu anda yürüyen bir planı söyleyin. Gelgitle mi başlatıldı, yoksa gelgite karşı mı?"
+              },
+              "blocks": [
+                { "type": "p", "text": "Bu el kitabındaki her plan, onu uygulamaya istekli ve muktedir bir ekip varsayar. Bu varsayım genellikle doğrudur. Ama bazen değildir — ve doğru olmadığında, daha iyi bir planlama sorunu çözmez, çünkü önünüzdeki engel hiçbir zaman plan değildi." },
+                { "type": "p", "text": "Hazırlık, motivasyonla aynı şey değildir. Yönetim El Kitabı (Bölüm 3.3) bireysel kapasiteyi bireysel motivasyondan ayırır — bir kişinin yapabildiği ile yapmak istediği. Hazırlık bir üst düzeyde işler. Bireyin değil, grubun bir özelliğidir: Ekip bir bütün olarak, kendisinden istenen değişiklikle barışmış mı? Bir ekipte on motivasyonlu kişi olabilir ve yine de ekip toplu olarak hazır olmayabilir — her biri içten içe isteklidir, ama şimdinin doğru an olduğuna, emeğin başkalarınca da karşılanacağına ya da eski çalışma biçiminin gerçekten bittiğine dair ortak bir inanç yoktur." },
+                { "type": "h3", "text": "Hazır olmayan ekipler iyi planları neden batırır" },
+                { "type": "p", "text": "Hazır olmayan bir ekibe sunulan plan gürültüyle başarısız olmaz; yıpranarak başarısız olur. Toplantılara katılınır ama gereği yapılmaz. Talimatlar kabul edilir, sonra sessizce etrafından dolaşılır. Değişiklik toplantı odasında alkışlanır, koridorda direnişle karşılanır. Bunların hiçbiri itaatsizlik olarak görünmez; teşhisi zorlaştıran da budur — sıradan bir sürtünme gibi görünür ve yöneticiler planı yeniden anlatarak karşılık verir; oysa eksik olan açıklık değil, rızadır." },
+                { "type": "h3", "text": "Hazır olmayan bir ekibi tanımak" },
+                { "type": "ul", "items": [
+                  "Toplantıda varılan ama bir sonraki haftaya dayanamayan uzlaşma",
+                  "Sorunları uygulamayı incelemek yerine koşullara bağlayan hazır bir açıklama (“biz hep böyle çalışmak zorunda kaldık”)",
+                  "Önceki değişim girişimlerine dair kuşkuculuğun (“bunu iki yıl önce denedik”) tartışmayı beslemek için değil, kapatmak için kullanılması",
+                  "Plana dair enerjinin bir iki kişide toplanması, ekibin geri kalanının kibar ama edilgen kalması",
+                  "Yeni talimatlara uyumun hiçbir zaman sahiplenmeye dönüşmemesi — insanların değişikliği kendileri uyarlamak yerine söylenmesini beklemesi"
+                ] },
+                { "type": "h3", "text": "Plan yapmadan önce hazırlık oluşturmak" },
+                { "type": "ul", "items": [
+                  "Alternatifi önermeden önce mevcut durumu dürüstçe ve ekibin kendi sözleriyle adlandırın — insanlar kendilerine ilan edilen değişikliğe değil, gerekli olduğunu gördükleri değişikliğe bağlanır",
+                  "Teşhisi karardan ayırın: Ne olduğunu sunmadan önce ekibin “burada bir şeyin değişmesi gerekiyor” noktasına kendisinin varmasına izin verin",
+                  "Küçük, erken ve görünür bir başarı bulun ve duyurun — hazırlık, tartışmayla değil kanıtla daha kolay inşa edilir",
+                  "Ekipte zaten ikna olmuş kişileri belirleyin ve onlara görünür bir rol verin — akranların inancı ekibi yönetim talimatından daha hızlı harekete geçirir",
+                  "Bu aşamayı bekleyin ve ona zaman ayırın; onu “gerçek” planlamadan önceki bir gecikme saymak, atlanmasının en yaygın nedenidir"
+                ] },
+                { "type": "example", "title": "hasta kabul sürecini değiştiren bir klinik", "text": "Yönetim, kabul iş akışını on sekiz ay içinde iki kez yeniden tasarlamıştı; iki tasarım da kâğıt üzerinde sağlamdı ve ikisi de bir ay içinde sessizce eskiye dönmüştü. Üçüncü denemede, sürece dokunmadan önce ekip iki oturum boyunca kabulde gerçekte neyin ters gittiğini kendi sözleriyle anlattı — neyin yanlış olduğu kendilerine söylenmeden. Yeni iş akışı önerildiğinde personel yöneticinin cümlelerini tamamlıyordu. Sürecin kendisi, başarısız ikinci denemeden pek farklı değildi. Farklı olan, ekibin çözüm kendisine verilmeden önce teşhise kendisinin ulaşmış olmasıydı." },
+                { "type": "p", "text": "Hazırlık oluşturmak planlamanın yerine geçmez — planlamayı yapmaya değer kılan odur." },
+                { "type": "p", "text": "İhtiyacını kabullenmemiş bir ekibe sunulan iyi planlanmış bir değişiklik, sessizce görmezden gelinmeyi bekleyen bir plandır." }
+              ]
+            },
+            {
+              "id": "13.2",
+              "title": "Katmanları Seçmek: İnsanları İşin Aşamasıyla Eşleştirmek",
+              "ship": {
+                "title": "Her tayfa her halata göre değildir",
+                "body": ["Fırtınada halat ekleyebilen tayfa, limanda dümende görmek isteyeceğiniz kişi nadiren olur; açık okyanusta rota çizen subay da varıştan sonra kumanyayı düzenlemeye genellikle en uygun kişi değildir. Bir yolculuğu başlatmak için kurulmuş mürettebat, onu yirmi yıl sürdürmeye yetmez; yirmi yıl dayanacak şekilde kurulmuş bir mürettebat ise gemiyi kıyıdan hiç ayıramazdı. Hangi tayfanın yolculuğun hangi aşamasına ait olduğunu bilmek, sonradan akla gelen bir düşünce değil, bir komuta kararıdır."],
+                "claim": "",
+                "question": "Ekibinizde hâlâ bu aşamanın işini yapan ama aslında bir sonrakine uygun olan kişiyi söyleyin — ve devri ne engelliyor?"
+              },
+              "blocks": [
+                { "type": "p", "text": "Yönetim El Kitabı (Bölüm 3.3) kadro oluşturmayı becerileri rollerle eşleştirmek olarak ele alır. Bu, istikrarlı pozisyonlar için doğrudur. Ama yeni bir girişim için yeterli değildir; çünkü girişim sabit tutulan tek bir iş değildir — belirgin aşamalardan geçer ve bir aşama için doğru olan kişi çoğu zaman bir sonraki için yanlıştır." },
+                { "type": "h3", "text": "Üç katman, üç mizaç" },
+                { "type": "p", "text": "Başlatan katman. Bir şeyi yoktan var etmek için gereklidir. Belirsizlikle rahattır, izlenecek bir sistemin yokluğu onu yıldırmaz, herkesin önünde yanılmaya ve düzeltmeye isteklidir. Bu katman zorunlu olarak küçüktür — yapı olmadan iyi çalışabilen pek az kişi vardır — ve genellikle başlangıçta en görünür olandır, çünkü en çok doğaçlamayı o yapar." },
+                { "type": "p", "text": "Sürükleyen katman. Fikir kendini kanıtladıktan ve kurucularının tek başına taşıyabileceğinden daha ileriye taşınması gerektiğinde gereklidir. Bu katman, başlatan katmanın kanıtladığını işe alır, düzenler ve büyütür — bir fikri yalnızca bizzat uygulayan değil, onun etrafında ekip kurabilen insanlar. Başlatan katman kaosa katlanırken, sürükleyen katman onu azaltmaya başlar." },
+                { "type": "p", "text": "İnşa eden katman. Girişimin, onu başlatanların ayrılmasından sonra da ayakta kalması gerektiğinde gereklidir. Bu katman süreci yazıya döker, işin tekrarlanmasını sağlayan sistemleri — belgeleri, kayıtları ve rutinleri — kurar, halefler yetiştirir ve kişiye bağlı bir çabayı kuruma bağlı bir çabaya dönüştürür. Kadro açısından çoğu zaman en az heyecan verici ve en çok ihmal edilen katmandır — kurumlar başlatanları kutlamakta iyidir ve başlattıkları hiçbir şeyin inşa edenler olmadan sürmeyeceğini unuturlar." },
+                { "type": "table", "caption": "Üç katman, üç mizaç", "head": ["Katman", "Ne zaman gerekir", "Mizaç", "Tipik başarısızlık"], "rows": [
+                  ["Başlatan", "Bir şeyi yoktan var ederken", "Belirsizlikle rahat; doğaçlama yapar; herkesin önünde yanılmaya istekli", "Gereğinden uzun yerinde tutulur, işin artık ihtiyaç duyduğu yapıya direnir"],
+                  ["Sürükleyen", "Fikir kendini kanıtlamış ve daha ileri taşınmalı", "İşe alır, düzenler ve büyütür; bir fikrin etrafında ekip kurar", "Atlanır, bu yüzden fikir kurucularının ötesine hiç büyümez"],
+                  ["İnşa eden", "İş, kurucularının ayrılmasından sonra da sürmeli", "Süreci yazıya döker, sistem kurar, halef yetiştirir", "Kurum hâlâ lansmanı kutlarken yeterince kadro ayrılmaz"]
+                ] },
+                { "type": "h3", "text": "Yaygın hata" },
+                { "type": "p", "text": "Büyüyen bir girişimde en sık yapılan kadro hatası yanlış insanları seçmek değil — aşama değiştikçe insanları kaydırmamaktır. İnşa aşamasında yerinde tutulan bir kurucu, girişimin artık ihtiyaç duyduğu yapıya direnecektir, çünkü ilk aşamayı tam da bu yapının etrafında doğaçlama yaparak geçirmiştir. Çok erken getirilen bir inşa eden ise henüz ne olması gerektiğini kanıtlamamış bir şeyi sistemleştirmeye çalışır ve onu boğar. Bir girişim için işgücü planlaması yalnızca “bu rol hangi becerileri gerektiriyor” diye değil, “bu girişim hangi aşamada ve bu kişinin mizacı o aşamaya mı uyuyor — yoksa bir öncekine mi?” diye de sormalıdır." },
+                { "type": "h3", "text": "Bunu uygulamaya dökmek" },
+                { "type": "ul", "items": [
+                  "İşgücü planlaması aşamasında (bkz. 3.3’teki Temel unsurlar listesi), girişimin şu anda üç aşamadan hangisinde olduğunu adlandırın — bir yıl sonra ulaşacağı aşamaya göre kadrolandığını varsaymayın",
+                  "Bir girişim başlatmadan sürüklemeye ya da sürüklemeden inşaya geçtiğinde, önceki aşamayı taşıyanların bir sonraki için doğru kişiler olup olmadığını gözden geçirin — ve bir kurucunun engel olmak yerine devredebileceği dürüst, saygılı bir yol bulundurun",
+                  "“Şimdi bir inşa edene ihtiyacımız var” demeyi, “daha fazla kapasiteye ihtiyacımız var” kadar meşru bir kadro kararı sayın — inşa eden katman, kurum hâlâ lansman için kendini tebrik ettiğinden sıklıkla yeterince kadrolanmaz"
+                ] },
+                { "type": "example", "title": "yeni bir topluluk programı", "text": "İki çalışan, bütçesi ve sabit bir müfredatı olmayan bir hafta sonu gençlik programı başlattı; oturumları büyük ölçüde sezgiyle yürütüyor ve haftadan haftaya uyarlıyorlardı. Bir yıl içinde program iki kişinin sunabileceğini aştı ve onu dört mekâna yaymak için bir sürükleyen katman — gönüllü kolaylaştırıcıları işe alıp yetiştirebilen üç koordinatör — getirildi. Üçüncü yıla gelindiğinde öncelik yine değişmişti: İnşa eden katmandan bir atama, eğitim kılavuzunu yazmak, koruma prosedürlerini belirlemek ve bir kolaylaştırıcı yetkilendirme süreci tasarlamak için görevi devraldı; böylece program artık hiç kimsenin nasıl yürütülmesi gerektiğine dair hafızasına bağlı kalmadı. Her aşama farklı türden bir kişiye ihtiyaç duydu; ilk iki kişiyi baştan sona tek başına sorumlu tutmak, programı onların kişisel olarak bir arada tutabileceği kadarla sınırlardı." }
+              ]
+            },
+            {
+              "id": "13.3",
+              "title": "Büyümenin İtici Gücü Olarak Rekabet",
+              "ship": {
+                "title": "Ufuktaki başka yelkenler",
+                "body": ["Boş bir denizde yalnız bir gemi, kaptanı onun yavaş olduğunu, gövdesinin kirlendiğini, seyrinin özensizleştiğini fark etmeden yıllarca sürüklenebilir — kendini ölçecek bir şey yoktur. Ufukta, aynı akıntıda aynı limana doğru ilerleyen başka bir yelken belirdiği anda, her gevşek halat fark edilir. Rakip gemi yalnızca uzak durulması gereken bir tehlike değildir. Çoğu zaman bir geminin sahip olduğu tek dürüst aynadır."],
+                "claim": "",
+                "question": "Biriminizin işine en yakın “başka yelkeni” söyleyin. Onun dümen suyu size, kendi işinizde görmeyi bıraktığınız neyi gösteriyor?"
+              },
+              "blocks": [
+                { "type": "p", "text": "Yönetim El Kitabı (Bölüm 1.4) yöneticilerden “rekabet avantajlarını ve farklılaştırıcıları” belirlemelerini ve “ortaya çıkan tehditleri ve zorlukları” fark etmelerini ister. Bu, diğer kurumları esas olarak okunacak bir manzara olarak ele alır. Benzer işler yapan başka kurumların varlığının sizinkine gerçekte ne yaptığı konusunda daha açık olmakta yarar var: Çoğu zaman sizi diri tutan odur ve yokluğu başlı başına bir risktir." },
+                { "type": "h3", "text": "Rekabet alanına yeniden bakmak" },
+                { "type": "p", "text": "Benzer kurumları — kâr amacı gütmeyen bir kuruluş için aynı alandaki diğer hayır kurumlarını; herhangi bir kurum için aynı fon sağlayıcılar, çalışanlar ya da ilgi için yarışan diğerlerini — öncelikle karşı savunma yapılacak bir tehdit olarak görmek doğaldır. Bu bakış eksiktir. Ciddi bir dengi olmayan, kimsenin çekişmediği bir alanda çalışan kurum, tam da hiçbir şey onu zorlamadığı için yavaşlama eğilimindedir. Rekabet yalnızca yönetilecek bir risk değildir; bir kurumu kendi standartları konusunda dürüst tutan en güvenilir mekanizmalardan biridir." },
+                { "type": "p", "text": "Bu, aynı kurum içindeki insanları motive etmekle ilgili olan ve Bölüm 14.4’te anlatılan iç ekip rekabetinden ayrı bir fikirdir. Burada söz konusu olan, kurumun dışında başka kurumların var olmasının etkisidir — bir motivasyon tekniği değil, yapısal bir baskı." },
+                { "type": "h3", "text": "Rekabet işlediğinde ne yapar" },
+                { "type": "ul", "items": [
+                  "Kalite için gerçek, dışsal bir standart koyar — kendiniz için koyduğunuz ve fark edilmeden aşağı kayma eğiliminde olan standardı değil",
+                  "Daha hızlı kararları zorunlu kılar — bir hibe, bir yararlanıcı grubu ya da bir pazar için rakibi olmayan kurum, hizmetini iyileştirme konusunda nadiren aciliyet hisseder",
+                  "Kör noktalarınızı ortaya çıkarır — bir rakibin ortak bir soruna yaklaşımı, kendi işinizde sorgulamayı bıraktığınız bir şeyi fark etmenin çoğu zaman en hızlı yoludur",
+                  "İlk hareket eden ya da tekele yakın konumdaki rehaveti disipline eder — ilk ya da en büyük olmak, ancak geçici sayıldığı sürece bir avantajdır"
+                ] },
+                { "type": "h3", "text": "Ondan iyi yararlanmak" },
+                { "type": "ul", "items": [
+                  "Benzer kurumların ne yaptığını yalnızca bir tehdit belirginleştiğinde değil, sabit bir takvimle gözden geçirin — belirginleştiğinde avantaj çoktan onlarındır",
+                  "Bir rakibin sizin ihmal ettiğiniz bir alandaki başarısını hakaret değil bilgi olarak görün — yararlı tepki savunmaya geçmek değil, “onlar bizim görmediğimiz neyi gördü?” diye sormaktır",
+                  "Kurumunuz alışılmadık derecede güçlü ya da rakipsiz bir konumdaysa, rehavet riskini savunması için bilerek birini görevlendirin — rakipsiz bir kurum, rekabetin aksi hâlde sağlayacağı baskıyı kendisi üretmek zorundadır"
+                ] },
+                { "type": "example", "title": "aynı şehirde iki eğitim kurumu", "text": "Bir meslek eğitim merkezi yıllarca bölgesindeki tek seçenek olarak çalışmış ve standartları sessizce düşmüştü — ders materyalleri güncellenmemiş, geri bildirim süreçleri görmezden gelinmişti. Yakınına ikinci bir kurum açıldığında kayıtlar bir gecede çökmedi, ama karşılaştırma artık fon sağlayıcılar ve aday öğrenciler için görünürdü. Yönetim bunu yalnızca savunmacı biçimde ele almak yerine, yeni kurumun ders yapısını kendi yapısını gözden geçirmek için bir vesile olarak kullandı — eksikliğini fark etmeyi bıraktığı gerçekten daha iyi bazı uygulamaları benimserken zaten iyi yaptığı şeyleri de keskinleştirdi. Üç yıl sonra her iki kurum da tek başına olduklarından daha güçlüydü; rekabet, iç değerlendirmenin başaramadığını yapmıştı." }
+              ]
+            },
+            {
+              "id": "13.4",
+              "title": "Dönüm Noktası: Talihin Değişmesine Hazırlanmak",
+              "ship": {
+                "title": "Sakin deniz sakin kalmayacak",
+                "body": ["Hiçbir geçiş tek bir havada yapılmaz. Yalnızca kendisine verilen rüzgâra göre yelken basan kaptan iki kez yakalanır: Bir kez sükûnet bittiğinde, bir kez de fırtınanın kalıcı olduğunu varsayıp ardından gelecek sükûneti gözlemeyi bıraktığında."],
+                "claim": "",
+                "question": "Biriminizin şu anda kalıcı saydığı bir şeyi söyleyin — güçlü bir çeyrek, zor bir fon sağlayıcı, oturmuş bir ekip — ve bunun bir yıl içinde değişeceğini varsaysanız neyi farklı yapacağınızı sorun."
+              },
+              "blocks": [
+                { "type": "p", "text": "Yönetim El Kitabı (Bölüm 4.10) uyum yeteneğini, değişim geldiğinde ona yanıt verme becerisi olarak ele alır. Bu bölüm ise bununla ilişkili ama ayrı bir disiplinle ilgilidir: Değişimi gelmeden önce beklemek; çünkü hiçbir kurumsal durum — iyi ya da kötü — kalıcı değildir ve yöneticinin işi dönüşe hazırlıklı kalmak, onunla şaşırmamaktır." },
+                { "type": "h3", "text": "İki mevsim, iki başarısızlık biçimi" },
+                { "type": "p", "text": "Güçlü mevsimlerde rehavet. Fon güvence altında, sonuçlar iyi ve ekip istikrarlıyken, mevcut konumu bir döngüdeki bir nokta yerine yeni bir başlangıç çizgisi saymak caziptir. Bu konumdaki kurumlar genellikle yedeklere, halef planlamasına ve kayıtları, materyalleri ve rutinleri düzenli tutmanın gösterişsiz işine yeterince yatırım yapmaz — tam da şu anda hiçbir şey bunu gerektirmediği için. Bu işi yapmanın doğru zamanı güçlü mevsimdir ve onu atlamanın kolay olduğu tek zaman da odur." },
+                { "type": "p", "text": "Zayıf mevsimlerde teslimiyet. Sonuçlar kötüyken ya da bir aksilik yaşandığında, düşüşü yeni başlangıç çizgisi saymak da aynı derecede caziptir — kapasiteye yatırımı durdurmak, zor kararları ertelemek ve koşullar değiştiğinde harekete geçebilecek konumda kalmak yerine edilgen biçimde beklemek. Bu ayna hatasıdır: Geçici bir düşüşü kalıcı sanmak ve sonuç olarak dönüş geldiğinde hazır olmamak." },
+                { "type": "p", "text": "İki hatanın kökü aynıdır: Bugünkü durumu sona erecek bir evre olarak değil, kalıcı olan olarak görmek. Bu bölümün istediği disiplin iki yönde de aynıdır — konumun tersine dönmesine hazır kalın ve bugünkü mevsimin gelecekteki bütün mevsimler hakkında neye inandığınızı belirlemesine izin vermeyin." },
+                { "type": "h3", "text": "Dönüşe hazır kalmak" },
+                { "type": "ul", "items": [
+                  "Güçlü dönemlerde, gelecekteki bir düşüşün başvuracağı yedekleri — mali, insani, kurumsal — bilerek oluşturun; bunu “gerçek” öncelikler finanse edildikten sonraki isteğe bağlı bir ek değil, asli iş sayın",
+                  "Zayıf dönemlerde, koşullar düzeldiğinde hızla hareket etmenizi sağlayacak sistemleri ve ilişkileri koruyun — düşüş, bir sonraki fırsatı gözlemeyi bırakmanın zamanı değildir",
+                  "Temel varsayımları sabit bir takvimle gözden geçirin ve açıkça sorun: Şu anda kalıcı saydığımız ama aslında yalnızca bugünkü evre olan ne?",
+                  "Bir tersine dönüş gerçekten geldiğinde — iyiye ya da kötüye — onu olağanüstü değil beklenen bir şey olarak karşılayın; dönüşü planlamış bir kurum, sükûnetin hiçbir zaman garanti olmadığını öğrenmenin şokunu önce sindirmek zorunda kalan kurumdan daha hızlı yanıt verir"
+                ] },
+                { "type": "example", "title": "fona bağımlı bir program", "text": "Bir program altı yıl boyunca çok yıllık tek bir hibeyle yürümüş ve bu fonu fiilen kalıcı saymıştı — çeşitlendirme yok, yedek yok, bitişi için plan yok. Fon sağlayıcının öncelikleri değişip hibe yenilenmediğinde, programın on sekiz aylık bir ön bildirimi vardı ama bunu kullanacak hiçbir yapısı yoktu: Üç yıl sonra hâlâ eski ölçeğine dönememişti. Sektörün başka bir yerindeki benzer bir program, fonu hiç de daha güvenli olmadığı hâlde, güçlü yıllarını iki küçük ikincil fon ilişkisi kurmak için kullanmıştı; çünkü yönetimi, ana hibenin sonsuza dek sürmeyeceğini — haklı olarak — varsaymıştı. Hibe bittiğinde geçiş, varoluşsal bir tehdit değil, zor bir yıl oldu." },
+                { "type": "p", "text": "Hazırlık, doğru aşamada doğru insanlar, dürüst rekabet ve dönüşe hazırlık — bunların hiçbiri tek başına nihai başarıyı garanti etmez. Bundan sonra gelen, bu koşullar sağlandığında o başarının neye benzediğini anlatan formüldür." },
+                { "type": "table", "caption": "Bir bakışta dört örüntü", "head": ["Örüntü", "Gemi", "Sorduğu soru", "Göz ardı edilirse"], "rows": [
+                  ["13.1 Plandan önce hazırlık", "Gelgiti beklemek", "Ekip değişim ihtiyacını kabul etti mi, yoksa yalnızca kendisine mi söylendi?", "Planlar yıpranarak başarısız olur: odada kabul, koridorda direniş"],
+                  ["13.2 Katmanları seçmek", "Her tayfa her halata göre değildir", "İşin ulaştığı aşama için doğru türden kişi yerinde mi?", "Kurucular yapıyı engeller; inşa edenler çok erken gelip fikri boğar"],
+                  ["13.3 Rekabet", "Ufuktaki başka yelkenler", "Benzer bir kurum bize kendi standartlarımız hakkında ne gösteriyor?", "Rakipsiz bir konumda standartlar fark edilmeden aşağı kayar"],
+                  ["13.4 Dönüm noktası", "Sakin deniz sakin kalmayacak", "Yalnızca bugünkü evre olan neyi kalıcı sayıyoruz?", "Güçlü mevsimlerde rehavet; zayıf mevsimlerde teslimiyet"]
+                ] }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Yenilenmeye ilişkin on test",
+            "tests": [
+              "Ekibimin şu anda istediğim değişikliğe hazır olduğunu mu, yoksa yalnızca kendisine söylendiğini mi dürüstçe söyleyebilir miyim?",
+              "Bir planım sessizce başarısız olduğunda, planın yanlış olduğu sonucuna mı vardım — yoksa ekibin ona ihtiyacı hiç kabul edip etmediğini mi kontrol ettim?",
+              "Alanımdaki her girişimin hangi aşamada olduğunu biliyor muyum: başlatma, sürükleme ya da inşa?",
+              "Alanımda hâlâ içinde bulunduğumuz aşamaya değil, geride bıraktığımız aşamaya uygun işi taşıyan biri var mı?",
+              "Burada bir kurucunun, rütbe indirimi gibi görülmeden bir şeyi devredebileceği dürüst ve saygılı bir yol var mı?",
+              "İki yıldan uzun süre önce başlattığımız herhangi bir şey için inşa eden katmandan birini işe aldık mı?",
+              "Alanımızda çalışan benzer kurumları sayabilir ve her birinin bizden neyi daha iyi yaptığını söyleyebilir miyim?",
+              "Başka bir kurumun iyi yaptığı bir şey yüzünden en son ne zaman bir şeyi değiştirdik?",
+              "Şu anda — iyi ya da kötü — kalıcı saydığımız ama aslında yalnızca bugünkü evre olan ne?",
+              "Şu anki en güçlü avantajımız bir yıl içinde ortadan kalksa, inşa ettiğimiz hangi şey hâlâ ayakta kalırdı?"
+            ],
+            "questions": [
+              "Hazır olmayan bir ekip soyut olarak değil, burada, kendi kurumumuzda neye benziyor?",
+              "Bir projenin bir aşamadan diğerine geçtiğine kim karar veriyor ve bunun gerçekleştiğini nasıl anlarız?",
+              "Alanımızdaki diğer kurumları rakip olarak mı, meslektaş olarak mı, yoksa hiçbiri olarak mı görüyoruz — ve bunlardan hangisi yararlanıcılarımıza en iyi hizmet eder?",
+              "Rakipsiz bir konumda olduğumuz bir alan var mı? Bu bize artık sınamadığımız standartlar açısından neye mal oluyor?",
+              "Fon ya da siyasi iklim on sekiz ay içinde tersine dönse, mevcut varsayımlarımızdan hangisi saf görünürdü?",
+              "Bu kurum hiç geçici bir aksiliği kalıcı bir düşüş sandı mı ve bu neye mal oldu?"
+            ],
+            "exercise": "Sorumlu olduğunuz bir girişimi seçin. Sırasıyla şunları yazın: Üç aşamadan hangisinde olduğu; onu kimin taşıdığı ve mizacının o aşamaya uyup uymadığı; aynı işi yapan en yakın benzer kurum ve onların daha iyi yaptığı bir şey; ve şu anda kalıcı saydığınız bir durum. Ardından bu listeden altı ay sonra hakkında soru sorulmasını en az isteyeceğiniz maddeyi seçin ve bu çeyrekte onunla ilgili bir şey yapın."
+          }
+        }
+      ],
+      "outcomes": {
+        "items": [
+          "Toplu hazırlığı bireysel motivasyondan ayırt etmek ve bir ekibin bir değişikliğe kabullenmeden uyduğunun işaretlerini tanımak.",
+          "Rızayı duyurunun ardından gelen bir şey saymak yerine, bir planı başlatmadan önce hazırlığı bilinçli olarak oluşturmak.",
+          "Bir girişimin hangi aşamaya ulaştığını belirlemek ve başlatan, sürükleyen ve inşa eden katmanları ona göre eşleştirmek.",
+          "Bir kurucunun başlattığı işten geri çekilmesi gereken durumlar da dâhil olmak üzere, aşamalar arasındaki devri dürüstçe yönetmek.",
+          "Benzer kurumları yalnızca rekabet tehdidi olarak değil, standartların ve kör nokta düzeltmesinin kaynağı olarak okumak.",
+          "Her iki yönde tersine dönüş için plan yapmak — güçlü mevsimlerde yedek oluşturmak ve zayıf mevsimlerde kapasiteyi korumak."
+        ],
+        "evidence": "Katılımcının sorumlu olduğu bir girişimin; mevcut katman ihtiyaçlarını, en yakın benzer kurumunu ve şu anda kalıcı sayılan bir durumu adlandıran yazılı bir aşama değerlendirmesi."
+      }
+    },
+    {
+      "id": "m6",
+      "number": 6,
+      "title": "Yükümlülük ve Amaç",
+      "tagline": "Altında yelken açtığınız bayrak ve yöneldiğiniz liman",
+      "foundation": {
+        "verses": [
+          { "ar": "وَأَوْفُوا بِالْعَهْدِ ۖ إِنَّ الْعَهْدَ كَانَ مَسْئُولًا", "text": "Ahdi yerine getirin; şüphesiz ahit sorumluluğu vardır.", "ref": "Kur’ân-ı Kerîm, İsrâ Sûresi 17:34" },
+          { "ar": "إِذَا مَاتَ الْإِنْسَانُ انْقَطَعَ عَنْهُ عَمَلُهُ إِلَّا مِنْ ثَلَاثَةٍ: إِلَّا مِنْ صَدَقَةٍ جَارِيَةٍ، أَوْ عِلْمٍ يُنْتَفَعُ بِهِ، أَوْ وَلَدٍ صَالِحٍ يَدْعُو لَهُ", "text": "İnsan ölünce ameli kesilir, ancak üç şey müstesna: sadaka-i câriye, kendisinden faydalanılan ilim ve kendisine dua eden salih evlat.", "ref": "Ebû Hüreyre rivayet etmiştir — Sahîh-i Müslim 1631" }
+        ],
+        "why": [
+          "Son modül yükümlülük ve amaç hakkındadır; bu iki metin de her biri içindir. Mükemmellik, fedakârlık ve ekip için vazgeçilen bir pay itibar birer ahittir — kurumun hizmet etmek için var olduğu insanlarla yapılmış, kimse denetlese de denetlemese de geçerli bir ahit. Hadis ise bütün bunların neden iyi yapılmaya değer olduğunun cevabıdır: Üç şeyin ikincisi aktarılan ilimdir; halefini yetiştiren bir yöneticinin geride bıraktığı da tam olarak budur."
+        ]
+      },
+      "sections": [
+        {
+          "id": "s14",
+          "number": 14,
+          "title": "Nihai Başarı Formülü",
+          "ship": {
+            "title": "Yöneldiğiniz liman",
+            "body": ["Şimdiye kadar her şey gemiyi iyi yürütmekle ilgiliydi. Bu bölüm daha eski soruyu sorar: Gemi nereye gidiyor ve kimi taşıyor? Kusursuz yönetilen ama hiçbir yere yönelmeyen bir gemi, iyi bir mürettebatın israfıdır. Dört üçlü, kaptandan sonra da süren yolculuk hakkındadır — mükemmellik, fedakârlık, aktarılan ilim ve hiç kimsenin tek başına varmadığı gerçeği. As Safinah adını bundan alır: Gemi, tek başına karşıya geçemeyecek insanları taşıyan şeydir."],
+            "claim": "",
+            "question": "Biriminizden ayrıldıktan beş yıl sonra onun hakkında söylenmesini istediğiniz cümleyi yazın. Sonra bu haftaki ajandanıza bakın ve sizi oraya götürüp götürmediğini sorun."
+          },
+          "intro": ["Her alanda başarı — kurumsal, mesleki ya da kişisel — bir örüntü izler. Bu örüntü birbirine kenetlenmiş dört üçlüden oluşur. Birincisi, özgünlük, kalite ve öncülük yoluyla mükemmelliği tesis etmek. İkincisi, fedakârlık yapmaya, risk almaya ve kalıcı temeller kurmaya isteklilik. Üçüncüsü, her kaynaktan sürekli öğrenmek ve gelecek kuşağa yatırım yapmak. Dördüncüsü, bireysel başarı yerine ortak çabaya odaklanmak. Bu dört üçlü birlikte nihai başarı formülünü oluşturur."],
+          "subsections": [
+            {
+              "id": "14.1",
+              "title": "Birinci Üçlü: Özgünlük Yoluyla Mükemmellik",
+              "blocks": [
+                { "type": "h3", "text": "1. İşin özgünlüğü" },
+                { "type": "p", "text": "Mükemmellik taze düşünce ve yenilikle başlar. Açık bir etki bırakan yeni, yaratıcı ve yenilikçi fikirler, başarılı kurumları vasat olanlardan ayırır. Özgünlük, pazarda ya da toplumda boşlukları tespit etmek ve kimsenin sunmadığı yanıtlar geliştirmek demektir. Başkalarının yaptığını kopyalamak yerine zorluklara yeni açılardan yaklaşmak demektir. Başarılı kurumlar, işlerine belirgin biçimde değerli bir şey katanlardır." },
+                { "type": "h3", "text": "2. En iyisi olmak" },
+                { "type": "p", "text": "Özgün olmanın ötesinde, iş mümkün olan en iyi biçimde sunulmalıdır. Bu, her ayrıntıda kaliteye özen göstermek demektir — programların nasıl tasarlandığında, hizmetlerin nasıl sunulduğunda, iletişimin nasıl kurulduğunda. En iyisi olmak yüksek standartlar, sürekli iyileştirme ve vasatlığı kabul etmeme gerektirir. İşinizden yararlananlara duyulan saygıyı yansıtır." },
+                { "type": "h3", "text": "3. İlk olmak" },
+                { "type": "p", "text": "İlk olmak, başkalarına örnek olmak demektir; başkalarının sonradan benimseyeceği yaklaşımlara öncülük etmek demektir. Nihai başarıya ulaşan kurumlar çoğu zaman belirli bir yeniliği kendi alanında ya da bölgesinde ilk uygulayanlardır. İlk olmak güvenilirlik kazandırır, dikkat çeker ve kurumu lider konumuna yerleştirir. Kalıcı bir miras bırakır." }
+              ]
+            },
+            {
+              "id": "14.2",
+              "title": "İkinci Üçlü: Fedakârlık ve Risk",
+              "blocks": [
+                { "type": "h3", "text": "1. Fedakârlık" },
+                { "type": "p", "text": "Olağanüstü bir iş başarmak fedakârlık gerektirir. Bu, iş baskısına katlanmak, zor yerlere seyahat etmek, bedeni yoran fiziksel çaba göstermek ya da misyon uğruna kişisel rahatından vazgeçmek anlamına gelebilir. Toplumun en geniş kesimine gerçekten yardım eden bir iş başarmak, asgari gerekenin ötesinde zaman ve emek ayırmayı gerektirir. Fedakârlık bağlılığı gösterir ve başkalarına misyonun sahici ve önemli olduğunu işaret eder." },
+                { "type": "h3", "text": "2. Risk almak" },
+                { "type": "p", "text": "Başarı risk almayı gerektirir. Bu, daha önce denenmemiş fikirler önermek, alışılmadık etkinlikler uygulamak ve belirsizliğe rağmen yeni yaklaşımlar geliştirmek demektir. Risk almak, başarısızlığın mümkün olduğunu kabul edip yine de ilerlemektir. Hesaplı risk alan kurumlar çoğu zaman yaygın biçimde benimsenen yaklaşımlar keşfeder. Risk alanlar başkalarına ilham verir ve gelecekteki başarının yolunu açar. Risk olmadan kurumlar durağanlaşır ve önemini yitirir." },
+                { "type": "h3", "text": "3. Sessizce inşa etmek" },
+                { "type": "p", "text": "Mükemmellik gürültülü açıklamalar üzerine değil, sağlam temeller üzerine kurulur. Sessizce inşa etmek, övgü ya da ilgi aramak yerine işinizin kendi adına konuşmasına izin vermektir. Görünüşe değil özüne, görünürlüğe değil gerçek etkiye odaklanmaktır. Sessizce kurulan güçlü temeller, ilk duyuruların heyecanı söndükten çok sonra da ayakta kalır. Sessizce inşa edilen iş, egoya değil misyona bağlılığı ve tevazuyu yansıtır." }
+              ]
+            },
+            {
+              "id": "14.3",
+              "title": "Üçüncü Üçlü: Öğrenme ve Kuşaklara Emanet",
+              "blocks": [
+                { "type": "h3", "text": "1. Bilgi ve öğrenme" },
+                { "type": "p", "text": "Nihai başarı sürekli öğrenmeyi gerektirir. Hayatın her aşamasında, ister öğretiyor ister öğreniyor olalım, herkesten yararlanmalıyız; çünkü herkesin sunacak yeni bir şeyi vardır. Meslektaşlardan, yararlanıcılardan, topluluklardan, başarısızlıklardan ve başarılardan öğrenmek bilgiye ve yetkinliğe büyük katkı sağlar. Öğrenme kültürünü benimseyen kurumlar değişime daha kolay uyum sağlar ve daha tutarlı biçimde yenilik yapar." },
+                { "type": "h3", "text": "2. Farklı kuşaklardan yararlanmak" },
+                { "type": "p", "text": "Her kuşak — genç ve yaşlı — değerli bir bilgiye sahiptir. Başarı, genç kuşakların özlemlerini, ihtiyaçlarını ve taze bakış açılarını anlamak için onları dinlemeyi gerektirir. Aynı zamanda yaşlı kuşakları deneyimleri ve bilgelikleri için onurlandırmayı da gerektirir. Büyüklerin gençlere yol gösterdiği, gençlerin enerji ve yenilik getirdiği, kuşaklar arasında köprü kuran kurumlar; bilgi ve yaratıcı gerilim bakımından zengin ortamlar oluşturur. Kuşaklar arası alışveriş en iyi sonuçları doğurur." },
+                { "type": "h3", "text": "3. Gençlere ve manevi temele yatırım" },
+                { "type": "p", "text": "Gençler, kurumsal ve toplumsal başarının temelidir. Bu, gençlerle ilgilenmek, gelişimlerini teşvik etmek ve onları anlamlı katkılara yönlendirmek demektir. Yalnızca mesleki beceriler değil, manevi ve ahlaki bir temel de kazandırmak demektir. Kurumlar gençlerin gelişimine yatırım yaptığında ve hem mükemmelliğe hem de manevi uygulamaya bağlılığı teşvik ettiğinde, etkilerinin mevcut projelerin çok ötesine, geleceğe uzanmasını sağlar." }
+              ]
+            },
+            {
+              "id": "14.4",
+              "title": "Dördüncü Üçlü: Ortak Başarı",
+              "blocks": [
+                { "type": "h3", "text": "1. Başkalarından bağımsız olarak çalışmak" },
+                { "type": "p", "text": "Gerçek bağlılık, başkaları katkı sağlasa da sağlamasa da işinizi sürdürmek demektir. İlerlemeden önce mükemmel koşulları ya da tam bir işbirliğini beklememek demektir. Kontrol edebildiğiniz şeye odaklanmak ve kendi payınıza düşeni mükemmel biçimde yapmak demektir. Bu zihniyet bahaneleri önler ve ivmeyi korur. Herkes başkalarının katılımından bağımsız olarak işini tam bir adanmışlıkla yaptığında, ortak sonuçlar daha güçlü olur." },
+                { "type": "h3", "text": "2. Ekipler arası rekabet ve mükemmellik" },
+                { "type": "p", "text": "Ekipler arasındaki rekabet, olumlu yönlendirildiğinde herkesi en iyisini ortaya koymaya motive eder. Sağlıklı rekabet, ekipleri yenilikçi fikirler önermeye, performansı artırmaya ve yaratıcı çözümler aramaya teşvik eder. Rekabet, yıkıcı bir çatışmaya değil mükemmelliğe yönelttiğinde sağlıklıdır. En iyi sonuçlara ve fikirlere ulaşmak için yarışan ekipler herkese en yüksek kapasitesiyle katkıda bulunması için ilham verir." },
+                { "type": "h3", "text": "3. Başarı ortaktır" },
+                { "type": "p", "text": "Sonuçta başarı bireysel değil ortaktır. Bir kişinin çabası, ne kadar olağanüstü olursa olsun, tek başına kalıcı bir etki yaratamaz. Gerçek başarı, her üyenin kendine özgü güçlü yanlarıyla katkıda bulunduğu ekibin birleşik çabasından doğar. Ortak başarının tanınması — itibarın paylaşıldığı, başarıların ekibe ait olduğu bir ortam — birlik yaratır ve gelecekteki işbirliğini mümkün kılar. Başarının ortak olduğunu anlayan kurumlar daha güçlü kültürler oluşturur ve daha iddialı hedeflere ulaşır." }
+              ]
+            },
+            {
+              "id": "14.5",
+              "title": "Dört Üçlünün Birlikte İşlemesi",
+              "blocks": [
+                { "type": "p", "text": "Bu dört üçlü birbirinden ayrı değil, tek bir formülün birbirine kenetlenmiş bileşenleridir. Fedakârlık ve risk almaya isteklilik (ikinci üçlü) olmadan mükemmellik (birinci üçlü) bir özlem olarak kalır. Ortak bağlılık (dördüncü üçlü) olmadan öğrenme ve kuşaklara yatırım (üçüncü üçlü) kuramsal kalır. Mükemmellik (birinci üçlü) olmadan ortak çaba (dördüncü üçlü) vasat sonuçlar doğurur. Dört üçlü birlikte işlediğinde — kurumlar fedakârlık ve risk yoluyla mükemmelliğin peşine düştüğünde, öğrenmeye ve kuşaklara yatırım yaptığında ve ortak başarıya bağlandığında — kalıcı olan, ilham veren ve dönüştüren sonuçlara ulaşırlar." }
+              ]
+            },
+            {
+              "id": "14.6",
+              "title": "Nihai Başarı Kurumları İnşa Etmek",
+              "blocks": [
+                { "type": "p", "text": "Bu formülü benimseyen kurumlar — mükemmelliğin ve yeniliğin peşinden giden, fedakârlık yapıp risk alan, sürekli öğrenip insana yatırım yapan ve bireysel değil ortak başarıya odaklanan kurumlar — yalnızca kısa vadeli sonuçlara değil, kalıcı bir etkiye ulaşır. Bu formül, gerçek başarının strateji ya da sistemlerden fazlasını gerektirdiğini kabul eder: bağlılık, cesaret, öğrenme ve herhangi bir bireyden daha büyük bir şeye ortak adanmışlık. Alanlarını dönüştüren, insanlarına ilham veren ve kurucuları ayrıldıktan çok sonra da süren miraslar bırakan kurumlar bunlardır." },
+                { "type": "table", "caption": "Bir bakışta dört üçlü", "head": ["Üçlü", "Üç parçası", "O olmadan…"], "rows": [
+                  ["Birinci — Özgünlük yoluyla mükemmellik (14.1)", "İşin özgünlüğü · En iyisi olmak · İlk olmak", "Ortak çaba vasat sonuçlar doğurur"],
+                  ["İkinci — Fedakârlık ve risk (14.2)", "Fedakârlık · Risk almak · Sessizce inşa etmek", "Mükemmellik bir özlem olarak kalır"],
+                  ["Üçüncü — Öğrenme ve kuşaklara emanet (14.3)", "Bilgi ve öğrenme · Her kuşaktan yararlanmak · Gençlere ve manevi temele yatırım", "İş, onu başlatanlarla birlikte biter"],
+                  ["Dördüncü — Ortak başarı (14.4)", "Başkalarından bağımsız çalışmak · Ekipler arası rekabet ve mükemmellik · Başarı ortaktır", "Öğrenme kuramsal kalır"]
+                ] }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Üzerinde düşünülecek on soru",
+            "tests": [
+              "İşimizde, başkalarının yaptığının kopyası olmayan, gerçekten ayırt edici olan ne?",
+              "Bir yararlanıcının son işimizin kalitesini görmesinden memnun olur muydum?",
+              "Nerede ilk olduk, nerede takip ediyoruz?",
+              "Geçen yıl bu iş için kişisel olarak neden vazgeçtim?",
+              "Başarısız olabilecek bir şeyi en son ne zaman önerdim?",
+              "Temel mi inşa ediyorum, yoksa duyuru mu?",
+              "Benden daha kıdemsiz birinden son zamanlarda ne öğrendim?",
+              "Benim yerimi alması için kim yetiştiriliyor?",
+              "Başkaları durduğunda devam ediyor muyum, yoksa koşulların uygun hâle gelmesini mi bekliyorum?",
+              "Başarılı olduğumuzda, başarının yanına kimin adı yazılıyor?"
+            ],
+            "questions": [
+              "Kurumumuz gerçekte neyde ilk? Aklımıza bir şey gelmiyorsa, bu bize ne söylüyor?",
+              "Temkinlilik bize nerede bir riskin mal olacağından daha pahalıya mal oldu?",
+              "Onu inşa edenlerden daha uzun yaşayacak, sessizce ne inşa ediyoruz?",
+              "Burada kuşaklar birlikte ne kadar iyi çalışıyor?",
+              "Takdir uygulamalarımız bireyleri mi yoksa ekipleri mi ödüllendiriyor? Bu bizim için doğru denge mi?"
+            ],
+            "exercise": "Kurumunuzun yaptığı ve bölgenizde başka hiç kimsenin yapmadığı bir şeyi yazın. Bir tane bile sayamıyorsanız, bulgunun kendisi budur — ve bir sonraki planlama döneminin başlangıç noktası da."
+          }
+        }
+      ],
+      "outcomes": {
+        "items": [
+          "Nihai başarı formülünün dört üçlüsünü açıklamak ve birini güncel bir karara uygulamak.",
+          "Kendi ekibinin ya da kurumunun her üçlüde nerede güçlü, nerede zayıf olduğunu belirlemek.",
+          "Tarihli taahhütler ve hesap verilecek belirli bir kişi içeren kişisel bir gelişim planı yazmak."
+        ],
+        "evidence": "bir üçlünün güncel bir karara kısa yazılı uygulaması ve üç aylık takibe taşınan, imzalı bir kişisel gelişim planı."
+      }
+    }
+  ]
+}

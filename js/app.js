@@ -65,6 +65,11 @@ async function loadDirection(id) {
   let trShared = null;
   if (lang !== "en") [tr, trShared] = await Promise.all([tryJSON(`data/${id}/${lang}.json`), tryJSON(`data/shared/${lang}.json`)]);
   const modules = [...mergeModules(en.modules, tr?.modules, false), ...mergeModules(shared?.modules || [], trShared?.modules, true)];
+  // the opening paragraph of a shared section can be worded for this programme
+  for (const s of modules.filter((m) => m.shared).flatMap((m) => m.sections)) {
+    const own = s._translated && lang !== "en" ? tr?.sharedIntro?.[s.id] : en.sharedIntro?.[s.id];
+    if (own && (lang === "en" || !s._translated || tr?.sharedIntro?.[s.id])) s.intro = own;
+  }
   const glossaryTr = lang !== "en" && tr?.glossary?.length ? tr.glossary : null;
   return { ...en, modules, glossary: glossaryTr || en.glossary || [], _glossaryTranslated: lang === "en" || !!glossaryTr };
 }

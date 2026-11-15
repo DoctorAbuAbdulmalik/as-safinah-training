@@ -399,6 +399,8 @@ const out = {
   lang: "en",
   source: `${(sourceFooter[1] || titleLine).replace(/\s*Programme$/, "")} Handbook, Version ${(sourceFooter[2] || "").replace("V", "")}, ${sourceFooter[3] || ""} — As Safinah Centre for Humanitarian Excellence`,
   modules,
+  // Section 13 opens with one sentence written for this programme; everything else in 13-14 is shared
+  sharedIntro: { s13: parseSection(13, sharedOpts[13]).intro },
   glossary: parseGlossary(),
 };
 write(`data/${directionId}/en.json`, out);
