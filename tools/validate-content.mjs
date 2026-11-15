@@ -30,7 +30,8 @@ for (const dir of fs.readdirSync(root, { withFileTypes: true }).filter((d) => d.
           const tsub = ts.subsections[i];
           if (!tsub) return;
           if (tsub.id !== sub.id) bad(`${at}: subsection id ${tsub.id} != ${sub.id}`);
-          const shape = (bl) => bl.map((b) => b.type + (b.items ? ":" + b.items.length : "")).join(",");
+          const shape = (bl) => bl.map((b) => b.type + (b.items ? ":" + b.items.length : "") + (b.rows ? ":" + b.rows.length + "x" + b.head.length : "")).join(",");
+          if (!!tsub.ship !== !!sub.ship) bad(`${at} ${sub.id}: ship panel missing/extra`);
           if (shape(tsub.blocks) !== shape(sub.blocks)) bad(`${at} ${sub.id}: block shape ${shape(tsub.blocks)} != ${shape(sub.blocks)}`);
         });
         if (ts.review.tests.length !== s.review.tests.length) bad(`${at}: tests count`);
@@ -39,7 +40,8 @@ for (const dir of fs.readdirSync(root, { withFileTypes: true }).filter((d) => d.
         if (ts.ship.body.length !== s.ship.body.length) bad(`${at}: ship paragraphs`);
       }
     }
-    console.log(`checked ${tag}: ${sections} sections`);
+    if (tr.glossary && en.glossary && tr.glossary.length !== en.glossary.length) bad(`${tag}: glossary has ${tr.glossary.length} terms, English has ${en.glossary.length}`);
+    console.log(`checked ${tag}: ${sections} sections${tr.glossary ? `, ${tr.glossary.length} glossary terms` : ""}`);
   }
 }
 console.log(problems ? `${problems} problem(s)` : "OK — all translations match the English structure");

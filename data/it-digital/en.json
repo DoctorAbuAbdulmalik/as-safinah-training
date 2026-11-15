@@ -27,6 +27,7 @@
       },
       "sections": [
         {
+          "id": "s1",
           "number": 1,
           "title": "Digital Literacy and Systems",
           "ship": {
@@ -147,10 +148,10 @@
               "What does “digital literacy” mean for different ages?"
             ],
             "exercise": "Organise one area of your digital life — your documents folder, your phone photos or a shared work drive — into a clear structure with consistent file names. Set up a backup for it, then test the backup by restoring one file."
-          },
-          "id": "s1"
+          }
         },
         {
+          "id": "s2",
           "number": 2,
           "title": "Email and Office Tools",
           "ship": {
@@ -269,10 +270,10 @@
               "How do we make sure sensitive information is not shared too widely?"
             ],
             "exercise": "Take one regular task that involves paper or repeated typing — a register, a booking list, a monthly report. Rebuild it as a spreadsheet or shared document with clear headers, formulas or a template. Use it for two weeks and record the time saved."
-          },
-          "id": "s2"
+          }
         },
         {
+          "id": "s3",
           "number": 3,
           "title": "Online Services and Access",
           "ship": {
@@ -395,8 +396,7 @@
               "What are the risks of helping people with their online accounts?"
             ],
             "exercise": "Choose one website or online form your organisation uses or provides. Test it on a phone, with the text enlarged and using only a keyboard. List three accessibility problems and suggest a fix for each."
-          },
-          "id": "s3"
+          }
         }
       ],
       "outcomes": {
@@ -436,6 +436,7 @@
       },
       "sections": [
         {
+          "id": "s4",
           "number": 4,
           "title": "Hardware and Service Desk",
           "ship": {
@@ -555,10 +556,10 @@
               "What makes a support person good to deal with?"
             ],
             "exercise": "Create or update an asset register for a small set of devices you use or manage. Then log every IT problem you meet or hear about for two weeks, with its cause and solution, and identify one pattern."
-          },
-          "id": "s4"
+          }
         },
         {
+          "id": "s5",
           "number": 5,
           "title": "Networks and Cloud",
           "ship": {
@@ -685,10 +686,10 @@
               "What would our continuity plan look like?"
             ],
             "exercise": "Draw a simple diagram of your organisation’s or home’s network: internet connection, router, Wi-Fi, main devices and cloud services. Mark one weakness and propose a fix, and write a half-page plan for working through a day without internet."
-          },
-          "id": "s5"
+          }
         },
         {
+          "id": "s6",
           "number": 6,
           "title": "Cybersecurity",
           "ship": {
@@ -823,8 +824,7 @@
               "How do we create a culture where people report mistakes quickly?"
             ],
             "exercise": "Carry out a personal security check: turn on multi-factor authentication for your email and one other important account, review your passwords, and check that your devices update automatically. Then write a one-page guide for colleagues on spotting phishing, using real examples with personal details removed."
-          },
-          "id": "s6"
+          }
         }
       ],
       "outcomes": {
@@ -864,6 +864,7 @@
       },
       "sections": [
         {
+          "id": "s7",
           "number": 7,
           "title": "Software Development",
           "ship": {
@@ -987,10 +988,10 @@
               "What responsibilities do developers have for security and privacy?"
             ],
             "exercise": "Choose a small, real problem — a calculation you do often, a list you maintain, a form you fill in. Write a simple program or spreadsheet automation to solve it. Test it, show it to one user, improve it once based on their feedback, and keep the code under version control."
-          },
-          "id": "s7"
+          }
         },
         {
+          "id": "s8",
           "number": 8,
           "title": "Data and Analytics",
           "ship": {
@@ -1120,10 +1121,10 @@
               "How do we share findings so that people actually use them?"
             ],
             "exercise": "Take a dataset from your work — attendance, bookings, enquiries or spending. Clean it, summarise it with a pivot table and one clear chart, and write three sentences on what it shows, one on what it does not show, and one recommendation."
-          },
-          "id": "s8"
+          }
         },
         {
+          "id": "s9",
           "number": 9,
           "title": "AI, Robotics and IoT",
           "ship": {
@@ -1241,8 +1242,7 @@
               "What simple sensors or automations could solve problems we have?"
             ],
             "exercise": "Choose one repetitive task in your work. Try an AI tool or a simple automation to help with it, checking every result. Write half a page on what it did well, where it made mistakes, and what guidance others should follow before using it."
-          },
-          "id": "s9"
+          }
         }
       ],
       "outcomes": {
@@ -1282,6 +1282,7 @@
       },
       "sections": [
         {
+          "id": "s10",
           "number": 10,
           "title": "Web, Design and Media",
           "ship": {
@@ -1406,10 +1407,10 @@
               "Which media — web, video, audio, print — reaches our community best?"
             ],
             "exercise": "Review one page of your organisation’s website, or one poster, against the design principles in 10.2. Redesign it, keeping to a consistent brand, and ask two people unfamiliar with it which version communicates better."
-          },
-          "id": "s10"
+          }
         },
         {
+          "id": "s11",
           "number": 11,
           "title": "Marketing and E-Commerce",
           "ship": {
@@ -1532,10 +1533,10 @@
               "What should we measure to know whether our marketing works?"
             ],
             "exercise": "Choose one product, course or service your organisation offers. Write a short profile of the people it is for, choose two channels to reach them, and draft one honest message for each. Decide what you will measure, run the campaign for two weeks, and report what happened."
-          },
-          "id": "s11"
+          }
         },
         {
+          "id": "s12",
           "number": 12,
           "title": "Project Management",
           "ship": {
@@ -1654,8 +1655,7 @@
               "What lessons from past projects should we never forget?"
             ],
             "exercise": "Choose a small digital change your organisation needs. Write a one-page project definition — goal, scope, stakeholders, constraints and success measures — and a task plan with owners, dates and three key risks. Present it to a colleague and revise it with their comments."
-          },
-          "id": "s12"
+          }
         }
       ],
       "outcomes": {
@@ -1670,6 +1670,278 @@
         ],
         "evidence": "a redesigned web page or poster with feedback, a two-week marketing campaign report, and a one-page project definition with a task plan."
       }
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Accessibility",
+      "def": "Designing services so that people with different abilities can use them, for example with screen readers or captions.",
+      "ref": "Section 3.3"
+    },
+    {
+      "term": "Agile",
+      "def": "A way of developing software in short cycles, delivering working results early and improving them with user feedback.",
+      "ref": "Section 7.1"
+    },
+    {
+      "term": "AI (artificial intelligence)",
+      "def": "Computer systems that perform tasks usually needing human intelligence, such as understanding language or recognising images.",
+      "ref": "Section 9"
+    },
+    {
+      "term": "Amānah",
+      "def": "Arabic: a trust. The information people give an organisation is held as an amānah.",
+      "ref": "Module 2"
+    },
+    {
+      "term": "Asset register",
+      "def": "A record of every IT device: what it is, who uses it, its warranty and when it should be replaced.",
+      "ref": "Section 4.1"
+    },
+    {
+      "term": "Backup",
+      "def": "A second copy of data kept somewhere else, so that it can be restored if the original is lost.",
+      "ref": "Section 1.3"
+    },
+    {
+      "term": "Bias (in AI)",
+      "def": "Unfairness that an AI system learns from its training data and repeats in its outputs.",
+      "ref": "Section 9.3"
+    },
+    {
+      "term": "Brand",
+      "def": "The consistent way an organisation presents itself: name, logo, colours, fonts and tone of voice.",
+      "ref": "Section 10.5"
+    },
+    {
+      "term": "Cloud services",
+      "def": "Storage and software provided over the internet from remote servers.",
+      "ref": "Section 5.3"
+    },
+    {
+      "term": "Collective success",
+      "def": "The fourth triplet: doing your own part fully whether or not others do theirs, so that the shared result is stronger.",
+      "ref": "Section 14.4"
+    },
+    {
+      "term": "Contention",
+      "def": "Healthy rivalry with others working in the same field. It exposes weaknesses that would otherwise go unnoticed and drives improvement.",
+      "ref": "Section 13.3"
+    },
+    {
+      "term": "Correlation",
+      "def": "Two things changing together. It does not by itself show that one causes the other.",
+      "ref": "Section 8.4"
+    },
+    {
+      "term": "Cybersecurity",
+      "def": "Protecting systems, networks and data from attack, damage or theft.",
+      "ref": "Section 6"
+    },
+    {
+      "term": "Dashboard",
+      "def": "A screen that shows key measures at a glance.",
+      "ref": "Section 8.3"
+    },
+    {
+      "term": "Data cleaning",
+      "def": "Fixing errors, removing duplicates and handling missing values before analysis.",
+      "ref": "Section 8.2"
+    },
+    {
+      "term": "Digital inclusion",
+      "def": "Making sure everyone can use digital services, whatever their skills, means or abilities.",
+      "ref": "Section 3.4"
+    },
+    {
+      "term": "Digital literacy",
+      "def": "The ability to use digital devices and systems confidently, safely and critically.",
+      "ref": "Section 1"
+    },
+    {
+      "term": "DNS",
+      "def": "Domain Name System: translates website names into the numerical addresses computers use.",
+      "ref": "Section 5.1"
+    },
+    {
+      "term": "E-commerce",
+      "def": "Buying and selling online.",
+      "ref": "Section 11"
+    },
+    {
+      "term": "Excellence through uniqueness",
+      "def": "The first triplet: fresh thinking that fills a real gap rather than copying what others already do.",
+      "ref": "Section 14.1"
+    },
+    {
+      "term": "Generational stewardship",
+      "def": "Part of the third triplet: investing in learning and in the next generation so that the work outlasts those who began it.",
+      "ref": "Section 14.3"
+    },
+    {
+      "term": "Ḥadīth",
+      "def": "A recorded saying or action of the Prophet Muḥammad صلى الله عليه وسلم, transmitted through a chain of narrators.",
+      "ref": "Islamic Foundation"
+    },
+    {
+      "term": "Ḥafīẓ ‘alīm",
+      "def": "Arabic: “a knowing guardian” — the qualities Yūsuf named when asking to be placed over the storehouses.",
+      "ref": "Module 2"
+    },
+    {
+      "term": "HTTPS",
+      "def": "The secure protocol for web pages, which encrypts information between browser and website.",
+      "ref": "Section 5.1"
+    },
+    {
+      "term": "IoT (Internet of Things)",
+      "def": "Everyday devices — sensors, meters, cameras — connected to networks.",
+      "ref": "Section 9.5"
+    },
+    {
+      "term": "IP address",
+      "def": "A number that identifies a device on a network.",
+      "ref": "Section 5.1"
+    },
+    {
+      "term": "Layers",
+      "def": "Groups of people suited to different stages of a piece of work — those who launch it, those who build it and those who sustain it.",
+      "ref": "Section 13.2"
+    },
+    {
+      "term": "Least privilege",
+      "def": "Giving each person only the access they need to do their work.",
+      "ref": "Section 6.2"
+    },
+    {
+      "term": "Malware",
+      "def": "Harmful software, including viruses and ransomware.",
+      "ref": "Section 6.1"
+    },
+    {
+      "term": "Multi-factor authentication",
+      "def": "Signing in with a second check, such as a code sent to a phone, as well as a password.",
+      "ref": "Section 6.2"
+    },
+    {
+      "term": "Operating system",
+      "def": "The software that manages a device: files, apps, settings, updates and security.",
+      "ref": "Section 1.1"
+    },
+    {
+      "term": "Password manager",
+      "def": "A secure application that stores and creates strong, unique passwords.",
+      "ref": "Section 3.2"
+    },
+    {
+      "term": "Phishing",
+      "def": "Fake messages designed to trick people into giving information, money or access.",
+      "ref": "Section 6.1"
+    },
+    {
+      "term": "Pivot table",
+      "def": "A spreadsheet tool that summarises large lists by category.",
+      "ref": "Section 8.3"
+    },
+    {
+      "term": "Ransomware",
+      "def": "Malware that locks files and demands payment to release them.",
+      "ref": "Section 6.1"
+    },
+    {
+      "term": "Readiness",
+      "def": "The point at which a team and its situation are genuinely prepared for a change, rather than merely informed of it.",
+      "ref": "Section 13.1"
+    },
+    {
+      "term": "Router",
+      "def": "A device that connects a local network to the internet and directs traffic.",
+      "ref": "Section 5.1"
+    },
+    {
+      "term": "Sacrifice and risk",
+      "def": "The second triplet: giving time, effort and comfort beyond the minimum, and accepting risk, for the sake of the mission.",
+      "ref": "Section 14.2"
+    },
+    {
+      "term": "Ṣaḥīḥ",
+      "def": "“Sound”: a grading for a hadith with a reliable chain of narration. Also part of the titles of the collections of al-Bukhārīand Muslim.",
+      "ref": "Islamic Foundation"
+    },
+    {
+      "term": "Scope",
+      "def": "What a project includes — and what it does not.",
+      "ref": "Section 12.1"
+    },
+    {
+      "term": "Section Review",
+      "def": "The three-part review at the end of every section: ten self-tests, questions for discussion and a practical exercise.",
+      "ref": "How to Use"
+    },
+    {
+      "term": "Service desk",
+      "def": "The team or person who supports users and resolves IT problems.",
+      "ref": "Section 4.4"
+    },
+    {
+      "term": "Stakeholder",
+      "def": "Anyone affected by, involved in or able to influence a project.",
+      "ref": "Section 12.1"
+    },
+    {
+      "term": "Sūrah",
+      "def": "A chapter of the Qur’an. There are 114 sūrahs.",
+      "ref": "Islamic Foundation"
+    },
+    {
+      "term": "Tabayyun",
+      "def": "Arabic: verifying information before acting on it, as commanded in Sūrah al-Ḥujurāt 49:6.",
+      "ref": "Module 1"
+    },
+    {
+      "term": "Taṭfīf",
+      "def": "Arabic: giving short measure — the dishonest dealing condemned in Sūrah al-Muṭaffifīn.",
+      "ref": "Module 4"
+    },
+    {
+      "term": "The Ship panel",
+      "def": "The short panel at the start of each section that explains its subject in terms of a ship and her crew, ending with a question.",
+      "ref": "The Ship"
+    },
+    {
+      "term": "Triplet",
+      "def": "One of the four interlocking parts of the Formula of Ultimate Success.",
+      "ref": "Section 14"
+    },
+    {
+      "term": "Turning point",
+      "def": "A change in fortune, good or bad, that a team should prepare for before it arrives.",
+      "ref": "Section 13.4"
+    },
+    {
+      "term": "Two-step verification",
+      "def": "Another name for multifactor authentication.",
+      "ref": "Section 3.1"
+    },
+    {
+      "term": "Ultimate success",
+      "def": "Success measured by lasting benefit to people and to future generations, not only by shortterm results.",
+      "ref": "Section 14"
+    },
+    {
+      "term": "Version control",
+      "def": "Using a tool such as Git to record every change to code, so that work can be tracked and undone.",
+      "ref": "Section 7.3"
+    },
+    {
+      "term": "WCAG",
+      "def": "Web Content Accessibility Guidelines: international guidance on making websites accessible.",
+      "ref": "Section 3.3"
+    },
+    {
+      "term": "Wi-Fi encryption",
+      "def": "Protection of wireless network traffic, such as WPA2 or WPA3.",
+      "ref": "Section 5.2"
     }
   ]
 }

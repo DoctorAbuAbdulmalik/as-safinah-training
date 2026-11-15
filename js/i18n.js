@@ -7,6 +7,10 @@ export const LANGS = [
 
 export const UI = {
   en: {
+    glossary: "Glossary",
+    glossaryLead: "New words and terms used in this handbook. The reference shows where each is first introduced.",
+    search: "Search…",
+    sharedModule: "Shared by every As Safinah programme",
     appName: "As Safinah Learning",
     appTagline: "Digital learning for the As Safinah Centre for Humanitarian Excellence",
     skip: "Skip to content",
@@ -50,6 +54,10 @@ export const UI = {
     sourceNote: "Source: IT and Digital Transformation Handbook, Version 3, November 2026.",
   },
   ar: {
+    glossary: "مسرد المصطلحات",
+    glossaryLead: "الكلمات والمصطلحات الجديدة الواردة في هذا الدليل، مع الإشارة إلى الموضع الذي وردت فيه أول مرة.",
+    search: "ابحث…",
+    sharedModule: "وحدة مشتركة في جميع برامج السفينة",
     appName: "السفينة للتعلّم",
     appTagline: "تعلّم رقمي لمركز السفينة للتميّز الإنساني",
     skip: "انتقل إلى المحتوى",
@@ -93,6 +101,10 @@ export const UI = {
     sourceNote: "المصدر: دليل تقنية المعلومات والتحول الرقمي، الإصدار 3، نوفمبر 2026.",
   },
   tr: {
+    glossary: "Sözlük",
+    glossaryLead: "Bu el kitabında geçen yeni kelime ve terimler. Parantez içindeki gönderme, terimin ilk açıklandığı yeri gösterir.",
+    search: "Ara…",
+    sharedModule: "Tüm As Safinah programlarında ortak",
     appName: "As Safinah Öğrenme",
     appTagline: "As Safinah İnsani Mükemmeliyet Merkezi için dijital öğrenme",
     skip: "İçeriğe geç",

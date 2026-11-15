@@ -18,8 +18,13 @@
     {
       "id": "education",
       "icon": "🎓",
-      "status": "soon",
-      "title": { "en": "Education", "ar": "التعليم", "tr": "Eğitim" }
+      "status": "active",
+      "title": { "en": "Education", "ar": "التعليم", "tr": "Eğitim" },
+      "desc": {
+        "en": "Teaching, curriculum, assessment, inclusion and school leadership: twelve pathways in four modules.",
+        "ar": "التدريس والمناهج والتقييم والتعليم الشامل وقيادة المدرسة: اثنا عشر مسارًا في أربع وحدات.",
+        "tr": "Öğretim, müfredat, ölçme-değerlendirme, kapsayıcı eğitim ve okul yönetimi: dört modülde on iki yol."
+      }
     },
     {
       "id": "engineering",

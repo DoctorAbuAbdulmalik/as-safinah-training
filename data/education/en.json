@@ -1,0 +1,1926 @@
+{
+  "direction": "education",
+  "lang": "en",
+  "source": "Education Handbook, Version 2, November 2026 — As Safinah Centre for Humanitarian Excellence",
+  "modules": [
+    {
+      "id": "m1",
+      "number": 1,
+      "title": "The Teacher",
+      "tagline": "From deckhand to master — the teacher and the passage plan",
+      "foundation": {
+        "verses": [
+          {
+            "ar": "هُوَ الَّذِي بَعَثَ فِي الْأُمِّيِّينَ رَسُولًا مِّنْهُمْ يَتْلُو عَلَيْهِمْ آيَاتِهِ وَيُزَكِّيهِمْ وَيُعَلِّمُهُمُ الْكِتَابَ وَالْحِكْمَةَ",
+            "text": "It is He who sent among the unlettered a messenger from themselves, reciting to them His verses, purifying them and teaching them the Book and wisdom.",
+            "ref": "Qur’an, Sūrah al-Jumu‘ah 62:2"
+          },
+          {
+            "ar": "الرَّحْمَٰنُ ۝ عَلَّمَ الْقُرْآنَ",
+            "text": "The Most Merciful — taught the Qur’an.",
+            "ref": "Qur’an, Sūrah ar-Raḥmān 55:1–2"
+          }
+        ],
+        "why": [
+          "The Prophet ‫ صلى الله عليه وسلم‬is described as one who recited, purified and taught — knowledge and character together. And the sūrah of ar-Raḥmān begins by joining mercy to teaching: the first act it names after the divine Name is that He taught. Module 1 is about the teacher: a person who must keep learning, who shapes the room that learning happens in, and who prepares every lesson as an act of care for those who will receive it."
+        ]
+      },
+      "sections": [
+        {
+          "id": "s1",
+          "number": 1,
+          "title": "Teacher Development",
+          "ship": {
+            "title": "Mate to master",
+            "body": [
+              "No one was born a ship’s master. A sailor rose by stages — deckhand, able seaman, mate, master — each step earned by time at sea, by study ashore and by the judgement of those who had gone before. Even a master with decades of experience kept learning: new coasts, new instruments, new rules of the road. Teaching is the same."
+            ],
+            "claim": "The first year in a classroom is a beginning, not an arrival.",
+            "question": "What is one thing about your teaching that you have not changed in years? Is that because it works — or because you have stopped looking at it?"
+          },
+          "intro": [
+            "Teacher development is the lifelong process by which teachers improve their knowledge, skills and judgement. Research and experience agree that the quality of teaching is one of the strongest influences on what learners achieve. Investing in teachers is therefore one of the most effective ways to improve any school, centre or programme."
+          ],
+          "subsections": [
+            {
+              "id": "1.1",
+              "title": "What Good Teachers Know and Do",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Good teaching draws on several kinds of knowledge:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Subject knowledge — a secure, deep understanding of what is being taught",
+                    "Pedagogical knowledge — how people learn, and how to teach so that they do",
+                    "Knowledge of learners — their backgrounds, needs, starting points and interests",
+                    "Classroom craft — routines, explanations, questioning and the management of time",
+                    "Professional character — fairness, patience, reliability and care"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1.2",
+              "title": "Stages of a Teaching Career",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Beginning teachers need structure, close support, a mentor and feedback on the basics.",
+                    "Developing teachers refine their craft, widen their repertoire and take on more responsibility.",
+                    "Experienced teachers deepen expertise, mentor others and contribute to curriculum and policy.",
+                    "Leading teachers shape the learning of a whole team, department or school."
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Each stage needs different kinds of development. A single programme for everyone rarely meets anyone’s needs well."
+                }
+              ]
+            },
+            {
+              "id": "1.3",
+              "title": "Ways Teachers Develop",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Effective development is ongoing, practical and close to the classroom:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Observing other teachers and being observed, with focused, respectful feedback",
+                    "Coaching and mentoring relationships",
+                    "Collaborative planning and reviewing work with colleagues",
+                    "Trying a new approach, gathering evidence and reflecting on what happened",
+                    "Reading research and professional writing, and discussing it with others",
+                    "Formal courses and qualifications, where they meet a clear need"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "One-off training days with no follow-up rarely change practice. Development that is sustained over time, linked to real lessons and supported by colleagues does."
+                }
+              ]
+            },
+            {
+              "id": "1.4",
+              "title": "The Reflective Teacher",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Reflection means looking honestly at what happened in a lesson and why. Useful questions include: What did learners actually learn today, and how do I know? What surprised me? What would I do differently? Who did I not reach? Keeping a short teaching journal, even a few lines after each lesson, turns experience into learning."
+                },
+                {
+                  "type": "example",
+                  "title": "the questioning focus",
+                  "text": "A small team of teachers agreed to work on one thing for a term: the quality of their questions. They observed each other for ten minutes a week, noting only the questions asked and who answered them. Within weeks they noticed that most questions went to the same few learners. They adopted no-hands-up questioning and waiting time, and by the end of term participation had widened markedly."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten tests of teacher development",
+            "tests": [
+              "Do I know which stage of my teaching career I am in, and what I need now?",
+              "Have I been observed teaching, with useful feedback, in the last term?",
+              "Have I observed a colleague and learned something I then used?",
+              "Do I reflect on my lessons regularly, in writing or with others?",
+              "Have I changed some part of my practice this year because of evidence?",
+              "Do I read anything about teaching beyond what I am required to?",
+              "Do I have a mentor or coach, or act as one for someone else?",
+              "Is my subject knowledge secure in everything I teach?",
+              "Do I ask learners what helps them learn?",
+              "Do I have a clear goal for my development this year?"
+            ],
+            "questions": [
+              "What has had the biggest influence on how you teach? Why?",
+              "How can observation feel supportive rather than like an inspection?",
+              "What gets in the way of teachers’ development in our setting?",
+              "How should development differ for new and experienced teachers?",
+              "What would a good year of development look like for our team?"
+            ],
+            "exercise": "Choose one aspect of your teaching to improve this term. Write down why you chose it, what you will try, and what evidence will show whether it worked. Ask a colleague to observe one lesson focusing only on that aspect, and discuss what they saw."
+          }
+        },
+        {
+          "id": "s2",
+          "number": 2,
+          "title": "Classroom Management",
+          "ship": {
+            "title": "A well-run deck",
+            "body": [
+              "On a well-run ship, nobody shouts orders all day. Each sailor knows his watch, his station and his duties; routines carry the ship through ordinary days, so that attention is free for the unusual. A ship that runs on shouting is a ship that is already in trouble."
+            ],
+            "claim": "A well-managed classroom is the same: calm, predictable, and quietly organised so that learning can happen.",
+            "question": "Think of the last time a lesson went off course. Was the cause a learner — or a routine that was never set up?"
+          },
+          "intro": [
+            "Classroom management is everything a teacher does to create and keep an environment in which learning can happen. It is less about discipline than about structure, relationships and expectations. When it works well, it is almost invisible."
+          ],
+          "subsections": [
+            {
+              "id": "2.1",
+              "title": "Relationships First",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Learners work hardest for teachers who know them, respect them and believe in them. Greeting learners by name, noticing effort, listening to concerns and following through on promises all build the trust that makes everything else easier."
+                }
+              ]
+            },
+            {
+              "id": "2.2",
+              "title": "Clear Expectations",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Good classrooms have a small number of clear, positive expectations:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Stated simply and explained, so learners know why they matter",
+                    "Taught and practised, not just announced",
+                    "Applied consistently and fairly to everyone",
+                    "Reinforced by noticing and praising the behaviour wanted",
+                    "Reviewed with learners from time to time"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2.3",
+              "title": "Routines",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Routines reduce wasted time and anxiety. Useful routines include how learners enter and settle, how materials are given out, how to get attention, how to move into groups, what to do when work is finished, and how the lesson ends. Teaching a routine thoroughly at the start of a year saves many hours later."
+                }
+              ]
+            },
+            {
+              "id": "2.4",
+              "title": "The Physical Space",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "The room itself affects learning:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Seating that suits the activity — rows for direct teaching, groups for collaboration",
+                    "Clear sight lines to the board and to the teacher",
+                    "Organised materials that learners can reach",
+                    "Displays that support learning rather than decorate",
+                    "Light, air and temperature that keep people alert"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2.5",
+              "title": "Responding to Difficult Behaviour",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "When behaviour disrupts learning:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Respond early and calmly, with the least intrusive action that works — a look, moving closer, a quiet word.",
+                    "Address the behaviour, not the person.",
+                    "Follow agreed consequences consistently, without anger or humiliation.",
+                    "Talk privately afterwards to understand the cause.",
+                    "Seek help when behaviour suggests something deeper — distress, need or harm (see Section 9)."
+                  ]
+                },
+                {
+                  "type": "example",
+                  "title": "the noisy start",
+                  "text": "A teacher found that the first ten minutes of every lesson were lost to settling. She introduced a simple routine: a short task on the board as learners entered, done in silence while she took the register and greeted each learner at the door. Within two weeks lessons began calmly and on time, and the teacher said she felt the difference in her own energy as much as in the class."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten tests of classroom management",
+            "tests": [
+              "Do I know every learner by name and something about them?",
+              "Are my classroom expectations few, clear and positive?",
+              "Have I taught and practised my routines, not only announced them?",
+              "Do I apply expectations consistently to everyone?",
+              "Do I notice and praise the behaviour I want to see?",
+              "Does my room layout suit the activities I use?",
+              "Do my lessons start and end in an orderly way?",
+              "Do I respond to disruption early and calmly?",
+              "Do I follow up privately to understand the cause of difficult behaviour?",
+              "Do I know when and how to ask for help with a learner?"
+            ],
+            "questions": [
+              "What does a well-managed classroom look and sound like to you?",
+              "Which routines save you the most time? Which are missing?",
+              "How do relationships with learners affect behaviour in your experience?",
+              "What consequences actually change behaviour, and which only make things worse?",
+              "How can colleagues support each other with difficult classes?"
+            ],
+            "exercise": "Write down the three routines that would most improve your lessons. Plan how you will teach each one — explaining it, modelling it, practising it — and introduce them over two weeks. Keep a brief note of the effect on time and atmosphere."
+          }
+        },
+        {
+          "id": "s3",
+          "number": 3,
+          "title": "Lesson Planning",
+          "ship": {
+            "title": "The passage plan",
+            "body": [
+              "Before a ship leaves her berth, the navigator prepares a passage plan: where we are going, the route, the dangers, the tides, the points where the course changes, and how we will know we are on track. The plan is followed, monitored and adjusted when the sea demands — but no prudent master sails without one."
+            ],
+            "claim": "A lesson plan is a passage plan for one lesson: clear aims, a route, and checkpoints along the way.",
+            "question": "Can you state, in one sentence, what learners should know or be able to do at the end of your next lesson? If not, the plan has no destination."
+          },
+          "intro": [
+            "Lesson planning turns a curriculum into learning, one lesson at a time. A good plan is not a script; it is a clear set of decisions about what learners will learn, how they will learn it, and how the teacher will know whether they have."
+          ],
+          "subsections": [
+            {
+              "id": "3.1",
+              "title": "Start with the Aim",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Every lesson needs a clear learning aim:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "What should learners know, understand or be able to do by the end?",
+                    "How does it build on what they already know?",
+                    "How does it fit into the sequence of lessons and the wider curriculum?"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Aims should describe learning, not activities. “Learners will be able to explain three causes of soil erosion” is an aim; “learners will watch a video” is an activity."
+                }
+              ]
+            },
+            {
+              "id": "3.2",
+              "title": "The Shape of a Lesson",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Start — connect to prior learning, share the aim, spark interest.",
+                    "New learning — clear explanation, examples and modelling.",
+                    "Guided practice — learners try, with support and feedback.",
+                    "Independent practice — learners apply the learning themselves.",
+                    "Check and close — find out what has been learned and what comes next."
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "This shape is not fixed, but most effective lessons include each of these elements in some form."
+                }
+              ]
+            },
+            {
+              "id": "3.3",
+              "title": "Planning for Every Learner",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "A good plan anticipates difference:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Support for those who will find the work hard — examples, prompts, simpler steps",
+                    "Challenge for those who will finish quickly — deeper questions, extension tasks",
+                    "Adjustments for learners with particular needs (see Section 7)",
+                    "Language support for those learning in a second language"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3.4",
+              "title": "Timing and Resources",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Plans should estimate how long each part will take — and teachers should expect to adjust. Resources should be prepared and checked in advance: copies made, equipment tested, links working. Lessons often fail not because the idea was poor but because the projector did not work or the worksheet ran out."
+                }
+              ]
+            },
+            {
+              "id": "3.5",
+              "title": "Checking Learning During the Lesson",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Plan the moments when you will check understanding: a question to the whole class, mini whiteboards, a short quiz, a quick written task. These checkpoints tell you whether to move on, slow down or reteach."
+                },
+                {
+                  "type": "example",
+                  "title": "the shared planning hour",
+                  "text": "Three teachers of the same course agreed to plan together for one hour a week. Each brought one lesson; the others questioned its aim, suggested activities and spotted likely difficulties. Their plans became shorter and sharper, and learners in all three classes did better on the end-of-unit assessment than the year before."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten tests of lesson planning",
+            "tests": [
+              "Does every lesson I teach have a clear learning aim?",
+              "Do my aims describe learning rather than activities?",
+              "Do my lessons build on what learners already know?",
+              "Do I plan explanation, guided practice and independent practice?",
+              "Do I plan support and challenge for different learners?",
+              "Do I prepare and check resources in advance?",
+              "Do I plan checkpoints to find out what has been learned?",
+              "Do I adjust the plan when the checkpoints tell me to?",
+              "Do I review my plans afterwards and note what to change?",
+              "Do I plan with colleagues as well as alone?"
+            ],
+            "questions": [
+              "How much detail should a lesson plan have? Does it depend on experience?",
+              "What happens in lessons that were not planned well?",
+              "How do you plan for learners who are far ahead or far behind?",
+              "What are the best ways to check learning quickly during a lesson?",
+              "How could planning together improve our teaching?"
+            ],
+            "exercise": "Plan a lesson using the shape in 3.2, with a clear aim, planned checkpoints, and support and challenge for different learners. Teach it, then annotate the plan with what actually happened and what you would change next time."
+          }
+        }
+      ],
+      "outcomes": {
+        "items": [
+          "Identify their own stage of development and set a clear, evidence-based development goal.",
+          "Use observation, feedback and reflection to improve their practice.",
+          "Build positive relationships and clear, consistent classroom expectations.",
+          "Teach and maintain routines that make lessons calm and efficient.",
+          "Respond to disruptive behaviour early, calmly and fairly.",
+          "Plan lessons with clear learning aims, a sound structure and planned checks of learning.",
+          "Adapt plans to meet the needs of different learners."
+        ],
+        "evidence": "a personal development goal with an observation record, a routines plan with notes on its effect, and an annotated lesson plan."
+      }
+    },
+    {
+      "id": "m2",
+      "number": 2,
+      "title": "What and How We Teach",
+      "tagline": "The trade route, learning the ropes and taking a fix",
+      "foundation": {
+        "verses": [
+          {
+            "ar": "قُلْ هَلْ يَسْتَوِي الَّذِينَ يَعْلَمُونَ وَالَّذِينَ لَا يَعْلَمُونَ",
+            "text": "Say: are those who know equal to those who do not know?",
+            "ref": "Qur’an, Sūrah az-Zumar 39:9"
+          },
+          {
+            "ar": "خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ",
+            "text": "The best of you are those who learn the Qur’an and teach it.",
+            "ref": "Narrated by ‘Uthmān ibn ‘Affān — Ṣaḥīḥ al-Bukhārī 5027"
+          }
+        ],
+        "why": [
+          "Knowledge changes a person: those who know and those who do not are not the same. And the hadith joins learning and teaching into one honour — the best are those who do both. Module 2 is about what we choose to teach, how we teach it so that it is truly learned, and how we find out whether it has been."
+        ]
+      },
+      "sections": [
+        {
+          "id": "s4",
+          "number": 4,
+          "title": "Curriculum Design",
+          "ship": {
+            "title": "The trade route",
+            "body": [
+              "A merchant captain did not plan one passage at a time and hope for the best. He knew the whole trade route: which ports came first, what cargo was loaded where, which seasons favoured which crossings. Each passage made sense because of its place in the whole voyage."
+            ],
+            "claim": "A curriculum is the trade route of learning. Each lesson is a passage; the curriculum decides the order of the ports.",
+            "question": "Pick one topic you teach. What must learners already know before it — and what will they need it for afterwards?"
+          },
+          "intro": [
+            "A curriculum sets out what learners should learn, in what order, and why. It is the bridge between the purpose of an education and the lessons that deliver it. Good curriculum design is one of the most important — and most overlooked — tasks in education."
+          ],
+          "subsections": [
+            {
+              "id": "4.1",
+              "title": "Purpose First",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Every curriculum should answer three questions:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Intent — what knowledge, skills and values do we want learners to gain, and why?",
+                    "Implementation — how will it be taught, in what sequence, with what resources?",
+                    "Impact — how will we know what learners have actually learned?"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "A curriculum that cannot explain its purpose becomes a list of topics to get through."
+                }
+              ]
+            },
+            {
+              "id": "4.2",
+              "title": "Sequencing",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Knowledge builds on knowledge. Good sequencing introduces foundational ideas first, returns to important ideas several times at increasing depth, and connects topics so that learners see the whole rather than isolated pieces. A spiral curriculum, in which key concepts are revisited across years, helps learning last."
+                }
+              ]
+            },
+            {
+              "id": "4.3",
+              "title": "Breadth and Depth",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Curriculum designers must balance:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Breadth — covering enough of a subject to give a full picture",
+                    "Depth — spending enough time on key ideas for real understanding"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Trying to cover too much leads to shallow learning that is quickly forgotten. It is usually better to teach fewer things well."
+                }
+              ]
+            },
+            {
+              "id": "4.4",
+              "title": "Values and Context",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "A curriculum carries values as well as knowledge. In a faith-based or community setting, it should reflect the community’s beliefs and aspirations, respect learners’ backgrounds, and prepare them for the wider world. Local examples, histories and languages make learning more meaningful."
+                }
+              ]
+            },
+            {
+              "id": "4.5",
+              "title": "Reviewing a Curriculum",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "A curriculum should be reviewed regularly:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Do learners achieve what it intends?",
+                    "Are there gaps, repetitions or illogical orders?",
+                    "Do teachers understand its purpose and sequence?",
+                    "Is it still relevant to learners’ lives and future needs?"
+                  ]
+                },
+                {
+                  "type": "example",
+                  "title": "the science sequence",
+                  "text": "A community school found that learners struggled with chemistry in their final year. Teachers mapped the science curriculum across all years and discovered that the particle model of matter — the foundation of chemistry — was taught once, briefly, years earlier and never revisited. They rewrote the sequence so the idea returned each year at greater depth. Results in chemistry improved within two years."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten tests of curriculum design",
+            "tests": [
+              "Can I explain the purpose of the curriculum I teach?",
+              "Do I know what learners learned before my course, and what comes after?",
+              "Are the key ideas revisited and deepened over time?",
+              "Do I teach fewer things well, or many things briefly?",
+              "Does the curriculum reflect our community’s values and context?",
+              "Does it prepare learners for the wider world?",
+              "Can I identify gaps or repetitions in our curriculum?",
+              "Do colleagues share an understanding of its sequence?",
+              "Is there a regular review of what learners actually achieve?",
+              "Would a new teacher understand the curriculum from our documents?"
+            ],
+            "questions": [
+              "What do we most want learners to know and be able to do when they leave us?",
+              "Where does our curriculum try to cover too much?",
+              "How should our values shape what we teach?",
+              "Which topics are learners least able to remember a year later? Why?",
+              "Who should be involved in designing and reviewing the curriculum?"
+            ],
+            "exercise": "Choose one subject or course. Map its main topics across a year or a level, showing what comes before and after each. Mark the key ideas that should be revisited, and identify one gap or repetition to fix."
+          }
+        },
+        {
+          "id": "s5",
+          "number": 5,
+          "title": "Learning Methods",
+          "ship": {
+            "title": "Learning the ropes",
+            "body": [
+              "The phrase comes from the sea. A new hand learned the ropes not from a book but by handling them — watching an experienced sailor, trying himself with help, then doing it alone in the dark and the rain. Explanation mattered, but so did practice, again and again, until the knot could be tied without thinking."
+            ],
+            "claim": "Good teaching combines the two: clear explanation and well-designed practice.",
+            "question": "In your last lesson, how much time did learners spend thinking hard — and how much listening or copying?"
+          },
+          "intro": [
+            "Learning methods are the approaches teachers use to help learners understand and remember. Research on learning has produced a fairly clear picture of what tends to work. This section summarises the most useful principles and the methods that put them into practice."
+          ],
+          "subsections": [
+            {
+              "id": "5.1",
+              "title": "How Learning Works",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Some principles are well supported by evidence:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "New learning builds on prior knowledge — find out what learners already know.",
+                    "Working memory is limited — present new material in small steps.",
+                    "Practice makes learning stick — especially practice spread over time.",
+                    "Retrieval strengthens memory — recalling information is more powerful than re-reading it.",
+                    "Thinking hard leads to learning — learners remember what they actively think about."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "5.2",
+              "title": "Explicit Instruction",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "For new and complex material, clear teacher explanation works well: stating the goal, explaining in small steps, giving worked examples, checking understanding and providing guided practice before independent work. This is sometimes called direct or explicit instruction, and it is especially effective for beginners."
+                }
+              ]
+            },
+            {
+              "id": "5.3",
+              "title": "Active and Collaborative Learning",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Once learners have the foundations, active methods deepen understanding:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Discussion in pairs and groups, with clear roles and tasks",
+                    "Problem-solving and case studies",
+                    "Projects and investigations",
+                    "Peer teaching — explaining to others reveals gaps in one’s own understanding",
+                    "Debate and structured argument"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Active learning works best when it requires real thinking, not just activity. A noisy room is not necessarily a learning room."
+                }
+              ]
+            },
+            {
+              "id": "5.4",
+              "title": "Practice and Memory",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Retrieval practice — short quizzes and recall tasks at the start of lessons",
+                    "Spaced practice — revisiting material after days and weeks, not only immediately",
+                    "Interleaving — mixing different types of problems so learners must choose the right method",
+                    "Elaboration — asking learners to explain why and how"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "5.5",
+              "title": "Evidence-Based Teaching",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Teachers should treat claims about learning methods with care. Some popular ideas — such as teaching to fixed “learning styles” — have little support in research. Good practice is to look for evidence, try methods carefully, and judge them by their effect on what learners actually learn."
+                },
+                {
+                  "type": "example",
+                  "title": "the five-question start",
+                  "text": "A teacher began every lesson with five quick questions: two from last lesson, two from last month and one from last term. Learners answered on mini whiteboards in three minutes. At first many struggled with the older material; by the end of the year recall was strong, and learners said the questions made them realise how much they knew."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten tests of learning methods",
+            "tests": [
+              "Do I find out what learners already know before new teaching?",
+              "Do I present new material in small, clear steps?",
+              "Do I use worked examples before asking learners to work alone?",
+              "Do I use retrieval practice regularly?",
+              "Do I revisit material after days and weeks?",
+              "Do my group activities require real thinking, not just activity?",
+              "Do I ask learners to explain why and how?",
+              "Do I check the evidence behind new methods before adopting them?",
+              "Do learners spend most of the lesson thinking hard?",
+              "Can I name one method I have changed because of evidence?"
+            ],
+            "questions": [
+              "When is explicit instruction best, and when are active methods better?",
+              "Which learning myths have you met in teaching?",
+              "How can retrieval practice be made enjoyable rather than stressful?",
+              "What makes group work effective — and what makes it a waste of time?",
+              "How do our learners prefer to learn, and does that match what helps them learn?"
+            ],
+            "exercise": "For two weeks, start every lesson with a short retrieval task drawing on earlier learning. Keep a simple record of results. At the end, compare learners’ recall with a class or topic where you did not use it, and share what you found."
+          }
+        },
+        {
+          "id": "s6",
+          "number": 6,
+          "title": "Assessment and Feedback",
+          "ship": {
+            "title": "Taking a fix",
+            "body": [
+              "A navigator does not wait until the end of a voyage to find out where the ship is. Several times a day he takes a fix — by the sun, the stars, landmarks or instruments — compares it with the plan and corrects the course. Small corrections early save long detours later. Assessment is taking a fix on learning."
+            ],
+            "claim": "Feedback is the course correction.",
+            "question": "How do you find out, during a lesson, whether learners have understood — before it is too late to help?"
+          },
+          "intro": [
+            "Assessment is how teachers and learners find out what has been learned. Feedback is the information that helps learners improve. Used well, both are among the most powerful tools in education; used badly, they consume time and discourage learners without helping anyone learn."
+          ],
+          "subsections": [
+            {
+              "id": "6.1",
+              "title": "Purposes of Assessment",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Assessment serves different purposes:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Formative assessment — checking learning during teaching, to guide the next steps",
+                    "Summative assessment — measuring learning at the end of a unit, course or year",
+                    "Diagnostic assessment — finding starting points and particular difficulties"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "The same task can serve different purposes; what matters is how the information is used."
+                }
+              ]
+            },
+            {
+              "id": "6.2",
+              "title": "Formative Assessment in Practice",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Questioning that involves all learners, not only volunteers",
+                    "Mini whiteboards, hinge questions and exit tickets",
+                    "Short quizzes that check understanding of key points",
+                    "Observing learners as they work",
+                    "Learners assessing their own and each other’s work against clear criteria"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "6.3",
+              "title": "Good Summative Assessment",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "A good test or examination:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Assesses what the curriculum actually intends",
+                    "Is fair to all learners, with clear questions",
+                    "Is marked consistently, with agreed criteria",
+                    "Gives useful information to learners, parents and teachers",
+                    "Is not so frequent that it crowds out teaching"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "6.4",
+              "title": "Effective Feedback",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Feedback helps when it is specific, timely and acted upon. It should tell learners what they did well, what to improve and how. Feedback that only gives a grade, or that learners never use, has little effect. Spoken feedback in class is often more efficient than long written comments."
+                }
+              ]
+            },
+            {
+              "id": "6.5",
+              "title": "Learners Using Feedback",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "The test of feedback is what the learner does next:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Time is given in class to act on feedback",
+                    "Learners redraft, correct or try a similar task",
+                    "Learners keep track of targets and progress",
+                    "Teachers adjust their teaching in response to common errors"
+                  ]
+                },
+                {
+                  "type": "example",
+                  "title": "the exit ticket",
+                  "text": "A teacher ended each lesson with a single question on a slip of paper. Sorting the slips took two minutes: those who had understood, those who were close, and those who had not. Next lesson she began by working with the third group while others started an extension task. Fewer learners fell behind, and her marking time fell as well."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten tests of assessment and feedback",
+            "tests": [
+              "Do I check learning during every lesson, not only at the end of units?",
+              "Do my questions involve all learners, not just volunteers?",
+              "Do I use the results of checks to change what I teach next?",
+              "Do my tests assess what the curriculum actually intends?",
+              "Is marking consistent across teachers?",
+              "Is my feedback specific about what to improve and how?",
+              "Do learners have time to act on feedback?",
+              "Do learners understand the criteria for good work?",
+              "Do I avoid testing so often that it crowds out teaching?",
+              "Can learners tell me what they need to do to improve?"
+            ],
+            "questions": [
+              "How much of our assessment actually changes what we teach?",
+              "What kind of feedback do learners find most useful?",
+              "How can we reduce marking time without reducing its value?",
+              "How should assessment results be shared with parents?",
+              "What are the risks of too much testing?"
+            ],
+            "exercise": "For one week, end every lesson with an exit ticket of one question. Sort the responses and use them to plan the start of the next lesson. Keep a brief record of how this changed your teaching and how learners responded."
+          }
+        }
+      ],
+      "outcomes": {
+        "items": [
+          "Explain the intent, sequence and purpose of the curriculum they teach.",
+          "Identify gaps, repetitions and poor sequencing in a curriculum and propose improvements.",
+          "Apply well-evidenced principles of learning — small steps, retrieval, spacing and practice.",
+          "Choose between explicit instruction and active methods according to learners and content.",
+          "Use formative assessment in every lesson to guide teaching.",
+          "Design fair summative assessments aligned to the curriculum.",
+          "Give specific feedback and ensure learners act on it."
+        ],
+        "evidence": "a curriculum map with one proposed change, a two-week retrieval practice record, and a week of exit tickets with notes on how teaching was adjusted."
+      }
+    },
+    {
+      "id": "m3",
+      "number": 3,
+      "title": "Every Learner",
+      "tagline": "Every hand aboard, laying the keel and the man-overboard drill",
+      "foundation": {
+        "verses": [
+          {
+            "ar": "لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا",
+            "text": "Allah does not burden a soul beyond its capacity.",
+            "ref": "Qur’an, Sūrah al-Baqarah 2:286"
+          },
+          {
+            "ar": "وَاللَّهُ أَخْرَجَكُم مِّن بُطُونِ أُمَّهَاتِكُمْ لَا تَعْلَمُونَ شَيْئًا وَجَعَلَ لَكُمُ السَّمْعَ وَالْأَبْصَارَ وَالْأَفْئِدَةَ",
+            "text": "And Allah brought you out of your mothers’ wombs knowing nothing, and gave you hearing, sight and hearts.",
+            "ref": "Qur’an, Sūrah an-Naḥl 16:78"
+          }
+        ],
+        "why": [
+          "Every person is given a capacity, and no one is asked to carry more than they can. Every child also begins knowing nothing, equipped with hearing, sight and a heart to learn with. Module 3 is about meeting each learner where they are: including those whose needs differ, giving the youngest the strongest start, and keeping every child safe and well."
+        ]
+      },
+      "sections": [
+        {
+          "id": "s7",
+          "number": 7,
+          "title": "Inclusive Education",
+          "ship": {
+            "title": "Every hand aboard",
+            "body": [
+              "No crew was made of identical sailors. Some were strong, some quick aloft, some skilled with a needle or a sextant, some still learning. A good master did not leave anyone ashore because they were different; he found the work each could do and arranged the ship so that all could contribute."
+            ],
+            "claim": "An inclusive school does the same for its learners.",
+            "question": "Which learner in your class are you least sure how to teach? What would help you find out?"
+          },
+          "intro": [
+            "Inclusive education means that every learner, whatever their needs, background or ability, has a fair chance to learn and to belong. It includes learners with disabilities and special educational needs, those learning in a second language, those who have experienced trauma or disrupted schooling, and those who learn faster or slower than their peers."
+          ],
+          "subsections": [
+            {
+              "id": "7.1",
+              "title": "Understanding Needs",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Learners may need additional support with:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Cognition and learning — such as dyslexia or general learning difficulties",
+                    "Communication and interaction — speech, language or social communication, including autism",
+                    "Social, emotional and mental health — anxiety, low mood, the effects of trauma",
+                    "Sensory and physical needs — hearing, vision, mobility or medical conditions",
+                    "Language — learning in a language that is not their first"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Needs are not labels to define a child. They are information that helps the teacher remove barriers."
+                }
+              ]
+            },
+            {
+              "id": "7.2",
+              "title": "Quality Teaching First",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "The best support for most learners is excellent everyday teaching: clear explanations, small steps, visual support, practice and checking understanding. These help everyone, and they help learners with additional needs most of all. Extra interventions add to good teaching; they do not replace it."
+                }
+              ]
+            },
+            {
+              "id": "7.3",
+              "title": "Adapting Teaching",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Break tasks into smaller steps with clear instructions",
+                    "Use visuals, models and concrete objects alongside words",
+                    "Offer different ways to show learning — speaking, drawing, writing, doing",
+                    "Pre-teach key vocabulary",
+                    "Allow extra time and reduce unnecessary copying",
+                    "Seat learners thoughtfully, considering hearing, sight and attention"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "7.4",
+              "title": "Working Together",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Inclusion depends on teamwork:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "With parents and carers, who know their child best",
+                    "With learners themselves, asking what helps them",
+                    "With specialists — speech therapists, psychologists, medical staff — where available",
+                    "With colleagues, sharing strategies that work"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Many schools keep a simple support plan for learners with additional needs: what the need is, what helps, who is responsible and when it will be reviewed."
+                }
+              ]
+            },
+            {
+              "id": "7.5",
+              "title": "Belonging",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Inclusion is not only about learning; it is about belonging. Learners who feel welcome, respected and safe are more able to learn. Schools should challenge bullying, celebrate differences and ensure that every learner can take part in the life of the school."
+                },
+                {
+                  "type": "example",
+                  "title": "the visual timetable",
+                  "text": "A seven-year-old with autism became distressed at every change of activity. His teacher introduced a simple visual timetable at his desk showing the day’s activities in pictures, and gave a two-minute warning before each change."
+                },
+                {
+                  "type": "p",
+                  "text": "His distress reduced sharply — and other children began using the timetable too."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten tests of inclusive education",
+            "tests": [
+              "Do I know the additional needs of every learner I teach?",
+              "Do I see needs as information, not labels?",
+              "Is my everyday teaching clear enough to support learners who struggle?",
+              "Do I adapt tasks, resources and timing for different learners?",
+              "Do I pre-teach key vocabulary for learners who need it?",
+              "Do I talk with parents and learners about what helps?",
+              "Do I know where to get specialist advice?",
+              "Does every learner with additional needs have a plan that is reviewed?",
+              "Do all learners feel they belong in my classroom?",
+              "Do I challenge bullying and exclusion when I see it?"
+            ],
+            "questions": [
+              "What barriers to learning are most common among our learners?",
+              "How can we support learners with additional needs without singling them out?",
+              "What do parents of children with additional needs most want from us?",
+              "How do we include learners who arrive mid-year or with disrupted schooling?",
+              "Where do we need more specialist knowledge?"
+            ],
+            "exercise": "Choose one learner who finds learning difficult. Talk with them and, if possible, their parents about what helps. Write a one-page support plan with three strategies, try them for three weeks, and review their effect."
+          }
+        },
+        {
+          "id": "s8",
+          "number": 8,
+          "title": "Early Years",
+          "ship": {
+            "title": "Laying the keel",
+            "body": [
+              "The first part of a ship to be built is the keel — the backbone along the bottom of the hull. Everything else is fixed to it. A ship with a crooked or weak keel can be beautifully finished above and still never sail true."
+            ],
+            "claim": "The early years are the keel of a child’s education.",
+            "question": "What do the youngest children in your care spend most of their day doing? Is that how young children learn best?"
+          },
+          "intro": [
+            "The early years — usually from birth to around six or seven — are a period of extraordinary growth in the brain, in language and in social and emotional development. What happens in these years has lasting effects on learning, health and wellbeing. Early years education is not a smaller version of school; it has its own principles and methods."
+          ],
+          "subsections": [
+            {
+              "id": "8.1",
+              "title": "How Young Children Learn",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Young children learn through:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Play — exploring, imagining, building and pretending",
+                    "Relationships — warm, responsive adults who talk, listen and care",
+                    "Their senses and bodies — touching, moving, making and doing",
+                    "Talk — conversations, stories, songs and rhymes",
+                    "Routine and security — knowing what comes next and feeling safe"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "8.2",
+              "title": "Areas of Development",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Communication and language — listening, understanding and speaking",
+                    "Physical development — movement, coordination and fine motor skills for writing",
+                    "Personal, social and emotional development — confidence, relationships and self-control",
+                    "Early literacy — enjoying books, recognising sounds and letters",
+                    "Early mathematics — counting, shape, size, pattern and comparison",
+                    "Understanding the world — people, places, nature and faith"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "8.3",
+              "title": "Play-Based Learning",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Play is not the opposite of learning; for young children it is how learning happens. Good early years settings plan play carefully: providing rich materials, joining in to extend thinking, asking open questions and noticing what children are ready to learn next. A balance of child-led play and short, adult-led activities works well."
+                }
+              ]
+            },
+            {
+              "id": "8.4",
+              "title": "Language and Stories",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "The number of words children hear and the conversations they take part in strongly affect later learning. Adults should talk with children constantly — naming, describing, asking and answering — and read stories every day. For children growing up with more than one language, strong development in the home language supports learning the school language."
+                }
+              ]
+            },
+            {
+              "id": "8.5",
+              "title": "Observing and Planning",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Early years practitioners learn about children by watching them:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Observing children at play and noting what they can do",
+                    "Sharing observations with parents and carers",
+                    "Planning next steps for each child based on what has been seen",
+                    "Noticing early signs that a child may need extra support, and acting promptly"
+                  ]
+                },
+                {
+                  "type": "example",
+                  "title": "the story sack",
+                  "text": "A nursery noticed that many children had few books at home. Staff made “story sacks”: a cloth bag with a picture book and simple objects linked to the story, which families borrowed each week. Parents reported reading more with their children, and staff noticed children’s vocabulary and storytelling growing in play."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten tests of early years practice",
+            "tests": [
+              "Do young children in our care spend most of their time in purposeful play?",
+              "Do adults talk and listen to every child throughout the day?",
+              "Are stories, songs and rhymes part of every day?",
+              "Is there a balance of child-led play and adult-led activity?",
+              "Do we observe children and plan next steps from what we see?",
+              "Do we share observations with parents regularly?",
+              "Do we support children’s home languages?",
+              "Are routines predictable so children feel secure?",
+              "Do we notice and act early when a child may need extra support?",
+              "Are physical activity and outdoor play part of every day?"
+            ],
+            "questions": [
+              "What is the right balance between play and more formal learning for young children?",
+              "How can we help parents support learning at home?",
+              "What are the signs that a young child may need extra help?",
+              "How do we value children’s home languages and cultures?",
+              "What do the youngest children most need from the adults around them?"
+            ],
+            "exercise": "Observe one young child at play for twenty minutes, noting what they do, say and learn. Identify one next step for their learning and plan an activity or resource to support it. Share your observation with a colleague or the child’s parent."
+          }
+        },
+        {
+          "id": "s9",
+          "number": 9,
+          "title": "Wellbeing and Safeguarding",
+          "ship": {
+            "title": "Man overboard",
+            "body": [
+              "On every ship, the cry of “man overboard” is everyone’s business. Whoever sees it shouts, points and keeps pointing; the whole crew knows the drill. Nobody waits to be sure, or assumes someone else has seen it. Seconds matter, and the drill is practised until it is automatic."
+            ],
+            "claim": "Safeguarding children works the same way: everyone’s responsibility, a clear drill, and no waiting for certainty.",
+            "question": "If a child told you something worrying today, do you know exactly whom you would tell and what you would write down?"
+          },
+          "intro": [
+            "Wellbeing is about children being healthy, happy and able to learn. Safeguarding is the set of actions taken to protect children from harm — including abuse, neglect, exploitation and danger. Every adult who works with children has a duty to keep them safe. This section introduces the principles; every setting must also follow its own safeguarding policy and the law of its country."
+          ],
+          "subsections": [
+            {
+              "id": "9.1",
+              "title": "Supporting Wellbeing",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Schools support wellbeing through:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Warm, trusting relationships with adults",
+                    "A safe, calm and predictable environment",
+                    "Teaching about feelings, relationships, health and staying safe",
+                    "Opportunities for physical activity, rest and good nutrition",
+                    "Prompt attention to bullying, distress or changes in behaviour",
+                    "Access to pastoral care and, where available, counselling"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9.2",
+              "title": "Recognising Concerns",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Adults should be alert to signs that a child may be at risk, such as unexplained injuries, sudden changes in behaviour, withdrawal, poor hygiene or hunger, fear of going home, frequent absence, or inappropriate knowledge or behaviour for their age. One sign alone may have an innocent explanation; the duty is to notice, record and pass on concerns, not to decide."
+                }
+              ]
+            },
+            {
+              "id": "9.3",
+              "title": "Responding to Disclosure",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "If a child tells you something worrying:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Stay calm, listen and take them seriously.",
+                    "Do not ask leading questions or investigate yourself.",
+                    "Do not promise to keep it secret; explain that you will need to tell someone who can help.",
+                    "Write down what was said, in the child’s words, with the date and time, as soon as possible.",
+                    "Report it immediately to the designated safeguarding lead, or to the authorities if the child is in immediate danger."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9.4",
+              "title": "Safe Practice for Adults",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Every setting should have a named safeguarding lead and a written policy known to all staff.",
+                    "Staff and volunteers should be checked and trained before working with children.",
+                    "Adults should avoid situations where they are alone with a child out of sight, and follow the setting’s rules on contact, communication and online behaviour.",
+                    "Concerns about another adult’s behaviour must also be reported."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9.5",
+              "title": "Online Safety",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Children face risks online, including harmful content, bullying and contact from people who wish them harm. Schools should teach children how to stay safe, filter and monitor devices, and work with parents to set sensible boundaries at home."
+                },
+                {
+                  "type": "example",
+                  "title": "the small notes",
+                  "text": "In a primary school, three different staff members each noticed something small about one boy over a month: he was always hungry, he was often in the same clothes, and he flinched when a door slammed. Each recorded it on the school’s concern system. Together, the records showed a pattern that the safeguarding lead could act on, and the family received support. None of the notes alone would have been enough."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten tests of wellbeing and safeguarding",
+            "tests": [
+              "Do I know who the safeguarding lead is in my setting?",
+              "Have I read and understood the safeguarding policy?",
+              "Do I know the signs that a child may be at risk?",
+              "Do I record and pass on concerns, rather than deciding myself?",
+              "Would I know what to say — and not say — if a child disclosed abuse?",
+              "Do I avoid promising to keep secrets?",
+              "Do I follow safe practice in my own conduct with children?",
+              "Would I report a concern about a colleague?",
+              "Do I teach children about feelings and staying safe, including online?",
+              "Do I notice changes in a child’s behaviour or wellbeing?"
+            ],
+            "questions": [
+              "What gets in the way of adults reporting concerns?",
+              "How do we make sure small concerns are joined up into a full picture?",
+              "How can we support children’s wellbeing every day, not only in a crisis?",
+              "What do parents need to know about our safeguarding approach?",
+              "How should we respond to online risks our learners face?"
+            ],
+            "exercise": "Read your setting’s safeguarding policy and write a one-page summary: the safeguarding lead, how to record a concern, what to do if a child discloses, and when to contact the authorities. Check it with the safeguarding lead and keep it where you can find it quickly."
+          }
+        }
+      ],
+      "outcomes": {
+        "items": [
+          "Identify learners’ additional needs and adapt teaching to remove barriers.",
+          "Work with parents, learners and specialists to plan and review support.",
+          "Create a classroom where every learner belongs.",
+          "Explain how young children learn through play, relationships and talk.",
+          "Observe young children and plan next steps for their learning.",
+          "Support children’s wellbeing and recognise signs that a child may be at risk.",
+          "Respond correctly to a disclosure and follow their setting’s safeguarding procedures."
+        ],
+        "evidence": "a learner support plan with a review, an early years observation with a planned next step, and a summary of their setting’s safeguarding procedures checked by the safeguarding lead."
+      }
+    },
+    {
+      "id": "m4",
+      "number": 4,
+      "title": "The School and Beyond",
+      "tagline": "New instruments, the harbour that waits, and command",
+      "foundation": {
+        "verses": [
+          {
+            "ar": "وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَىٰ",
+            "text": "And cooperate in righteousness and piety.",
+            "ref": "Qur’an, Sūrah al-Mā’idah 5:2"
+          },
+          {
+            "ar": "يَا أَيُّهَا الَّذِينَ آمَنُوا قُوا أَنفُسَكُمْ وَأَهْلِيكُمْ نَارًا",
+            "text": "O you who believe, protect yourselves and your families from a Fire.",
+            "ref": "Qur’an, Sūrah at-Taḥrīm 66:6"
+          }
+        ],
+        "why": [
+          "No school educates a child alone. The first verse calls for cooperation in goodness — between teachers, families and the wider community. The second reminds every believer that the care of one’s family is a personal responsibility, which no institution can take over. Module 4 widens the view beyond the classroom: to the tools that support teaching, the families who share the work, and the leadership that holds a school together."
+        ]
+      },
+      "sections": [
+        {
+          "id": "s10",
+          "number": 10,
+          "title": "Educational Technology",
+          "ship": {
+            "title": "From sextant to satellite",
+            "body": [
+              "Navigation has changed beyond recognition: from lead line and sextant to radar and satellite positioning. Each new instrument made the navigator’s work faster and more precise. None removed the need for judgement — and every experienced master still checks the screen against the coastline outside the window."
+            ],
+            "claim": "Educational technology is the same: a powerful instrument in the hands of a good teacher, and a dangerous distraction without one.",
+            "question": "Think of a technology you use in teaching. What does it help learners do that they could not do as well without it?"
+          },
+          "intro": [
+            "Educational technology includes any digital tool used to support teaching and learning: devices, software, online platforms, digital resources and communication tools. Used well, it can extend learning, save time and reach learners who would otherwise be left out. Used badly, it distracts, isolates and wastes money."
+          ],
+          "subsections": [
+            {
+              "id": "10.1",
+              "title": "Purpose Before Tools",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Before adopting any technology, ask:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "What learning problem does it solve?",
+                    "Is there evidence that it helps learners like ours?",
+                    "Can our teachers use it well, and will they be trained?",
+                    "Do all learners have access, at school and at home?",
+                    "What will it cost over time — not only to buy, but to maintain and replace?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "10.2",
+              "title": "Useful Uses of Technology",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Presenting clear explanations with images, diagrams and video",
+                    "Quick quizzes and retrieval practice with instant feedback",
+                    "Access to books, sources and resources beyond the school’s own",
+                    "Practice programmes that adapt to the learner’s level",
+                    "Assistive technology for learners with additional needs — text-to-speech, magnification, captions",
+                    "Communication with parents and between colleagues",
+                    "Keeping records, attendance and assessment data"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "10.3",
+              "title": "Digital Literacy",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Learners need to use technology wisely, not only skilfully: searching effectively, judging the reliability of sources, protecting their privacy, behaving respectfully online, and understanding how digital tools — including artificial intelligence — work and where they can be wrong."
+                }
+              ]
+            },
+            {
+              "id": "10.4",
+              "title": "Artificial Intelligence in Education",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "AI tools can help teachers plan, create resources and give feedback, and can help learners practise and explore. They also raise real concerns:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "AI can produce confident but incorrect information.",
+                    "Learners may use it to avoid thinking rather than to support it.",
+                    "Data and privacy must be protected."
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Schools should agree clear guidance on when and how AI may be used, and teach learners to use it honestly and critically."
+                }
+              ]
+            },
+            {
+              "id": "10.5",
+              "title": "Screen Time and Balance",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Technology should support, not replace, the human relationships and hands-on experiences at the heart of education — especially for young children. A balance of screen-based and practical, physical and social learning is essential."
+                },
+                {
+                  "type": "example",
+                  "title": "the shared quiz bank",
+                  "text": "Teachers at a small school each built short online quizzes for their topics and added them to a shared bank. Learners used them for retrieval practice in class and at home, and the platform showed teachers which questions most learners got wrong. Teachers then retaught those points. The technology was simple; its value came from how teachers used the information."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten tests of educational technology",
+            "tests": [
+              "Can I name the learning problem each technology I use solves?",
+              "Do I check evidence before adopting a new tool?",
+              "Have I been properly trained in the tools I use?",
+              "Do all my learners have access to the technology I expect them to use?",
+              "Do I use technology for retrieval practice and feedback?",
+              "Do I teach learners to judge the reliability of online sources?",
+              "Do I know our school’s guidance on artificial intelligence?",
+              "Do I teach learners to use AI honestly and critically?",
+              "Do I protect learners’ data and privacy?",
+              "Do my lessons balance screen-based and hands-on learning?"
+            ],
+            "questions": [
+              "Which technologies have genuinely improved learning in our setting? Which have not?",
+              "How should we respond to learners using AI for their work?",
+              "How do we ensure fair access for learners without devices or internet at home?",
+              "What training do our staff most need?",
+              "How much screen time is right for different ages?"
+            ],
+            "exercise": "Choose one technology you use or would like to use. Write half a page on the learning problem it solves, the evidence for it, the access and cost issues, and how you will judge whether it works. Try it for two weeks and review it against your own criteria."
+          }
+        },
+        {
+          "id": "s11",
+          "number": 11,
+          "title": "Parents and Community",
+          "ship": {
+            "title": "The harbour that waits",
+            "body": [
+              "Every ship sails from a harbour and returns to it. Behind each sailor stood a family ashore and a community that built the ship, supplied it and welcomed it home. A voyage succeeded not only because of the crew, but because of everyone who supported them from the quay."
+            ],
+            "claim": "A child’s education is carried by the school — and by the harbour of family and community behind it.",
+            "question": "How often do you speak with the parents of your learners when there is good news, not only when there is a problem?"
+          },
+          "intro": [
+            "Parents and carers are a child’s first and most lasting teachers. When schools and families work together, children attend more regularly, behave better and achieve more. The wider community — mosques, community centres, local businesses and organisations — can also enrich learning in ways a school cannot alone."
+          ],
+          "subsections": [
+            {
+              "id": "11.1",
+              "title": "Why Partnership Matters",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Strong partnerships with families:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Help teachers understand each child’s background, strengths and needs",
+                    "Allow problems to be spotted and solved early",
+                    "Extend learning into the home",
+                    "Build trust, so that difficult conversations go better when they are needed",
+                    "Give families a voice in the life of the school"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "11.2",
+              "title": "Communicating with Families",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Share good news as well as concerns",
+                    "Use clear, simple language, and translate key information where needed",
+                    "Offer different ways to communicate — meetings, phone calls, messages, written reports",
+                    "Make parents’ meetings welcoming, with interpreters where possible",
+                    "Respond to parents’ concerns promptly and respectfully"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "11.3",
+              "title": "Supporting Learning at Home",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Parents can help most by:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Showing interest in what their child is learning",
+                    "Reading with and to their children, in any language",
+                    "Providing a regular time and place for homework, where possible",
+                    "Encouraging good sleep, attendance and routines",
+                    "Talking positively about learning and school"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Schools can help by explaining what is being taught, suggesting simple activities and running workshops for parents."
+                }
+              ]
+            },
+            {
+              "id": "11.4",
+              "title": "Families Facing Difficulties",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Some families face poverty, illness, language barriers, displacement or other pressures that make involvement hard. Schools should avoid judgement, offer flexible ways to take part, and connect families with support where they can. A family that cannot attend meetings may still care deeply about their child’s education."
+                }
+              ]
+            },
+            {
+              "id": "11.5",
+              "title": "The Wider Community",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Visits from local professionals, scholars and craftspeople",
+                    "Partnerships with community centres, libraries and mosques",
+                    "Volunteering and service projects for learners",
+                    "Using local places — markets, parks, workplaces — as places of learning",
+                    "Inviting the community to celebrate learners’ achievements"
+                  ]
+                },
+                {
+                  "type": "example",
+                  "title": "the welcome coffee morning",
+                  "text": "A school serving many newly arrived families found that few parents came to formal meetings. It started a monthly coffee morning with interpreters, where parents could meet teachers informally, ask questions and learn about the curriculum. Attendance grew each month, and teachers reported much better communication about children’s needs."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten tests of partnership with parents and community",
+            "tests": [
+              "Do I contact parents with good news as well as concerns?",
+              "Is our communication clear, and translated where needed?",
+              "Do parents feel welcome in our school?",
+              "Do I know something about each learner’s home situation?",
+              "Do we help parents support learning at home?",
+              "Do we offer flexible ways for busy or struggling families to take part?",
+              "Do I respond to parents’ concerns promptly and respectfully?",
+              "Do we involve community members in learners’ education?",
+              "Do we use local places and people as resources for learning?",
+              "Do parents have a real voice in the school?"
+            ],
+            "questions": [
+              "What stops some parents from being involved in their children’s education?",
+              "How can we communicate better with families who speak other languages?",
+              "What could parents teach us about their children?",
+              "Which community partnerships could enrich our curriculum?",
+              "How do we handle disagreements with parents constructively?"
+            ],
+            "exercise": "Make positive contact with the parents of five learners this week, sharing something specific their child has done well. Note their responses. Then plan one small way to involve families or the community in your teaching this term."
+          }
+        },
+        {
+          "id": "s12",
+          "number": 12,
+          "title": "School Management",
+          "ship": {
+            "title": "Commanding the ship",
+            "body": [
+              "The master of a ship is responsible for everything aboard: the course, the cargo, the safety of every soul, the condition of the hull, the accounts and the reputation of the owners. He cannot do it all himself. He leads through officers, systems and routines, and through the standard he sets by his own example."
+            ],
+            "claim": "Leading a school is the same: responsible for everything, able to do almost nothing alone.",
+            "question": "What does your school say it values? Would a visitor see those values in an ordinary hour of an ordinary day?"
+          },
+          "intro": [
+            "School management covers the leadership, organisation and administration that keep a school running and improving. Good leaders set a clear direction, build strong teams, manage resources wisely and keep the focus on teaching and learning. Much of the Management Handbook applies directly here; this section focuses on what is particular to schools."
+          ],
+          "subsections": [
+            {
+              "id": "12.1",
+              "title": "Vision and Values",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "A school needs a clear sense of purpose:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "A short statement of what the school is for and what it values",
+                    "Shared by staff, learners, parents and governors",
+                    "Visible in decisions, priorities and everyday behaviour",
+                    "Reviewed and renewed from time to time"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "12.2",
+              "title": "Leading Teaching and Learning",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "The most important work of school leaders is improving the quality of teaching. This means knowing what happens in classrooms, supporting teacher development (Section 1), building a strong curriculum (Section 4) and using assessment information wisely (Section 6). Leaders who spend all their time on administration and none in classrooms lose touch with the heart of the school."
+                }
+              ]
+            },
+            {
+              "id": "12.3",
+              "title": "Staff and Teams",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Recruiting carefully, with safeguarding checks (Section 9)",
+                    "Inducting new staff well, with a mentor",
+                    "Distributing leadership — giving teachers real responsibility",
+                    "Managing workload so that staff can do their best",
+                    "Recognising good work and addressing poor performance fairly"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "12.4",
+              "title": "Resources and Administration",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Schools must manage:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Budgets and financial accountability",
+                    "Timetables, rooms and resources",
+                    "Admissions, attendance and records",
+                    "Health, safety and premises",
+                    "Policies and compliance with the law"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Clear systems, good records and reliable administrative staff free leaders and teachers to focus on learning."
+                }
+              ]
+            },
+            {
+              "id": "12.5",
+              "title": "Self-Evaluation and Improvement",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Good schools keep asking how they can improve:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Gathering evidence — results, observations, surveys of learners and parents",
+                    "Identifying a small number of priorities",
+                    "Planning actions, responsibilities and timescales",
+                    "Checking progress and adjusting the plan"
+                  ]
+                },
+                {
+                  "type": "example",
+                  "title": "the three priorities",
+                  "text": "A new head teacher inherited a school improvement plan with twenty-seven priorities, none of which were progressing. After gathering evidence from lessons, results and parents, she reduced the plan to three: reading in the early years, behaviour in corridors, and attendance. Each had a named leader and monthly review. Within a year all three had improved measurably, and staff said for the first time they understood what the school was trying to do."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten tests of school management",
+            "tests": [
+              "Does our school have a clear statement of purpose and values?",
+              "Can staff, learners and parents describe them?",
+              "Do leaders spend regular time in classrooms?",
+              "Is improving teaching the main focus of leadership?",
+              "Are new staff inducted well, with a mentor?",
+              "Is leadership shared, with teachers given real responsibility?",
+              "Is staff workload manageable?",
+              "Are finances, records and premises well managed?",
+              "Does the school have a small number of clear improvement priorities?",
+              "Do we check progress on our priorities regularly and honestly?"
+            ],
+            "questions": [
+              "What does our school say it values, and how would a visitor see it?",
+              "How much of leaders’ time goes on teaching and learning?",
+              "What causes the most unnecessary workload for staff?",
+              "How should we gather the views of learners and parents?",
+              "What would our three priorities be for next year?"
+            ],
+            "exercise": "Using evidence you have — results, observations, feedback from learners or parents — identify three priorities for improving your class, department or school. For each, write the action, the person responsible, the timescale and how success will be measured."
+          }
+        }
+      ],
+      "outcomes": {
+        "items": [
+          "Choose educational technology by its purpose and evidence, and judge its effect.",
+          "Teach learners to use digital tools, including AI, safely, honestly and critically.",
+          "Communicate with parents clearly and positively, including those facing difficulties.",
+          "Help families and the community support children’s learning.",
+          "Explain the main responsibilities of school leadership and management.",
+          "Keep the focus of leadership on teaching and learning.",
+          "Use evidence to set a small number of improvement priorities and track progress."
+        ],
+        "evidence": "an evaluation of one technology used in teaching, a record of positive contact with five families, and a short improvement plan with three priorities."
+      }
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Assessment",
+      "def": "Finding out what learners have learned.",
+      "ref": "Section 6"
+    },
+    {
+      "term": "Collective success",
+      "def": "The fourth triplet: doing your own part fully whether or not others do theirs, so that the shared result is stronger.",
+      "ref": "Section 14.4"
+    },
+    {
+      "term": "Generational stewardship",
+      "def": "Part of the third triplet: investing in learning and in the next generation so that the work outlasts those who began it.",
+      "ref": "Section 14.3"
+    },
+    {
+      "term": "Guided practice",
+      "def": "Learners trying new work with the teacher’s support before working alone.",
+      "ref": "Section 3.2"
+    },
+    {
+      "term": "Contention",
+      "def": "Healthy rivalry with others working in the same field. It exposes weaknesses that would otherwise go unnoticed and drives improvement.",
+      "ref": "Section 13.3"
+    },
+    {
+      "term": "Curriculum",
+      "def": "What learners should learn, in what order and why.",
+      "ref": "Section 4"
+    },
+    {
+      "term": "Designated safeguarding lead",
+      "def": "The named person in a setting responsible for receiving and acting on safeguarding concerns.",
+      "ref": "Section 9.3"
+    },
+    {
+      "term": "Diagnostic assessment",
+      "def": "Assessment that finds starting points and particular difficulties.",
+      "ref": "Section 6.1"
+    },
+    {
+      "term": "Differentiation",
+      "def": "Adapting tasks, support and challenge so that learners with different needs can all make progress.",
+      "ref": "Section 3.3"
+    },
+    {
+      "term": "Disclosure",
+      "def": "When a child tells an adult about harm they have experienced or are at risk of.",
+      "ref": "Section 9.3"
+    },
+    {
+      "term": "Early years",
+      "def": "Roughly from birth to six or seven: the period of fastest development in a child’s life.",
+      "ref": "Section 8"
+    },
+    {
+      "term": "Excellence through uniqueness",
+      "def": "The first triplet: fresh thinking that fills a real gap rather than copying what others already do.",
+      "ref": "Section 14.1"
+    },
+    {
+      "term": "Exit ticket",
+      "def": "A short question answered at the end of a lesson to check what has been learned.",
+      "ref": "Section 6.2"
+    },
+    {
+      "term": "Explicit instruction",
+      "def": "Clear teacher explanation in small steps, with worked examples and guided practice.",
+      "ref": "Section 5.2"
+    },
+    {
+      "term": "Feedback",
+      "def": "Information that helps a learner improve, and that they act on.",
+      "ref": "Section 6.4"
+    },
+    {
+      "term": "Formative assessment",
+      "def": "Checking learning during teaching to decide what to do next.",
+      "ref": "Section 6.1"
+    },
+    {
+      "term": "Ḥadīth",
+      "def": "A recorded saying or action of the Prophet Muḥammad صلى الله عليه وسلم, transmitted through a chain of narrators. (Islamic Foundation) ‘Ilm — Arabic: knowledge, as in the prayer “My Lord, increase me in knowledge.”",
+      "ref": "Cover"
+    },
+    {
+      "term": "Inclusive education",
+      "def": "Education in which every learner, whatever their needs or background, can learn and belong.",
+      "ref": "Section 7"
+    },
+    {
+      "term": "Interleaving",
+      "def": "Mixing different kinds of problems in practice, so learners must choose the right method.",
+      "ref": "Section 5.4"
+    },
+    {
+      "term": "Layers",
+      "def": "Groups of people suited to different stages of a piece of work — those who launch it, those who build it and those who sustain it.",
+      "ref": "Section 13.2"
+    },
+    {
+      "term": "Learning aim",
+      "def": "A clear statement of what learners should know or be able to do by the end of a lesson.",
+      "ref": "Section 3.1"
+    },
+    {
+      "term": "Mentor",
+      "def": "An experienced colleague who supports a teacher’s development over time.",
+      "ref": "Section 1.3"
+    },
+    {
+      "term": "Online safety",
+      "def": "Protecting children from harmful content, contact and conduct online.",
+      "ref": "Section 9.5"
+    },
+    {
+      "term": "Pedagogy",
+      "def": "The method and practice of teaching.",
+      "ref": "Section 1.1"
+    },
+    {
+      "term": "Play-based learning",
+      "def": "Learning through purposeful play, especially in the early years.",
+      "ref": "Section 8.3"
+    },
+    {
+      "term": "Readiness",
+      "def": "The point at which a team and its situation are genuinely prepared for a change, rather than merely informed of it.",
+      "ref": "Section 13.1"
+    },
+    {
+      "term": "Reflective practice",
+      "def": "Looking honestly at one’s own teaching to learn from it.",
+      "ref": "Section 1.4"
+    },
+    {
+      "term": "Retrieval practice",
+      "def": "Recalling information from memory, which strengthens learning more than rereading.",
+      "ref": "Section 5.4"
+    },
+    {
+      "term": "Routine",
+      "def": "A practised, predictable way of doing a regular classroom task.",
+      "ref": "Section 2.3"
+    },
+    {
+      "term": "Sacrifice and risk",
+      "def": "The second triplet: giving time, effort and comfort beyond the minimum, and accepting risk, for the sake of the mission.",
+      "ref": "Section 14.2"
+    },
+    {
+      "term": "Safeguarding",
+      "def": "The actions taken to protect children from harm, abuse, neglect and exploitation.",
+      "ref": "Section 9"
+    },
+    {
+      "term": "Ṣaḥīḥ",
+      "def": "“Sound”: a grading for a hadith with a reliable chain of narration. Also part of the titles of the collections of al-Bukhārīand Muslim.",
+      "ref": "Islamic Foundation"
+    },
+    {
+      "term": "Section Review",
+      "def": "The three-part review at the end of every section: ten self-tests, questions for discussion and a practical exercise.",
+      "ref": "How to Use"
+    },
+    {
+      "term": "Self-evaluation",
+      "def": "A school gathering evidence about itself in order to improve.",
+      "ref": "Section 12.5"
+    },
+    {
+      "term": "Sequencing",
+      "def": "The order in which topics are taught so that knowledge builds on knowledge.",
+      "ref": "Section 4.2"
+    },
+    {
+      "term": "Spaced practice",
+      "def": "Revisiting material after increasing intervals of time.",
+      "ref": "Section 5.4"
+    },
+    {
+      "term": "Spiral curriculum",
+      "def": "A curriculum in which key ideas are revisited at increasing depth over time.",
+      "ref": "Section 4.2"
+    },
+    {
+      "term": "Summative assessment",
+      "def": "Measuring learning at the end of a unit, course or year.",
+      "ref": "Section 6.1"
+    },
+    {
+      "term": "Support plan",
+      "def": "A short written plan for a learner with additional needs: what helps, who is responsible and when it is reviewed.",
+      "ref": "Section 7.4"
+    },
+    {
+      "term": "Sūrah",
+      "def": "A chapter of the Qur’an. There are 114 sūrahs.",
+      "ref": "Islamic Foundation"
+    },
+    {
+      "term": "Tazkiyah",
+      "def": "Arabic: purification and growth of the self — named with teaching in Sūrah al-Jumu‘ah 62:2.",
+      "ref": "Module 1"
+    },
+    {
+      "term": "The Ship panel",
+      "def": "The short panel at the start of each section that explains its subject in terms of a ship and her crew, ending with a question.",
+      "ref": "The Ship"
+    },
+    {
+      "term": "Triplet",
+      "def": "One of the four interlocking parts of the Formula of Ultimate Success.",
+      "ref": "Section 14"
+    },
+    {
+      "term": "Turning point",
+      "def": "A change in fortune, good or bad, that a team should prepare for before it arrives.",
+      "ref": "Section 13.4"
+    },
+    {
+      "term": "Ultimate success",
+      "def": "Success measured by lasting benefit to people and to future generations, not only by shortterm results.",
+      "ref": "Section 14"
+    },
+    {
+      "term": "Vision and values",
+      "def": "A short statement of what a school is for and what it stands for.",
+      "ref": "Section 12.1"
+    },
+    {
+      "term": "Wellbeing",
+      "def": "Children being healthy, happy and able to learn.",
+      "ref": "Section 9.1"
+    },
+    {
+      "term": "Working memory",
+      "def": "The limited mental space in which we hold and work on new information.",
+      "ref": "Section 5.1"
+    }
+  ]
+}

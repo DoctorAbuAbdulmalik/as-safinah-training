@@ -1,0 +1,642 @@
+{
+  "direction": "shared",
+  "lang": "en",
+  "modules": [
+    {
+      "id": "m5",
+      "number": 5,
+      "title": "Patterns of Renewal",
+      "tagline": "The tide, the crew, the rival sail and the turning weather",
+      "foundation": {
+        "verses": [
+          {
+            "ar": "وَتِلْكَ الْأَيَّامُ نُدَاوِلُهَا بَيْنَ النَّاسِ",
+            "text": "And these days [of varying fortunes] We alternate among the people.",
+            "ref": "Qur’an, Sūrah Āl ‘Imrān 3:140"
+          },
+          {
+            "ar": "إِذَا وُسِّدَ الْأَمْرُ إِلَى غَيْرِ أَهْلِهِ فَانْتَظِرِ السَّاعَةَ",
+            "text": "When authority is entrusted to those unfit for it, await the Hour.",
+            "ref": "Narrated by Abū Hurayrah — Ṣaḥīḥ al-Bukhārī 59"
+          }
+        ],
+        "why": [
+          "This module is about the patterns underneath the work rather than the work itself, and both texts name one. The verse is the plainest statement in the Qur’an that no condition is permanent: fortune is passed between people in turn, which is precisely the discipline 13.4 asks for — do not read the present season as the whole story, in a strong year or a poor one. The ḥadīth is the warning behind 13.2. Work put in the hands of someone unsuited to it is not merely inefficient; it is named here as a symptom of a trust being lost, and the damage is to the whole vessel rather than to one task. Between them sits the idea the classical scholars called tadāfu‘ — the mutual pushing of groups against one another that Sūrah al-Baqarah 2:251 presents as what keeps the earth from corruption, and which 13.3 treats in its ordinary managerial form: the organisation with no one contesting its ground is the one most likely to let its standards slip unnoticed."
+        ]
+      },
+      "sections": [
+        {
+          "id": "s13",
+          "number": 13,
+          "title": "Patterns of Renewal",
+          "ship": {
+            "title": "What the charts don't show",
+            "body": [
+              "A chart tells you where the rocks are and where the channel runs. It says nothing about whether the crew has the stomach for this crossing, which hand belongs on which watch, who else is working these waters, or whether the calm you are enjoying will hold. That is not a fault in the chart — it is a different kind of knowledge, and a master who has mastered every chart in the wheelhouse can still be undone by never having asked these older questions."
+            ],
+            "claim": "",
+            "question": "Of the four patterns in this section — readiness, crew, rival sails, weather — name the one you have never actually stopped to check for your own unit."
+          },
+          "intro": [
+            "Sections 1 through 12 are about using and building digital systems well: understanding them, securing them, creating with them and leading change through them. That is necessary and it is not the whole picture. Underneath the mechanics, every organisation and every effort within it also moves through a set of less visible patterns — whether the people carrying it are actually ready to act, whether the right kind of person is in place for the stage it has reached, how it is shaped by the others contending in the same space, and whether it is prepared for its own fortune to turn. These patterns are not additional techniques to apply. They are the conditions the techniques operate in — and neglecting them is why plans, staffing decisions and strategies that look correct on paper still sometimes fail.",
+            "Understanding them is also the bridge to what follows. The Formula of Ultimate Success, in Section 14, describes what sustained excellence looks like from the outside. This section describes some of the internal weather that has to be navigated to get there."
+          ],
+          "subsections": [
+            {
+              "id": "13.1",
+              "title": "Readiness Before the Plan",
+              "ship": {
+                "title": "Waiting for the tide",
+                "body": [
+                  "A vessel can be provisioned, crewed, and pointed at the harbour mouth, and still be going nowhere, because the tide has not turned. A master who casts off against it burns the crew's strength fighting water that would, in an hour, have carried them out for free. Readiness is not delay dressed up as caution — it is telling the difference between the tide and your own impatience."
+                ],
+                "claim": "",
+                "question": "Name a plan currently underway in your unit. Was it launched on the tide, or against it?"
+              },
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Every plan in this handbook assumes a team that is willing and able to act on it. That assumption is usually safe. Occasionally it is not — and when it is not, no amount of better planning fixes the problem, because the plan was never the thing standing in the way."
+                },
+                {
+                  "type": "p",
+                  "text": "Readiness is not the same as motivation. The Management Handbook (Section 3.3) distinguishes individual capacity from individual motivation — what a person can do versus what they want to do. Readiness operates one level up. It is a property of the group, not the individual: whether the team, as a whole, has made its peace with the change being asked of it. A team can contain ten motivated people and still be collectively unready — each person privately willing, but no shared belief that this is the moment, that the effort will be matched by others, or that the old way of working is actually finished."
+                },
+                {
+                  "type": "h3",
+                  "text": "Why unready teams sink good plans"
+                },
+                {
+                  "type": "p",
+                  "text": "A plan launched into an unready team does not fail loudly. It fails by attrition. Meetings are attended but not acted on. Instructions are agreed to and then quietly worked around. Change is welcomed in the room and resisted in the corridor. None of this shows up as insubordination, which is what makes it hard to diagnose — it looks like ordinary friction, and managers respond by re-explaining the plan, when what is missing is not clarity but consent."
+                },
+                {
+                  "type": "h3",
+                  "text": "Recognising an unready team"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Agreement in meetings that does not survive contact with the following week",
+                    "A default explanation for problems that blames circumstances rather than examining practice (“we have always had to work this way”)",
+                    "Cynicism about previous change efforts (“we tried this two years ago”) used to close down discussion rather than inform it",
+                    "Energy for the plan concentrated in one or two people, with the rest of the team polite but passive",
+                    "Compliance with new instructions that never becomes ownership — people wait to be told rather than adapting the change themselves"
+                  ]
+                },
+                {
+                  "type": "h3",
+                  "text": "Building readiness before you plan"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Name the current position honestly, in the team's own words, before proposing the alternative — people commit to change they recognise as necessary, not change that is announced to them",
+                    "Separate the diagnosis from the decision: let the team arrive at “something has to change here” before you present what that something is",
+                    "Find and publicise a small, early, visible win — readiness is easier to build on evidence than on argument",
+                    "Identify who in the team is already convinced and give them a visible role — peer conviction moves a team faster than management instruction",
+                    "Expect and budget time for this stage; treating it as a delay before the “real” planning begins is the most common reason it gets skipped"
+                  ]
+                },
+                {
+                  "type": "example",
+                  "title": "a clinic changing its patient intake process",
+                  "text": "Management had redesigned the intake workflow twice in eighteen months, on paper both times sound, and both times it had quietly reverted within a month. On the third attempt, before touching the process, the team spent two sessions simply describing what was actually going wrong with intake in their own words — not being told what was wrong. By the time the new workflow was proposed, staff were finishing the manager's sentences. The process itself barely differed from the second, failed attempt. What differed was that the team had arrived at the diagnosis themselves before being handed the solution."
+                },
+                {
+                  "type": "p",
+                  "text": "Readiness-building is not a substitute for planning — it is what makes planning worth doing."
+                },
+                {
+                  "type": "p",
+                  "text": "A well-planned change presented to a team that has not reckoned with the need for it is a plan waiting to be quietly ignored."
+                }
+              ]
+            },
+            {
+              "id": "13.2",
+              "title": "Selecting the Layers: Matching People to the Stage of the Work",
+              "ship": {
+                "title": "Not every hand for every line",
+                "body": [
+                  "The hand who can splice a line in a gale is rarely the one you want on the helm in harbour, and the officer who charts a passage across open ocean is usually the wrong person to trust with provisioning the galley once you have arrived. A crew built to launch a voyage is undercrewed for running it twenty years; a crew built to last twenty years would never have got her off the beach. Knowing which hands belong to which stage of the voyage is a command decision, not an afterthought."
+                ],
+                "claim": "",
+                "question": "Name the person on your team still doing this stage's work who is actually built for the next one — and what is stopping the handover."
+              },
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "The Management Handbook (Section 3.3) treats staffing as matching skills to roles. That is correct for steady-state positions. It is not sufficient for a new initiative, because an initiative is not one job held constant — it passes through distinct stages, and the person who is right for one stage is frequently wrong for the next."
+                },
+                {
+                  "type": "h3",
+                  "text": "Three layers, three temperaments"
+                },
+                {
+                  "type": "p",
+                  "text": "The starting layer. Needed to take something from nothing to something. Comfortable with ambiguity, undeterred by the absence of a system to follow, willing to be wrong in public and adjust. This layer is small by necessity — few people work well without structure — and it is usually the most visible during a launch, because it is doing the most improvising."
+                },
+                {
+                  "type": "p",
+                  "text": "The driving layer. Needed once the idea has proved itself and now has to be carried further than its founders can carry it alone. This layer recruits, organises, and scales what the starting layer proved — people who can build a team around a concept, not just execute it personally. Where the starting layer tolerates chaos, the driving layer starts reducing it."
+                },
+                {
+                  "type": "p",
+                  "text": "The building layer. Needed once the initiative has to survive the departure of the people who started it. This layer writes the process down, builds the systems — documentation, records and routines — that let the work be repeated, trains successors, and turns a personality-dependent effort into an institution-dependent one. This is frequently the least exciting layer to staff for and the most often neglected — organisations are good at celebrating starters and forget that nothing they started lasts without builders."
+                },
+                {
+                  "type": "table",
+                  "caption": "Three layers, three temperaments",
+                  "head": [
+                    "Layer",
+                    "Needed when",
+                    "Temperament",
+                    "Typical failure"
+                  ],
+                  "rows": [
+                    [
+                      "Starting",
+                      "Taking something from nothing to something",
+                      "Comfortable with ambiguity; improvises; willing to be wrong in public",
+                      "Kept in place too long, resists the structure the work now needs"
+                    ],
+                    [
+                      "Driving",
+                      "The idea has proved itself and must be carried further",
+                      "Recruits, organises and scales; builds a team around a concept",
+                      "Skipped, so the idea never grows beyond its founders"
+                    ],
+                    [
+                      "Building",
+                      "The work must survive the departure of its founders",
+                      "Writes the process down, builds systems, trains successors",
+                      "Under-recruited while the organisation is still celebrating the launch"
+                    ]
+                  ]
+                },
+                {
+                  "type": "h3",
+                  "text": "The common mistake"
+                },
+                {
+                  "type": "p",
+                  "text": "The most frequent staffing error in a growing initiative is not choosing the wrong people — it is failing to move people as the stage changes. A founder kept in place through the building stage will resist the very structure the initiative now needs, because structure is what they spent the first stage improvising around. A builder brought in too early will try to systematise something that has not yet proved what it is meant to be, and will strangle it. Workforce planning for an initiative should ask not only “what skills does this role need” but “what stage is this initiative in, and does this person's temperament match that stage — or the one before it?”"
+                },
+                {
+                  "type": "h3",
+                  "text": "Applying this in practice"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "At the workforce-planning stage (see the Key elements list in 3.3), name which of the three stages the initiative is currently in — do not assume it is staffed for the stage it will reach in a year",
+                    "When an initiative moves from starting to driving, or from driving to building, review whether the people who carried the previous stage are the right people for the next one — and have an honest, respectful route for a founder to hand over rather than block",
+                    "Treat “we need a builder now” as a staffing decision as legitimate as “we need more capacity” — the building layer is frequently under-recruited because the organisation is still congratulating itself on the launch"
+                  ]
+                },
+                {
+                  "type": "example",
+                  "title": "a new community programme",
+                  "text": "Two staff members launched a weekend youth programme with no budget and no fixed curriculum, running sessions largely by instinct and adjusting week to week. Within a year it had outgrown what two people could deliver and a driving layer — three coordinators able to recruit and train volunteer facilitators — was brought in to scale it across four sites. By year three the priority had changed again: a building-layer appointment took over to write the training manual, set safeguarding procedures, and design a facilitator accreditation process, so the programme no longer depended on any one person's memory of how it was meant to run. Each stage needed a different kind of person; keeping the original two in sole charge throughout would have capped the programme at what they personally could hold together."
+                }
+              ]
+            },
+            {
+              "id": "13.3",
+              "title": "Contention as a Driver of Growth",
+              "ship": {
+                "title": "Other sails on the horizon",
+                "body": [
+                  "A ship alone on an empty sea can drift for years before her master notices she is slow, her hull foul, her navigation sloppy — there is nothing to measure her against. The moment another sail appears on the horizon, working the same current toward the same port, every slack line gets noticed. A rival ship is not only a danger to keep clear of. Often it is the only honest mirror a vessel has."
+                ],
+                "claim": "",
+                "question": "Name the nearest “other sail” to your unit's work. What does her wake show you about your own that you have stopped seeing?"
+              },
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "The Management Handbook (Section 1.4) asks managers to identify “competitive advantages and differentiators” and to spot “emerging threats and challenges.” That treats other organisations mainly as a landscape to be read. It is worth being more direct about what the presence of other organisations doing similar work actually does to yours: it is frequently the thing that keeps you sharp, and its absence is a risk in itself."
+                },
+                {
+                  "type": "h3",
+                  "text": "Reframing the competitive field"
+                },
+                {
+                  "type": "p",
+                  "text": "It is natural to treat comparable organisations — for a non-profit, other charities in the same space; for any organisation, others competing for the same funders, staff, or attention — primarily as a threat to be defended against. That framing is incomplete. An organisation with no serious peers, in an area no one else is contesting, tends to slow down precisely because nothing forces it not to. Contention is not only a risk to be managed; it is one of the more reliable mechanisms that keeps an organisation honest about its own standards."
+                },
+                {
+                  "type": "p",
+                  "text": "This is a distinct idea from the internal team competition described in Section 14.4, which is about motivating people inside the same organisation. This is about the effect of other organisations existing outside it — a structural pressure, not a motivational technique."
+                },
+                {
+                  "type": "h3",
+                  "text": "What contention does when it is working"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "It sets a real, external standard for quality — not the standard you set for yourself, which tends to drift downward unnoticed",
+                    "It forces faster decisions — an organisation with no rival for a grant, a beneficiary group, or a market rarely feels urgency about improving delivery",
+                    "It surfaces your own blind spots — a competitor's approach to a shared problem is often the fastest way to notice something you have stopped questioning about your own",
+                    "It disciplines complacency in a first-mover or near-monopoly position — being first or largest is an advantage only for as long as it is treated as temporary"
+                  ]
+                },
+                {
+                  "type": "h3",
+                  "text": "Using it well"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Review what comparable organisations are doing on a fixed schedule, not only when a threat becomes obvious — by the time it is obvious, the advantage is theirs",
+                    "Treat a competitor's success in an area you neglected as information, not as an affront — the useful response is “what did they see that we did not,” not defensiveness",
+                    "Where your organisation holds an unusually strong or unchallenged position, deliberately assign someone to argue the case for complacency risk — an uncontested organisation needs to manufacture the pressure that contention would otherwise provide"
+                  ]
+                },
+                {
+                  "type": "example",
+                  "title": "two training providers in the same city",
+                  "text": "A vocational training centre operated for years as the only option in its area and standards had quietly slipped — course materials unrevised, feedback processes ignored. When a second provider opened nearby, enrolment did not collapse overnight, but the comparison was now visible to funders and to prospective students. Rather than treating this purely defensively, management used the new provider's course structure as a prompt to review its own — adopting some genuinely better practices it had stopped noticing were missing, while sharpening the things it already did well. Three years on, both organisations were stronger than either had been alone; the contention had done what internal review had failed to."
+                }
+              ]
+            },
+            {
+              "id": "13.4",
+              "title": "The Turning Point: Preparing for Change in Fortune",
+              "ship": {
+                "title": "The sea that is calm will not stay calm",
+                "body": [
+                  "No crossing is made in a single weather. The master who trims for the wind she is given, and no other, is caught twice: once when the calm ends, and once again when she assumes the storm is permanent and stops watching for the calm that follows it."
+                ],
+                "claim": "",
+                "question": "Name one thing your unit currently treats as permanent — a strong quarter, a difficult funder, a settled team — and ask what you would do differently if you assumed it will turn within the year."
+              },
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "The Management Handbook (Section 4.10) treats adaptability as a skill for responding to change once it arrives. This section is about a related but separate discipline: expecting change before it arrives, because no organisational condition — good or bad — is permanent, and the manager's job is to stay prepared for the turn rather than be surprised by it."
+                },
+                {
+                  "type": "h3",
+                  "text": "Two seasons, two failure modes"
+                },
+                {
+                  "type": "p",
+                  "text": "Complacency in strong seasons. When funding is secure, results are good, and the team is stable, it is tempting to treat the current position as the new baseline rather than as one point in a cycle. Organisations in this position typically under-invest in reserves, succession, and the unglamorous work of keeping records, materials and routines in order — precisely because nothing currently demands it. The strong season is the correct time to do this work, and the only time it is easy to skip."
+                },
+                {
+                  "type": "p",
+                  "text": "Resignation in weak seasons. When results are poor or a setback has landed, it is equally tempting to treat the decline as the new baseline — to stop investing in capability, defer difficult decisions, and wait it out passively rather than staying positioned to move when conditions change. This is the mirror error: mistaking a temporary low for a permanent one, and consequently failing to be ready when the turn comes."
+                },
+                {
+                  "type": "p",
+                  "text": "Both errors share a root: treating the present condition as the permanent one, rather than as a phase that will end. The discipline this section asks for is the same in both directions — stay prepared for the position to reverse, and do not let the current season dictate what you believe about all future seasons."
+                },
+                {
+                  "type": "h3",
+                  "text": "Staying prepared for the turn"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "During strong periods, deliberately build the reserves — financial, staffing, institutional — that a future downturn will call on; treat this as core work, not a discretionary extra once “real” priorities are funded",
+                    "During weak periods, maintain the systems and relationships that will let you move quickly when conditions improve — a downturn is not the time to stop watching for the next opening",
+                    "Review major assumptions on a fixed schedule and ask explicitly: what are we currently treating as permanent that is actually just the present phase?",
+                    "When a reversal does arrive — for better or worse — treat it as expected rather than exceptional; an organisation that has planned for the turn responds faster than one that is first absorbing the shock of learning the calm was never guaranteed"
+                  ]
+                },
+                {
+                  "type": "example",
+                  "title": "a funding-dependent programme",
+                  "text": "A programme had run on a single multi-year grant for six years and treated that funding as effectively permanent — no diversification, no reserve, no plan for its end. When the funder's priorities shifted and the grant was not renewed, the programme had eighteen months' notice and no structure in place to use it: three years later it still had not recovered its former scale. A comparable programme elsewhere in the sector, funded no more securely, had used its strong years to build two smaller secondary funding relationships precisely because management assumed, correctly, that the primary grant would not last forever. When it ended, the transition was a difficult year rather than an existential one."
+                },
+                {
+                  "type": "p",
+                  "text": "Readiness, the right people at the right stage, honest contention, and preparedness for the turn — none of these guarantee ultimate success on their own. What follows is the formula for what that success looks like once these conditions are in place."
+                },
+                {
+                  "type": "table",
+                  "caption": "The four patterns at a glance",
+                  "head": [
+                    "Pattern",
+                    "The Ship",
+                    "The question it asks",
+                    "If it is ignored"
+                  ],
+                  "rows": [
+                    [
+                      "13.1 Readiness before the plan",
+                      "Waiting for the tide",
+                      "Has the team accepted the need for change, or only been told about it?",
+                      "Plans fail by attrition: agreed in the room, resisted in the corridor"
+                    ],
+                    [
+                      "13.2 Selecting the layers",
+                      "Not every hand for every line",
+                      "Is the right kind of person in place for the stage the work has reached?",
+                      "Founders block structure; builders arrive too early and strangle the idea"
+                    ],
+                    [
+                      "13.3 Contention",
+                      "Other sails on the horizon",
+                      "What does a comparable organisation show us about our own standards?",
+                      "Standards drift downward unnoticed in an uncontested position"
+                    ],
+                    [
+                      "13.4 The turning point",
+                      "The calm will not stay calm",
+                      "What are we treating as permanent that is only the present phase?",
+                      "Complacency in strong seasons; resignation in weak ones"
+                    ]
+                  ]
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten tests of renewal",
+            "tests": [
+              "Could I say honestly whether my team is ready for the change I am currently asking of it, or only that it has been told about it?",
+              "When a plan of mine quietly failed, did I conclude the plan was wrong — or check whether the team had ever accepted the need for it?",
+              "Do I know which stage each initiative in my area is in: starting, driving, or building?",
+              "Is anyone in my area still carrying work that suits the stage we have left rather than the one we are in?",
+              "Is there an honest, respectful route here for a founder to hand something over without it being treated as a demotion?",
+              "Have we recruited a building-layer person for anything we launched more than two years ago?",
+              "Can I name the comparable organisations working in our space, and say what each does better than we do?",
+              "When was the last time we changed something because of what another organisation was doing well?",
+              "What are we currently treating as permanent — good or bad — that is in fact just the present phase?",
+              "If our strongest current advantage disappeared within a year, what have we built that would still be standing?"
+            ],
+            "questions": [
+              "What does an unready team look like here, in our own organisation, rather than in the abstract?",
+              "Who decides that a project has moved from one stage to the next, and how would we know it had happened?",
+              "Do we treat other organisations in our field as rivals, as colleagues, or as neither — and which of those serves our beneficiaries best?",
+              "Is there an area where we hold an unchallenged position? What is that costing us in standards we no longer test?",
+              "Which of our current assumptions would look naive if the funding or political climate reversed within eighteen months?",
+              "Has this organisation ever mistaken a temporary setback for a permanent decline, and what did that cost?"
+            ],
+            "exercise": "Take one initiative you are responsible for. Write down, in order: which of the three stages it is in; who is carrying it and whether their temperament matches that stage; the nearest comparable organisation doing the same work and one thing they do better; and one condition you are currently treating as permanent. Then choose the single item from that list you would least like to be asked about in six months, and do something about it this quarter."
+          }
+        }
+      ],
+      "outcomes": {
+        "items": [
+          "Distinguish collective readiness from individual motivation, and recognise the signs that a team has complied with a change without accepting it.",
+          "Build readiness deliberately before launching a plan, rather than treating consent as something that follows announcement.",
+          "Identify which stage an initiative has reached, and match the starting, driving and building layers to it.",
+          "Manage a handover between stages honestly, including where a founder must step back from work they began.",
+          "Read comparable organisations as a source of standards and blind-spot correction, not only as a competitive threat.",
+          "Plan for reversal in both directions — building reserves in strong seasons and maintaining capability in weak ones."
+        ],
+        "evidence": "A written stage-assessment of one initiative the participant is responsible for, naming its current layer needs, its nearest comparable organisation, and one condition currently being treated as permanent."
+      }
+    },
+    {
+      "id": "m6",
+      "number": 6,
+      "title": "Obligation and Purpose",
+      "tagline": "The flag you sail under and the port you are making for",
+      "foundation": {
+        "verses": [
+          {
+            "ar": "وَأَوْفُوا بِالْعَهْدِ ۖ إِنَّ الْعَهْدَ كَانَ مَسْئُولًا",
+            "text": "And fulfil the covenant — indeed, the covenant will be questioned.",
+            "ref": "Qur’an, Sūrah al-Isrā’ 17:34"
+          },
+          {
+            "ar": "إِذَا مَاتَ الْإِنْسَانُ انْقَطَعَ عَنْهُ عَمَلُهُ إِلَّا مِنْ ثَلَاثَةٍ: إِلَّا مِنْ صَدَقَةٍ جَارِيَةٍ، أَوْ عِلْمٍ يُنْتَفَعُ بِهِ، أَوْ وَلَدٍ صَالِحٍ يَدْعُو لَهُ",
+            "text": "When a person dies, his deeds come to an end except three: an ongoing charity, knowledge from which benefit is taken, or a righteous child who prays for him.",
+            "ref": "Narrated by Abū Hurayrah — Ṣaḥīḥ Muslim 1631"
+          }
+        ],
+        "why": [
+          "The final module is about obligation and about purpose, and these are the two texts for each. Excellence, sacrifice, and a share of credit given up for the team are ‘ahd — a covenant with the people an organisation exists to serve, whether or not anyone inspects it. And the ḥadīth is the answer to why any of this is worth doing well: the second of the three is knowledge passed on, which is precisely what a manager who trains his successor leaves behind."
+        ]
+      },
+      "sections": [
+        {
+          "id": "s14",
+          "number": 14,
+          "title": "The Formula of Ultimate Success",
+          "ship": {
+            "title": "The port you are making for",
+            "body": [
+              "Everything so far has been about sailing the ship well. This section asks the older question: where is she going, and who is she carrying? A vessel perfectly run and pointed nowhere is still a waste of a good crew. The four triplets are about the voyage that outlasts the master — excellence, sacrifice, learning passed on, and the fact that no one arrives alone. As Safinah is named for this: a ship is a thing that carries people who could not cross alone."
+            ],
+            "claim": "",
+            "question": "Write the sentence you would want said about your unit five years after you have left it. Then look at this week's diary and ask whether it is taking you there."
+          },
+          "intro": [
+            "Success in any endeavour — organisational, professional, or personal — follows a pattern. This pattern consists of four interlocking triplets. First, establishing excellence through uniqueness, quality, and pioneering work. Second, the willingness to make sacrifices, take risks, and build foundations that endure. Third, continuous learning from all sources and investing in the next generation. Fourth, focusing on collective effort rather than individual achievement. These four triplets together form the formula for ultimate success."
+          ],
+          "subsections": [
+            {
+              "id": "14.1",
+              "title": "The First Triplet: Excellence Through Uniqueness",
+              "blocks": [
+                {
+                  "type": "h3",
+                  "text": "1. Uniqueness of work"
+                },
+                {
+                  "type": "p",
+                  "text": "Excellence begins with fresh thinking and innovation. New, creative, and innovative ideas that leave a clear impact distinguish successful organisations from mediocre ones. Uniqueness means identifying gaps in the market or in society and developing responses that no one else has provided. It means approaching challenges from new angles rather than simply copying what others have done. Organisations that succeed are those that bring something distinctly valuable to their work."
+                },
+                {
+                  "type": "h3",
+                  "text": "2. Being the best"
+                },
+                {
+                  "type": "p",
+                  "text": "Beyond being unique, the work should be presented in the best possible form. This means attention to quality in every detail — how programmes are designed, how services are delivered, how communications are crafted. Being the best requires high standards, continuous improvement, and refusal to accept mediocrity. It reflects respect for those who benefit from your work."
+                },
+                {
+                  "type": "h3",
+                  "text": "3. Being first"
+                },
+                {
+                  "type": "p",
+                  "text": "Being first means setting an example for others. It means pioneering approaches that others later adopt. Organisations that achieve ultimate success are often those that were first in their field or first in their region to implement a particular innovation. Being first creates credibility, attracts attention, and positions the organisation as a leader. It establishes a lasting legacy."
+                }
+              ]
+            },
+            {
+              "id": "14.2",
+              "title": "The Second Triplet: Sacrifice and Risk",
+              "blocks": [
+                {
+                  "type": "h3",
+                  "text": "1. Sacrifice"
+                },
+                {
+                  "type": "p",
+                  "text": "Achieving extraordinary work requires sacrifice. This may mean enduring work pressure, travelling to difficult locations, making physical efforts that exhaust the body, or sacrificing personal convenience for the benefit of the mission. To accomplish work that truly helps the largest segment of society requires dedicating time and effort beyond what is minimally required. Sacrifice demonstrates commitment and signals to others that the mission is genuine and important."
+                },
+                {
+                  "type": "h3",
+                  "text": "2. Risk-taking"
+                },
+                {
+                  "type": "p",
+                  "text": "Success requires taking risks. This means proposing ideas that have not been tried before, implementing unconventional activities, and innovating new approaches despite uncertainty. Risk-taking means accepting that failure is possible and proceeding anyway. Organisations that take calculated risks often discover approaches that become widely adopted. Risk-takers inspire others and pave the way for future success. Without risk, organisations stagnate and become irrelevant."
+                },
+                {
+                  "type": "h3",
+                  "text": "3. Building in silence"
+                },
+                {
+                  "type": "p",
+                  "text": "Excellence is built on solid foundations, not loud proclamations. Building in silence means letting your work speak for itself rather than seeking credit or attention. It means focusing on substance rather than appearance, on actual impact rather than visibility. Strong foundations built quietly endure long after the excitement of initial announcements fades. Work built in silence reflects humility and dedication to mission rather than ego."
+                }
+              ]
+            },
+            {
+              "id": "14.3",
+              "title": "The Third Triplet: Learning and Generational Stewardship",
+              "blocks": [
+                {
+                  "type": "h3",
+                  "text": "1. Knowledge and learning"
+                },
+                {
+                  "type": "p",
+                  "text": "Ultimate success requires continuous learning. At all stages of life, whether teaching or learning, we should benefit from everyone, because everyone has something new to offer. Learning from colleagues, from beneficiaries, from communities, from failures, and from successes adds immensely to knowledge and capability. Organisations that embrace learning cultures adapt more readily to change and innovate more consistently."
+                },
+                {
+                  "type": "h3",
+                  "text": "2. Benefiting from different generations"
+                },
+                {
+                  "type": "p",
+                  "text": "Every generation — young and old — possesses valuable knowledge. Success requires listening to younger generations to understand their aspirations, needs, and fresh perspectives. It also requires honouring older generations for their experience and wisdom. Organisations that bridge generations, where elders guide youth and youth bring energy and innovation, create environments rich in knowledge and creative tension. The exchange between generations produces the best results."
+                },
+                {
+                  "type": "h3",
+                  "text": "3. Investing in youth and spiritual foundation"
+                },
+                {
+                  "type": "p",
+                  "text": "The youth are the foundation of organisational and societal success. This means caring for young people, encouraging their development, and guiding them towards meaningful contribution. It means instilling not just professional skills but also spiritual and moral foundation. When organisations invest in youth development and encourage commitment to both excellence and spiritual practice, they ensure their impact extends far beyond current projects into the future."
+                }
+              ]
+            },
+            {
+              "id": "14.4",
+              "title": "The Fourth Triplet: Collective Success",
+              "blocks": [
+                {
+                  "type": "h3",
+                  "text": "1. Work regardless of others"
+                },
+                {
+                  "type": "p",
+                  "text": "True commitment means continuing your work whether others are contributing or not. It means not waiting for perfect conditions or complete cooperation before proceeding. It means focusing on what you can control and doing your part excellently. This mindset prevents excuses and maintains momentum. When each person does their work with full dedication regardless of others’ participation, collective results are stronger."
+                },
+                {
+                  "type": "h3",
+                  "text": "2. Team competition and excellence"
+                },
+                {
+                  "type": "p",
+                  "text": "Competition among teams, when channelled positively, motivates everyone to deliver their best. Healthy competition encourages teams to propose innovative ideas, improve performance, and seek creative solutions. Competition is healthy when it drives excellence rather than destructive conflict. Teams competing to achieve the best results and ideas inspire everyone to contribute their highest capacity."
+                },
+                {
+                  "type": "h3",
+                  "text": "3. Success is collective"
+                },
+                {
+                  "type": "p",
+                  "text": "Ultimately, success is not individual but collective. One person’s effort, no matter how exceptional, cannot achieve lasting impact alone. True success emerges from the combined effort of the team, where each member contributes their unique strengths. Recognition of collective success — where credit is shared, where achievements belong to the team — creates unity and enables future collaboration. Organisations that understand success is collective create stronger cultures and achieve more ambitious goals."
+                }
+              ]
+            },
+            {
+              "id": "14.5",
+              "title": "The Four Triplets Working Together",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "These four triplets are not separate but interlocking components of a unified formula. Excellence (first triplet) without willingness to sacrifice and take risks (second triplet) remains aspirational. Learning and generational investment (third triplet) without collective commitment (fourth triplet) remains academic. Collective effort (fourth triplet) without excellence (first triplet) produces mediocre results. When all four triplets work together — when organisations pursue excellence through sacrifice and risk, invest in learning and generations, and commit to collective success — they achieve results that endure, inspire, and transform."
+                }
+              ]
+            },
+            {
+              "id": "14.6",
+              "title": "Building Organisations of Ultimate Success",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Organisations that embrace this formula — pursuing excellence and innovation, making sacrifice and taking risks, continuously learning and investing in people, and focusing on collective rather than individual success — achieve not just short-term results but lasting impact. This formula recognises that true success requires more than strategy or systems. It requires commitment, courage, learning, and collective dedication to something larger than any individual. These are the organisations that transform their fields, inspire their people, and leave legacies that endure long after their founders have moved on."
+                },
+                {
+                  "type": "table",
+                  "caption": "The four triplets at a glance",
+                  "head": [
+                    "Triplet",
+                    "Its three parts",
+                    "Without it…"
+                  ],
+                  "rows": [
+                    [
+                      "First — Excellence through uniqueness (14.1)",
+                      "Uniqueness of work · Being the best · Being first",
+                      "Collective effort produces mediocre results"
+                    ],
+                    [
+                      "Second — Sacrifice and risk (14.2)",
+                      "Sacrifice · Risk-taking · Building in silence",
+                      "Excellence remains aspirational"
+                    ],
+                    [
+                      "Third — Learning and generational stewardship (14.3)",
+                      "Knowledge and learning · Benefiting from every generation · Investing in youth and spiritual foundation",
+                      "The work ends with the people who began it"
+                    ],
+                    [
+                      "Fourth — Collective success (14.4)",
+                      "Work regardless of others · Team competition and excellence · Success is collective",
+                      "Learning remains academic"
+                    ]
+                  ]
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten questions to sit with",
+            "tests": [
+              "What in our work is genuinely distinctive, rather than a copy of what others do?",
+              "Would I be content for a beneficiary to see the quality of our last piece of work?",
+              "Where have we been first, and where are we following?",
+              "What have I personally given up for this work in the past year?",
+              "When did I last propose something that might fail?",
+              "Am I building foundations, or announcements?",
+              "What have I learned recently from someone junior to me?",
+              "Who is being developed to replace me?",
+              "Do I continue when others do not, or do I wait for conditions to be right?",
+              "When we succeed, whose name is attached to it?"
+            ],
+            "questions": [
+              "What is our organisation genuinely first at? If nothing comes to mind, what does that tell us?",
+              "Where has caution cost us more than a risk would have?",
+              "What are we building quietly that will outlast the people building it?",
+              "How well do the generations work together here?",
+              "Do our recognition practices reward individuals or teams? Is that the right balance for us?"
+            ],
+            "exercise": "Write down one thing your organisation does that no one else in your area does. If you cannot name one, that is itself the finding — and the starting point for the next planning cycle."
+          }
+        }
+      ],
+      "outcomes": {
+        "items": [
+          "Explain the four triplets of the formula of ultimate success and apply one to a current decision.",
+          "Identify where their own team or organisation is strong or weak against each triplet.",
+          "Write a personal development plan with dated commitments and a named person to be accountable to."
+        ],
+        "evidence": "a short written application of one triplet to a live decision, and a signed personal development plan carried into the three-month follow-up."
+      }
+    }
+  ]
+}

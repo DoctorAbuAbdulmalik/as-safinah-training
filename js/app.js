@@ -41,16 +41,13 @@ async function loadJSON(path) {
   return jsonCache.get(path);
 }
 
+const tryJSON = (path) => loadJSON(path).catch(() => null);
+
 /** English is the master; a translated file may override any module/section (matched by id). */
-async function loadDirection(id) {
-  const en = await loadJSON(`data/${id}/en.json`);
-  let tr = null;
-  if (lang !== "en") {
-    try { tr = await loadJSON(`data/${id}/${lang}.json`); } catch { tr = null; }
-  }
-  const modules = en.modules.map((m) => {
-    const tm = tr?.modules?.find((x) => x.id === m.id);
-    const merged = { ...m, ...(tm || {}), id: m.id, number: m.number };
+function mergeModules(enModules, trModules, shared) {
+  return enModules.map((m) => {
+    const tm = trModules?.find((x) => x.id === m.id);
+    const merged = { ...m, ...(tm || {}), id: m.id, number: m.number, shared };
     merged._translated = lang === "en" || !!tm;
     merged.sections = m.sections.map((s) => {
       const ts = tm?.sections?.find((x) => x.id === s.id);
@@ -59,7 +56,17 @@ async function loadDirection(id) {
     if (!tm?.outcomes) merged.outcomes = m.outcomes;
     return merged;
   });
-  return { ...en, modules };
+}
+
+/** A direction = its own modules (1-4) + the shared modules (5-6) that every As Safinah programme includes. */
+async function loadDirection(id) {
+  const [en, shared] = await Promise.all([loadJSON(`data/${id}/en.json`), tryJSON("data/shared/en.json")]);
+  let tr = null;
+  let trShared = null;
+  if (lang !== "en") [tr, trShared] = await Promise.all([tryJSON(`data/${id}/${lang}.json`), tryJSON(`data/shared/${lang}.json`)]);
+  const modules = [...mergeModules(en.modules, tr?.modules, false), ...mergeModules(shared?.modules || [], trShared?.modules, true)];
+  const glossaryTr = lang !== "en" && tr?.glossary?.length ? tr.glossary : null;
+  return { ...en, modules, glossary: glossaryTr || en.glossary || [], _glossaryTranslated: lang === "en" || !!glossaryTr };
 }
 
 /* ---------- progress ---------- */
@@ -85,6 +92,7 @@ function parseRoute() {
   if (parts[0] === "d" && parts[1]) {
     if (parts[2] === "m" && parts[3]) return { view: "module", dir: parts[1], id: parts[3] };
     if (parts[2] === "s" && parts[3]) return { view: "section", dir: parts[1], id: parts[3] };
+    if (parts[2] === "glossary") return { view: "glossary", dir: parts[1] };
     return { view: "direction", dir: parts[1] };
   }
   return { view: "home" };
@@ -103,6 +111,7 @@ async function render() {
         const data = await loadDirection(d.id);
         if (route.view === "direction") html = renderDirection(d, data);
         else if (route.view === "module") html = renderModule(d, data, route.id) || renderNotFound();
+        else if (route.view === "glossary") html = renderGlossary(d, data);
         else html = renderSection(d, data, route.id) || renderNotFound();
       }
     }
@@ -139,7 +148,26 @@ function renderHome() {
       ? `<a class="card" href="#/d/${d.id}">${inner}</a>`
       : `<div class="card soon">${inner}</div>`;
   });
-  return `<h1>${esc(t("homeTitle"))}</h1><p class="lead">${esc(t("homeLead"))}</p><div class="grid three">${cards.join("")}</div>`;
+  return `
+    <div class="hero">
+      <div class="hero-logo"><img src="assets/logo.webp" width="480" height="722" alt="As Safinah — Centre for Humanitarian Excellence"></div>
+      <div><h1>${esc(t("homeTitle"))}</h1><p class="lead">${esc(t("homeLead"))}</p></div>
+    </div>
+    <div class="grid three">${cards.join("")}</div>`;
+}
+
+function renderGlossary(d, data) {
+  const items = [...data.glossary].sort((a, b) => a.term.localeCompare(b.term, lang));
+  const fallback = !data._glossaryTranslated;
+  return `
+    ${crumbs([{ label: t("home"), href: "#/" }, { label: L(d.title), href: `#/d/${d.id}` }, { label: t("glossary") }])}
+    <h1>${esc(t("glossary"))}</h1>
+    ${fallback ? `<div class="notice">${esc(t("notTranslated"))}</div>` : ""}
+    <p class="lead">${esc(t("glossaryLead"))}</p>
+    <input class="search" id="gloss-search" type="search" placeholder="${esc(t("search"))}" aria-label="${esc(t("search"))}">
+    <dl class="gloss" id="gloss"${fallback ? ' lang="en" dir="ltr"' : ""}>
+      ${items.map((g) => `<div data-q="${esc((g.term + " " + g.def).toLowerCase())}"><dt>${esc(g.term)}</dt><dd>${esc(g.def)} <small>(${esc(g.ref)})</small></dd></div>`).join("")}
+    </dl>`;
 }
 
 function allSections(data) {
@@ -155,6 +183,7 @@ function renderDirection(d, data) {
     <section class="module" aria-labelledby="mh-${m.id}">
       <a class="module-head" href="#/d/${d.id}/m/${m.id}">
         <span class="kicker">${esc(t("module"))} ${m.number}</span>
+        ${m.shared ? `<span class="badge shared">${esc(t("sharedModule"))}</span>` : ""}
         <h2 id="mh-${m.id}">${esc(m.title)}</h2>
         <p>${esc(m.tagline)}</p>
       </a>
@@ -173,8 +202,9 @@ function renderDirection(d, data) {
       <div class="bar"><i style="width:${pct}%"></i></div>
       <small>${esc(fmt(t("sectionsDone"), { n: done, m: all.length }))}</small>
     </div>
+    ${data.glossary.length ? `<div class="links-row"><a class="btn ghost" href="#/d/${d.id}/glossary">📖 ${esc(t("glossary"))}</a></div>` : ""}
     ${mods}
-    <p><small>${esc(t("sourceNote"))}</small></p>`;
+    <p><small>${esc(data.source || "")}</small></p>`;
 }
 
 function renderModule(d, data, id) {
@@ -183,7 +213,7 @@ function renderModule(d, data, id) {
   const p = dirProgress(d.id);
   const verses = (m.foundation?.verses || []).map((v) => `
     <figure class="verse" style="margin:0">
-      ${v.ar ? `<p class="ar" lang="ar" dir="rtl">﴿${esc(v.ar)}﴾</p>` : ""}
+      ${v.ar ? `<p class="ar" lang="ar" dir="rtl">${/Narrated|رواه|Bukhārī|Muslim|Buhârî|Müslim/.test(v.ref) ? `«${esc(v.ar)}»` : `﴿${esc(v.ar)}﴾`}</p>` : ""}
       ${v.text ? `<blockquote>“${esc(v.text)}”</blockquote>` : ""}
       <cite>${esc(v.ref)}</cite>
     </figure>`).join("");
@@ -212,8 +242,26 @@ function renderModule(d, data, id) {
 
 function renderBlock(b, ctx) {
   if (b.type === "ul") return `<ul>${b.items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul>`;
+  if (b.type === "h3") return `<h3>${esc(b.text)}</h3>`;
+  if (b.type === "table")
+    return `<div class="table-wrap" role="region" tabindex="0" aria-label="${esc(b.caption)}"><table>
+      <caption>${esc(b.caption)}</caption>
+      <thead><tr>${b.head.map((h) => `<th scope="col">${esc(h)}</th>`).join("")}</tr></thead>
+      <tbody>${b.rows.map((r) => `<tr>${r.map((c, i) => (i === 0 ? `<th scope="row">${esc(c)}</th>` : `<td>${esc(c)}</td>`)).join("")}</tr>`).join("")}</tbody>
+    </table></div>`;
   if (b.type === "example") return `<aside class="example"><b>${esc(ctx.exampleLabel)} — ${esc(b.title)}</b>${esc(b.text)}</aside>`;
   return `<p>${esc(b.text)}</p>`;
+}
+
+function shipPanel(ship, lbl, small) {
+  const H = small ? "h3" : "h2";
+  return `<section class="ship-panel${small ? " small" : ""}" aria-label="${esc(lbl("theShip"))}">
+    <div class="kicker">⚓ ${esc(lbl("theShip"))}</div>
+    <${H}>${esc(ship.title)}</${H}>
+    ${ship.body.map((x) => `<p>${esc(x)}</p>`).join("")}
+    ${ship.claim ? `<p class="claim">${esc(ship.claim)}</p>` : ""}
+    <p class="onboard"><b>${esc(lbl("onBoardHere"))}:</b> ${esc(ship.question)}</p>
+  </section>`;
 }
 
 function renderSection(d, data, id) {
@@ -233,6 +281,7 @@ function renderSection(d, data, id) {
   const subs = s.subsections.map((sub) => `
     <section aria-labelledby="h-${sub.id.replace(".", "-")}">
       <h2 id="h-${sub.id.replace(".", "-")}"><span class="n">${esc(sub.id)}</span>${esc(sub.title)}</h2>
+      ${sub.ship ? shipPanel(sub.ship, lbl, true) : ""}
       ${sub.blocks.map((b) => renderBlock(b, ctx)).join("")}
     </section>`).join("");
 
@@ -263,13 +312,7 @@ function renderSection(d, data, id) {
     <article class="lesson"${contentAttrs}>
       <p style="color:var(--accent);font-weight:700;margin:0">${esc(t("section"))} ${s.number}</p>
       <h1>${esc(s.title)}</h1>
-      <section class="ship-panel" aria-label="${esc(lbl("theShip"))}">
-        <div class="kicker">⚓ ${esc(lbl("theShip"))}</div>
-        <h2>${esc(s.ship.title)}</h2>
-        ${s.ship.body.map((x) => `<p>${esc(x)}</p>`).join("")}
-        <p class="claim">${esc(s.ship.claim)}</p>
-        <p class="onboard"><b>${esc(lbl("onBoardHere"))}:</b> ${esc(s.ship.question)}</p>
-      </section>
+      ${shipPanel(s.ship, lbl, false)}
       ${s.intro.map((x) => `<p>${esc(x)}</p>`).join("")}
       <ul class="toc" aria-label="${esc(lbl("inThisSection"))}">
         ${s.subsections.map((sub) => `<li><a href="#" data-jump="h-${sub.id.replace(".", "-")}">${esc(sub.id)} ${esc(sub.title)}</a></li>`).join("")}
@@ -287,6 +330,11 @@ function renderSection(d, data, id) {
 
 /* ---------- interactions for the current page ---------- */
 function bindPage(route) {
+  const search = $("#gloss-search");
+  search?.addEventListener("input", () => {
+    const q = search.value.trim().toLowerCase();
+    document.querySelectorAll("#gloss > div").forEach((row) => (row.hidden = q && !row.dataset.q.includes(q)));
+  });
   document.querySelectorAll("[data-jump]").forEach((a) =>
     a.addEventListener("click", (e) => {
       e.preventDefault();
