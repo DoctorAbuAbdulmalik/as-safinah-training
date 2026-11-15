@@ -1,0 +1,1675 @@
+{
+  "direction": "it-digital",
+  "lang": "en",
+  "source": "IT and Digital Transformation Handbook, Version 3, November 2026 — As Safinah Centre for Humanitarian Excellence",
+  "modules": [
+    {
+      "id": "m1",
+      "number": 1,
+      "title": "Digital Foundations",
+      "tagline": "Knowing your ship, her papers and her gangway",
+      "foundation": {
+        "verses": [
+          {
+            "ar": "وَلَا تَقْفُ مَا لَيْسَ لَكَ بِهِ عِلْمٌ",
+            "text": "And do not pursue that of which you have no knowledge.",
+            "ref": "Qur’an, Sūrah al-Isrā’ 17:36"
+          },
+          {
+            "ar": "يَا أَيُّهَا الَّذِينَ آمَنُوا إِن جَاءَكُمْ فَاسِقٌ بِنَبَإٍ فَتَبَيَّنُوا",
+            "text": "O you who believe, if a wrongdoer brings you news, verify it.",
+            "ref": "Qur’an, Sūrah al-Ḥujurāt 49:6"
+          }
+        ],
+        "why": [
+          "The digital world puts more information in front of us in a day than earlier generations met in a lifetime — and much of it is wrong, misleading or designed to deceive. These two verses set the first rule of digital life: do not follow what you do not know, and verify what you are told. Module 1 builds the everyday skills of using devices, files, email and online services with confidence and care."
+        ]
+      },
+      "sections": [
+        {
+          "number": 1,
+          "title": "Digital Literacy and Systems",
+          "ship": {
+            "title": "Knowing your ship",
+            "body": [
+              "A new hand who does not know where the pumps are, how the lights work or where the spare rope is kept is a danger to himself and everyone else. Before he can do any skilled work, he must know his way around the ship."
+            ],
+            "claim": "Digital literacy is knowing your way around the devices and systems you depend on every day.",
+            "question": "If your phone or computer stopped working this afternoon, what would you lose — and do you have a copy anywhere else?"
+          },
+          "intro": [
+            "Digital literacy is the ability to use digital devices and systems confidently, safely and critically. It is now as basic as reading and writing: work, study, banking, health and government services all increasingly assume it. This section covers the foundations every user needs."
+          ],
+          "subsections": [
+            {
+              "id": "1.1",
+              "title": "Devices and Operating Systems",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Most people use several kinds of device:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Computers — desktops and laptops running Windows, macOS or Linux",
+                    "Phones and tablets — running Android or iOS",
+                    "Shared devices — in offices, schools and libraries"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "The operating system manages the device: files, apps, settings, updates and security. Knowing where to find settings, how to install and remove apps and how to update the system is the starting point of confident use."
+                }
+              ]
+            },
+            {
+              "id": "1.2",
+              "title": "Files and Folders",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Good file habits save hours:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Use a clear folder structure, by project, subject or year",
+                    "Name files so they can be found — what, when, version: “Budget-2026-v2”",
+                    "Know where files are saved — on the device, on a network drive or in the cloud",
+                    "Delete or archive what is no longer needed",
+                    "Learn to search, sort and share files"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1.3",
+              "title": "Backups",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Every device eventually fails, is lost or is stolen. A backup is a second copy kept somewhere else. A simple rule is the 3-2-1 approach: three copies of important data, on two different kinds of storage, with one copy kept off-site or in the cloud. Backups should be checked from time to time by actually restoring a file."
+                }
+              ]
+            },
+            {
+              "id": "1.4",
+              "title": "Thinking Critically Online",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Check who published information and why",
+                    "Compare with other reliable sources before believing or sharing",
+                    "Be wary of headlines designed to provoke anger or fear",
+                    "Recognise advertising and sponsored content",
+                    "Check whether images and videos may have been altered or generated by AI"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1.5",
+              "title": "Everyday Confidence",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Confidence grows with use. Learners should practise regularly, ask for help without embarrassment, and help others in turn. Many people with poor digital skills hide it; a good programme makes it safe to start from the beginning."
+                },
+                {
+                  "type": "example",
+                  "title": "the lost photographs",
+                  "text": "A community volunteer kept years of event photographs only on her phone. When it was stolen, they were gone. After a digital skills session, the centre set up automatic cloud backup for all its devices and a shared folder structure for events. The next time a laptop failed, nothing was lost."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten tests of digital literacy",
+            "tests": [
+              "Can I find and change the main settings on my devices?",
+              "Do I install updates promptly?",
+              "Are my files organised so that I can find them quickly?",
+              "Do my file names say what the file is and which version?",
+              "Do I know where each of my important files is stored?",
+              "Do I have a backup of my important data, and have I tested it?",
+              "Do I check the source of information before sharing it?",
+              "Can I recognise advertising and sponsored content?",
+              "Am I comfortable asking for help with technology?",
+              "Have I helped someone else with a digital task this month?"
+            ],
+            "questions": [
+              "Which digital tasks do people around you find hardest?",
+              "What important data in our organisation has no backup?",
+              "How can we tell whether online information is reliable?",
+              "How should we support people who are embarrassed about their digital skills?",
+              "What does “digital literacy” mean for different ages?"
+            ],
+            "exercise": "Organise one area of your digital life — your documents folder, your phone photos or a shared work drive — into a clear structure with consistent file names. Set up a backup for it, then test the backup by restoring one file."
+          },
+          "id": "s1"
+        },
+        {
+          "number": 2,
+          "title": "Email and Office Tools",
+          "ship": {
+            "title": "The ship’s papers",
+            "body": [
+              "A ship carries papers: the log, the manifest, the crew list, letters for the owners. They must be clear, accurate and in order, because others will act on them long after they are written. A careless manifest can cost a cargo; an unclear letter can cost a contract."
+            ],
+            "claim": "Email, documents and spreadsheets are the ship’s papers of modern work.",
+            "question": "Look at the last five emails you sent. Could each reader tell from the subject line what it was about and what you needed?"
+          },
+          "intro": [
+            "Email, word processing, spreadsheets and presentations are the everyday tools of almost every job. Using them well saves time, reduces mistakes and makes work look professional. This section covers the essentials."
+          ],
+          "subsections": [
+            {
+              "id": "2.1",
+              "title": "Writing Good Email",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "A good email:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Has a clear subject line that says what it is about",
+                    "States its purpose in the first sentence or two",
+                    "Asks for any action clearly, with a deadline if there is one",
+                    "Is short, polite and checked before sending",
+                    "Uses “reply all” and copying only when others genuinely need it"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2.2",
+              "title": "Managing the Inbox",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Check email at set times rather than constantly",
+                    "Deal with each message once: reply, file, delete or schedule",
+                    "Use folders or labels, and search, to find messages",
+                    "Unsubscribe from what you never read",
+                    "Never open unexpected attachments or links without checking (see Section 6)"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2.3",
+              "title": "Documents",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Word processors are used for letters, reports, minutes and forms. Good practice includes using built-in styles for headings, which make long documents easy to navigate and format; using templates for documents produced often; tracking changes when several people edit; and saving or sharing finished versions as PDF."
+                }
+              ]
+            },
+            {
+              "id": "2.4",
+              "title": "Spreadsheets",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Spreadsheets are powerful for lists, budgets and records:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Put one kind of information in each column, with a clear header",
+                    "Use formulas rather than typing calculated numbers by hand",
+                    "Keep raw data separate from summaries and charts",
+                    "Check formulas, and protect cells that should not be changed",
+                    "Learn the basics: sorting, filtering, SUM, AVERAGE, IF and simple charts"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2.5",
+              "title": "Working Together Online",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Shared documents and folders allow several people to work on the same file at once. They work best with clear rules: who can edit, who can only view, where the master copy lives, and how versions are named. Sharing permissions should be checked, especially for sensitive information."
+                },
+                {
+                  "type": "example",
+                  "title": "the shared register",
+                  "text": "A centre kept attendance on paper registers in each room, then retyped them into a spreadsheet every month — with frequent errors. Staff moved to a single shared spreadsheet with a tab for each class, drop-down options and a summary sheet that calculated attendance automatically. Monthly reports that had taken a day now took minutes."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten tests of email and office tools",
+            "tests": [
+              "Do my email subject lines say clearly what each message is about?",
+              "Do I state my purpose and any request early in each email?",
+              "Do I check emails before sending?",
+              "Do I manage my inbox at set times rather than constantly?",
+              "Do I use styles and templates in documents?",
+              "Can I track changes when editing with others?",
+              "Do I use formulas rather than typing calculated numbers?",
+              "Can I sort, filter and chart data in a spreadsheet?",
+              "Do I know who can see and edit each file I share?",
+              "Do I save final versions as PDF when sharing them?"
+            ],
+            "questions": [
+              "What email habits waste the most time in our organisation?",
+              "Which tasks do we still do on paper that could be done digitally?",
+              "How should we organise shared files and folders?",
+              "What spreadsheet skills would help our work most?",
+              "How do we make sure sensitive information is not shared too widely?"
+            ],
+            "exercise": "Take one regular task that involves paper or repeated typing — a register, a booking list, a monthly report. Rebuild it as a spreadsheet or shared document with clear headers, formulas or a template. Use it for two weeks and record the time saved."
+          },
+          "id": "s2"
+        },
+        {
+          "number": 3,
+          "title": "Online Services and Access",
+          "ship": {
+            "title": "The gangway",
+            "body": [
+              "The gangway is how people come aboard. A good one is steady, wide enough, lit at night and has a rail to hold. A bad one keeps out the old, the young and the unsteady — and sometimes lets in those who should never have come aboard."
+            ],
+            "claim": "Online services are the gangway to modern life. They must be easy for everyone to use, and safe.",
+            "question": "Think of an online service you find hard to use. Who else is shut out by the same difficulty?"
+          },
+          "intro": [
+            "Government, banking, health, education and shopping have moved online. For those who can use them, online services save time and money. For those who cannot — because of skills, language, disability, cost or connection — they can become a new barrier. This section covers using online services well and designing them so that everyone can."
+          ],
+          "subsections": [
+            {
+              "id": "3.1",
+              "title": "Using Online Services Safely",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "When using any online service:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Check the website address is genuine before entering personal details",
+                    "Use strong, different passwords and turn on two-step verification",
+                    "Keep a record of reference numbers and confirmations",
+                    "Log out on shared devices",
+                    "Be cautious about what personal information you give, and why it is needed"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3.2",
+              "title": "Digital Identity and Accounts",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Many services require an account or a digital identity. Keeping a secure list of accounts, using a password manager, and knowing how to recover an account if a password is lost all reduce stress and risk."
+                }
+              ]
+            },
+            {
+              "id": "3.3",
+              "title": "Accessibility",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Accessible services can be used by people with different abilities:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Text that can be enlarged, with good contrast",
+                    "Images described with alternative text for screen readers",
+                    "Captions and transcripts for audio and video",
+                    "Forms that work with a keyboard as well as a mouse or touch",
+                    "Plain language that is easy to understand",
+                    "Content available in the languages users speak"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "International guidelines, such as the Web Content Accessibility Guidelines (WCAG), set out what good accessibility looks like."
+                }
+              ]
+            },
+            {
+              "id": "3.4",
+              "title": "Digital Inclusion",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Provide free access to devices and internet where possible",
+                    "Offer patient, one-to-one support for first-time users",
+                    "Keep a non-digital route for those who cannot go online",
+                    "Design services with users, testing them with people who find technology hard"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3.5",
+              "title": "Helping Others Online",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Many people need help with online forms and services. Helpers should explain each step so that the person learns, never keep or reuse their passwords, respect their privacy and decisions, and know where to refer them for specialist advice."
+                },
+                {
+                  "type": "example",
+                  "title": "the help desk hour",
+                  "text": "A community centre noticed many visitors struggling with online applications for benefits and school places. It started a weekly “digital help hour” with trained volunteers. Volunteers sat beside visitors, letting them type, and explained each step. Within a few months several regular visitors were completing forms alone and had begun helping others."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten tests of online services and access",
+            "tests": [
+              "Do I check website addresses before entering personal details?",
+              "Do I use two-step verification on important accounts?",
+              "Do I use a password manager or another secure way to manage passwords?",
+              "Do I know how to recover my important accounts?",
+              "Do I keep records of online applications and confirmations?",
+              "Can I name three features that make a service accessible?",
+              "Do our own online services work for people with disabilities?",
+              "Are our services available in the languages our users speak?",
+              "Is there a non-digital route for those who cannot go online?",
+              "When I help others online, do I help them learn rather than do it for them?"
+            ],
+            "questions": [
+              "Who in our community is most likely to be shut out by online services?",
+              "Which online services cause the most difficulty for our users?",
+              "How accessible are our own website and forms?",
+              "What support would help people become independent online?",
+              "What are the risks of helping people with their online accounts?"
+            ],
+            "exercise": "Choose one website or online form your organisation uses or provides. Test it on a phone, with the text enlarged and using only a keyboard. List three accessibility problems and suggest a fix for each."
+          },
+          "id": "s3"
+        }
+      ],
+      "outcomes": {
+        "items": [
+          "Use devices, operating systems, files and folders confidently and keep reliable backups.",
+          "Evaluate online information critically before believing or sharing it.",
+          "Write clear, effective emails and manage an inbox efficiently.",
+          "Produce well-structured documents and accurate spreadsheets with formulas.",
+          "Share and collaborate on files with appropriate permissions.",
+          "Use online services safely and manage digital accounts securely.",
+          "Explain accessibility and digital inclusion, and help others to use services independently."
+        ],
+        "evidence": "an organised and backed-up folder structure, a rebuilt spreadsheet or template with time saved, and an accessibility review of one online service."
+      }
+    },
+    {
+      "id": "m2",
+      "number": 2,
+      "title": "Infrastructure and Security",
+      "tagline": "The engine room, the signal flags and the anchor watch",
+      "foundation": {
+        "verses": [
+          {
+            "ar": "اجْعَلْنِي عَلَىٰ خَزَائِنِ الْأَرْضِ ۖ إِنِّي حَفِيظٌ عَلِيمٌ",
+            "text": "Appoint me over the storehouses of the land; indeed, I am a knowing guardian.",
+            "ref": "Qur’an, Sūrah Yūsuf 12:55"
+          },
+          {
+            "ar": "وَالَّذِينَ هُمْ لِأَمَانَاتِهِمْ وَعَهْدِهِمْ رَاعُونَ",
+            "text": "And those who are faithful to their trusts and their promises.",
+            "ref": "Qur’an, Sūrah al-Mu’minūn 23:8"
+          }
+        ],
+        "why": [
+          "Yūsuf asked to be placed over the storehouses because he was both a guardian and knowledgeable — ḥafīẓ and ‘alīm. Those who run an organisation’s systems hold its modern storehouses: its devices, its networks and its data. The second verse describes believers as faithful to their trusts, and the information people give us is a trust. Module 2 is about guarding these storehouses with knowledge and care."
+        ]
+      },
+      "sections": [
+        {
+          "number": 4,
+          "title": "Hardware and Service Desk",
+          "ship": {
+            "title": "The engine room",
+            "body": [
+              "Passengers rarely see the engine room, and they only think of it when something stops. The engineers who work there keep the machinery running through regular checks, careful records and quick repairs — and their best work is the breakdown that never happens."
+            ],
+            "claim": "The service desk is the engine room of an organisation’s IT.",
+            "question": "When something breaks, does your team know exactly whom to tell and how? Does anyone keep a record of what went wrong?"
+          },
+          "intro": [
+            "Hardware is the physical equipment of IT: computers, phones, printers, screens, network equipment and servers. The service desk is the team or person who keeps it working and helps users when something goes wrong. Good support is calm, organised and focused on getting people back to work."
+          ],
+          "subsections": [
+            {
+              "id": "4.1",
+              "title": "Knowing Your Equipment",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Every organisation should keep an asset register recording:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "What each device is, with make, model and serial number",
+                    "Who uses it and where it is",
+                    "When it was bought and when the warranty ends",
+                    "What software and licences it has",
+                    "When it should be replaced"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "4.2",
+              "title": "Preventive Maintenance",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Install operating system and software updates regularly",
+                    "Keep devices clean, ventilated and protected from heat, dust and liquid",
+                    "Check backups and storage space",
+                    "Replace ageing batteries and failing parts before they cause outages",
+                    "Plan replacement before equipment becomes unreliable or unsupported"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "4.3",
+              "title": "Troubleshooting",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "A logical approach solves most problems:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Identify — what exactly is wrong, and when did it start?",
+                    "Check the simple things — power, cables, connections, a restart.",
+                    "Isolate — does it affect one user, one device or everyone?",
+                    "Test — change one thing at a time and see if it helps.",
+                    "Fix and verify — confirm with the user that it works.",
+                    "Record — note the problem and solution for next time."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "4.4",
+              "title": "Running a Service Desk",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Users should have one clear way to report problems, such as an email address, phone number or ticket system. Each request should be logged, prioritised by its impact, assigned and closed when resolved. Common problems and solutions should be written up so that users can sometimes help themselves."
+                }
+              ]
+            },
+            {
+              "id": "4.5",
+              "title": "Supporting Users",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Users who report a problem are often stressed and in a hurry. Good support staff listen, avoid jargon, explain what they are doing, keep people informed and treat every request with respect, however simple. Patience is a technical skill."
+                },
+                {
+                  "type": "example",
+                  "title": "the printer log",
+                  "text": "An office suffered constant printer failures, each fixed and forgotten. A volunteer started logging every incident. Within a month the pattern was clear: almost every failure happened on one old printer after large jobs. It was replaced, and printing complaints dropped to almost none. The log, not the repair, solved the problem."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten tests of hardware and support",
+            "tests": [
+              "Do we have an up-to-date register of our IT equipment?",
+              "Do we know when warranties end and when devices should be replaced?",
+              "Are updates installed regularly on all devices?",
+              "Do I follow a logical process when troubleshooting?",
+              "Do I check the simple things first?",
+              "Is there one clear way for users to report problems?",
+              "Is every request logged, prioritised and closed?",
+              "Do we record solutions so that problems are solved faster next time?",
+              "Do I explain problems to users without jargon?",
+              "Do we look for patterns in recurring problems?"
+            ],
+            "questions": [
+              "Which IT problems cost our organisation the most time?",
+              "How do users report problems now, and does it work?",
+              "What equipment is overdue for replacement?",
+              "How can we help users solve simple problems themselves?",
+              "What makes a support person good to deal with?"
+            ],
+            "exercise": "Create or update an asset register for a small set of devices you use or manage. Then log every IT problem you meet or hear about for two weeks, with its cause and solution, and identify one pattern."
+          },
+          "id": "s4"
+        },
+        {
+          "number": 5,
+          "title": "Networks and Cloud",
+          "ship": {
+            "title": "Signal flags and shipping lanes",
+            "body": [
+              "Before radio, ships spoke to each other with signal flags, and they travelled along agreed shipping lanes so that traffic was ordered and safe. Every signal depended on agreed codes; every lane depended on rules everyone followed."
+            ],
+            "claim": "Networks are the signal flags and shipping lanes of information: agreed ways of carrying messages from one place to another.",
+            "question": "If your organisation’s internet went down for a day, what work would stop? Is there a plan for that day?"
+          },
+          "intro": [
+            "A network connects devices so that they can share information and resources. The internet is the largest network of all. Cloud services store data and run software on networks of remote servers, reached over the internet. Understanding the basics helps anyone use, plan and protect these systems."
+          ],
+          "subsections": [
+            {
+              "id": "5.1",
+              "title": "How Networks Work",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Key ideas:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Devices connect by cable (Ethernet) or wirelessly (Wi-Fi).",
+                    "Routers connect a local network to the internet and direct traffic.",
+                    "Switches connect several devices within a local network.",
+                    "IP addresses identify devices on a network; DNS translates names like as-safinah.org into addresses.",
+                    "Protocols are the agreed rules for communication, such as HTTPS for secure web pages."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "5.2",
+              "title": "Wi-Fi and Local Networks",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Use strong encryption (WPA2 or WPA3) and a strong password",
+                    "Change default router passwords",
+                    "Provide a separate guest network for visitors",
+                    "Place access points to cover the building evenly",
+                    "Keep router firmware updated"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "5.3",
+              "title": "Cloud Services",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Cloud services provide:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Storage — files kept online and synchronised across devices",
+                    "Software as a service — email, office tools and databases used through a browser",
+                    "Infrastructure — servers and computing power rented as needed"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Benefits include access from anywhere, automatic updates and lower upfront costs. Risks include dependence on the internet, ongoing subscription costs, and questions about where data is stored and who can access it."
+                }
+              ]
+            },
+            {
+              "id": "5.4",
+              "title": "Choosing and Managing Cloud Services",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Check where data is stored and what laws apply to it",
+                    "Understand the costs over several years, not just the first month",
+                    "Ensure you can export your data if you leave",
+                    "Manage user accounts carefully — remove access promptly when people leave",
+                    "Keep your own backup of critical data"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "5.5",
+              "title": "Planning for Failure",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Networks fail. A simple continuity plan answers: what work stops if the connection goes down? Is there a backup connection, such as a mobile data hotspot? Where are offline copies of essential documents and contacts? Who decides what happens?"
+                },
+                {
+                  "type": "example",
+                  "title": "the guest network",
+                  "text": "A centre allowed visitors to use the same Wi-Fi as its office computers. After a visitor’s infected laptop spread malware to two office machines, the centre set up a separate guest network and changed all passwords. The office network has since stayed clean, and visitors still have internet access."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten tests of networks and cloud",
+            "tests": [
+              "Can I explain the role of a router, a switch and DNS?",
+              "Does our Wi-Fi use strong encryption and a non-default password?",
+              "Do visitors use a separate guest network?",
+              "Is router firmware kept up to date?",
+              "Do I know which cloud services we depend on?",
+              "Do I know where our cloud data is stored?",
+              "Can we export our data if we change provider?",
+              "Do we remove access promptly when people leave?",
+              "Do we keep our own backup of critical cloud data?",
+              "Do we have a plan for a day without internet?"
+            ],
+            "questions": [
+              "Which of our services would stop without the internet?",
+              "What are the advantages and risks of moving more of our work to the cloud?",
+              "How should we decide which cloud services to trust?",
+              "Who manages user accounts and access, and how?",
+              "What would our continuity plan look like?"
+            ],
+            "exercise": "Draw a simple diagram of your organisation’s or home’s network: internet connection, router, Wi-Fi, main devices and cloud services. Mark one weakness and propose a fix, and write a half-page plan for working through a day without internet."
+          },
+          "id": "s5"
+        },
+        {
+          "number": 6,
+          "title": "Cybersecurity",
+          "ship": {
+            "title": "Watch at anchor",
+            "body": [
+              "A ship at anchor is not safe because she is still. In many harbours the danger at night came from thieves rowing out quietly, or a dragging anchor no one noticed. Masters kept an anchor watch: someone awake, checking, ready to raise the alarm."
+            ],
+            "claim": "Cybersecurity is the anchor watch of the digital world — quiet, constant, and everyone’s business.",
+            "question": "If you received an urgent email from your manager asking you to buy gift cards today, what would you do?"
+          },
+          "intro": [
+            "Cybersecurity is the protection of systems, networks and data from attack, damage or theft. Most successful attacks exploit people rather than technology — a convincing email, a reused password, an unlocked device. That means everyone in an organisation is part of its security."
+          ],
+          "subsections": [
+            {
+              "id": "6.1",
+              "title": "Common Threats",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "The most common threats include:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Phishing — fake emails, messages or calls that trick people into giving information or clicking harmful links",
+                    "Malware — harmful software, including ransomware that locks files and demands payment",
+                    "Weak or reused passwords — easily guessed or stolen from another site",
+                    "Unpatched software — known weaknesses left unfixed",
+                    "Social engineering — impersonating trusted people to gain access",
+                    "Lost or stolen devices — with unprotected data"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "6.2",
+              "title": "Basic Defences",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Strong, unique passwords, managed with a password manager",
+                    "Multi-factor authentication on all important accounts",
+                    "Prompt updates of systems and software",
+                    "Antivirus and firewall protection",
+                    "Regular, tested backups kept separate from the main system",
+                    "Least privilege — giving people only the access they need"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "6.3",
+              "title": "Recognising Phishing",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Warning signs:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Urgency or pressure — “act now”, “your account will be closed”",
+                    "Unexpected requests for money, passwords or gift cards",
+                    "Sender addresses or links that do not quite match the real organisation",
+                    "Spelling mistakes, odd greetings or unusual tone",
+                    "Attachments you were not expecting"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "When in doubt, contact the person or organisation through a known, separate route — not by replying."
+                }
+              ]
+            },
+            {
+              "id": "6.4",
+              "title": "Protecting Personal Data",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Organisations that hold personal data — about learners, beneficiaries, staff or donors — have legal and moral duties to protect it. Collect only what is needed, store it securely, limit who can see it, keep it no longer than necessary, and know what to do if it is lost or exposed."
+                }
+              ]
+            },
+            {
+              "id": "6.5",
+              "title": "When Something Goes Wrong",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "If you suspect an incident:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Report it immediately to the person responsible — speed matters more than embarrassment.",
+                    "Disconnect an affected device from the network if advised.",
+                    "Do not delete evidence or try to fix it alone.",
+                    "Change passwords that may be compromised.",
+                    "Learn from it, without blame, so it does not happen again."
+                  ]
+                },
+                {
+                  "type": "example",
+                  "title": "the fake invoice",
+                  "text": "A finance volunteer received an email that appeared to come from a regular supplier, saying their bank details had changed. Remembering her training, she phoned the supplier on the number in their file — not the one in the email. The email was fake. A two-minute phone call saved several thousand pounds."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten tests of cybersecurity",
+            "tests": [
+              "Do I use a different strong password for every important account?",
+              "Is multi-factor authentication turned on for my email and banking?",
+              "Are my devices and software updated promptly?",
+              "Can I recognise the warning signs of phishing?",
+              "Do I verify unusual requests through a separate, known route?",
+              "Is our important data backed up separately from our main systems?",
+              "Do people have only the access they need?",
+              "Do we collect and keep only the personal data we need?",
+              "Do I know whom to tell if I suspect a security incident?",
+              "Would I report a mistake quickly, even if embarrassing?"
+            ],
+            "questions": [
+              "What would happen if our organisation lost all its data tomorrow?",
+              "Which phishing attempts have you seen? How did you spot them?",
+              "How can we make security part of everyday habits rather than a burden?",
+              "Who has access to sensitive data in our organisation, and do they need it?",
+              "How do we create a culture where people report mistakes quickly?"
+            ],
+            "exercise": "Carry out a personal security check: turn on multi-factor authentication for your email and one other important account, review your passwords, and check that your devices update automatically. Then write a one-page guide for colleagues on spotting phishing, using real examples with personal details removed."
+          },
+          "id": "s6"
+        }
+      ],
+      "outcomes": {
+        "items": [
+          "Keep an asset register and plan preventive maintenance and replacement.",
+          "Troubleshoot problems logically and run a simple, recorded support process.",
+          "Explain how networks, Wi-Fi, DNS and cloud services work.",
+          "Choose and manage cloud services with attention to data, cost and access.",
+          "Plan for continuity when networks or services fail.",
+          "Recognise common cyber threats, especially phishing, and apply basic defences.",
+          "Protect personal data and respond correctly to a security incident."
+        ],
+        "evidence": "an asset register with a two-week problem log, a network diagram with a continuity plan, and a personal security check with a phishing guide for colleagues."
+      }
+    },
+    {
+      "id": "m3",
+      "number": 3,
+      "title": "Building and Analysing",
+      "tagline": "Building to plan, reading the log and the autopilot",
+      "foundation": {
+        "verses": [
+          {
+            "ar": "إِنَّ فِي خَلْقِ السَّمَاوَاتِ وَالْأَرْضِ وَاخْتِلَافِ اللَّيْلِ وَالنَّهَارِ لَآيَاتٍ لِّأُولِي الْأَلْبَابِ",
+            "text": "Indeed, in the creation of the heavens and the earth and the alternation of night and day are signs for those of understanding.",
+            "ref": "Qur’an, Sūrah Āl ‘Imrān 3:190"
+          },
+          {
+            "ar": "وَأَنزَلْنَا الْحَدِيدَ فِيهِ بَأْسٌ شَدِيدٌ وَمَنَافِعُ لِلنَّاسِ",
+            "text": "And We sent down iron, in which is great might and benefits for people.",
+            "ref": "Qur’an, Sūrah al-Ḥadīd 57:25"
+          }
+        ],
+        "why": [
+          "The first verse praises those who study the order of creation and find meaning in its patterns — the work of every honest analyst. The second describes iron as holding both great might and great benefit: a material that can build or destroy depending on how it is used. Software, data and artificial intelligence are the iron of our age. Module 3 teaches how to build and use them for benefit, and to guard against their harm."
+        ]
+      },
+      "sections": [
+        {
+          "number": 7,
+          "title": "Software Development",
+          "ship": {
+            "title": "Building to the plan",
+            "body": [
+              "A shipyard does not begin by cutting timber. It begins with a plan, builds in stages, inspects every stage, and launches only after trials. A hull built without inspection may look fine on the slipway and fail at sea."
+            ],
+            "claim": "Software is built the same way: plan, build in stages, test at every step, and release only what has been tried.",
+            "question": "Think of an app or system you use that frustrates you. Was the problem the code — or that nobody asked users what they needed?"
+          },
+          "intro": [
+            "Software development is the process of designing, writing, testing and maintaining programs. It is a creative and logical discipline that anyone can begin to learn. This section introduces the stages of development and the habits of good developers."
+          ],
+          "subsections": [
+            {
+              "id": "7.1",
+              "title": "The Development Process",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Most projects follow these stages, in cycles:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Understand the need — who will use it, and what problem does it solve?",
+                    "Design — plan the structure, screens and data.",
+                    "Build — write the code in small pieces.",
+                    "Test — check that each piece works and that the whole works together.",
+                    "Release — make it available to users.",
+                    "Maintain — fix problems, improve and update over time."
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Modern teams usually work in short cycles (often called agile development), delivering something useful early and improving it with user feedback."
+                }
+              ]
+            },
+            {
+              "id": "7.2",
+              "title": "Learning to Program",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Start with one beginner-friendly language, such as Python or JavaScript",
+                    "Learn the core ideas: variables, conditions, loops, functions and data structures",
+                    "Build small, real projects that solve problems you care about",
+                    "Read other people’s code and ask for feedback on yours",
+                    "Practise regularly; programming is learned by doing"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "7.3",
+              "title": "Writing Good Code",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Good code is:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Readable — clear names, simple structure, helpful comments",
+                    "Tested — with checks that show it works and keeps working",
+                    "Version-controlled — using a tool such as Git to track every change",
+                    "Secure — never trusting user input, and protecting data and passwords",
+                    "Maintainable — easy for someone else to understand and change"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "7.4",
+              "title": "Testing",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Testing finds problems before users do. Developers test individual functions, test how parts work together, and test with real users. Automated tests that run every time the code changes catch mistakes early."
+                }
+              ]
+            },
+            {
+              "id": "7.5",
+              "title": "Working with Users",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Software succeeds when it meets real needs. Talking to users, watching them use early versions and acting on their feedback matter as much as technical skill."
+                },
+                {
+                  "type": "example",
+                  "title": "the booking form",
+                  "text": "A learner on the programme built a simple web form for the centre’s room bookings. The first version worked technically, but staff found it confusing. She watched three colleagues use it, simplified the form from twelve fields to five, and added a confirmation email. Bookings by phone dropped by half within a month."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten tests of software development",
+            "tests": [
+              "Do I start by understanding who the software is for and what problem it solves?",
+              "Do I plan before I write code?",
+              "Do I build in small pieces and test each one?",
+              "Do I use clear names and keep my code readable?",
+              "Do I use version control for my code?",
+              "Do I write tests, or at least test systematically?",
+              "Do I treat user input as untrusted?",
+              "Do I show early versions to users and act on feedback?",
+              "Could someone else understand and change my code?",
+              "Am I building small, real projects to practise?"
+            ],
+            "questions": [
+              "Which software problems in our organisation could be solved by a small custom tool?",
+              "Why do many software projects fail even when the code works?",
+              "How should beginners choose a first programming language?",
+              "How can we involve users throughout development?",
+              "What responsibilities do developers have for security and privacy?"
+            ],
+            "exercise": "Choose a small, real problem — a calculation you do often, a list you maintain, a form you fill in. Write a simple program or spreadsheet automation to solve it. Test it, show it to one user, improve it once based on their feedback, and keep the code under version control."
+          },
+          "id": "s7"
+        },
+        {
+          "number": 8,
+          "title": "Data and Analytics",
+          "ship": {
+            "title": "The ship’s log, read backwards",
+            "body": [
+              "A ship’s log is written for safety, but a careful captain also reads it backwards. Patterns appear: the same leak after heavy weather, slower passages with a fouled hull, more sickness on certain routes. The log becomes a source of knowledge about the ship itself. Data is the log of an organisation."
+            ],
+            "claim": "Analytics is reading it to learn.",
+            "question": "What decision did your team make recently on a hunch that data could have informed?"
+          },
+          "intro": [
+            "Data is recorded information: numbers, text, dates, categories and more. Analytics is the process of turning data into understanding that supports better decisions. Organisations of every size now collect data; few use it as well as they could."
+          ],
+          "subsections": [
+            {
+              "id": "8.1",
+              "title": "Good Data",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Analysis is only as good as the data behind it. Good data is:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Accurate — correctly recorded",
+                    "Complete — without important gaps",
+                    "Consistent — recorded the same way each time",
+                    "Timely — up to date",
+                    "Relevant — measuring what actually matters"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Most data problems start at the point of entry. Clear forms, drop-down lists and validation rules prevent many errors."
+                }
+              ]
+            },
+            {
+              "id": "8.2",
+              "title": "From Data to Insight",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Collect — decide what to record and why",
+                    "Clean — fix errors, remove duplicates, handle missing values",
+                    "Analyse — summarise, compare and look for patterns",
+                    "Visualise — use clear charts and tables",
+                    "Interpret — ask what it means and what else could explain it",
+                    "Act — use the findings to make a decision"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "8.3",
+              "title": "Simple Analysis",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Useful tools for most organisations:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Counts, totals, averages and percentages",
+                    "Comparisons over time and between groups",
+                    "Pivot tables to summarise large lists",
+                    "Simple charts: bar, line and pie charts used appropriately",
+                    "Dashboards that show key measures at a glance"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "8.4",
+              "title": "Honest Analysis",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Correlation is not causation: two things moving together does not mean one causes the other.",
+                    "Small samples can mislead.",
+                    "Charts can distort — check axes and scales.",
+                    "Look for evidence that might prove you wrong, not only evidence that supports you.",
+                    "Report uncertainty honestly."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "8.5",
+              "title": "Data Ethics and Privacy",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Data about people must be handled with care: collected with consent where required, used only for its stated purpose, kept secure, anonymised where possible, and deleted when no longer needed. Data should never be used to discriminate or to harm."
+                },
+                {
+                  "type": "example",
+                  "title": "the attendance pattern",
+                  "text": "A centre’s course attendance looked steady overall, but when staff broke the data down by day and time, they found evening sessions in winter lost almost half their learners. Learners explained that dark evenings and poor bus services made travel hard. The centre moved winter sessions earlier and arranged shared lifts; attendance recovered."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten tests of data and analytics",
+            "tests": [
+              "Do I know what data my organisation collects and why?",
+              "Is our data accurate, complete and consistent?",
+              "Do our forms prevent errors at the point of entry?",
+              "Do I clean data before analysing it?",
+              "Can I use a pivot table to summarise data?",
+              "Do I choose charts that show data honestly?",
+              "Do I distinguish correlation from causation?",
+              "Do I report the uncertainty in my findings?",
+              "Do we handle personal data ethically and securely?",
+              "Has data changed a decision we made this year?"
+            ],
+            "questions": [
+              "What decisions could we make better with data we already have?",
+              "Where is our data unreliable, and why?",
+              "How do we make sure analysis is honest rather than selective?",
+              "What data should we stop collecting?",
+              "How do we share findings so that people actually use them?"
+            ],
+            "exercise": "Take a dataset from your work — attendance, bookings, enquiries or spending. Clean it, summarise it with a pivot table and one clear chart, and write three sentences on what it shows, one on what it does not show, and one recommendation."
+          },
+          "id": "s8"
+        },
+        {
+          "number": 9,
+          "title": "AI, Robotics and IoT",
+          "ship": {
+            "title": "The autopilot",
+            "body": [
+              "Modern ships steer themselves for days on autopilot. It holds a course more steadily than any helmsman and never tires. But it cannot see the fishing boat without lights, does not notice the weather changing, and will steer confidently onto a reef if the course is wrong. A watch must still be kept."
+            ],
+            "claim": "Artificial intelligence and automation are powerful autopilots. They still need a human on watch.",
+            "question": "Which tasks in your work could a machine do better than you — and which should a person always decide?"
+          },
+          "intro": [
+            "Artificial intelligence (AI) refers to computer systems that perform tasks usually needing human intelligence, such as understanding language, recognising images or making predictions. Robotics combines machines, sensors and software to act in the physical world. The Internet of Things (IoT) connects everyday devices — sensors, meters, cameras, appliances — to networks. Together they are changing work and daily life."
+          ],
+          "subsections": [
+            {
+              "id": "9.1",
+              "title": "How AI Works, Simply",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Most modern AI learns from data:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "It is trained on large numbers of examples.",
+                    "It finds patterns that let it predict, classify or generate text, images or sound.",
+                    "It does not understand the world as people do; it produces likely outputs based on its training.",
+                    "It can be impressively capable and still confidently wrong."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9.2",
+              "title": "Using AI Tools Well",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Use AI to draft, summarise, translate, brainstorm and explain — then check the result.",
+                    "Never treat AI output as fact without verification, especially for health, legal or financial matters.",
+                    "Do not enter confidential or personal data into tools that are not approved for it.",
+                    "Be honest about when AI has been used in your work.",
+                    "Keep human judgement for decisions that affect people."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9.3",
+              "title": "Responsible AI",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Key concerns include:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Bias — AI can repeat and amplify unfairness in its training data.",
+                    "Transparency — people affected by decisions should know when AI is involved.",
+                    "Privacy — data used to train and run AI must be handled lawfully.",
+                    "Accountability — a person or organisation must remain responsible for outcomes.",
+                    "Impact on work — tasks will change; people need support to adapt."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9.4",
+              "title": "Robotics and Automation",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Robots and automated systems are used in manufacturing, warehouses, agriculture, healthcare and homes. Even simple automation — scheduled tasks, rules that file emails, scripts that produce reports — can free people for more valuable work. Learners can begin with educational robotics kits and microcontrollers, which teach sensors, motors and programming together."
+                }
+              ]
+            },
+            {
+              "id": "9.5",
+              "title": "The Internet of Things",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "IoT devices measure and control the physical world: temperature sensors, smart meters, door locks, cameras, irrigation systems. They can save energy, improve safety and provide useful data — but every connected device is also a potential security risk. Change default passwords, update firmware, and place IoT devices on a separate network where possible."
+                },
+                {
+                  "type": "example",
+                  "title": "the cold room sensor",
+                  "text": "A community food bank lost stock twice when its cold room failed overnight. A volunteer installed a low-cost temperature sensor that sent a text message if the temperature rose above a safe limit. Months later it alerted staff at 2 a.m.; the door had been left ajar. The food was saved. The device was simple; its value was in someone being alerted in time."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten tests of AI, robotics and IoT",
+            "tests": [
+              "Can I explain in simple terms how AI produces its answers?",
+              "Do I check AI output before relying on it?",
+              "Do I avoid entering confidential data into unapproved AI tools?",
+              "Am I honest about when I have used AI?",
+              "Do I keep human judgement for decisions that affect people?",
+              "Can I name the main risks of bias in AI systems?",
+              "Have I automated a repetitive task in my own work?",
+              "Do I know what connected devices our organisation uses?",
+              "Are our IoT devices secured with changed passwords and updates?",
+              "Do I know our organisation’s guidance on using AI?"
+            ],
+            "questions": [
+              "Where could AI genuinely help our work, and where would it be inappropriate?",
+              "How should we respond when learners or staff use AI to produce work?",
+              "What jobs in our community are most likely to change because of automation?",
+              "How can we make sure AI does not treat people unfairly?",
+              "What simple sensors or automations could solve problems we have?"
+            ],
+            "exercise": "Choose one repetitive task in your work. Try an AI tool or a simple automation to help with it, checking every result. Write half a page on what it did well, where it made mistakes, and what guidance others should follow before using it."
+          },
+          "id": "s9"
+        }
+      ],
+      "outcomes": {
+        "items": [
+          "Describe the stages of software development and build a small, tested program or automation.",
+          "Use version control and good coding habits, and involve users in development.",
+          "Collect, clean and analyse data, and present it honestly with clear charts.",
+          "Distinguish correlation from causation and report uncertainty.",
+          "Explain how AI works and use AI tools critically, honestly and safely.",
+          "Identify risks of bias, privacy loss and over-reliance in AI systems.",
+          "Describe uses of robotics and IoT and secure connected devices."
+        ],
+        "evidence": "a small program or automation with test notes, a cleaned dataset with a chart and recommendation, and a written review of an AI tool used on a real task."
+      }
+    },
+    {
+      "id": "m4",
+      "number": 4,
+      "title": "Transformation in Practice",
+      "tagline": "The figurehead, the honest merchant and fitting out",
+      "foundation": {
+        "verses": [
+          {
+            "ar": "وَيْلٌ لِّلْمُطَفِّفِينَ ۝ الَّذِينَ إِذَا اكْتَالُوا عَلَى النَّاسِ يَسْتَوْفُونَ ۝ وَإِذَا كَالُوهُمْ أَوْ وَزَنُوهُمْ يُخْسِرُونَ",
+            "text": "Woe to those who give short measure — who, when they take a measure from people, take it in full, but when they measure or weigh for them, give less.",
+            "ref": "Qur’an, Sūrah al-Muṭaffifīn 83:1–3"
+          },
+          {
+            "ar": "وَأَوْفُوا بِالْعَهْدِ ۖ إِنَّ الْعَهْدَ كَانَ مَسْئُولًا",
+            "text": "And fulfil every promise; indeed, the promise will be asked about.",
+            "ref": "Qur’an, Sūrah al-Isrā’ 17:34"
+          }
+        ],
+        "why": [
+          "Digital tools make it easy to present things as better than they are: a polished website, a persuasive advert, a promised delivery date. The first verses condemn giving short measure; the second reminds us that every promise will be asked about. Module 4 brings the programme together in practice — creating media, marketing and selling honestly, and running projects that deliver what they promise."
+        ]
+      },
+      "sections": [
+        {
+          "number": 10,
+          "title": "Web, Design and Media",
+          "ship": {
+            "title": "The figurehead and the flag",
+            "body": [
+              "A ship announced herself before she spoke. Her figurehead, her colours and her flag told every harbour who she was and where she came from. A well-kept ship, clearly marked, was trusted; a shabby one with no flag was watched with suspicion."
+            ],
+            "claim": "An organisation’s website and media are its figurehead and flag.",
+            "question": "Open your organisation’s website on a phone. Could a stranger find out what you do and how to contact you in thirty seconds?"
+          },
+          "intro": [
+            "Websites, graphics, video and podcasts are how most people first meet an organisation. Good digital media is clear, honest, accessible and consistent. This section covers the basics of creating it."
+          ],
+          "subsections": [
+            {
+              "id": "10.1",
+              "title": "Websites",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "A good website:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Says clearly who you are, what you do and how to get in touch",
+                    "Works well on phones as well as computers",
+                    "Loads quickly and is easy to navigate",
+                    "Is accessible to people with disabilities (see Section 3)",
+                    "Is kept up to date — old news and broken links damage trust",
+                    "Is secure, with HTTPS and updated software"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Many organisations use website builders or content management systems that allow staff to update pages without programming."
+                }
+              ]
+            },
+            {
+              "id": "10.2",
+              "title": "Design Principles",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Clarity — one main message per page, poster or slide",
+                    "Hierarchy — the most important information is the most prominent",
+                    "Consistency — the same colours, fonts and logo used everywhere",
+                    "White space — room around elements makes them easier to read",
+                    "Contrast — text that stands out clearly from its background",
+                    "Images — relevant, good quality, and used with permission"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "10.3",
+              "title": "Video and Audio",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Simple, well-made video and audio can be produced with a phone:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Plan what you want to say, and keep it short",
+                    "Record in a quiet place with good light",
+                    "Use a simple microphone if possible — poor sound loses audiences fastest",
+                    "Add captions for accessibility and silent viewing",
+                    "Edit out mistakes and long pauses"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "10.4",
+              "title": "Copyright and Consent",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Only use images, music, fonts and video you have the right to use: your own, licensed, or clearly free to use. Get consent before photographing or filming people, especially children, and respect requests not to be shown."
+                }
+              ]
+            },
+            {
+              "id": "10.5",
+              "title": "Brand and Voice",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "A brand is the consistent way an organisation presents itself: name, logo, colours, fonts and tone of voice. A short brand guide helps everyone who creates material keep it consistent."
+                },
+                {
+                  "type": "example",
+                  "title": "the one-page brand guide",
+                  "text": "Volunteers at a centre were making posters in a dozen different styles, some using the old logo. The communications volunteer created a one-page brand guide: logo files, two colours, two fonts and three poster templates. Within a term the centre’s materials looked unmistakably its own, and making a new poster took minutes rather than hours."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten tests of web, design and media",
+            "tests": [
+              "Does our website say clearly what we do and how to contact us?",
+              "Does it work well on a phone?",
+              "Is it up to date, with no broken links or old news?",
+              "Are our materials consistent in logo, colours and fonts?",
+              "Does each design have one clear main message?",
+              "Is text easy to read against its background?",
+              "Do our videos have captions and clear sound?",
+              "Do we have the right to use every image, font and piece of music?",
+              "Do we get consent before photographing or filming people?",
+              "Do we have a simple brand guide that others can follow?"
+            ],
+            "questions": [
+              "What impression does our website give a stranger?",
+              "Which of our materials look least professional, and why?",
+              "How do we balance creativity with consistency?",
+              "What are the risks of using images found online?",
+              "Which media — web, video, audio, print — reaches our community best?"
+            ],
+            "exercise": "Review one page of your organisation’s website, or one poster, against the design principles in 10.2. Redesign it, keeping to a consistent brand, and ask two people unfamiliar with it which version communicates better."
+          },
+          "id": "s10"
+        },
+        {
+          "number": 11,
+          "title": "Marketing and E-Commerce",
+          "ship": {
+            "title": "The honest merchant",
+            "body": [
+              "Merchants who sailed the trade routes depended on their names. A merchant who gave short weight or sold spoiled goods might profit once, but word travelled from port to port, and next season no one would trade with him. Honest dealing was not only right; it was the only way to keep trading."
+            ],
+            "claim": "Digital marketing spreads reputation faster than any trade route, for good or ill.",
+            "question": "Is every claim in your organisation’s marketing something you could prove to a customer face to face?"
+          },
+          "intro": [
+            "Marketing is how organisations reach the people they serve and tell them what they offer. E-commerce is buying and selling online. For businesses, charities and community organisations alike, digital channels have made both cheaper and more powerful — and made honesty more important than ever."
+          ],
+          "subsections": [
+            {
+              "id": "11.1",
+              "title": "Understanding Your Audience",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Effective marketing starts with people:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Who are you trying to reach?",
+                    "What do they need, and what problems do they have?",
+                    "Where do they spend time online and offline?",
+                    "What language and tone will they trust?",
+                    "What do you want them to do next?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "11.2",
+              "title": "Digital Channels",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Website — the home base for information and sales",
+                    "Social media — for conversation, community and sharing news",
+                    "Email newsletters — for people who have chosen to hear from you",
+                    "Search — making sure people can find you when they look",
+                    "Messaging apps — for direct, personal contact where appropriate"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Choose a few channels and use them well, rather than many channels badly."
+                }
+              ]
+            },
+            {
+              "id": "11.3",
+              "title": "Selling Online",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "A basic online shop or booking system needs:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Clear descriptions, honest photos and full prices including delivery",
+                    "Secure payment through a trusted provider",
+                    "Clear terms for delivery, returns and refunds",
+                    "Prompt, courteous responses to questions and complaints",
+                    "Protection of customers’ personal and payment data"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "11.4",
+              "title": "Honest Marketing",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Marketing must be truthful: no false claims, hidden costs, fake reviews or pressure tactics. Organisations should respect people’s choices about receiving messages, follow the advertising and consumer laws of their country, and be especially careful in marketing to children and vulnerable people."
+                }
+              ]
+            },
+            {
+              "id": "11.5",
+              "title": "Measuring Results",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Track what works: website visits, enquiries, sign-ups, sales and the channels they came from. Simple measurement prevents wasted effort and shows which messages genuinely reach people."
+                },
+                {
+                  "type": "example",
+                  "title": "the course launch",
+                  "text": "A centre launching a new evening course posted on four social media platforms with little response. Asking existing learners how they had heard of the centre, staff found that most came through word of mouth and a local messaging group. The next launch focused on a short message for learners to share and a post in the local group. Enrolments filled within a week."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten tests of marketing and e-commerce",
+            "tests": [
+              "Can I describe the people we are trying to reach?",
+              "Do I know where our audience spends time online and offline?",
+              "Do we focus on a few channels and use them well?",
+              "Is every claim in our marketing truthful and provable?",
+              "Are all prices and costs shown clearly upfront?",
+              "Do we use a secure, trusted payment provider?",
+              "Are our delivery, returns and refund terms clear?",
+              "Do we respond to questions and complaints promptly?",
+              "Do we respect people’s choices about receiving messages?",
+              "Do we measure which channels actually work?"
+            ],
+            "questions": [
+              "How do people really hear about what we offer?",
+              "What makes you trust or distrust an online seller?",
+              "Which marketing practices cross the line into dishonesty?",
+              "How can small organisations compete online with large ones?",
+              "What should we measure to know whether our marketing works?"
+            ],
+            "exercise": "Choose one product, course or service your organisation offers. Write a short profile of the people it is for, choose two channels to reach them, and draft one honest message for each. Decide what you will measure, run the campaign for two weeks, and report what happened."
+          },
+          "id": "s11"
+        },
+        {
+          "number": 12,
+          "title": "Project Management",
+          "ship": {
+            "title": "Fitting out",
+            "body": [
+              "Fitting out a ship — installing engines, rigging, cabins and stores after launch — involves dozens of trades working in a tight space to a fixed sailing date. Without a plan, electricians wait for carpenters, stores arrive before shelves, and the sailing date slips. With one, each trade knows its turn."
+            ],
+            "claim": "Digital transformation projects are fitting out: many people, many parts, one date.",
+            "question": "Think of the last project that ran late. Was the problem the work — or that nobody could see who was waiting for whom?"
+          },
+          "intro": [
+            "A project is temporary work with a clear goal, a start and an end. Digital transformation — moving services online, introducing new systems, changing how people work — is almost always done through projects. Many such projects fail, not because the technology is wrong, but because the project is poorly managed or people are not brought along."
+          ],
+          "subsections": [
+            {
+              "id": "12.1",
+              "title": "Defining the Project",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Every project needs a clear definition:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Goal — what will be different when it is finished?",
+                    "Scope — what is included, and just as importantly, what is not",
+                    "Stakeholders — who is affected, who decides, who must be consulted",
+                    "Constraints — budget, time, people and technology",
+                    "Success measures — how will we know it worked?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "12.2",
+              "title": "Planning",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Break the work into tasks and assign an owner to each",
+                    "Estimate time realistically and identify which tasks depend on others",
+                    "Set milestones — points where progress can be checked",
+                    "Identify risks and plan how to reduce them",
+                    "Use a simple tool: a task board, a shared spreadsheet or project software"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "12.3",
+              "title": "Ways of Working",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Traditional projects plan everything first and then deliver in sequence. Agile projects deliver in short cycles, showing working results to users frequently and adapting as they learn. Digital projects usually benefit from agile methods, with enough upfront planning to keep everyone pointed in the same direction."
+                }
+              ]
+            },
+            {
+              "id": "12.4",
+              "title": "Bringing People Along",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Digital change is people change:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Explain why the change is happening and what it means for each person",
+                    "Involve users early in design and testing",
+                    "Provide training and support at the time it is needed",
+                    "Expect resistance and listen to it — it often contains useful warnings",
+                    "Celebrate progress and recognise those who help"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "12.5",
+              "title": "Monitoring and Closing",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Regular short progress meetings, a visible task board and an honest record of risks keep projects on track. At the end, review what went well and what did not, hand over properly to those who will run the new system, and record lessons for the next project."
+                },
+                {
+                  "type": "example",
+                  "title": "the online registration project",
+                  "text": "A centre decided to move course registration online. The first plan was to launch everything at once. The project lead instead introduced it for one course first, ran a training session for staff, and kept paper forms available for a term. Problems found in the first course were fixed before the wider launch. By the end of the year nearly all registrations were online, with almost no complaints."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Ten tests of project management",
+            "tests": [
+              "Does our project have a clear, written goal and scope?",
+              "Do we know who our stakeholders are and what they need?",
+              "Does every task have an owner and a deadline?",
+              "Do we know which tasks depend on others?",
+              "Have we identified the main risks and how to reduce them?",
+              "Do we show working results to users early and often?",
+              "Do we explain the change to the people it affects?",
+              "Do we provide training when people need it?",
+              "Do we hold short, regular progress checks?",
+              "Do we review and record lessons at the end of every project?"
+            ],
+            "questions": [
+              "Why do so many digital projects fail?",
+              "How do we balance planning with flexibility?",
+              "How should we handle people who resist a new system?",
+              "What tools could help us track our projects better?",
+              "What lessons from past projects should we never forget?"
+            ],
+            "exercise": "Choose a small digital change your organisation needs. Write a one-page project definition — goal, scope, stakeholders, constraints and success measures — and a task plan with owners, dates and three key risks. Present it to a colleague and revise it with their comments."
+          },
+          "id": "s12"
+        }
+      ],
+      "outcomes": {
+        "items": [
+          "Create clear, accessible, consistent web pages and media, respecting copyright and consent.",
+          "Apply basic design principles to digital and print materials.",
+          "Identify an audience and choose suitable digital marketing channels.",
+          "Market and sell online honestly, securely and within the law.",
+          "Measure the results of marketing and act on what is learned.",
+          "Define, plan and monitor a digital project with clear goals, owners and risks.",
+          "Lead people through digital change with explanation, involvement and training."
+        ],
+        "evidence": "a redesigned web page or poster with feedback, a two-week marketing campaign report, and a one-page project definition with a task plan."
+      }
+    }
+  ]
+}

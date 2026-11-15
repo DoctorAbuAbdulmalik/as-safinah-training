@@ -1,0 +1,55 @@
+{
+  "directions": [
+    {
+      "id": "it-digital",
+      "icon": "💻",
+      "status": "active",
+      "title": {
+        "en": "IT and Digital Transformation",
+        "ar": "تقنية المعلومات والتحول الرقمي",
+        "tr": "Bilişim ve Dijital Dönüşüm"
+      },
+      "desc": {
+        "en": "Digital skills, security, software, data and AI: twelve pathways in four modules.",
+        "ar": "المهارات الرقمية والأمن السيبراني والبرمجيات والبيانات والذكاء الاصطناعي: اثنا عشر مسارًا في أربع وحدات.",
+        "tr": "Dijital beceriler, güvenlik, yazılım, veri ve yapay zekâ: dört modülde on iki yol."
+      }
+    },
+    {
+      "id": "education",
+      "icon": "🎓",
+      "status": "soon",
+      "title": { "en": "Education", "ar": "التعليم", "tr": "Eğitim" }
+    },
+    {
+      "id": "engineering",
+      "icon": "⚙️",
+      "status": "soon",
+      "title": { "en": "Engineering", "ar": "الهندسة", "tr": "Mühendislik" }
+    },
+    {
+      "id": "leadership",
+      "icon": "🧭",
+      "status": "soon",
+      "title": { "en": "Leadership", "ar": "القيادة", "tr": "Liderlik" }
+    },
+    {
+      "id": "languages",
+      "icon": "🗣️",
+      "status": "soon",
+      "title": { "en": "Languages", "ar": "اللغات", "tr": "Diller" }
+    },
+    {
+      "id": "management",
+      "icon": "📋",
+      "status": "soon",
+      "title": { "en": "Management", "ar": "الإدارة", "tr": "Yönetim" }
+    },
+    {
+      "id": "research",
+      "icon": "🔬",
+      "status": "soon",
+      "title": { "en": "Research and Development", "ar": "البحث والتطوير", "tr": "Araştırma ve Geliştirme" }
+    }
+  ]
+}

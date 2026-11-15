@@ -1,0 +1,262 @@
+{
+  "direction": "it-digital",
+  "lang": "tr",
+  "modules": [
+    {
+      "id": "m1",
+      "number": 1,
+      "title": "Dijital Temeller",
+      "tagline": "Geminizi, evraklarını ve iskelesini tanımak",
+      "foundation": {
+        "verses": [
+          { "ar": "وَلَا تَقْفُ مَا لَيْسَ لَكَ بِهِ عِلْمٌ", "text": "Hakkında bilgi sahibi olmadığın şeyin peşine düşme.", "ref": "Kur’ân-ı Kerîm, İsrâ Sûresi 17:36" },
+          { "ar": "يَا أَيُّهَا الَّذِينَ آمَنُوا إِن جَاءَكُمْ فَاسِقٌ بِنَبَإٍ فَتَبَيَّنُوا", "text": "Ey iman edenler! Bir fasık size bir haber getirirse, doğruluğunu araştırın.", "ref": "Kur’ân-ı Kerîm, Hucurât Sûresi 49:6" }
+        ],
+        "why": [
+          "Dijital dünya, bize bir günde önceki kuşakların bir ömürde karşılaştığından daha fazla bilgi sunuyor — ve bunların büyük bölümü yanlış, yanıltıcı ya da aldatmak için tasarlanmış. Bu iki âyet dijital hayatın ilk kuralını koyar: bilmediğin şeyin peşine düşme ve sana söylenenleri doğrula. Birinci modül; cihazları, dosyaları, e-postayı ve çevrimiçi hizmetleri güvenle ve özenle kullanmanın günlük becerilerini oluşturur."
+        ]
+      },
+      "sections": [
+        {
+          "id": "s1",
+          "number": 1,
+          "title": "Dijital Okuryazarlık ve Sistemler",
+          "ship": {
+            "title": "Geminizi tanımak",
+            "body": ["Tulumbaların nerede olduğunu, ışıkların nasıl çalıştığını ya da yedek halatın nerede durduğunu bilmeyen yeni bir tayfa, kendisi ve herkes için tehlikedir. Herhangi bir ustalık isteyen işe girişmeden önce geminin içinde yolunu bulmayı öğrenmelidir."],
+            "claim": "Dijital okuryazarlık, her gün güvendiğiniz cihazlar ve sistemler arasında yolunuzu bilmektir.",
+            "question": "Telefonunuz ya da bilgisayarınız bu öğleden sonra çalışmayı bıraksa neyi kaybederdiniz — ve başka bir yerde bir kopyası var mı?"
+          },
+          "intro": ["Dijital okuryazarlık; dijital cihaz ve sistemleri güvenle, emniyetle ve eleştirel bir gözle kullanabilme becerisidir. Artık okuma yazma kadar temeldir: iş, eğitim, bankacılık, sağlık ve kamu hizmetleri giderek daha fazla bunu varsayıyor. Bu bölüm her kullanıcının ihtiyaç duyduğu temelleri kapsar."],
+          "subsections": [
+            {
+              "id": "1.1",
+              "title": "Cihazlar ve İşletim Sistemleri",
+              "blocks": [
+                { "type": "p", "text": "Çoğu insan birkaç tür cihaz kullanır:" },
+                { "type": "ul", "items": ["Bilgisayarlar — Windows, macOS veya Linux çalıştıran masaüstü ve dizüstü bilgisayarlar", "Telefonlar ve tabletler — Android veya iOS çalıştıran cihazlar", "Ortak cihazlar — ofislerde, okullarda ve kütüphanelerde"] },
+                { "type": "p", "text": "İşletim sistemi cihazı yönetir: dosyaları, uygulamaları, ayarları, güncellemeleri ve güvenliği. Ayarların nerede bulunacağını, uygulamaların nasıl yükleneceğini ve kaldırılacağını, sistemin nasıl güncelleneceğini bilmek, güvenle kullanımın başlangıç noktasıdır." }
+              ]
+            },
+            {
+              "id": "1.2",
+              "title": "Dosyalar ve Klasörler",
+              "blocks": [
+                { "type": "p", "text": "İyi dosya alışkanlıkları saatler kazandırır:" },
+                { "type": "ul", "items": ["Proje, konu ya da yıla göre net bir klasör yapısı kullanın", "Dosyaları bulunabilir şekilde adlandırın — ne, ne zaman, hangi sürüm: “Butce-2026-v2”", "Dosyaların nereye kaydedildiğini bilin — cihazda, ağ sürücüsünde veya bulutta", "Artık gerekmeyenleri silin ya da arşivleyin", "Dosyaları aramayı, sıralamayı ve paylaşmayı öğrenin"] }
+              ]
+            },
+            {
+              "id": "1.3",
+              "title": "Yedekleme",
+              "blocks": [
+                { "type": "p", "text": "Her cihaz eninde sonunda bozulur, kaybolur veya çalınır. Yedek, başka bir yerde tutulan ikinci bir kopyadır. Basit bir kural 3-2-1 yaklaşımıdır: önemli verilerin üç kopyası, iki farklı depolama türünde, bir kopya da dışarıda veya bulutta tutulur. Yedekler, arada bir gerçekten bir dosya geri yüklenerek sınanmalıdır." }
+              ]
+            },
+            {
+              "id": "1.4",
+              "title": "Çevrimiçi Eleştirel Düşünme",
+              "blocks": [
+                { "type": "ul", "items": ["Bilgiyi kimin ve neden yayımladığına bakın", "İnanmadan veya paylaşmadan önce diğer güvenilir kaynaklarla karşılaştırın", "Öfke ya da korku uyandırmak için tasarlanmış başlıklara karşı temkinli olun", "Reklamı ve sponsorlu içeriği tanıyın", "Görsellerin ve videoların değiştirilmiş veya yapay zekâyla üretilmiş olabileceğini kontrol edin"] }
+              ]
+            },
+            {
+              "id": "1.5",
+              "title": "Günlük Özgüven",
+              "blocks": [
+                { "type": "p", "text": "Özgüven kullandıkça artar. Öğrenenler düzenli pratik yapmalı, utanmadan yardım istemeli ve sırası geldiğinde başkalarına yardım etmelidir. Dijital becerisi zayıf birçok kişi bunu gizler; iyi bir program en baştan başlamayı güvenli kılar." },
+                { "type": "example", "title": "kaybolan fotoğraflar", "text": "Bir topluluk gönüllüsü yıllarca etkinlik fotoğraflarını yalnızca telefonunda tuttu. Telefon çalındığında fotoğraflar da gitti. Bir dijital beceri oturumundan sonra merkez, tüm cihazları için otomatik bulut yedeklemesi ve etkinlikler için ortak bir klasör yapısı kurdu. Bir dizüstü bilgisayar bozulduğunda bu kez hiçbir şey kaybolmadı." }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Dijital okuryazarlığa ilişkin on test",
+            "tests": [
+              "Cihazlarımdaki ana ayarları bulup değiştirebiliyor muyum?",
+              "Güncellemeleri gecikmeden yüklüyor muyum?",
+              "Dosyalarım, hızlıca bulabileceğim şekilde düzenli mi?",
+              "Dosya adlarım dosyanın ne olduğunu ve hangi sürüm olduğunu söylüyor mu?",
+              "Önemli dosyalarımın her birinin nerede saklandığını biliyor muyum?",
+              "Önemli verilerimin yedeği var mı ve onu denedim mi?",
+              "Bilgiyi paylaşmadan önce kaynağını kontrol ediyor muyum?",
+              "Reklamı ve sponsorlu içeriği tanıyabiliyor muyum?",
+              "Teknolojiyle ilgili yardım istemekte rahat mıyım?",
+              "Bu ay bir başkasına dijital bir işte yardım ettim mi?"
+            ],
+            "questions": [
+              "Çevrenizdeki insanlar hangi dijital işleri en zor buluyor?",
+              "Kuruluşumuzda hangi önemli verinin yedeği yok?",
+              "Çevrimiçi bilginin güvenilir olup olmadığını nasıl anlarız?",
+              "Dijital becerileri nedeniyle utanan insanları nasıl destekleriz?",
+              "“Dijital okuryazarlık” farklı yaş grupları için ne anlama gelir?"
+            ],
+            "exercise": "Dijital hayatınızın bir alanını — belgeler klasörünüzü, telefon fotoğraflarınızı ya da ortak bir iş sürücüsünü — net bir yapıya ve tutarlı dosya adlarına kavuşturun. Ardından bir yedek kurun ve bir dosyayı geri yükleyerek yedeği sınayın."
+          }
+        },
+        {
+          "id": "s2",
+          "number": 2,
+          "title": "E-posta ve Ofis Araçları",
+          "ship": {
+            "title": "Geminin evrakları",
+            "body": ["Bir gemi evrak taşır: seyir defteri, yük manifestosu, tayfa listesi, armatörlere mektuplar. Bunlar açık, doğru ve düzenli olmalıdır; çünkü başkaları yazıldıktan çok sonra bunlara dayanarak hareket eder. Özensiz bir manifesto bir yüke, belirsiz bir mektup bir sözleşmeye mal olabilir."],
+            "claim": "E-posta, belgeler ve hesap tabloları, modern işin gemi evraklarıdır.",
+            "question": "Gönderdiğiniz son beş e-postaya bakın. Her okuyucu konu satırından e-postanın neyle ilgili olduğunu ve sizden ne istediğinizi anlayabilir miydi?"
+          },
+          "intro": ["E-posta, kelime işlemci, hesap tabloları ve sunumlar, hemen her işin gündelik araçlarıdır. İyi kullanıldıklarında zaman kazandırır, hataları azaltır ve işe profesyonel bir görünüm verir. Bu bölüm temel noktaları kapsar."],
+          "subsections": [
+            {
+              "id": "2.1",
+              "title": "İyi E-posta Yazmak",
+              "blocks": [
+                { "type": "p", "text": "İyi bir e-posta:" },
+                { "type": "ul", "items": ["Neyle ilgili olduğunu söyleyen net bir konu satırına sahiptir", "Amacını ilk bir iki cümlede belirtir", "Varsa bir son tarihle birlikte, istenen eylemi açıkça ister", "Kısa, kibar ve göndermeden önce gözden geçirilmiştir", "“Tümünü yanıtla” ve bilgi kopyasını yalnızca başkalarının gerçekten ihtiyacı olduğunda kullanır"] }
+              ]
+            },
+            {
+              "id": "2.2",
+              "title": "Gelen Kutusunu Yönetmek",
+              "blocks": [
+                { "type": "ul", "items": ["E-postayı sürekli değil, belirli saatlerde kontrol edin", "Her iletiyle bir kez ilgilenin: yanıtlayın, dosyalayın, silin veya erteleyin", "İletileri bulmak için klasör ya da etiket ve arama kullanın", "Hiç okumadığınız aboneliklerden çıkın", "Beklenmedik ekleri veya bağlantıları kontrol etmeden asla açmayın (bkz. Bölüm 6)"] }
+              ]
+            },
+            {
+              "id": "2.3",
+              "title": "Belgeler",
+              "blocks": [
+                { "type": "p", "text": "Kelime işlemciler mektup, rapor, tutanak ve form hazırlamak için kullanılır. İyi uygulamalar arasında şunlar vardır: uzun belgeleri gezinmesi ve biçimlendirmesi kolay kılan yerleşik başlık stillerini kullanmak; sık hazırlanan belgeler için şablonlardan yararlanmak; birkaç kişi düzenleme yaptığında değişiklikleri izlemek; bitmiş sürümleri PDF olarak kaydetmek veya paylaşmak." }
+              ]
+            },
+            {
+              "id": "2.4",
+              "title": "Hesap Tabloları",
+              "blocks": [
+                { "type": "p", "text": "Hesap tabloları listeler, bütçeler ve kayıtlar için güçlüdür:" },
+                { "type": "ul", "items": ["Her sütuna tek tür bilgi koyun ve net bir başlık verin", "Hesaplanmış sayıları elle yazmak yerine formül kullanın", "Ham veriyi özetlerden ve grafiklerden ayrı tutun", "Formülleri kontrol edin ve değişmemesi gereken hücreleri koruyun", "Temelleri öğrenin: sıralama, filtreleme, SUM/TOPLA, AVERAGE/ORTALAMA, IF/EĞER ve basit grafikler"] }
+              ]
+            },
+            {
+              "id": "2.5",
+              "title": "Çevrimiçi Birlikte Çalışmak",
+              "blocks": [
+                { "type": "p", "text": "Ortak belgeler ve klasörler, birkaç kişinin aynı dosya üzerinde aynı anda çalışmasına olanak verir. En iyi sonucu açık kurallarla verirler: kim düzenleyebilir, kim yalnızca görüntüleyebilir, ana kopya nerede durur ve sürümler nasıl adlandırılır. Paylaşım izinleri, özellikle hassas bilgiler için kontrol edilmelidir." },
+                { "type": "example", "title": "ortak yoklama kaydı", "text": "Bir merkez yoklamayı her odada kâğıt kayıtlarla tutuyor, sonra her ay bunları sık sık hata yaparak hesap tablosuna yeniden yazıyordu. Personel, her sınıf için bir sekmesi, açılır liste seçenekleri ve katılımı otomatik hesaplayan bir özet sayfası olan tek bir ortak hesap tablosuna geçti. Bir günlerini alan aylık raporlar artık dakikalar içinde hazırlanıyor." }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "E-posta ve ofis araçlarına ilişkin on test",
+            "tests": [
+              "E-posta konu satırlarım her iletinin neyle ilgili olduğunu açıkça söylüyor mu?",
+              "Her e-postada amacımı ve isteğimi en başta belirtiyor muyum?",
+              "E-postaları göndermeden önce kontrol ediyor muyum?",
+              "Gelen kutumu sürekli değil, belirli saatlerde mi yönetiyorum?",
+              "Belgelerde stil ve şablon kullanıyor muyum?",
+              "Başkalarıyla düzenleme yaparken değişiklikleri izleyebiliyor muyum?",
+              "Hesaplanmış sayıları elle yazmak yerine formül kullanıyor muyum?",
+              "Bir hesap tablosunda veriyi sıralayıp filtreleyebiliyor ve grafiğe dökebiliyor muyum?",
+              "Paylaştığım her dosyayı kimin görebildiğini ve düzenleyebildiğini biliyor muyum?",
+              "Nihai sürümleri paylaşırken PDF olarak kaydediyor muyum?"
+            ],
+            "questions": [
+              "Kuruluşumuzda hangi e-posta alışkanlıkları en çok zaman kaybettiriyor?",
+              "Hâlâ kâğıt üzerinde yaptığımız, dijital yapılabilecek hangi işler var?",
+              "Ortak dosya ve klasörleri nasıl düzenlemeliyiz?",
+              "Hangi hesap tablosu becerileri işimize en çok yardımcı olur?",
+              "Hassas bilgilerin gereğinden geniş bir kesimle paylaşılmadığından nasıl emin oluruz?"
+            ],
+            "exercise": "Kâğıt veya tekrarlanan yazım içeren düzenli bir işi seçin — bir yoklama defteri, bir rezervasyon listesi, bir aylık rapor. Bunu net başlıklar, formüller veya bir şablonla hesap tablosu ya da ortak belge olarak yeniden kurun. İki hafta kullanın ve kazandığınız zamanı kaydedin."
+          }
+        },
+        {
+          "id": "s3",
+          "number": 3,
+          "title": "Çevrimiçi Hizmetler ve Erişim",
+          "ship": {
+            "title": "İskele",
+            "body": ["İskele, insanların gemiye çıktığı yerdir. İyi bir iskele sağlam, yeterince geniştir, geceleri aydınlıktır ve tutunacak bir korkuluğu vardır. Kötü bir iskele yaşlıları, çocukları ve dengesizleri dışarıda bırakır — bazen de hiç gemiye çıkmaması gerekenleri içeri alır."],
+            "claim": "Çevrimiçi hizmetler, modern hayata açılan iskeledir. Herkes için kolay ve güvenli olmalıdır.",
+            "question": "Kullanmakta zorlandığınız bir çevrimiçi hizmeti düşünün. Aynı zorluk yüzünden başka kimler dışarıda kalıyor?"
+          },
+          "intro": ["Kamu hizmetleri, bankacılık, sağlık, eğitim ve alışveriş çevrimiçi ortama taşındı. Kullanabilenler için çevrimiçi hizmetler zaman ve para kazandırır. Kullanamayanlar için — beceri, dil, engellilik, maliyet ya da bağlantı yüzünden — yeni bir engele dönüşebilir. Bu bölüm, çevrimiçi hizmetleri iyi kullanmayı ve herkesin kullanabileceği biçimde tasarlamayı kapsar."],
+          "subsections": [
+            {
+              "id": "3.1",
+              "title": "Çevrimiçi Hizmetleri Güvenle Kullanmak",
+              "blocks": [
+                { "type": "p", "text": "Herhangi bir çevrimiçi hizmeti kullanırken:" },
+                { "type": "ul", "items": ["Kişisel bilgilerinizi girmeden önce web adresinin gerçek olduğunu kontrol edin", "Güçlü ve birbirinden farklı parolalar kullanın, iki adımlı doğrulamayı açın", "Referans numaralarının ve onayların kaydını tutun", "Ortak cihazlarda oturumu kapatın", "Hangi kişisel bilgileri verdiğinize ve bunların neden istendiğine dikkat edin"] }
+              ]
+            },
+            {
+              "id": "3.2",
+              "title": "Dijital Kimlik ve Hesaplar",
+              "blocks": [
+                { "type": "p", "text": "Birçok hizmet bir hesap ya da dijital kimlik gerektirir. Hesapların güvenli bir listesini tutmak, bir parola yöneticisi kullanmak ve parola kaybolduğunda hesabı nasıl geri alacağını bilmek, stresi ve riski azaltır." }
+              ]
+            },
+            {
+              "id": "3.3",
+              "title": "Erişilebilirlik",
+              "blocks": [
+                { "type": "p", "text": "Erişilebilir hizmetler, farklı yeteneklere sahip insanlar tarafından kullanılabilir:" },
+                { "type": "ul", "items": ["Büyütülebilen, iyi kontrastlı metin", "Ekran okuyucular için alternatif metinle tanımlanmış görseller", "Ses ve video için altyazılar ve yazıya dökümler", "Fare veya dokunmatik kadar klavyeyle de çalışan formlar", "Anlaşılması kolay sade bir dil", "Kullanıcıların konuştuğu dillerde sunulan içerik"] },
+                { "type": "p", "text": "Web İçeriği Erişilebilirlik Yönergeleri (WCAG) gibi uluslararası yönergeler, iyi erişilebilirliğin neye benzediğini ortaya koyar." }
+              ]
+            },
+            {
+              "id": "3.4",
+              "title": "Dijital Kapsayıcılık",
+              "blocks": [
+                { "type": "ul", "items": ["Mümkün olduğunda cihazlara ve internete ücretsiz erişim sağlayın", "İlk kez kullananlara sabırlı, birebir destek verin", "Çevrimiçi olamayanlar için dijital olmayan bir yol bırakın", "Hizmetleri kullanıcılarla birlikte tasarlayın ve teknolojiyi zor bulan kişilerle test edin"] }
+              ]
+            },
+            {
+              "id": "3.5",
+              "title": "Başkalarına Çevrimiçi Yardım Etmek",
+              "blocks": [
+                { "type": "p", "text": "Birçok insan çevrimiçi formlar ve hizmetler konusunda yardıma ihtiyaç duyar. Yardım edenler, kişinin öğrenmesi için her adımı açıklamalı; kimsenin parolasını asla saklamamalı ya da yeniden kullanmamalı; kişinin mahremiyetine ve kararlarına saygı göstermeli; uzman tavsiyesi için nereye yönlendireceklerini bilmelidir." },
+                { "type": "example", "title": "dijital yardım saati", "text": "Bir topluluk merkezi, birçok ziyaretçinin sosyal yardım ve okul kaydı için yapılan çevrimiçi başvurularda zorlandığını fark etti. Eğitimli gönüllülerle haftalık bir “dijital yardım saati” başlattı. Gönüllüler ziyaretçilerin yanına oturuyor, yazmayı onlara bırakıyor ve her adımı açıklıyordu. Birkaç ay içinde düzenli ziyaretçilerin bir kısmı formları tek başına doldurur oldu ve başkalarına yardım etmeye başladı." }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Çevrimiçi hizmetler ve erişime ilişkin on test",
+            "tests": [
+              "Kişisel bilgilerimi girmeden önce web adreslerini kontrol ediyor muyum?",
+              "Önemli hesaplarımda iki adımlı doğrulama kullanıyor muyum?",
+              "Parolalarımı yönetmek için bir parola yöneticisi ya da başka güvenli bir yol kullanıyor muyum?",
+              "Önemli hesaplarımı nasıl geri alacağımı biliyor muyum?",
+              "Çevrimiçi başvuruların ve onayların kaydını tutuyor muyum?",
+              "Bir hizmeti erişilebilir kılan üç özelliği sayabilir miyim?",
+              "Kendi çevrimiçi hizmetlerimiz engelli kişiler için çalışıyor mu?",
+              "Hizmetlerimiz kullanıcılarımızın konuştuğu dillerde sunuluyor mu?",
+              "Çevrimiçi olamayanlar için dijital olmayan bir yol var mı?",
+              "Başkalarına çevrimiçi yardım ederken, onlar yerine yapmak yerine öğrenmelerine yardımcı oluyor muyum?"
+            ],
+            "questions": [
+              "Topluluğumuzda çevrimiçi hizmetlerin dışında kalma olasılığı en yüksek olanlar kimler?",
+              "Hangi çevrimiçi hizmetler kullanıcılarımız için en çok zorluk yaratıyor?",
+              "Kendi web sitemiz ve formlarımız ne kadar erişilebilir?",
+              "İnsanların çevrimiçi bağımsız olmasına hangi destek yardımcı olur?",
+              "İnsanlara çevrimiçi hesaplarında yardım etmenin riskleri nelerdir?"
+            ],
+            "exercise": "Kuruluşunuzun kullandığı ya da sunduğu bir web sitesi veya çevrimiçi form seçin. Bunu telefonda, metni büyüterek ve yalnızca klavye kullanarak deneyin. Üç erişilebilirlik sorunu listeleyin ve her biri için bir çözüm önerin."
+          }
+        }
+      ],
+      "outcomes": {
+        "items": [
+          "Cihazları, işletim sistemlerini, dosya ve klasörleri güvenle kullanmak ve güvenilir yedekler tutmak.",
+          "Çevrimiçi bilgiyi inanmadan veya paylaşmadan önce eleştirel olarak değerlendirmek.",
+          "Açık ve etkili e-postalar yazmak ve gelen kutusunu verimli yönetmek.",
+          "İyi yapılandırılmış belgeler ve formüllerle doğru hesap tabloları hazırlamak.",
+          "Uygun izinlerle dosyaları paylaşmak ve birlikte çalışmak.",
+          "Çevrimiçi hizmetleri güvenle kullanmak ve dijital hesapları güvenli biçimde yönetmek.",
+          "Erişilebilirliği ve dijital kapsayıcılığı açıklamak, başkalarının hizmetleri bağımsız kullanmasına yardımcı olmak."
+        ],
+        "evidence": "düzenli ve yedeklenmiş bir klasör yapısı, kazanılan zamanla birlikte yeniden kurulmuş bir hesap tablosu veya şablon ve bir çevrimiçi hizmetin erişilebilirlik incelemesi."
+      }
+    }
+  ]
+}
