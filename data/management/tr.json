@@ -2,7 +2,914 @@
   "direction": "management",
   "lang": "tr",
   "status": "draft",
-  "modules": [],
+  "modules": [
+    {
+      "id": "m1",
+      "number": 1,
+      "sections": [
+        {
+          "id": "s1",
+          "number": 1,
+          "title": "Yönetim",
+          "ship": {
+            "title": "Bir geminin neden kaptana ihtiyacı vardır",
+            "body": [
+              "Demirli bir gemi kimseye ihtiyaç duymaz. Yola çıktığı an ise nereye gittiğini, ne taşıdığını, neye dayanabileceğini ve gemide kimlerin olduğunu bilen bir kişiye ihtiyaç duyar. Bu bölümdeki her şey o kişinin işidir. Yönetim bir rütbe değildir; şu sorunun cevabıdır: Bu gemi sürüklenirse kusur kimindir?"
+            ],
+            "claim": "Dört kaynak türü, her geminin sahip olduğu dört şeydir: bir mürettebat, bir kese, bir gövde ve erzak, bir de seyrettiği sulara dair birikmiş bilgi. Üçünde güçlü olup dördüncüsünü görmeyen bir kaptan, gemiyi o dördüncüsü yüzünden kaybeder.",
+            "question": "En seyrek kontrol ettiğiniz kaynağı söyleyin. İskandil atmadığınız bölme odur; bir sonraki sızıntı da orada bulunacaktır."
+          },
+          "intro": [
+            "Yönetim, her başarılı kurumun omurgasıdır. İnsanların, kaynakların ve faaliyetlerin hedeflere etkili ve verimli biçimde ulaşmak için eşgüdümlendiği süreçtir. Yeni yöneticiler yalnızca yönetimin ne olduğunu değil, neden önemli olduğunu ve bir kurumun performansını, kültürünü ve uzun vadeli başarısını nasıl şekillendirdiğini de anlamalıdır."
+          ],
+          "subsections": [
+            {
+              "id": "1.1",
+              "title": "Neyin Yönetilmesi Gerekir",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Yönetim, tüm sektörlerde ve her tür kurumda zorunludur. Borsada, tarımda, imalatta, sağlıkta, eğitimde ya da insani hizmetlerde etkili yönetimin ilkeleri aynı kalır. Küçük işletmelerden çok uluslu şirketlere kadar her teşebbüs; kaynakları eşgüdümlemek, hedeflere ulaşmak ve kalıcı değer üretmek için yetkin bir yönetime ihtiyaç duyar."
+                },
+                {
+                  "type": "p",
+                  "text": "Yönetim şunların bulunduğu her yerde gereklidir:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Eşgüdümlenmesi gereken birden çok kaynak",
+                    "Ulaşılması gereken hedefler",
+                    "Yönlendirilmesi gereken insanlar",
+                    "Dağıtılması gereken mali kaynaklar",
+                    "Ölçülmesi gereken sonuçlar"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Gündelik örnekler: bir tren istasyonu, bir otomobil üreticisi, bir alışveriş merkezi, bir hastane."
+                }
+              ]
+            },
+            {
+              "id": "1.2",
+              "title": "Başlıca Kaynak Türleri",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Etkili yönetim, dört kritik kaynak türünün eşgüdümü etrafında döner. Her biri, kurumun başarısı için ayrı bir özen, uzmanlık ve stratejik gözetim gerektirir."
+                },
+                {
+                  "type": "p",
+                  "text": "İnsan Kaynakları (İK)"
+                },
+                {
+                  "type": "p",
+                  "text": "İnsanlar en değerli varlıktır. İK yönetimi; işe alım, eğitim, motivasyon, performans değerlendirme, çatışma çözümü ve kurum kültürünün geliştirilmesini kapsar. İnsan kaynaklarınızın gücü, kurumun stratejiyi uygulama ve değişime uyum sağlama kapasitesini belirler."
+                },
+                {
+                  "type": "h3",
+                  "text": "Finans"
+                },
+                {
+                  "type": "p",
+                  "text": "Finansal yönetim; fonların en uygun dağılımını, bütçelemeyi, maliyet kontrolünü, kârlılığı, nakit akışı yönetimini ve mali sürdürülebilirliği güvence altına alır. Sağlam bir finansal yönetim kurumun varlıklarını korur, stratejik yatırımları mümkün kılar ve uzun vadeli varlığını sürdürmesini sağlar."
+                },
+                {
+                  "type": "h3",
+                  "text": "Varlıklar"
+                },
+                {
+                  "type": "p",
+                  "text": "Ekipman, mülk, stok, altyapı ve teknoloji gibi fiziksel ve somut kaynakların bakımı yapılmalı, en iyi biçimde kullanılmalı ve verimli değerlendirilmelidir. Varlık yönetimi israfı önler, kullanım ömrünü uzatır ve yatırımın getirisini en üst düzeye çıkarır."
+                },
+                {
+                  "type": "h3",
+                  "text": "Bilgi ve Veri"
+                },
+                {
+                  "type": "p",
+                  "text": "Bilgi yönetimi, veri analizi, kurumsal öğrenme, belgeleme sistemleri ve bilgi paylaşımı; rekabet avantajı ve bilinçli karar alma sağlar."
+                },
+                {
+                  "type": "p",
+                  "text": "Bilgi varlıkları kurum içinde paylaşıldıkça ve uygulandıkça değer kazanır."
+                }
+              ]
+            },
+            {
+              "id": "1.3",
+              "title": "Yönetimin Temelleri",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Başarılı yönetim, tüm kararları ve eylemleri şekillendiren iki temel dayanak üzerine kurulur."
+                },
+                {
+                  "type": "h3",
+                  "text": "Doğru Düşünme"
+                },
+                {
+                  "type": "p",
+                  "text": "Yöneticiler durumları önyargısız ve varsayımsız, nesnel biçimde analiz etmelidir. Bu şu anlama gelir:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Eksiksiz ve güvenilir bilgi toplamak",
+                    "Belirtileri değil kök nedenleri anlamak",
+                    "Bağlantıları ve bağımlılıkları görmek",
+                    "Karar vermeden önce eleştirel düşünmek",
+                    "Olguları görüşlerden ve yorumlardan ayırmak"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Doğru düşünme maliyetli hataları önler ve stratejilerin temenniler ya da varsayımlar yerine gerçeklere dayanmasını sağlar."
+                },
+                {
+                  "type": "h3",
+                  "text": "Gerçekçi Planlama"
+                },
+                {
+                  "type": "p",
+                  "text": "Planlar mevcut kaynaklara, gerçekçi zaman çizelgelerine ve kurumun gerçek kapasitesine dayanmalıdır. Etkili planlama:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Kısıtları ve sınırları dürüstçe hesaba katar",
+                    "Beklenmedik zorluklar için pay bırakır",
+                    "Açık ve ölçülebilir ara hedefler belirler",
+                    "Koşullar değiştikçe uyum sağlayabilecek esneklikte kalır",
+                    "İstekleri ulaşılabilir hedeflerle uyumlu hâle getirir"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Gerçekçi planlama ulaşılabilir hedefler yaratır, paydaşlar nezdinde güvenilirlik kazandırır ve başarılı uygulama olasılığını artırır."
+                },
+                {
+                  "type": "p",
+                  "text": "Temel fikir: Doğru düşünme gerçekçi planlamayla buluştuğunda kurumlar aşırı taahhütten kaçınır, israfı azaltır, güven inşa eder ve tutarlı biçimde sonuç alır."
+                }
+              ]
+            },
+            {
+              "id": "1.4",
+              "title": "Temel Yönetim Sorumlulukları",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Yöneticilerin rollerini tanımlayan belirli sorumlulukları vardır. Bu beş temel alan, etkili yönetim uygulamasının temelini oluşturur."
+                },
+                {
+                  "type": "h3",
+                  "text": "1. Sonuçları Öngörmek, Yöntem Geliştirmek ve Uygun Çözümler Bulmak"
+                },
+                {
+                  "type": "p",
+                  "text": "Yöneticiler istenen sonuçları zihinlerinde canlandırmalı, gerekli adımları belirlemek için tersinden çalışmalı, iyi uygulamaları araştırmalı ve kendi bağlamlarına uygun yaklaşımlar geliştirmelidir. Bu şunları gerektirir:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Nihai hedefler hakkında stratejik düşünme",
+                    "Birden çok çözüm yolu geliştirmede yaratıcılık",
+                    "Engelleri aşmak için sorun çözme becerisi",
+                    "Kendine özgü ortamınızda işe yarayan yöntemleri bulacak uyum yeteneği"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Güçlü yöneticiler yalnızca sorunlara tepki vermez; neyin gerektiğini öngörür ve oraya ulaştıracak yaklaşımları önceden geliştirir."
+                },
+                {
+                  "type": "h3",
+                  "text": "2. İş Programları Hazırlamak, Görevleri Dağıtmak ve İş Akışının Sürekliliğini Sağlamak"
+                },
+                {
+                  "type": "p",
+                  "text": "Yöneticiler işi sistemli biçimde düzenler, sorumlulukları yeteneklere göre dağıtır, ivmeyi korur, bireysel performansı değerlendirir ve kurum hedeflerine bağlılığı ölçer. Bu sorumluluk şunları kapsar:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Karmaşık işi yönetilebilir görevlere bölmek",
+                    "Görevleri bireylerin güçlü yanları ve yetenekleriyle eşleştirmek",
+                    "İş akışının ivmesini korumak ve darboğazları önlemek",
+                    "Performansı adil ve tutarlı biçimde değerlendirmek",
+                    "Ekip üyelerinin hedeflere gerçekten bağlı olup olmadığını değerlendirmek"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Bu sorumluluk iyi yerine getirildiğinde hiçbir şey arada kaybolmaz ve iş sorunsuzca tamamlanmaya doğru akar."
+                },
+                {
+                  "type": "h3",
+                  "text": "3. Toplantıları Etkili Biçimde Yönetmek"
+                },
+                {
+                  "type": "p",
+                  "text": "Toplantılar, eşgüdüm ve iletişim için kritik araçlardır. Yöneticiler:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Toplantıları açık gündemler ve belirli amaçlarla yapılandırmalı",
+                    "İlgili paydaşların etkin katılımını sağlamalı",
+                    "Kararları ve eylem maddelerini eksiksiz kayda geçirmeli",
+                    "Tartışmaları somut sonuçlara yöneltmeli",
+                    "Verilen görevleri ve hesap verebilirliği takip etmelidir"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Etkili toplantılar zaman kazandırır, yanlış anlaşılmaları önler, ekibi aynı hizaya getirir ve karar almayı hızlandırır. Kötü toplantılar ise kaynak israf eder ve kafa karışıklığı yaratır."
+                },
+                {
+                  "type": "h3",
+                  "text": "4. Avantajları ve Fırsatları Doğru Analiz Etmek"
+                },
+                {
+                  "type": "p",
+                  "text": "Yöneticiler kurumun güçlü yanlarını belirler, pazardaki fırsatları görür, rekabet ortamındaki boşlukları fark eder ve kurumu elverişli koşullardan yararlanacak biçimde konumlandırır. Bu stratejik sorumluluk şunları içerir:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "İç güçlü yanları ve yetenekleri tanımak",
+                    "Pazar eğilimlerini ve dış fırsatları anlamak",
+                    "Rekabet avantajlarını ve farklılaştırıcıları belirlemek",
+                    "Ortaya çıkan tehditleri ve zorlukları fark etmek",
+                    "Kaynakları elverişli anları yakalayacak biçimde konumlandırmak"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Bu stratejik farkındalık büyümeyi sürükler, güncelliği korur ve kurumun etkisini en üst düzeye çıkarır."
+                },
+                {
+                  "type": "h3",
+                  "text": "5. İşin İlerleyişini İzlemek ve Hataları Dürüstçe Ele Almak"
+                },
+                {
+                  "type": "p",
+                  "text": "Yöneticiler hedeflere göre ilerlemeyi izler, sapmaları araştırır, zamanında geri bildirim verir ve sorunların gizlenmek yerine ortaya konduğu bir kültür oluşturur. Bu şunları kapsar:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Açık ölçütler ve ara hedefler belirlemek",
+                    "Düzenli izleme ve durum değerlendirmeleri",
+                    "Plandan sapmaların hızla araştırılması",
+                    "Bireylere ve ekiplere dürüst, yapıcı geri bildirim",
+                    "Sorunların erken bildirilmesi için psikolojik güven ortamı yaratmak",
+                    "Hataların örtbas edildiği ya da gizlendiği bir kültürü önlemek"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Şeffaflık ve hesap verebilirlik küçük sorunların büyük krizlere dönüşmesini önler. Sorunlar hızla ve dürüstçe ele alındığında kurumlar öğrenir, uyum sağlar ve gelişir."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Yönetimin temellerine ilişkin on test",
+            "tests": [
+              "Biriminin bu çeyrekte neyi başarmaya çalıştığını tek cümleyle söyleyebilir miyim?",
+              "Dört kaynak türünden — insan, finans, varlıklar, bilgi — hangisini en zayıf yönettiğimi biliyor muyum?",
+              "En son önemli bir karar verdiğimde kanıt mı topladım, yoksa izlenime mi dayandım?",
+              "Mevcut planlarım, ekibimin olmasını dilediğim kapasiteye değil, gerçekte sahip olduğu kapasiteye mi dayanıyor?",
+              "Bildiğimi varsaydığımdan yazılı olarak ayırıyor muyum?",
+              "Mevcut zaman çizelgelerime pay koydum mu?",
+              "Sorunları öngörüyor muyum, yoksa çoğunlukla onlara tepki mi veriyorum?",
+              "Ekibimdeki görevler bireylerin güçlü yanlarına göre mi, yoksa kolaylığa göre mi dağıtılıyor?",
+              "Yönettiğim kişiler performanslarının nasıl ölçüldüğünü biliyor mu?",
+              "Ekibimde bir şey ters gittiğinde bunu erken mi, geç mi duyuyorum?"
+            ],
+            "questions": [
+              "Kurumumuz dört kaynak türünden hangisini en iyi yönetiyor? Hangisini en kötü? Bu yargının kanıtı nedir?",
+              "Kendi işimizden doğru düşünmenin eksik olduğu bir örnek verin. Bunun bedeli ne oldu?",
+              "Planlamamız gerçekçi mi, yoksa temenni mi? Farkı nasıl anlarız?",
+              "Burada insanları sorunları erken bildirmekten alıkoyan nedir?",
+              "Beş temel yönetim sorumluluğundan hangisi bizim bağlamımızda en zorudur ve neden?"
+            ],
+            "exercise": "Biriminizin ulaşmaya çalıştığı bir hedefi seçin. Tek sayfaya; dört kaynak türünün her birinden neye ihtiyaç duyduğunu, yaptığınız varsayımları ve henüz plan yapmadığınız, ters gidebilecek bir şeyi yazın."
+          }
+        },
+        {
+          "id": "s2",
+          "number": 2,
+          "title": "Yönetim Düzeyleri",
+          "ship": {
+            "title": "Geminin mürettebatı",
+            "body": [
+              "Hiçbir gemi tek bir kişiyle yürütülmez. Kaptan rotayı belirler ve yolculuktan sorumludur. Zabitler vardiyaları tutar ve niyeti emre dönüştürür. Tayfalar güvertede çalışır; geminin denizle gerçekten buluştuğu yerde. Kâhya erzakı, evrakı ve hesapları tutar; kaptana bağlıdır ama komuta zincirinde yer almaz. Denizdeki sorun nadiren varış yeri üzerine bir anlaşmazlıktır. Asıl anlaşmazlık, emri kimin vereceği ve kimin yerine getireceğidir."
+            ],
+            "claim": "Bu bölümdeki düzeyler, hava bozmadan önce bunu çözmek için vardır.",
+            "question": "Ekibinizde tekrar eden bir tartışmayı ele alın. Neyle ilgili olduğunu değil, hangi düzeyde çözülmesi gerektiğini sorun."
+          },
+          "intro": [
+            "Herhangi bir kurumda yönetim genellikle üç düzeyde sınıflandırılır — üst, orta ve alt (operasyonel) — ve her birinin kendi karar yetkisi alanı, sorumlulukları ve odağı vardır. Bu üç düzeyin yanı sıra çoğu kurumda ayrı bir Büro Yönetimi işlevi de bulunur. Büro Yönetimi, yönetim hiyerarşisinin bir basamağı değildir; üç düzeyin hepsine hizmet eden ve günlük operasyonel mükemmellik için vazgeçilmez olan paralel bir destek işlevidir."
+          ],
+          "subsections": [
+            {
+              "id": "2.1",
+              "title": "Üst Yönetim / İdare",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "İdare ya da Yürütme Liderliği olarak da anılan Üst Yönetim, kurumdaki en yüksek yetki düzeyini temsil eder. Bu düzey esas olarak kurumun misyonunu, vizyonunu, politikalarını ve uzun vadeli stratejik yönünü belirlemekle ilgilenir. Üst yöneticiler yönetişimden sorumludur; yani kurumun “neyi” başarmak istediğini tanımlar, kurumsal politika ve standartları koyar, fon, personel ve sermaye yatırımı gibi büyük kaynakları tahsis ederler."
+                },
+                {
+                  "type": "p",
+                  "text": "Temel özellikler:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Stratejik hedefleri ve kurumun genel misyonunu belirler",
+                    "Kurumsal politika ve standartları geliştirir, onaylar ve gözden geçirir",
+                    "Önemli kaynakları tahsis eder — bütçeler, büyük ölçekli işe alımlar, stratejik yatırımlar, sermaye planlaması",
+                    "Uyumu, risk yönetimini ve hukuki çerçeveleri gözetir",
+                    "Kurumun tamamı için performans hedefleri ve başarı ölçütleri belirler",
+                    "Dış paydaşlar, kurullar ve düzenleyici kuruluşlarla ilişkiler kurar",
+                    "Uzun vadeli etkileri olan kararlar alır (üç ila beş yıl ya da daha uzun)"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Tipik roller: Genel Müdür (CEO), Mali İşler Direktörü (CFO), Mütevelli Heyeti ya da Yönetim Kurulu, Yürütme Direktörleri, Başkanlar, Başkan Yardımcıları."
+                },
+                {
+                  "type": "p",
+                  "text": "Örnek ifade: İdare, önümüzdeki beş yıl için dijital dönüşümü temel stratejik politika olarak önceliklendirmeye karar verdi ve kurum çapındaki bu girişim için milyonlarca sterlinlik bir bütçeyi onayladı."
+                }
+              ]
+            },
+            {
+              "id": "2.2",
+              "title": "Orta Düzey Yönetim",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Orta Yönetim, üst yönetim ile operasyonel personel arasında bir düzeyde çalışır. Bu düzey, üst yönetimin belirlediği strateji ve politikaları uygulanabilir pratik planlara dönüştürmekten sorumludur. Orta düzey yöneticiler; belirli birim ya da proje hedeflerine ulaşmak için insanların ve kaynakların çabalarını planlar, düzenler, eşgüdümler ve denetler. Stratejik vizyon ile operasyonel uygulama arasında kritik bir köprü işlevi görür, kurum hedeflerinin ekiplerinde anlaşılmasını ve etkili biçimde uygulanmasını sağlarlar."
+                },
+                {
+                  "type": "p",
+                  "text": "Temel özellikler:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Üst yönetimin politikalarını ve misyonunu uygulanabilir birim planlarına ve projelerine dönüştürür",
+                    "Ekipleri düzenler, sorumlulukları dağıtır ve birim kaynaklarını verimli ve etkili biçimde tahsis eder",
+                    "Personele ve ekip liderlerine öncülük eder, onları motive eder, koçluk yapar ve denetler",
+                    "Performansı izler, birim hedeflerine doğru ilerlemeyi takip eder ve gerektiğinde stratejileri ayarlar",
+                    "Operasyonel zorlukları belirler ve pratik çözümler geliştirir",
+                    "Sonuçları, ilerlemeyi ve zorlukları üst yönetime raporlar",
+                    "Birim ya da işlev düzeyinde bütçeleri yönetir",
+                    "Eğitim ve performans yönetimiyle ekip yetkinliklerini geliştirir",
+                    "Günlük işleyişi ve ekip performansını etkileyen taktik kararlar alır"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Tipik roller: Birim Başkanları, Proje Yöneticileri, Bölge Yöneticileri, İşlevsel Yöneticiler, Ekip Liderleri, Amirler, Üretim Yöneticileri."
+                },
+                {
+                  "type": "p",
+                  "text": "Örnek ifade: Yönetim ekibi, idarenin stratejik yönüne dayanarak ayrıntılı bir proje planı hazırladı, ekip üyelerine belirli roller verdi, temel ara hedefleri ve çıktıları belirledi ve ilerlemeyi haftalık toplantılarda personelle düzenli olarak gözden geçirdi."
+                }
+              ]
+            },
+            {
+              "id": "2.3",
+              "title": "Alt Düzey Ekip (Operasyonel Düzey)",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Operasyonel ya da Ön Saf Düzeyi olarak da bilinen Alt Düzey Ekip, kurumun günlük faaliyetlerini yürütmekten ve hizmetleri doğrudan sunmaktan sorumludur. Modern yönetim çerçevelerine göre bu grup örgüt yapısının temelini oluşturur ve yönetimin tasarladığı strateji ve planların etkili biçimde uygulanmasını sağlar."
+                },
+                {
+                  "type": "p",
+                  "text": "Temel özellikler:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Amirlerin verdiği operasyonel görevleri ve saha faaliyetlerini yürütür",
+                    "Doğrudan hizmet, destek ya da üretim işi sunar",
+                    "Performansta kaliteyi, zamanlamayı ve doğruluğu korur",
+                    "Operasyonel verileri, sonuçları ve sorunları orta yönetime raporlar",
+                    "Sistemleri, verimliliği ve yararlanıcı memnuniyetini geliştirmek için geri bildirim verir",
+                    "Sürekli öğrenmeye, eğitime ve kapasite geliştirmeye katılır"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Tipik roller: Saha Görevlileri, Teknisyenler, Asistanlar, Koordinatörler, Müşteri Hizmetleri Temsilcileri,"
+                },
+                {
+                  "type": "p",
+                  "text": "Destek Personeli."
+                },
+                {
+                  "type": "p",
+                  "text": "Örnek ifade: Saha görevlileri yerinde ziyaretler yaptı, yararlanıcı verilerini topladı, planlanan faaliyetleri uyguladı ve ilerleme raporlarını proje amirlerine sundu."
+                }
+              ]
+            },
+            {
+              "id": "2.4",
+              "title": "Büro Yönetimi / İdari Destek",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Büro Yönetimi, kurumun tüm düzeylerini destekleyen paralel ama ayrı bir işlev olarak çalışır. Kurum faaliyetlerinin sorunsuz yürümesini sağlayan operasyonel sistemlerin, lojistiğin ve belgelerin sürdürülmesiyle ilgilenir. İdari personel genellikle yönetsel karar almaya katılmaz, ancak kurumu verimli, mevzuata uygun ve eşgüdümlü tutmak için kritik öneme sahiptir."
+                },
+                {
+                  "type": "p",
+                  "text": "Temel özellikler:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Tüm düzeylerdeki personele ve yönetime günlük operasyonel destek sağlar",
+                    "Kayıtları, belgeleri, dosyalama sistemlerini ve kurumsal veri tabanlarını yönetir",
+                    "Toplantıları planlar ve eşgüdümler, yazışmaları yürütür, iletişimi yönetir",
+                    "Seyahat, konaklama ve lojistik desteği eşgüdümler",
+                    "Büro malzemelerini, ekipmanı ve tesis kaynaklarını korur",
+                    "İdari belgeleri, izinleri ve rutin evrak işlerini yürütür",
+                    "İşe alım, işe uyum ve İK idari işlevlerini destekler",
+                    "Danışma ve ziyaretçi işlemlerini yürütür",
+                    "Kurumsal prosedürlere ve idari protokollere uyumu sağlar",
+                    "Süreç ve prosedürlere hâkim olduğundan çoğu zaman kurumun bilgi merkezi işlevi görür"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Tipik roller: Büro Yöneticileri, Yönetici Asistanları, İdari Memurlar, Resepsiyon Görevlileri, Katipler, Veri Giriş Uzmanları, İK Koordinatörleri."
+                },
+                {
+                  "type": "p",
+                  "text": "Örnek ifade: Büro yöneticisi toplantı gündemlerini yönetimin önceliklerine göre hazırladı, tüm katılımcılara zamanında hatırlatma gönderdi, gerekli belgelerin derlenip hazır olmasını sağladı, toplantı yerini ayarladı ve takip edilecek eylem maddelerini kayda geçirdi."
+                }
+              ]
+            },
+            {
+              "id": "2.5",
+              "title": "Uygulamadan Gerçek Örnekler",
+              "blocks": [
+                {
+                  "type": "h3",
+                  "text": "Örnek 1: Eğitim sektörü (üniversite)"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Üst yönetim: Üniversite kurulu yeni bir araştırma mükemmelliği stratejisini onaylar ve araştırma kapasitesini, uluslararası ortaklıkları ve etkisi yüksek yayınları güçlendirmek için çok yıllık bir bütçe ayırır.",
+                    "Orta yönetim: Araştırma dekanı ve bölüm başkanları bu stratejiyi öğretim üyesi alım planlarına, araştırma kümelerine, danışmanlık yüklerine ve her bölüm için yıllık yayın ve hibe başvurusu hedeflerine dönüştürür.",
+                    "Alt düzey ekip: Araştırma asistanları ve genç öğretim görevlileri literatür taramaları yapar, veri toplar ve analiz eder, hibe başvurularının yazımına destek olur ve günlük araştırma faaliyetlerini bölümün planına uygun yürütür."
+                  ]
+                },
+                {
+                  "type": "h3",
+                  "text": "Örnek 2: Sağlık sektörü (hastane)"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Üst yönetim: Hastanenin yürütme kurulu, kalp hastalıklarında bölgesel bir mükemmeliyet merkezi olmaya karar verir ve yeni ekipman, uzman personel ve kalite akreditasyonu için büyük yatırımları onaylar.",
+                    "Orta yönetim: Başhekim ve servis sorumluları hizmet süreçlerini yeniden tasarlar, kalp hastalarının bakımı için protokoller belirler, personel eğitimlerini planlar ve aylık kalite ve güvenlik göstergelerini tanımlar.",
+                    "Alt düzey ekip: Hemşireler ve asistan hekimler yeni bakım protokollerini uygular, hastaları izler, klinik verileri doğru kaydeder ve komplikasyonları ya da tekrarlayan sorunları amirlerine iletir."
+                  ]
+                },
+                {
+                  "type": "h3",
+                  "text": "Örnek 3: Sivil toplum kuruluşu / insani yardım projesi"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Üst yönetim: Kuruluşun yönetim organı, çatışma sonrası bölgelerde geçim kaynakları ve yeniden yapılanma programlarını genişletmek için üç yıllık bir stratejiyi onaylar; sonuç hedeflerini ve genel finansman çerçevesini belirler.",
+                    "Orta yönetim: Ülke ve program yöneticileri belirli projeler tasarlar, bütçeleri bölgelere dağıtır, yerel ortaklarla eşgüdüm kurar ve izleme çerçeveleriyle uygulama takvimleri oluşturur.",
+                    "Alt düzey ekip: Saha görevlileri faaliyetleri sahada uygular, yararlanıcıları kaydeder, eğitim ya da nakdi yardım sunar, izleme verilerini toplar ve sahadaki zorlukları ve toplumdan gelen geri bildirimleri proje yöneticilerine iletir."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2.6",
+              "title": "Bu Düzeyler Neden Önemlidir",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Kurumlar, her düzey kendine özgü rolünü ve sorumluluklarını anladığında en etkili biçimde işler. Üst yönetim açık bir stratejik yön verir, orta yönetim bu stratejinin verimli biçimde yorumlanıp uygulanmasını sağlar, alt düzey ekip de günlük uygulamayı ve hizmet sunumunu yürütür. Büro yönetimi ise üç düzeyin sorunsuz çalışmasını sağlayan operasyonel sistemleri ve destek yapılarını sürdürür. Bu düzeylerin açıkça ayrılması kafa karışıklığını önler, çabaların tekrarlanmasını azaltır ve işleyişin her aşamasında hesap verebilirliği güvence altına alır."
+                },
+                {
+                  "type": "p",
+                  "text": "Bu düzeyler açık iletişim, karşılıklı anlayış ve uyumlu hedeflerle eşgüdüm içinde çalıştığında kurum hedeflerine daha etkili biçimde ulaşabilir ve tüm alanlarda yüksek performans standartlarını koruyabilir."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Doğru düzeyde çalışmaya ilişkin on test",
+            "tests": [
+              "Çalıştığım düzeyi ve hangi kararların bana ait olduğunu söyleyebilir miyim?",
+              "Hangi kararların yukarı gitmesi gerektiğini, hangilerini kendim çözebileceğimi biliyor muyum?",
+              "Strateji benim üstümde belirlendiğinde onu somut planlara mı dönüştürüyorum, yoksa olduğu gibi mi aktarıyorum?",
+              "Ekibim kendi düzeyinde neyin kararlaştırıldığını, neyin kararlaştırılmadığını biliyor mu?",
+              "Konuları bir öneriyle mi yukarı taşıyorum, yoksa yalnızca sorunla mı?",
+              "Altımdaki düzeye ait bir işi mi yapıyorum?",
+              "Alt düzey ekipten gelen saha geri bildirimleri üst yönetime ulaşıyor mu, yoksa bende mi kalıyor?",
+              "Büro yönetimini bir destek işlevi olarak mı görüyorum, yoksa her şeyin atıldığı bir yer olarak mı?",
+              "Alanımda hiçbir düzeyin açıkça sahiplenmediği görevler var mı?",
+              "İki düzey anlaşamadığında bunu çözmek için üzerinde uzlaşılmış bir yol var mı?"
+            ],
+            "questions": [
+              "Kurumumuzda düzeyler arasındaki sınırlar en çok nerede bulanıklaşıyor?",
+              "Yakın zamanda yanlış düzeyde alınmış bir karara örnek verin. Etkisi ne oldu?",
+              "Burada bilgi yukarı doğru, aşağı doğru olduğuna kıyasla ne kadar iyi akıyor?",
+              "Büro yönetimi işlevimiz işini yapmak için gereken yetkiye sahip mi?",
+              "Üç örnekten hangisi bizim yapımıza en çok benziyor ve benzerlik nerede bozuluyor?"
+            ],
+            "exercise": "Verdiğiniz son on kararı listeleyin. Her birini stratejik, taktik ya da görev düzeyinde olarak işaretleyin. Başka birinin — sizin üstünüzde ya da altınızda — vermesi gerekenleri not edin."
+          }
+        },
+        {
+          "id": "s3",
+          "number": 3,
+          "title": "Yönetimin İlkeleri",
+          "ship": {
+            "title": "Altı istasyon, tek yolculuk",
+            "body": [
+              "Rotayı çizmek, gemiyi donatmak, mürettebatı toplamak, emri vermek, vardiyaları uyum içinde tutmak ve iskandil atmak — altı istasyon; gemi her yolculukta altısına da ihtiyaç duyar. Donatılmamış bir gemide kusursuz çizilmiş bir rota hiçbir yere varmaz."
+            ],
+            "claim": "Çoğu kaptan iki istasyonda iyidir ve iki istasyondan da sessizce kaçınır. Deniz bunu hesaba katmaz.",
+            "question": "Kendinizi altı istasyonun her birinde birden beşe kadar puanlayın. En düşük puan, başka birinin üstlendiğini umduğunuz istasyondur."
+          },
+          "intro": [
+            "Yönetimin altı temel ilkesi, yöneticilerin ve idarecilerin sorumluluklarını yerine getirdiği çerçeveyi sunar. Bu ilkeler — Planlama, Örgütleme, Kadrolama, Yönlendirme/Liderlik, Eşgüdüm ve Denetim — kurumsal hedeflere verimli ve etkili biçimde ulaşılmasını sağlayan bütünleşik bir sistem oluşturur. Her ilke diğerlerinin üzerine kurularak tutarlı bir yönetim yaklaşımı yaratır."
+          ],
+          "subsections": [
+            {
+              "id": "3.1",
+              "title": "Planlama",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Planlama, yönetimin temel ilkesidir. Kurumsal hedefleri belirlemeyi ve bunlara ulaşmak için gereken yöntem ve kaynaklara önceden karar vermeyi içerir. Planlama şu kritik sorulara cevap verir: “Nereye gidiyoruz?”, “Oraya nasıl varacağız?” ve “Hangi kaynaklara ihtiyacımız var?” Planlamanın temel unsurları:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Açık ve ölçülebilir kurumsal hedefler belirlemek",
+                    "Mevcut kaynakları ve yetenekleri analiz etmek",
+                    "Çevredeki olası fırsatları ve tehditleri belirlemek",
+                    "Hedeflere ulaşmak için zaman çizelgesini ve ara hedefleri belirlemek",
+                    "Kaynakları stratejik olarak öncelikli alanlara ayırmak",
+                    "Beklenmedik zorluklar için yedek planlar geliştirmek",
+                    "Planı ilgili tüm paydaşlara açıkça iletmek"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Planlama neden önemlidir: Planlama olmadan kurumlar önceden davranmak yerine tepkisel çalışır. Planlama yön verir, belirsizliği azaltır, israfı en aza indirir ve tüm çabaların ortak hedeflere yönelmesini sağlar. Kurumun vizyonunu ve misyonunu somut, uygulanabilir adımlara dönüştürür."
+                },
+                {
+                  "type": "example",
+                  "title": "bir genişlemeyi planlamak",
+                  "text": "Bir insani yardım kuruluşu, tıbbi yardım programını üç yeni bölgeye genişletmeyi planlar. Yönetim hedefi belirler, gereken bütçeyi ve personeli hesaplar, zaman çizelgesini (12 ay) saptar, mevcut kapasiteyi değerlendirir, riskleri (güvenlik kaygıları, kültürel engeller) belirler ve bu zorluklarla başa çıkmak için stratejiler geliştirir. Bu kapsamlı plan, sonraki tüm karar ve eylemlere yön verir."
+                }
+              ]
+            },
+            {
+              "id": "3.2",
+              "title": "Örgütleme",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Örgütleme, planı etkili biçimde uygulamak için kaynakları, görevleri ve insanları düzenleme ve yapılandırma sürecidir. Rolleri netleştiren, raporlama ilişkilerini kuran ve işin nasıl dağıtılıp eşgüdümleneceğini belirleyen bir çerçeve oluşturmayı içerir."
+                },
+                {
+                  "type": "p",
+                  "text": "Örgütlemenin temel unsurları:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Örgüt yapısını tasarlamak (birimler, alt birimler, hiyerarşiler)",
+                    "Görev tanımları ve rol tanımları hazırlamak",
+                    "Açık raporlama ilişkileri ve yetki hatları kurmak",
+                    "Bireylere ve ekiplere belirli görev ve sorumluluklar vermek",
+                    "Benzer faaliyetleri ve işlevleri mantıklı biçimde bir araya getirmek",
+                    "İletişim kanallarını ve bilgi akış yollarını kurmak",
+                    "Kaynakların birimler ve projeler arasında dağılımını belirlemek",
+                    "Tutarlılık ve verimlilik için politika ve prosedürleri tanımlamak"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Örgütleme neden önemlidir: Doğru bir örgütleme olmadan sorumluluklar konusunda kafa karışıklığı doğar, yetki konusunda çatışmalar çıkar ve çabalar tekrarlanır ya da dağılır. İyi örgütleme açıklık sağlar, belirsizliği azaltır, boşlukları önler ve herkesin rolünü ve genel hedeflere katkısını anladığı verimli bir sistem kurar."
+                },
+                {
+                  "type": "example",
+                  "title": "bir yapıyı örgütlemek",
+                  "text": "Bir inşaat şirketi faaliyetlerini ayrı birimler hâlinde örgütler: Proje Yönetimi, Finans, İnsan Kaynakları, Güvenlik ve Satın Alma. Her birimin belirgin bir lideri, tanımlı sorumlulukları ve belirli raporlama ilişkileri vardır. Her birimin içinde görevler beceri ve uzmanlığa göre bireylere verilir. Birimlerin nasıl etkileşip iletişim kuracağına dair açık prosedürler belirlenir."
+                }
+              ]
+            },
+            {
+              "id": "3.3",
+              "title": "Kadrolama",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Kadrolama, kurumun işlemesi ve hedeflerine ulaşması için gereken insan kaynaklarını edinme, geliştirme ve elde tutma sürecidir. Bu ilke, insanların en önemli kurumsal kaynak olduğunu ve yeteneklerinin kurumun başarısını doğrudan etkilediğini kabul eder."
+                },
+                {
+                  "type": "p",
+                  "text": "Kadrolamanın temel unsurları:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "İşgücü planlaması yapmak ve personel ihtiyacını belirlemek",
+                    "Uygun yetenek kaynaklarından nitelikli adaylar bulmak",
+                    "En uygun adayları seçip işe almak",
+                    "Yeni çalışanları kuruma tanıtmak ve uyumlarını sağlamak",
+                    "Eğitim ve mesleki gelişim fırsatları sunmak",
+                    "Çalışanların performansını ve yetkinliğini düzenli olarak değerlendirmek",
+                    "Ücret, yan haklar ve kariyer ilerlemesini yönetmek",
+                    "Yetenekli çalışanları elde tutmak ve işgücü değişikliklerini yönetmek",
+                    "Sürekli öğrenme ve gelişme kültürü oluşturmak",
+                    "Performans sorunlarını ele almak ve gerekli disiplin işlemlerini yürütmek"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Kapasite ve motivasyon farklı şeylerdir."
+                },
+                {
+                  "type": "p",
+                  "text": "Bir kişinin performansını iki ayrı etken belirler: sahip oldukları ve istedikleri. Sahip oldukları — yatkınlık, bilgi, deneyim, mizaç, geçmiş — onun için mümkün olanın dış sınırını çizer. İstedikleri — bir şey başarmak, öğrenmek, bir zanaatta ustalaşmak, kazanmak, belirli türde biri olmak, hizmet etmek — o kapasitenin ne kadarının gerçekten kullanılacağını belirler. Çoğu insan kendi sınırının içinde iyi çalışır."
+                },
+                {
+                  "type": "p",
+                  "text": "İstemek, gelişmeyi sürükleyen itici güçtür, ama yalnızca potansiyel kapasitenin sınırları içinde. Hiçbir motivasyon olmayan bir yatkınlığın yerini tutamaz; hiçbir yatkınlık da sonucu istemeyen birini telafi edemez."
+                },
+                {
+                  "type": "p",
+                  "text": "Pratik sonucu şudur: İşe alım ve denetim farklı sorularla ilgilenir. İşe alımda kapasiteyi değerlendirirsiniz; denetimde motivasyonla çalışırsınız. İkisini karıştıran yöneticiler ya hevese bakarak işe alıp sonra hayal kırıklığına uğrar ya da sonuç vermeyen yetenekli bir kişinin yetersiz olduğu sonucuna varır — oysa gerçek durum, o kişinin bu rolün sunmadığı bir şeyi istemesidir."
+                },
+                {
+                  "type": "p",
+                  "text": "Kadrolama neden önemlidir: Becerili, motive ve iyi yetiştirilmiş çalışanlara sahip kurumlar, insan kaynağının gelişimini ihmal edenlerden sürekli olarak daha iyi performans gösterir. Etkili kadrolama, doğru becerilere sahip doğru kişilerin doğru yerlerde olmasını sağlar. Çalışan devrini azaltır, verimliliği artırır, kurum kültürünü iyileştirir ve sürdürülebilir rekabet avantajının temelini atar."
+                },
+                {
+                  "type": "example",
+                  "title": "yeni bir program için kadro kurmak",
+                  "text": "Kâr amacı gütmeyen bir kuruluş yeni bir eğitim programı başlatmayı planladığında önce gereken belirli beceri ve deneyimleri belirler. Ardından eğitimcileri, koordinatörleri ve destek personelini işe alır. Seçilen adaylar kuruluşun misyonu, yöntemi ve sistemleri hakkında kapsamlı bir eğitimden geçer. Kuruluş açık performans ölçütleri belirler, sürekli mentorluk sağlar ve kariyer gelişim yolları oluşturur. Düzenli değerlendirmeler personelin motive ve yetkin kalmasını sağlar."
+                }
+              ]
+            },
+            {
+              "id": "3.4",
+              "title": "Yönlendirme / Liderlik",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Yönlendirme (Liderlik ya da Komuta olarak da anılır), yöneticilerin ekiplerini kurumsal hedeflere ulaşmaya doğru yönlendirdiği, motive ettiği ve etkilediği ilkedir. Kurum kültürünün tonunu belirlemeyi, stratejik kararlar almayı ve personele vizyon ve ilham vermeyi içerir."
+                },
+                {
+                  "type": "p",
+                  "text": "Yönlendirme ve liderliğin temel unsurları:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Kurumun vizyonunu ve hedeflerini açıkça iletmek",
+                    "Ekipleri hedeflere ulaşmak için motive etmek ve onlara ilham vermek",
+                    "Açık beklentiler ve performans standartları koymak",
+                    "Rehberlik, mentorluk ve yapıcı geri bildirim vermek",
+                    "Kurumsal konularda zamanında karar almak",
+                    "Etik davranışta ve kurum değerlerinde örnek olmak",
+                    "Ekip üyeleriyle güven ve inandırıcılık kurmak",
+                    "Açık iletişim için psikolojik güven ortamı yaratmak",
+                    "Çatışmaları çözmek ve kişiler arası sorunları ele almak",
+                    "Liderlik tarzını farklı durumlara ve ekip ihtiyaçlarına göre uyarlamak"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Yönlendirme ve liderlik neden önemlidir: Etkili liderlik, kurumun potansiyelini gerçek performansa dönüştürür. Açık bir yön olmadan ekiplerin motivasyonu ve amacı eksik kalır. Güçlü liderlik uyum yaratır, kurum kültürünü inşa eder, hedeflere bağlılık uyandırır ve bireysel çabaların ortak başarıya anlamlı katkı sağlamasını güvence altına alır. Liderliğin kalitesi çalışan memnuniyetini, bağlılığını ve verimliliğini doğrudan etkiler."
+                },
+                {
+                  "type": "example",
+                  "title": "açık yönlendirme",
+                  "text": "Bir birim başkanı yılın hedefini, bundan doğan son tarihleri ve beklenen iş standardını herkesin tekrarlayabileceği sade ifadelerle ortaya koyar. Haftalık kısa bir bilgilendirme, ekibin nelerin değiştiği konusunda aynı noktada kalmasını sağlar. Bir güçlük çıktığında karar ertelenmeden hızla verilir ve gerekçesi açıklanır. İyi iş açıkça takdir edilir; zayıf iş özelde ve somut biçimde düzeltilir. Kaygılar ceza görmeden dile getirilebildiği için sorunlar henüz küçükken yöneticiye ulaşır. Bu tür bir yönlendirme, nereye gittiğini bilen ve oraya gitmeye istekli bir ekip ortaya çıkarır."
+                }
+              ]
+            },
+            {
+              "id": "3.5",
+              "title": "Eşgüdüm",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Eşgüdüm, tüm birimlerin, ekiplerin ve bireylerin ortak kurumsal hedeflere doğru uyum içinde çalışmasını sağlayan ilkedir. Çabaları senkronize etmeyi, faaliyetleri bütünleştirmeyi ve bir birimin işinin diğerleriyle çatışmak yerine onları tamamlamasını sağlamayı içerir."
+                },
+                {
+                  "type": "p",
+                  "text": "Eşgüdümün temel unsurları:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Birimler arasında düzenli iletişim kanalları kurmak",
+                    "Gerektiğinde işlevler arası ekipler oluşturmak",
+                    "Birimler arasında zaman çizelgelerini ve son tarihleri eşlemek",
+                    "Birim hedeflerini kurum hedefleriyle uyumlu hâle getirmek",
+                    "Birimler ya da kişiler arasındaki çatışmaları çözmek",
+                    "Bilgiyi ve iyi uygulamaları kurum genelinde paylaşmak",
+                    "Karmaşık girişimler için birimler arası çalışma grupları kurmak",
+                    "Birimler arasında açık devir teslim prosedürleri belirlemek",
+                    "Birden çok proje ve birimdeki ilerlemeyi izlemek",
+                    "Faaliyetler birbirine bağımlı ya da çelişkili hâle geldiğinde planları ayarlamak"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Eşgüdüm neden önemlidir: Eşgüdüm olmadan birimler birbiriyle yarışan önceliklerle ve tekrarlanan çabalarla kendi adalarında çalışır. Bu da verimsizliğe, yararlanıcılar ya da müşteriler için kötü bir deneyime, kaynak israfına ve kurum içi çatışmaya yol açar. Güçlü eşgüdüm sinerji yaratır — eşgüdümlü çabaların toplam sonucu, ayrı ayrı çabaların ulaşabileceğini aşar. İsrafı azaltır, hedeflere ulaşmayı hızlandırır ve bütünleşik bir kurumsal sistem kurar."
+                },
+                {
+                  "type": "example",
+                  "title": "birimler arasında eşgüdüm",
+                  "text": "Yeni bir hasta bakım protokolü uygulayan bir hastanede başhekim; hemşirelik, eczane, radyoloji ve idari birimler arasında eşgüdüm sağlar. Haftalık eşgüdüm toplantıları tüm birimlerin protokol değişikliklerini anlamasını güvence altına alır. Eczane ekibi ilaçların hazır olması için hemşirelikle eşgüdümlenir. Radyoloji zamanlaması tedavi programlarıyla uyumlu hâle getirilir. İdari personel faturalama ve sigorta belgelerini eşgüdümler. Bu senkronize yaklaşım gecikmeleri önler, hataları azaltır ve hasta sonuçlarını iyileştirir."
+                }
+              ]
+            },
+            {
+              "id": "3.6",
+              "title": "Denetim",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Denetim, yönetimin gerçek performansı planlanan hedeflere göre izlediği ve gerektiğinde düzeltici adım attığı ilkedir. Sonuçları ölçmeyi, standartlarla karşılaştırmayı, sapmaları belirlemeyi ve performansı hedeflerle yeniden uyumlu hâle getirecek önlemleri uygulamayı içerir."
+                },
+                {
+                  "type": "p",
+                  "text": "Denetimin temel unsurları:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Performans standartları ve ölçülebilir hedefler belirlemek",
+                    "Gerçek performans ve sonuçlar hakkında veri toplamak",
+                    "Gerçek performansı önceden belirlenmiş standartlarla karşılaştırmak",
+                    "Planlanan ve gerçekleşen sonuçlar arasındaki farkları analiz etmek",
+                    "Performans sapmalarının kök nedenlerini belirlemek",
+                    "Eksiklikleri gidermek için düzeltici adımlar atmak",
+                    "Gelecekteki performans için önleyici tedbirler uygulamak",
+                    "Çıkarılan dersleri ve iyi uygulamaları kayda geçirmek",
+                    "Politika ve prosedürlere uyumu izlemek",
+                    "İzlemeden elde edilen bulgulara göre planları ayarlamak",
+                    "İlgili taraflara performans hakkında geri bildirim vermek"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Denetim neden önemlidir: Denetim çoğu zaman kısıtlayıcı ya da cezalandırıcı olarak yanlış anlaşılır; oysa aslında kurumun yolunda kalmasını sağlayan düzeltici bir mekanizmadır. Denetim olmadan kurumlar hedeflerinden sapar, kaynaklarını israf eder ve amaçlarına ulaşamaz. Etkili denetim sorunlar için erken uyarı verir, zamanında düzeltmeye olanak tanır, küçük sorunların krize dönüşmesini önler ve hesap verebilirliği güvence altına alır. Denetim mekanizmaları suçlamaya değil öğrenmeye ve gelişmeye odaklanmalıdır."
+                },
+                {
+                  "type": "p",
+                  "text": "Uygulamalı örnek — iş başında denetim: Bir eğitim merkezi hiçbir kursun katılımının yüzde seksen beşin altına düşmemesi ve her öğrencinin ortada ve sonda değerlendirilmesi standardını koyar. Katılım haftalık kaydedilir, değerlendirme sonuçları her ayın sonunda derlenir. Bir kurs üçüncü haftasında yüzde altmış katılım bildirdiğinde koordinatör son raporu beklemek yerine durumu araştırır. Nedenin, yakındaki bir fabrikanın öğleden sonra vardiyasıyla ders saatinin çakışması olduğu anlaşılır. Ders saati değiştirilir, katılım toparlanır ve bir sonraki dönem için programlama kuralı değiştirilir. Denetim kimseyi cezalandırmadı; düzeltilebilir bir sorunu on ikinci hafta yerine üçüncü haftada ortaya çıkardı."
+                }
+              ]
+            },
+            {
+              "id": "3.7",
+              "title": "Bu İlkeler Birlikte Nasıl İşler",
+              "blocks": [
+                {
+                  "type": "table",
+                  "caption": "Altı ilke birlikte nasıl işler",
+                  "head": [
+                    "İlke",
+                    "Temel soru",
+                    "Odak"
+                  ],
+                  "rows": [
+                    [
+                      "Planlama",
+                      "Nereye gidiyoruz ve oraya nasıl varacağız?",
+                      "Gelecekteki yön, hedefler, stratejiler"
+                    ],
+                    [
+                      "Örgütleme",
+                      "Planımıza ulaşmak için kendimizi nasıl yapılandırmalıyız?",
+                      "Yapı, roller, ilişkiler, prosedürler"
+                    ],
+                    [
+                      "Kadrolama",
+                      "Doğru becerilere sahip doğru insanlara sahip miyiz?",
+                      "İşe alım, geliştirme, elde tutma, yetkinlik"
+                    ],
+                    [
+                      "Yönlendirme / Liderlik",
+                      "Ekiplerimizi nasıl yönlendirir ve motive ederiz?",
+                      "Vizyon, motivasyon, karar alma, kültür"
+                    ],
+                    [
+                      "Eşgüdüm",
+                      "Tüm parçaların birlikte çalışmasını nasıl sağlarız?",
+                      "Bütünleşme, uyum, senkronizasyon, iletişim"
+                    ],
+                    [
+                      "Denetim",
+                      "Hedeflerimize ulaşıyor ve yolumuzda kalıyor muyuz?",
+                      "Ölçme, izleme, düzeltme, hesap verebilirlik"
+                    ]
+                  ]
+                },
+                {
+                  "type": "h3",
+                  "text": "Bütünleşik yönetim sistemi"
+                },
+                {
+                  "type": "p",
+                  "text": "Bu altı ilke, ayrık ve kopuk işlevler değil, bütünleşik bir yönetim sistemi oluşturur. Planlama yapılması gerekeni belirler. Örgütleme onu yapacak yapıyı kurar. Kadrolama doğru insanların yerinde olmasını sağlar. Yönlendirme ve liderlik motivasyon ve rehberlik sunar. Eşgüdüm tüm çabaların birlikte işlemesini sağlar. Denetim sonuçları izler ve sürekli gelişmeyi mümkün kılar."
+                },
+                {
+                  "type": "p",
+                  "text": "Etkili yöneticiler ve idareciler altı ilkenin tamamını süregiden bir döngü içinde uygular. Plan yapar, plana göre örgütler, uygun biçimde kadro kurar, yön verir, faaliyetleri eşgüdümler, sonuçları izler, öğrendiklerine göre ayarlama yapar ve döngüyü yeniden başlatırlar. Bu sürekli ve bütünleşik yaklaşım, koşullar ne kadar değişirse değişsin kurumların etkili, uyumlu ve temel misyonuna odaklı kalmasını sağlar."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Altı ilkeye ilişkin on test",
+            "tests": [
+              "Alanım için önümüzdeki çeyreği kapsayan yazılı bir plan var mı?",
+              "Bana bağlı her kişinin güncel bir rol tanımı var mı?",
+              "Önümüzdeki on iki ayda hangi kadroları doldurmam gerekeceğini biliyor muyum?",
+              "Kararların gerekçesini mi iletiyorum, yoksa yalnızca kararları mı?",
+              "İşimin başka bir birime nerede bağlı olduğunu biliyor muyum ve onlarla bu konuda konuştum mu?",
+              "İyi performansın neye benzediğini ölçülebilir ifadelerle tanımladım mı?",
+              "Gerçekleşen sonuçları plana göre sabit bir takvimle gözden geçiriyor muyum?",
+              "Sonuçlar saptığında nedeni mi araştırıyorum, yoksa hedefi sessizce mi yeniden ifade ediyorum?",
+              "Alanımda denetim öğrenmek için mi, suçlamak için mi kullanılıyor?",
+              "Altı ilkenin hepsini mi işletiyorum, yoksa en rahat ettiğim ikisine mi yöneliyorum?"
+            ],
+            "questions": [
+              "Kurumumuz altı ilkeden hangisinde en güçlü? Hangisinde en zayıf?",
+              "Liderlikte güçlü ama denetimde zayıf bir yönetici yine de başarılı olabilir mi? Ne kadar süre?",
+              "Birimlerimiz en çok nerede birbirine ters düşen amaçlarla çalışıyor?",
+              "Denetimin burada cezalandırıcı değil düzeltici hissettirmesi için neyin değişmesi gerekir?",
+              "Bu kurumda bir planın yanlış olduğu anlaşıldığında ne olur?"
+            ],
+            "exercise": "Alanınızı aşağıdaki ölçeği kullanarak altı ilkenin her birine göre puanlayın. Amaç başkası için bir puan üretmek değil, nerede durduğunuza dair tek bir resim elde etmektir. 5 — Mükemmel: şu anda değişiklik gerekmez. 4 — Yeterli: biraz gelişme gerekir. 3 — Oldukça tatmin edici: bir miktar gelişme gerekir. 2 — Zayıf: önemli ölçüde gelişme gerekir. 1 — Eksik: çok fazla gelişme gerekir. İlkeler: Planlama, Örgütleme, Kadrolama, Yönlendirme / Liderlik, Eşgüdüm, Denetim. En düşük puanınızı alın ve onu bir puan yükseltecek tek değişikliği yazın. Bu değişikliği yapmak için bir tarih belirleyin ve değerlendirmeyi altı ay sonra tekrarlayın."
+          }
+        }
+      ],
+      "title": "Temeller",
+      "tagline": "Gemi nedir, onu kim yürütür ve hangi ilkelerle",
+      "foundation": {
+        "verses": [
+          {
+            "ar": "إِنَّ اللَّهَ يَأْمُرُكُمْ أَن تُؤَدُّوا الْأَمَانَاتِ إِلَىٰ أَهْلِهَا وَإِذَا حَكَمْتُم بَيْنَ النَّاسِ أَن تَحْكُمُوا بِالْعَدْلِ",
+            "text": "Şüphesiz Allah, emanetleri ehline vermenizi ve insanlar arasında hükmettiğinizde adaletle hükmetmenizi emrediyor.",
+            "ref": "Kur’ân-ı Kerîm, Nisâ Sûresi 4:58"
+          },
+          {
+            "ar": "كُلُّكُمْ رَاعٍ وَكُلُّكُمْ مَسْئُولٌ عَنْ رَعِيَّتِهِ",
+            "text": "Hepiniz çobansınız ve hepiniz sürünüzden sorumlusunuz.",
+            "ref": "Abdullah b. Ömer rivayet etmiştir — Sahîh-i Buhârî 893; Sahîh-i Müslim 1829"
+          }
+        ],
+        "why": [
+          "Bu iki metin, 1. Modülün tamamını içinde taşır. Yönetim bir emanettir — başkası adına tutulan ve eksiksiz teslim edilmesi gereken bir şey — ve yönetici bir çobandır; kendi rahatından değil, sürüsünden sorulacaktır. 2. Bölümdeki her yönetim düzeyi farklı büyüklükte bir sürüdür. 3. Bölümdeki her ilke aynı emaneti yerine getirmenin bir yoludur."
+        ]
+      },
+      "outcomes": {
+        "items": [
+          "Biriminin neyi başarmak için var olduğunu ve bu çeyrekte neyi başarmaya çalıştığını tek cümleyle ifade etmek.",
+          "Dört kaynak türünü — insan, finans, varlıklar, bilgi — saymak ve hangisini en zayıf yönettiğini dürüstçe belirlemek.",
+          "Bir durumu sunarken bildiğini varsaydığından ayırmak ve ekibin gerçekte sahip olduğu kapasiteye göre plan yapmak.",
+          "Üç yönetim düzeyinden hangisinde çalıştığını ve hangi kararların kendisinin üstünde, hangilerinin altında olduğunu belirlemek.",
+          "Bir kararın kime ait olduğuna dair güncel bir belirsizliği “Kim Ne Yapar” tablosuyla çözmek.",
+          "Altı yönetim ilkesini saymak; kişisel olarak en çok başvurduğu iki ilkeyi ve kaçındığı iki ilkeyi belirlemek.",
+          "Denetimin neden cezalandırıcı değil düzeltici olduğunu açıklamak ve kendi alanından bir örnek vermek."
+        ],
+        "evidence": "tek sayfalık bir kaynak ve varsayım analizi, düzeye göre işaretlenmiş bir karar kaydı ve tarihli bir değişiklik içeren tamamlanmış bir altı ilke öz değerlendirmesi."
+      }
+    }
+  ],
   "sharedIntro": {
     "s11": [
       "1’den 10’a kadar olan bölümler bir kurumu iyi yönetmekle ilgilidir: onu planlamak, kadrolamak, denetlemek ve belgelemek. Bu gereklidir, ama resmin tamamı değildir. Mekanizmaların altında her kurum ve içindeki her çaba, daha az görünür bir dizi örüntüden geçer: İşi taşıyan insanlar harekete geçmeye gerçekten hazır mı, işin ulaştığı aşama için doğru türden kişi yerinde mi, aynı alanda yarışan diğerleri işi nasıl şekillendiriyor ve iş kendi talihinin dönmesine hazır mı? Bu örüntüler uygulanacak ek teknikler değildir; tekniklerin içinde işlediği koşullardır — ve kâğıt üzerinde doğru görünen planların, kadro kararlarının ve stratejilerin bazen yine de başarısız olmasının nedeni bunları ihmal etmektir.",
