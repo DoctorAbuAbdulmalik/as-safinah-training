@@ -1,4 +1,4 @@
-# As Safinah Learning (MVP)
+# As Safinah Management Training Centre
 
 A static, multilingual (English / العربية / Türkçe) learning web app for the As Safinah Centre for Humanitarian Excellence.
 Plain HTML + CSS + JavaScript — no framework, no build step.
@@ -32,7 +32,8 @@ index.html            page shell
 css/styles.css        mobile-first styles, RTL-ready (CSS logical properties)
 js/app.js             router, views, progress (localStorage)
 js/i18n.js            interface strings (en / ar / tr)
-data/directions.json  the 7 directions (+ status: active | soon)
+js/symbols.js         the Ship's Key symbols and the programme wheel (inline SVG)
+data/directions.json  the 7 programmes: number, flagship, symbol, status, course introduction
 data/<direction>/<lang>.json   course content; en.json is the master
 data/shared/<lang>.json        Modules 5-6, included in every direction
 assets/                        logo and app icons

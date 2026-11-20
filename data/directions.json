@@ -1,59 +1,131 @@
 {
   "directions": [
     {
+      "id": "management",
+      "number": 1,
+      "flagship": true,
+      "symbol": "pennant",
+      "status": "soon",
+      "soon": "opening",
+      "title": { "en": "Management", "ar": "الإدارة", "tr": "Yönetim" },
+      "promise": {
+        "en": "The working reality of management, not the theory of it",
+        "ar": "الواقع العملي للإدارة، لا نظرياتها",
+        "tr": "Kuramı değil, yönetimin sahadaki gerçeği"
+      },
+      "audience": {
+        "en": "New managers, team leaders, administrators, trustees and students. No prior study is assumed.",
+        "ar": "المديرون الجدد، وقادة الفرق، والإداريون، وأعضاء مجالس الأمناء، والطلاب. لا يُشترط أي دراسة سابقة.",
+        "tr": "Yeni yöneticiler, ekip liderleri, idari personel, mütevelliler ve öğrenciler. Ön bilgi gerekmez."
+      },
+      "produce": {
+        "en": "A one-page resource analysis, a delegation brief, a seven-step diagnostic, a draft policy and a signed personal development plan.",
+        "ar": "تحليل للموارد في صفحة واحدة، وتكليف مكتوب بالتفويض، وتشخيص من سبع خطوات، ومسودة سياسة، وخطة تطوير شخصية موقّعة.",
+        "tr": "Tek sayfalık bir kaynak analizi, bir yetki devri notu, yedi adımlı bir teşhis, bir politika taslağı ve imzalı bir kişisel gelişim planı."
+      },
+      "sections": 12,
+      "sessions": 16,
+      "moduleSections": ["1–3", "4–5", "6–7", "8–10", "11", "12"],
+      "moduleSessions": ["1–3", "4–7", "8–9", "10–12", "13–14", "15–16"],
+      "moduleTitles": {
+        "en": ["Foundations", "The Manager's Own Practice", "Solving and Improving", "The Systems That Hold It Together", "Patterns of Renewal", "Obligation and Purpose"],
+        "ar": ["الأسس", "ممارسة المدير الذاتية", "الحل والتحسين", "الأنظمة التي تُمسك بالعمل", "أنماط التجدّد", "الالتزام والغاية"],
+        "tr": ["Temeller", "Yöneticinin Kendi Uygulaması", "Çözmek ve İyileştirmek", "Her Şeyi Bir Arada Tutan Sistemler", "Yenilenmenin Örüntüleri", "Yükümlülük ve Amaç"]
+      },
+      "foundation": {
+        "ar": "إِنَّ اللَّهَ يَأْمُرُكُمْ أَن تُؤَدُّوا الْأَمَانَاتِ إِلَىٰ أَهْلِهَا",
+        "text": { "en": "Indeed, Allah commands you to render trusts to whom they are due.", "tr": "Şüphesiz Allah, emanetleri ehline vermenizi emrediyor." },
+        "ref": { "en": "Qur’an, Sūrah an-Nisā’ 4:58", "ar": "القرآن الكريم، سورة النساء، الآية 58", "tr": "Kur’ân-ı Kerîm, Nisâ Sûresi 4:58" }
+      }
+    },
+    {
+      "id": "leadership",
+      "number": 2,
+      "flagship": true,
+      "symbol": "helm",
+      "status": "soon",
+      "soon": "opening",
+      "title": { "en": "Leadership", "ar": "القيادة", "tr": "Liderlik" },
+      "promise": {
+        "en": "Leading people through calm water and storm, rooted in faith",
+        "ar": "قيادة الناس في الماء الهادئ وفي العاصفة، بجذور راسخة في الإيمان",
+        "tr": "İnsanlara sakin suda da fırtınada da, imana dayanarak öncülük etmek"
+      }
+    },
+    {
+      "id": "engineering",
+      "number": 3,
+      "symbol": "cog",
+      "status": "soon",
+      "soon": "building",
+      "title": { "en": "Engineering", "ar": "الهندسة", "tr": "Mühendislik" }
+    },
+    {
       "id": "it-digital",
-      "icon": "💻",
+      "number": 4,
+      "symbol": "laptop",
       "status": "active",
       "title": {
         "en": "IT and Digital Transformation",
         "ar": "تقنية المعلومات والتحول الرقمي",
         "tr": "Bilişim ve Dijital Dönüşüm"
       },
-      "desc": {
-        "en": "Digital skills, security, software, data and AI: twelve pathways in four modules.",
-        "ar": "المهارات الرقمية والأمن السيبراني والبرمجيات والبيانات والذكاء الاصطناعي: اثنا عشر مسارًا في أربع وحدات.",
-        "tr": "Dijital beceriler, güvenlik, yazılım, veri ve yapay zekâ: dört modülde on iki yol."
-      }
+      "promise": {
+        "en": "Digital skills, security, software, data and AI, from everyday use to leading change",
+        "ar": "المهارات الرقمية والأمن والبرمجيات والبيانات والذكاء الاصطناعي، من الاستخدام اليومي إلى قيادة التغيير",
+        "tr": "Gündelik kullanımdan değişime öncülük etmeye: dijital beceriler, güvenlik, yazılım, veri ve yapay zekâ"
+      },
+      "audience": {
+        "en": "First-time users, office staff, IT support volunteers, aspiring developers and analysts, small business owners, charity workers and managers leading digital change. No technical qualification is assumed.",
+        "ar": "المستخدمون الجدد، وموظفو المكاتب، ومتطوعو الدعم التقني، والمطوّرون والمحلّلون الطامحون، وأصحاب المشروعات الصغيرة، والعاملون في الجمعيات، والمديرون الذين يقودون التحول الرقمي. لا يُشترط أي مؤهل تقني.",
+        "tr": "İlk kez kullananlar, ofis çalışanları, BT destek gönüllüleri, geliştirici ve analist adayları, küçük işletme sahipleri, hayır kurumu çalışanları ve dijital değişime öncülük eden yöneticiler. Teknik bir yeterlilik gerekmez."
+      },
+      "produce": {
+        "en": "A backed-up folder structure, an asset register with a problem log, a network diagram with a continuity plan, a small program or cleaned dataset, a one-page project definition and a signed personal development plan.",
+        "ar": "هيكل مجلدات له نسخ احتياطية، وسجل أصول مع سجل للمشكلات، ومخطط شبكة مع خطة استمرارية، وبرنامج صغير أو مجموعة بيانات منقّحة، وتعريف مشروع في صفحة واحدة، وخطة تطوير شخصية موقّعة.",
+        "tr": "Yedeklenmiş bir klasör yapısı, sorun kaydıyla birlikte bir varlık envanteri, süreklilik planıyla bir ağ şeması, küçük bir program ya da temizlenmiş bir veri seti, tek sayfalık bir proje tanımı ve imzalı bir kişisel gelişim planı."
+      },
+      "sessions": 16,
+      "moduleSessions": ["1–3", "4–6", "7–9", "10–12", "13–14", "15–16"]
     },
     {
       "id": "education",
-      "icon": "🎓",
+      "number": 5,
+      "symbol": "book",
       "status": "active",
       "title": { "en": "Education", "ar": "التعليم", "tr": "Eğitim" },
-      "desc": {
-        "en": "Teaching, curriculum, assessment, inclusion and school leadership: twelve pathways in four modules.",
-        "ar": "التدريس والمناهج والتقييم والتعليم الشامل وقيادة المدرسة: اثنا عشر مسارًا في أربع وحدات.",
-        "tr": "Öğretim, müfredat, ölçme-değerlendirme, kapsayıcı eğitim ve okul yönetimi: dört modülde on iki yol."
-      }
-    },
-    {
-      "id": "engineering",
-      "icon": "⚙️",
-      "status": "soon",
-      "title": { "en": "Engineering", "ar": "الهندسة", "tr": "Mühendislik" }
-    },
-    {
-      "id": "leadership",
-      "icon": "🧭",
-      "status": "soon",
-      "title": { "en": "Leadership", "ar": "القيادة", "tr": "Liderlik" }
+      "promise": {
+        "en": "Teaching, curriculum, assessment, inclusion and school leadership for every learner",
+        "ar": "التدريس والمناهج والتقييم والتعليم الشامل وقيادة المدرسة، لكل متعلّم",
+        "tr": "Her öğrenci için öğretim, müfredat, ölçme-değerlendirme, kapsayıcı eğitim ve okul yönetimi"
+      },
+      "audience": {
+        "en": "New and experienced teachers, teaching assistants, early years practitioners, supplementary and weekend school teachers, school leaders, trainers and youth workers. No formal teaching qualification is assumed.",
+        "ar": "المعلمون الجدد وذوو الخبرة، ومساعدو التدريس، والعاملون في الطفولة المبكرة، ومعلمو المدارس التكميلية ومدارس نهاية الأسبوع، وقادة المدارس، والمدرّبون، والعاملون مع الشباب. لا يُشترط مؤهل تربوي رسمي.",
+        "tr": "Yeni ve deneyimli öğretmenler, öğretmen yardımcıları, okul öncesi eğitimciler, tamamlayıcı ve hafta sonu okulu öğretmenleri, okul yöneticileri, eğitmenler ve gençlik çalışanları. Resmî bir öğretmenlik yeterliliği gerekmez."
+      },
+      "produce": {
+        "en": "An annotated lesson plan, a curriculum map, a week of exit tickets, a learner support plan, a record of positive contact with families, a short improvement plan and a signed personal development plan.",
+        "ar": "خطة درس مشروحة، وخريطة منهج، وبطاقات خروج لأسبوع، وخطة لدعم متعلّم، وسجل تواصل إيجابي مع الأسر، وخطة تحسين قصيرة، وخطة تطوير شخصية موقّعة.",
+        "tr": "Açıklamalı bir ders planı, bir müfredat haritası, bir haftalık çıkış kartları, bir öğrenci destek planı, ailelerle olumlu iletişim kaydı, kısa bir iyileştirme planı ve imzalı bir kişisel gelişim planı."
+      },
+      "sessions": 16,
+      "moduleSessions": ["1–3", "4–6", "7–9", "10–12", "13–14", "15–16"]
     },
     {
       "id": "languages",
-      "icon": "🗣️",
+      "number": 6,
+      "symbol": "speech",
       "status": "soon",
+      "soon": "building",
       "title": { "en": "Languages", "ar": "اللغات", "tr": "Diller" }
     },
     {
-      "id": "management",
-      "icon": "📋",
-      "status": "soon",
-      "title": { "en": "Management", "ar": "الإدارة", "tr": "Yönetim" }
-    },
-    {
       "id": "research",
-      "icon": "🔬",
+      "number": 7,
+      "symbol": "magnifier",
       "status": "soon",
+      "soon": "building",
       "title": { "en": "Research and Development", "ar": "البحث والتطوير", "tr": "Araştırma ve Geliştirme" }
     }
   ]

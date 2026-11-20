@@ -1,4 +1,5 @@
 import { LANGS, UI } from "./i18n.js";
+import { icon, shipDisc, waveRule, nameplate, wheel } from "./symbols.js";
 
 /* ---------- small helpers ---------- */
 const $ = (sel) => document.querySelector(sel);
@@ -16,6 +17,8 @@ const store = {
 /* ---------- state ---------- */
 const PROGRESS_KEY = "safinah.progress.v1";
 const LANG_KEY = "safinah.lang";
+const THEME_KEY = "safinah.theme";
+const SITE = "https://as-safinah.org";
 let lang = pickInitialLang();
 let progress = store.get(PROGRESS_KEY, {}); // { [directionId]: { done: {s1:true}, tests: {s1:[0,2]} } }
 let directions = [];
@@ -27,20 +30,26 @@ function pickInitialLang() {
   const nav = (navigator.language || "en").slice(0, 2).toLowerCase();
   return LANGS.some((l) => l.code === nav) ? nav : "en";
 }
+const isRTL = () => LANGS.find((l) => l.code === lang).dir === "rtl";
+/** Numbers written by the interface: Arabic-Indic digits in Arabic. */
+const digits = (s) => (lang === "ar" ? String(s).replace(/\d/g, (d) => "٠١٢٣٤٥٦٧٨٩"[d]) : String(s));
 const t = (key, vars) => {
   const s = UI[lang]?.[key] ?? UI.en[key] ?? key;
-  return vars ? fmt(s, vars) : s;
+  return vars ? fmt(s, Object.fromEntries(Object.entries(vars).map(([k, v]) => [k, typeof v === "number" || /^[\d–-]+$/.test(v) ? digits(v) : v]))) : s;
 };
+const tEn = (key, vars) => (vars ? fmt(UI.en[key], vars) : UI.en[key]);
 const L = (obj) => (obj ? obj[lang] ?? obj.en : "");
+const pad = (n) => digits(String(n).padStart(2, "0"));
 
 /* ---------- data ---------- */
 async function loadJSON(path) {
   if (!jsonCache.has(path)) {
-    jsonCache.set(path, fetch(path).then((r) => { if (!r.ok) throw new Error(`${path}: ${r.status}`); return r.json(); }));
+    const p = fetch(path).then((r) => { if (!r.ok) throw new Error(`${path}: ${r.status}`); return r.json(); });
+    p.catch(() => jsonCache.delete(path)); // allow "Try again"
+    jsonCache.set(path, p);
   }
   return jsonCache.get(path);
 }
-
 const tryJSON = (path) => loadJSON(path).catch(() => null);
 
 /** English is the master; a translated file may override any module/section (matched by id). */
@@ -77,6 +86,17 @@ async function loadDirection(id) {
 /* ---------- progress ---------- */
 const dirProgress = (id) => (progress[id] ||= { done: {}, tests: {} });
 const saveProgress = () => store.set(PROGRESS_KEY, progress);
+const allSections = (data) => data.modules.flatMap((m) => m.sections.map((s) => ({ m, s })));
+const nextPort = (d, data) => {
+  const p = dirProgress(d.id);
+  const all = allSections(data);
+  return all.find(({ s }) => !p.done[s.id]) || null;
+};
+const moduleDone = (p, m) => m.sections.every((s) => p.done[s.id]);
+const sectionRange = (m) => {
+  const a = m.sections[0].number, b = m.sections[m.sections.length - 1].number;
+  return a === b ? `${a}` : `${a}–${b}`;
+};
 
 /* ---------- shell ---------- */
 function applyLanguage() {
@@ -84,167 +104,340 @@ function applyLanguage() {
   document.documentElement.lang = lang;
   document.documentElement.dir = meta.dir;
   $("#brand-name").textContent = t("appName");
+  $("#brand-sub").textContent = t("appSub");
+  $("#brand").setAttribute("aria-label", `${t("appName")} — ${t("appSub")}`);
   $("#skip-link").textContent = t("skip");
-  $("#lang-label").textContent = t("language");
-  $("#footer-text").textContent = t("footer");
+  $("#nav-main").textContent = t("navMain");
+  $("#nav-programmes").textContent = t("navProgrammes");
+  $("#menu-btn").innerHTML = icon("menu", { label: t("menu") });
+  $("#lang-plate").setAttribute("aria-label", t("language"));
+  $("#lang-plate").innerHTML = LANGS.map((l) => `<button type="button" lang="${l.code}" data-lang="${l.code}" aria-pressed="${l.code === lang}" title="${esc(l.name)}">${esc(l.label)}</button>`).join("");
+  updateThemeButton();
+  $("#wave-top").innerHTML = waveRule();
+  $("#wave-bottom").innerHTML = waveRule();
+  $("#part-of").innerHTML = `${icon("harbour")}<div><b>${esc(t("partOf"))}</b><small>${esc(t("footerPlace"))} · <a href="${SITE}" rel="noopener">as-safinah.org</a> · ${esc(t("motto"))}</small></div>`;
+  $("#part-of-links").innerHTML = ["learn", "volunteer", "partner", "support"].map((k) => `<a href="${SITE}" rel="noopener">${esc(t(k))}</a>`).join("");
+  $("#copyright").textContent = t("copyright");
   $("#reset-progress").textContent = t("resetProgress");
-  $("#lang-select").innerHTML = LANGS.map((l) => `<option value="${l.code}" ${l.code === lang ? "selected" : ""}>${esc(l.label)}</option>`).join("");
+}
+
+function updateThemeButton() {
+  const light = document.documentElement.dataset.theme === "light";
+  const label = light ? t("themeDark") : t("themeLight");
+  $("#theme-btn").innerHTML = icon(light ? "moon" : "sun");
+  $("#theme-btn").setAttribute("aria-label", label);
+  $("#theme-btn").title = label;
+  document.querySelector(".theme-in-menu").innerHTML = `${icon(light ? "moon" : "sun")}<span>${esc(label)}</span>`;
 }
 
 /* ---------- routing ---------- */
 function parseRoute() {
   const parts = (location.hash.replace(/^#\/?/, "") || "").split("/").filter(Boolean);
+  if (parts[0] === "programmes") return { view: "home", anchor: "programmes" };
   if (parts[0] === "d" && parts[1]) {
     if (parts[2] === "m" && parts[3]) return { view: "module", dir: parts[1], id: parts[3] };
     if (parts[2] === "s" && parts[3]) return { view: "section", dir: parts[1], id: parts[3] };
     if (parts[2] === "glossary") return { view: "glossary", dir: parts[1] };
-    return { view: "direction", dir: parts[1] };
+    return { view: "course", dir: parts[1] };
   }
-  return { view: "home" };
+  return parts.length ? { view: "notfound" } : { view: "home" };
 }
 
+let renderSeq = 0;
 async function render() {
+  const seq = ++renderSeq;
   const route = parseRoute();
   const main = $("#main");
+  document.querySelectorAll("[data-nav]").forEach((a) => {
+    const on = (a.dataset.nav === "home" && route.view === "home" && !route.anchor) || (a.dataset.nav === "programmes" && (route.anchor || route.dir));
+    on ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current");
+  });
+  $(".bridge").classList.remove("open");
+  $("#menu-btn").setAttribute("aria-expanded", "false");
+  const slow = setTimeout(() => { if (seq === renderSeq) main.innerHTML = renderLoading(); }, 180);
+  let html;
   try {
-    let html;
     if (route.view === "home") html = renderHome();
+    else if (route.view === "notfound") html = renderNotFound();
     else {
       const d = directions.find((x) => x.id === route.dir);
-      if (!d || d.status !== "active") html = renderNotFound();
+      if (!d) html = renderNotFound();
+      else if (d.status !== "active") html = route.view === "course" ? renderCourseSoon(d) : renderNotFound();
       else {
         const data = await loadDirection(d.id);
-        if (route.view === "direction") html = renderDirection(d, data);
+        if (route.view === "course") html = renderCourse(d, data);
         else if (route.view === "module") html = renderModule(d, data, route.id) || renderNotFound();
         else if (route.view === "glossary") html = renderGlossary(d, data);
         else html = renderSection(d, data, route.id) || renderNotFound();
       }
     }
-    main.innerHTML = html;
-    bindPage(route);
   } catch (err) {
     console.error(err);
-    main.innerHTML = `<div class="notice" role="alert">${esc(t("loadError"))}</div>`;
+    html = renderError();
   }
+  clearTimeout(slow);
+  if (seq !== renderSeq) return;
+  main.innerHTML = html;
+  bindPage(route);
   const h1 = main.querySelector("h1");
-  document.title = (h1 ? h1.textContent + " · " : "") + t("appName");
-  window.scrollTo(0, 0);
+  document.title = (h1 ? h1.textContent.trim() + " · " : "") + `${t("appName")} — ${t("appSub")}`;
+  if (route.anchor) document.getElementById(route.anchor)?.scrollIntoView();
+  else window.scrollTo(0, 0);
 }
 
-/* ---------- views ---------- */
+/* ---------- shared pieces ---------- */
 const crumbs = (items) =>
-  `<nav class="crumbs" aria-label="Breadcrumb">${items
-    .map((it, i) => (it.href ? `<a href="${it.href}">${esc(it.label)}</a>` : `<span>${esc(it.label)}</span>`) + (i < items.length - 1 ? '<span aria-hidden="true">›</span>' : ""))
+  `<nav class="crumbs" aria-label="Breadcrumb">${icon("compass")}${items
+    .map((it, i) => (i === items.length - 1 ? `<span aria-current="page">${esc(it.label)}</span>` : `<a href="${it.href}">${esc(it.label)}</a><span class="sep" aria-hidden="true">›</span>`))
     .join("")}</nav>`;
 
-function renderNotFound() {
-  return `<h1>${esc(t("notFound"))}</h1><p><a href="#/">${esc(t("backHome"))}</a></p>`;
-}
+const arrow = () => icon("arrow", { cls: "ico-flip" });
+const progWheel = (d, extra = {}) =>
+  wheel({ rtl: isRTL(), num: digits, moduleWord: t("module"), flagship: !!d.flagship, grey: d.status !== "active", ...extra });
 
+const renderLoading = () => `<div class="loading" role="status">${icon("compass")}<p>${esc(t("loading"))}</p></div>`;
+const renderError = () => `<div class="state-box" role="alert">${icon("flags")}<h1>${esc(t("loadError"))}</h1><p class="lead" style="margin-inline:auto">${esc(t("loadErrorText"))}</p><button type="button" class="btn" id="retry">${esc(t("tryAgain"))}</button></div>`;
+const renderNotFound = () => `<div class="state-box">${icon("chart")}<h1>${esc(t("notFound"))}</h1><p class="lead" style="margin-inline:auto">${esc(t("notFoundText"))}</p><a class="btn" href="#/">${esc(t("backHome"))}</a></div>`;
+const notTranslated = () => `<div class="notice" role="note">${esc(t("notTranslated"))}</div>`;
+const quoteMarks = (v) => (/Narrated|رواه|Bukhārī|Muslim|Buhârî|Müslim|rivayet/.test(v.ref) ? `«${esc(v.ar)}»` : `﴿${esc(v.ar)}﴾`);
+
+/* ---------- home: the main deck ---------- */
 function renderHome() {
-  const cards = directions.map((d) => {
+  const flag = directions.filter((d) => d.flagship);
+  const spec = directions.filter((d) => !d.flagship);
+  const statusLine = (d) => (d.status === "active" ? t("openModules", { n: 6 }) : d.soon === "opening" ? t("inPreparation") : t("beingBuilt"));
+
+  const flagCards = flag.map((d) => {
     const active = d.status === "active";
-    const inner = `
-      <span class="icon" aria-hidden="true">${d.icon}</span>
+    return `<a class="flag-card" href="#/d/${d.id}">
+      <span class="eyebrow">${icon("pennant")}${esc(t("flagshipTag", { n: pad(d.number) }))}</span>
+      ${progWheel(d)}
       <h3>${esc(L(d.title))}</h3>
-      ${d.desc ? `<p>${esc(L(d.desc))}</p>` : ""}
-      ${active ? `<span class="cta">${esc(t("open"))} →</span>` : `<span class="badge">${esc(t("comingSoon"))}</span>`}`;
-    return active
-      ? `<a class="card" href="#/d/${d.id}">${inner}</a>`
-      : `<div class="card soon">${inner}</div>`;
-  });
+      ${d.promise ? `<p>${esc(L(d.promise))}</p>` : ""}
+      <span class="caps stats">${esc(d.sections ? t("statsLine", { m: 6, s: d.sections, x: d.sessions }) : t("chipModules", { n: 6 }) + " · " + statusLine(d))}</span>
+      <span class="btn${active ? "" : " ghost"}">${active ? `${esc(t("boardCourse"))} ${arrow()}` : `${shipDisc("sm")} ${esc(t("openingSoon"))}`}</span>
+    </a>`;
+  }).join("");
+
+  const specCards = spec.map((d) => `<a class="spec-card" href="#/d/${d.id}">
+      <span class="ring">${icon(d.symbol)}</span>
+      ${progWheel(d)}
+      <h3>${esc(L(d.title))}</h3>
+      <span class="caps">${esc(statusLine(d))}</span>
+    </a>`).join("");
+
   return `
-    <div class="hero">
-      <div class="hero-logo"><img src="assets/logo.webp" width="480" height="722" alt="As Safinah — Centre for Humanitarian Excellence"></div>
-      <div><h1>${esc(t("homeTitle"))}</h1><p class="lead">${esc(t("homeLead"))}</p></div>
-    </div>
-    <div class="grid three">${cards.join("")}</div>`;
+    <section class="hero">
+      <div class="hero-logo">
+        <img class="dark" src="assets/logo-navy.webp" width="440" height="662" alt="السفينة — As Safinah, Centre for Humanitarian Excellence">
+        <img class="light" src="assets/logo.webp" width="480" height="722" alt="السفينة — As Safinah, Centre for Humanitarian Excellence">
+      </div>
+      <div>
+        <p class="eyebrow">${esc(t("heroEyebrow"))}</p>
+        <h1>${esc(t("heroTitle"))} <em>${esc(t("heroTitleEm"))}</em></h1>
+        <p class="lead">${esc(t("heroLead"))}</p>
+        <div class="btn-row"><a class="btn" href="#/programmes">${icon("compass")} ${esc(t("chooseProgramme"))}</a></div>
+      </div>
+    </section>
+
+    ${nameplate(esc(t("beforeBoard")))}
+    <section class="board">
+      <div class="board-wheel">
+        ${wheel({ rtl: isRTL(), num: digits })}
+        <p>${esc(t("wheelNote"))} <em>${esc(t("wheelNoteShared"))}</em></p>
+      </div>
+      <div>
+        <p>${esc(t("boardLead"))} ${esc(t("whoForLead"))} <b>${esc(t("whoForList"))}</b></p>
+        <div class="steps">
+          <div class="step">${shipDisc("lg")}<div><span class="caps">${esc(t("step", { n: 1 }))}</span><h3>${esc(t("step1Title"))}</h3><p>${esc(t("step1Text"))}</p></div></div>
+          <div class="step"><span class="ring">${icon("chart")}</span><div><span class="caps">${esc(t("step", { n: 2 }))}</span><h3>${esc(t("step2Title"))}</h3><p>${esc(t("step2Text"))}</p></div></div>
+          <div class="step"><span class="ring">${icon("sounding")}</span><div><span class="caps">${esc(t("step", { n: 3 }))}</span><h3>${esc(t("step3Title"))}</h3><p>${esc(t("step3Text"))}</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <div id="programmes">${nameplate(esc(t("flagship")), "pennant")}</div>
+    <section class="flagships" aria-label="${esc(t("flagship"))}">${flagCards}</section>
+
+    ${nameplate(esc(t("specialist")))}
+    <section class="specials" aria-label="${esc(t("specialist"))}">${specCards}</section>`;
 }
 
-function renderGlossary(d, data) {
-  const items = [...data.glossary].sort((a, b) => a.term.localeCompare(b.term, lang));
-  const fallback = !data._glossaryTranslated;
+/* ---------- course screen ---------- */
+function courseIntro(d, { sections, sessions }) {
+  const chips = [t("chipModules", { n: 6 }), sections && t("chipSections", { n: sections }), sessions && t("chipSessions", { n: sessions }), "English · العربية · Türkçe"].filter(Boolean);
   return `
-    ${crumbs([{ label: t("home"), href: "#/" }, { label: L(d.title), href: `#/d/${d.id}` }, { label: t("glossary") }])}
-    <h1>${esc(t("glossary"))}</h1>
-    ${fallback ? `<div class="notice">${esc(t("notTranslated"))}</div>` : ""}
-    <p class="lead">${esc(t("glossaryLead"))}</p>
-    <input class="search" id="gloss-search" type="search" placeholder="${esc(t("search"))}" aria-label="${esc(t("search"))}">
-    <dl class="gloss" id="gloss"${fallback ? ' lang="en" dir="ltr"' : ""}>
-      ${items.map((g) => `<div data-q="${esc((g.term + " " + g.def).toLowerCase())}"><dt>${esc(g.term)}</dt><dd>${esc(g.def)} <small>(${esc(g.ref)})</small></dd></div>`).join("")}
-    </dl>`;
+    <p class="eyebrow">${icon(d.flagship ? "pennant" : d.symbol)}${esc(d.flagship ? t("flagshipTag", { n: pad(d.number) }) : t("programmeTag", { n: pad(d.number) }))}</p>
+    <h1>${esc(L(d.title))}</h1>
+    ${d.promise ? `<p class="promise">${esc(L(d.promise))}</p>` : ""}
+    <div class="chips">${chips.map((c) => `<span class="chip">${esc(c)}</span>`).join("")}</div>
+    ${d.audience || d.produce ? `<div class="facts">
+      ${d.audience ? `<div><b>${esc(t("whoFor"))}</b><span>${esc(L(d.audience))}</span></div>` : ""}
+      ${d.produce ? `<div><b>${esc(t("produce"))}</b><span>${esc(L(d.produce))}</span></div>` : ""}
+    </div>` : ""}`;
 }
 
-function allSections(data) {
-  return data.modules.flatMap((m) => m.sections.map((s) => ({ m, s })));
+function anchorBox(v, english = false) {
+  if (!v) return "";
+  // in Arabic the verse itself is the text; an English rendering of its meaning is not needed
+  const showText = v.text && !(lang === "ar" && english);
+  return `<div class="anchor-box">${icon("anchor", { label: t("islamicFoundation") })}<div style="flex:1">
+    ${v.ar ? `<p class="ar" lang="ar">${quoteMarks(v)}</p>` : ""}
+    ${showText ? `<blockquote${english && lang !== "en" ? ' lang="en" dir="ltr"' : ""}>“${esc(v.text)}”</blockquote>` : ""}
+    <cite class="caps">${esc(v.ref)}</cite></div></div>`;
 }
 
-function renderDirection(d, data) {
+function renderCourseSoon(d) {
+  const titles = d.moduleTitles ? L(d.moduleTitles) : [];
+  const v = d.foundation ? { ar: d.foundation.ar, text: lang === "ar" ? "" : L(d.foundation.text), ref: L(d.foundation.ref) } : null;
+  return `
+    ${crumbs([{ label: t("navMain"), href: "#/" }, { label: t("navProgrammes"), href: "#/programmes" }, { label: L(d.title) }])}
+    <section class="course-head">
+      <div>
+        ${courseIntro(d, { sections: d.sections, sessions: d.sessions })}
+        ${anchorBox(v)}
+        <div class="soon-panel">${d.soon === "opening" ? shipDisc("lg") : `<span class="ring">${icon("cog")}</span>`}<div><h2 style="margin:0 0 4px">${esc(d.soon === "opening" ? t("openingSoon") : t("beingBuilt"))}</h2><p style="margin:0">${esc(d.soon === "opening" ? t("soonOpeningText") : t("soonBuildingText"))}</p></div></div>
+      </div>
+      <div>${progWheel(d, { titles, labels: titles.length > 0, label: t("wheelLabel", { name: L(d.title) }) })}</div>
+    </section>`;
+}
+
+function voyageRoute(d, data) {
   const p = dirProgress(d.id);
   const all = allSections(data);
+  const here = nextPort(d, data);
   const done = all.filter(({ s }) => p.done[s.id]).length;
-  const pct = Math.round((done / all.length) * 100);
-  const mods = data.modules.map((m) => `
-    <section class="module" aria-labelledby="mh-${m.id}">
-      <a class="module-head" href="#/d/${d.id}/m/${m.id}">
-        <span class="kicker">${esc(t("module"))} ${m.number}</span>
-        ${m.shared ? `<span class="badge shared">${esc(t("sharedModule"))}</span>` : ""}
-        <h2 id="mh-${m.id}">${esc(m.title)}</h2>
-        <p>${esc(m.tagline)}</p>
-      </a>
-      <ul class="sec-list">
-        ${m.sections.map((s) => `
-          <li><a class="${p.done[s.id] ? "done" : ""}" href="#/d/${d.id}/s/${s.id}">
-            <span class="sec-num" aria-hidden="true">${p.done[s.id] ? "✓" : s.number}</span>
-            <span>${esc(s.title)}</span></a></li>`).join("")}
-      </ul>
-    </section>`).join("");
-  return `
-    ${crumbs([{ label: t("home"), href: "#/" }, { label: L(d.title) }])}
-    <h1>${d.icon} ${esc(L(d.title))}</h1>
-    <p class="lead">${esc(L(d.desc))}</p>
-    <div class="progress" role="group" aria-label="${esc(t("progress"))}">
-      <div class="bar"><i style="width:${pct}%"></i></div>
-      <small>${esc(fmt(t("sectionsDone"), { n: done, m: all.length }))}</small>
-    </div>
-    ${data.glossary.length ? `<div class="links-row"><a class="btn ghost" href="#/d/${d.id}/glossary">📖 ${esc(t("glossary"))}</a></div>` : ""}
-    ${mods}
-    <p><small>${esc(data.source || "")}</small></p>`;
+  const ports = all.map(({ s }) => {
+    const isDone = !!p.done[s.id];
+    const isHere = here && here.s.id === s.id;
+    return `<li class="${isDone ? "is-done" : ""}${isHere ? " is-here" : ""}">
+      ${isHere ? `<span class="marker">${shipDisc()}</span>` : ""}
+      <a href="#/d/${d.id}/s/${s.id}" aria-label="${esc(`${t("section")} ${s.number}: ${s.title}${isDone ? " — " + t("logged") : ""}`)}"><span class="port"></span>${digits(s.number)}</a></li>`;
+  }).join("");
+  const note = here
+    ? `${esc(t("voyageLine", { n: done, m: all.length }))} ${esc(t("nextPort"))}: <a href="#/d/${d.id}/s/${here.s.id}">${esc(t("section"))} ${digits(here.s.number)}, ${esc(here.s.title)}</a>.`
+    : esc(t("voyageDone"));
+  return `<div class="route" style="--ports:${all.length}"><ol>${ports}</ol></div><p class="route-note">${note}</p>`;
 }
 
-function renderModule(d, data, id) {
-  const m = data.modules.find((x) => x.id === id);
-  if (!m) return null;
+function renderCourse(d, data) {
   const p = dirProgress(d.id);
+  const all = allSections(data);
+  const here = nextPort(d, data);
+  const started = all.some(({ s }) => p.done[s.id]);
+  const target = here || all[0];
+  const startLabel = !here ? t("reviewVoyage") : started ? t("continueVoyage") : t("beginVoyage");
+  const doneSet = new Set(data.modules.map((m, i) => (moduleDone(p, m) ? i : -1)).filter((i) => i >= 0));
+  const m1 = data.modules[0];
+  const v = m1.foundation?.verses?.[0];
+
+  const modCards = data.modules.map((m, i) => {
+    const isDone = moduleDone(p, m);
+    const isHere = !isDone && here && here.m.id === m.id;
+    const state = isDone ? `${icon("log")} ${esc(t("logged"))}` : isHere ? `${shipDisc("sm")} ${esc(t("onBoard"))}` : `${icon("diamond")} ${esc(t("ahead"))}`;
+    const sess = d.moduleSessions?.[i];
+    return `<a class="mod-card${isDone ? " is-done" : ""}${isHere ? " is-here" : ""}" href="#/d/${d.id}/m/${m.id}">
+      <span class="n">${digits(m.number)}</span>
+      <h3>${esc(m.title)}</h3>
+      <span class="caps">${esc(t("sectionsRange", { r: sectionRange(m) }))}${sess ? " · " + esc(t("sessionsRange", { r: sess })) : ""}${m.shared ? " · " + esc(t("shared")) : ""}</span>
+      <span class="caps state">${state}</span>
+    </a>`;
+  }).join("");
+
+  return `
+    ${crumbs([{ label: t("navMain"), href: "#/" }, { label: t("navProgrammes"), href: "#/programmes" }, { label: L(d.title) }])}
+    <section class="course-head">
+      <div>
+        ${courseIntro(d, { sections: all.length, sessions: d.sessions })}
+        ${anchorBox(v, !m1._translated)}
+        <div class="btn-row">
+          <a class="btn" href="#/d/${d.id}/s/${target.s.id}">${esc(startLabel)} ${arrow()}</a>
+          ${data.glossary.length ? `<a class="btn ghost" href="#/d/${d.id}/glossary">${icon("flags")} ${esc(t("glossary"))}</a>` : ""}
+        </div>
+      </div>
+      <div>
+        ${progWheel(d, { titles: data.modules.map((m) => m.title), labels: true, done: doneSet, hrefs: data.modules.map((m) => `#/d/${d.id}/m/${m.id}`), label: t("wheelLabel", { name: L(d.title) }) })}
+        <p class="wheel-cap">${esc(t("wheelCaption"))}</p>
+      </div>
+    </section>
+
+    ${nameplate(esc(t("yourVoyage")), "log")}
+    ${voyageRoute(d, data)}
+
+    ${nameplate(esc(t("sixModules")), "porthole")}
+    <section class="mod-grid">${modCards}</section>
+    <p class="muted" style="margin-top:22px;font-size:.85rem;color:var(--muted)">${esc(data.source || "")}</p>`;
+}
+
+/* ---------- module screen ---------- */
+function renderModule(d, data, id) {
+  const idx = data.modules.findIndex((x) => x.id === id);
+  if (idx < 0) return null;
+  const m = data.modules[idx];
+  const p = dirProgress(d.id);
+  const doneSet = new Set(data.modules.map((mm, i) => (moduleDone(p, mm) ? i : -1)).filter((i) => i >= 0));
+  const first = m.sections[0];
+  const nextM = data.modules[idx + 1];
+  const fallback = !m._translated;
+  const content = fallback ? ' lang="en" dir="ltr"' : "";
+  const sess = d.moduleSessions?.[idx];
+
   const verses = (m.foundation?.verses || []).map((v) => `
-    <figure class="verse" style="margin:0">
-      ${v.ar ? `<p class="ar" lang="ar" dir="rtl">${/Narrated|رواه|Bukhārī|Muslim|Buhârî|Müslim/.test(v.ref) ? `«${esc(v.ar)}»` : `﴿${esc(v.ar)}﴾`}</p>` : ""}
+    <figure class="verse">
+      ${v.ar ? `<p class="ar" lang="ar">${quoteMarks(v)}</p>` : ""}
       ${v.text ? `<blockquote>“${esc(v.text)}”</blockquote>` : ""}
       <cite>${esc(v.ref)}</cite>
     </figure>`).join("");
-  const wrapLang = m._translated ? "" : ' lang="en" dir="ltr"';
+
+  const ports = m.sections.map((s) => {
+    const isDone = !!p.done[s.id];
+    return `<a class="port-row${isDone ? " is-done" : ""}" href="#/d/${d.id}/s/${s.id}">
+      <span class="disc">${isDone ? icon("check") : digits(s.number)}</span>
+      <span><span class="caps">${esc(t("section"))} ${digits(s.number)}</span><h3${s._translated ? "" : ' lang="en"'}>${esc(s.title)}</h3><em${s._translated ? "" : ' lang="en"'}>${esc((s._translated ? t("theShip") : tEn("theShip")) + ": " + s.ship.title)}</em></span>
+      ${isDone ? `<span class="caps state">${icon("log")} ${esc(t("logged"))}</span>` : ""}
+    </a>`;
+  }).join("");
+
   return `
-    ${crumbs([{ label: t("home"), href: "#/" }, { label: L(d.title), href: `#/d/${d.id}` }, { label: `${t("module")} ${m.number}` }])}
-    <article${wrapLang}>
-    ${m._translated ? "" : `<div class="notice" lang="${lang}" dir="${LANGS.find((l) => l.code === lang).dir}">${esc(t("notTranslated"))}</div>`}
-    <p class="kicker" style="color:var(--accent);font-weight:700;margin:0">${esc(t("module"))} ${m.number}</p>
-    <h1>${esc(m.title)}</h1>
-    <p class="lead"><em>${esc(m.tagline)}</em></p>
-    <h2>${esc(t("islamicFoundation"))}</h2>
-    <div class="verses">${verses}</div>
-    <h3>${esc(t("whyItSitsHere"))}</h3>
-    ${(m.foundation?.why || []).map((w) => `<p>${esc(w)}</p>`).join("")}
-    <div class="module" style="margin-top:28px"><ul class="sec-list">
-      ${m.sections.map((s) => `<li><a class="${p.done[s.id] ? "done" : ""}" href="#/d/${d.id}/s/${s.id}">
-        <span class="sec-num" aria-hidden="true">${p.done[s.id] ? "✓" : s.number}</span><span>${esc(s.title)}</span></a></li>`).join("")}
-    </ul></div>
-    <h2>${esc(t("learningOutcomes"))}</h2>
-    <p>${esc(m.outcomes.items.length ? t("outcomesLead") : "")}</p>
-    <ol class="outcomes">${m.outcomes.items.map((i) => `<li>${esc(i)}</li>`).join("")}</ol>
-    <div class="evidence"><b>${esc(t("evidence"))}:</b> ${esc(m.outcomes.evidence)}</div>
-    </article>`;
+    ${crumbs([{ label: t("navMain"), href: "#/" }, { label: L(d.title), href: `#/d/${d.id}` }, { label: `${t("module")} ${digits(m.number)}` }])}
+    ${fallback ? notTranslated() : ""}
+    <section class="mod-head">
+      ${progWheel(d, { titles: data.modules.map((x) => x.title), labels: true, lit: idx, done: doneSet, hrefs: data.modules.map((x) => `#/d/${d.id}/m/${x.id}`), label: t("wheelLabel", { name: L(d.title) }) })}
+      <div${content}>
+        <p class="eyebrow">${esc(t("moduleOf", { n: m.number }))} · ${esc(t("sectionsRange", { r: sectionRange(m) }))}${sess ? " · " + esc(t("sessionsRange", { r: sess })) : ""}</p>
+        ${m.shared ? `<p class="caps" style="margin:0 0 8px">${icon("diamond")} ${esc(t("sharedModule"))}</p>` : ""}
+        <h1>${esc(m.title)}</h1>
+        <p class="promise">${esc(m.tagline)}</p>
+        <div class="btn-row">
+          <a class="btn" href="#/d/${d.id}/s/${first.id}">${esc(t("setSail", { n: first.number }))} ${arrow()}</a>
+          <a class="btn ghost" href="#/d/${d.id}">${icon("porthole")} ${esc(t("allModules"))}</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="foundation"${content}>
+      ${nameplate(esc(fallback ? tEn("islamicFoundation") : t("islamicFoundation")), "anchor")}
+      <div class="verses">${verses}</div>
+      <div class="why"><h3>${esc(fallback ? tEn("whyItSitsHere") : t("whyItSitsHere"))}</h3>${(m.foundation?.why || []).map((w) => `<p>${esc(w)}</p>`).join("")}</div>
+    </section>
+
+    ${nameplate(esc(t("portsOfCall")), "chart")}
+    <section class="ports">${ports}</section>
+
+    <section class="parch" style="margin-top:36px"${content}>
+      <div class="panel-title">${icon("lighthouse")}<h2>${esc(fallback ? tEn("learningOutcomes") : t("learningOutcomes"))}</h2></div>
+      <p class="muted">${esc(fallback ? tEn("outcomesLead") : t("outcomesLead"))}</p>
+      <ol class="outcomes">${m.outcomes.items.map((i) => `<li>${esc(i)}</li>`).join("")}</ol>
+      <div class="evidence"><b>${esc(fallback ? tEn("evidence") : t("evidence"))}:</b> ${esc(m.outcomes.evidence)}</div>
+    </section>
+
+    <nav class="pager" aria-label="${esc(t("allModules"))}">
+      <a class="prev" href="#/d/${d.id}"><small>${esc(t("allModules"))}</small>${esc(L(d.title))}</a>
+      ${nextM ? `<a class="next" href="#/d/${d.id}/m/${nextM.id}"><small>${esc(t("nextModule", { n: nextM.number }))}</small>${esc(nextM.title)}</a>` : ""}
+    </nav>`;
 }
 
+/* ---------- the lesson ---------- */
 function renderBlock(b, ctx) {
   if (b.type === "ul") return `<ul>${b.items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul>`;
   if (b.type === "h3") return `<h3>${esc(b.text)}</h3>`;
@@ -254,18 +447,18 @@ function renderBlock(b, ctx) {
       <thead><tr>${b.head.map((h) => `<th scope="col">${esc(h)}</th>`).join("")}</tr></thead>
       <tbody>${b.rows.map((r) => `<tr>${r.map((c, i) => (i === 0 ? `<th scope="row">${esc(c)}</th>` : `<td>${esc(c)}</td>`)).join("")}</tr>`).join("")}</tbody>
     </table></div>`;
-  if (b.type === "example") return `<aside class="example"><b>${esc(ctx.exampleLabel)} — ${esc(b.title)}</b>${esc(b.text)}</aside>`;
+  if (b.type === "example") return `<aside class="example"><b>${esc(ctx.lbl("example"))} — ${esc(b.title)}</b>${esc(b.text)}</aside>`;
   return `<p>${esc(b.text)}</p>`;
 }
 
 function shipPanel(ship, lbl, small) {
   const H = small ? "h3" : "h2";
   return `<section class="ship-panel${small ? " small" : ""}" aria-label="${esc(lbl("theShip"))}">
-    <div class="kicker">⚓ ${esc(lbl("theShip"))}</div>
+    <p class="eyebrow">${shipDisc("sm")} ${esc(lbl("theShip"))}</p>
     <${H}>${esc(ship.title)}</${H}>
     ${ship.body.map((x) => `<p>${esc(x)}</p>`).join("")}
     ${ship.claim ? `<p class="claim">${esc(ship.claim)}</p>` : ""}
-    <p class="onboard"><b>${esc(lbl("onBoardHere"))}:</b> ${esc(ship.question)}</p>
+    <p class="onboard"><b>${esc(lbl("onBoardHere"))}</b><span>${esc(ship.question)}</span></p>
   </section>`;
 }
 
@@ -274,67 +467,100 @@ function renderSection(d, data, id) {
   const idx = all.findIndex(({ s }) => s.id === id);
   if (idx < 0) return null;
   const { m, s } = all[idx];
+  const mIdx = data.modules.indexOf(m);
   const p = dirProgress(d.id);
   const checked = new Set(p.tests[s.id] || []);
   const prev = all[idx - 1];
   const next = all[idx + 1];
   const tr = s._translated;
   const contentAttrs = tr ? "" : ' lang="en" dir="ltr"';
-  const ctx = { exampleLabel: tr ? t("example") : UI.en.example };
-  const lbl = (k) => (tr ? t(k) : UI.en[k]);
+  const lbl = (k, v) => (tr ? t(k, v) : tEn(k, v));
+  const ctx = { lbl };
+  const doneSet = new Set(data.modules.map((mm, i) => (moduleDone(p, mm) ? i : -1)).filter((i) => i >= 0));
+  const hid = (sub) => "h-" + sub.id.replace(".", "-");
 
   const subs = s.subsections.map((sub) => `
-    <section aria-labelledby="h-${sub.id.replace(".", "-")}">
-      <h2 id="h-${sub.id.replace(".", "-")}"><span class="n">${esc(sub.id)}</span>${esc(sub.title)}</h2>
+    <section aria-labelledby="${hid(sub)}">
+      <h2 id="${hid(sub)}"><span class="n">${esc(sub.id)}</span>${esc(sub.title)}</h2>
       ${sub.ship ? shipPanel(sub.ship, lbl, true) : ""}
       ${sub.blocks.map((b) => renderBlock(b, ctx)).join("")}
     </section>`).join("");
 
   const r = s.review;
   const review = r ? `
-    <section class="review" aria-labelledby="rev">
-      <h2 id="rev">${esc(lbl("tenTests"))}</h2>
-      <p>${esc(r.intro)}. ${esc(lbl("testsLead"))}</p>
+    <div class="divider"><i></i>${esc(lbl("sectionReview"))}<i></i></div>
+    <section aria-labelledby="rev">
+      <div class="review-h">${icon("sounding")}<h2 id="rev">${esc(lbl("tenTests"))}</h2></div>
+      <p class="muted">${esc(r.intro)}. ${esc(lbl("testsLead"))}</p>
       <ul class="tests">
         ${r.tests.map((q, i) => `<li><label><input type="checkbox" data-test="${i}" ${checked.has(i) ? "checked" : ""}><span>${esc(q)}</span></label></li>`).join("")}
       </ul>
       <p class="score" id="score" aria-live="polite"></p>
-      <h2>${esc(lbl("questions"))}</h2>
+    </section>
+    <section>
+      <div class="review-h">${icon("bell")}<h2>${esc(lbl("questions"))}</h2></div>
       <ol class="q">${r.questions.map((q) => `<li>${esc(q)}</li>`).join("")}</ol>
-      <h2>${esc(lbl("exercise"))}</h2>
-      <div class="exercise">${esc(r.exercise)}</div>
-    </section>` : "";
+    </section>
+    <section class="exercise">${icon("knot")}<div><h2>${esc(lbl("exercise"))}</h2><p style="margin:0">${esc(r.exercise)}</p></div></section>` : "";
 
   const isDone = !!p.done[s.id];
-  const pager = `<nav class="pager" aria-label="Pager">
-      ${prev ? `<a class="prev" href="#/d/${d.id}/s/${prev.s.id}"><small>← ${esc(t("prev"))}</small>${esc(prev.s.title)}</a>` : "<span></span>"}
-      ${next ? `<a class="next" href="#/d/${d.id}/s/${next.s.id}"><small>${esc(t("next"))} →</small>${esc(next.s.title)}</a>` : ""}
-    </nav>`;
+  const route = `<div class="route" style="--ports:${all.length};margin-bottom:22px"><ol>${all.map(({ s: x }, i) => `<li class="${p.done[x.id] ? "is-done" : ""}${i === idx ? " is-here" : ""}">${i === idx ? `<span class="marker">${shipDisc()}</span>` : ""}<a href="#/d/${d.id}/s/${x.id}" aria-label="${esc(`${t("section")} ${x.number}: ${x.title}`)}"${i === idx ? ' aria-current="page"' : ""}><span class="port"></span>${digits(x.number)}</a></li>`).join("")}</ol></div>`;
 
   return `
-    ${crumbs([{ label: t("home"), href: "#/" }, { label: L(d.title), href: `#/d/${d.id}` }, { label: `${t("module")} ${m.number}`, href: `#/d/${d.id}/m/${m.id}` }, { label: `${t("section")} ${s.number}` }])}
-    ${tr ? "" : `<div class="notice">${esc(t("notTranslated"))}</div>`}
-    <article class="lesson"${contentAttrs}>
-      <p style="color:var(--accent);font-weight:700;margin:0">${esc(t("section"))} ${s.number}</p>
-      <h1>${esc(s.title)}</h1>
-      ${shipPanel(s.ship, lbl, false)}
-      ${s.intro.map((x) => `<p>${esc(x)}</p>`).join("")}
-      <ul class="toc" aria-label="${esc(lbl("inThisSection"))}">
-        ${s.subsections.map((sub) => `<li><a href="#" data-jump="h-${sub.id.replace(".", "-")}">${esc(sub.id)} ${esc(sub.title)}</a></li>`).join("")}
-      </ul>
-      ${subs}
-      ${review}
-    </article>
-    <div class="complete-row">
-      <button type="button" class="btn" id="complete" aria-pressed="${isDone}" data-section="${s.id}">
-        ${esc(isDone ? t("completed") : t("markComplete"))}
-      </button>
+    ${crumbs([{ label: t("navMain"), href: "#/" }, { label: L(d.title), href: `#/d/${d.id}` }, { label: `${t("module")} ${digits(m.number)}`, href: `#/d/${d.id}/m/${m.id}` }, { label: `${t("section")} ${digits(s.number)}` }])}
+    ${route}
+    ${tr ? "" : notTranslated()}
+    <div class="lesson-grid">
+      <article class="parch lesson"${contentAttrs}>
+        <p class="eyebrow">${esc(lbl("sectionKicker", { s: s.number, m: m.number, title: m.title }))}</p>
+        <h1>${esc(s.title)}</h1>
+        <div class="rule"></div>
+        ${shipPanel(s.ship, lbl, false)}
+        ${s.intro.map((x) => `<p>${esc(x)}</p>`).join("")}
+        <nav class="toc-box" aria-label="${esc(lbl("inThisSection"))}"><span class="caps">${esc(lbl("inThisSection"))}</span>
+          <ul>${s.subsections.map((sub) => `<li><a href="#" data-jump="${hid(sub)}">${esc(sub.id)} ${esc(sub.title)}</a></li>`).join("")}${r ? `<li><a href="#" data-jump="rev">${esc(lbl("sectionReview"))}</a></li>` : ""}</ul>
+        </nav>
+        ${subs}
+        ${review}
+        <div class="log-row">
+          <button type="button" class="btn" id="complete" aria-pressed="${isDone}">${icon("log")} <span>${esc(isDone ? t("inLog") : t("enterLog"))}</span></button>
+          <p>${esc(t("logNote"))}</p>
+        </div>
+      </article>
+      <aside class="aside">
+        <a class="aside-card center" href="#/d/${d.id}/m/${m.id}">
+          ${progWheel(d, { lit: mIdx, done: doneSet, label: `${L(d.title)} · ${t("module")} ${m.number}` })}
+          <span class="caps">${esc(L(d.title))} · ${esc(t("module"))} ${digits(m.number)}</span>
+        </a>
+        ${data.glossary.length ? `<a class="aside-card" href="#/d/${d.id}/glossary">${icon("flags")}<span>${esc(t("glossary"))}<small>${esc(t("termsCount", { n: data.glossary.length }))}</small></span></a>` : ""}
+      </aside>
     </div>
-    ${pager}`;
+    <nav class="pager" aria-label="${esc(t("prevPort"))} / ${esc(t("nextPortBtn"))}">
+      ${prev ? `<a class="prev" href="#/d/${d.id}/s/${prev.s.id}"><small>${esc(t("prevPort"))}</small>${esc(t("section"))} ${digits(prev.s.number)}, ${esc(prev.s.title)}</a>` : "<span></span>"}
+      ${next ? `<a class="next" href="#/d/${d.id}/s/${next.s.id}"><small>${esc(t("nextPortBtn"))}</small>${esc(t("section"))} ${digits(next.s.number)}, ${esc(next.s.title)}</a>` : ""}
+    </nav>`;
+}
+
+/* ---------- glossary ---------- */
+function renderGlossary(d, data) {
+  const items = [...data.glossary].sort((a, b) => a.term.localeCompare(b.term, data._glossaryTranslated ? lang : "en"));
+  const fallback = !data._glossaryTranslated;
+  return `
+    ${crumbs([{ label: t("navMain"), href: "#/" }, { label: L(d.title), href: `#/d/${d.id}` }, { label: t("glossary") }])}
+    ${fallback ? notTranslated() : ""}
+    <section class="parch">
+      <div class="panel-title">${icon("flags")}<h1 style="margin:0;font-size:2rem">${esc(t("glossary"))}</h1></div>
+      <p class="muted">${esc(t("glossaryLead"))}</p>
+      <input class="search" id="gloss-search" type="search" placeholder="${esc(t("search"))}" aria-label="${esc(t("search"))}">
+      <dl class="gloss" id="gloss"${fallback ? ' lang="en" dir="ltr"' : ""}>
+        ${items.map((g) => `<div data-q="${esc((g.term + " " + g.def).toLowerCase())}"><dt>${esc(g.term)}</dt><dd>${esc(g.def)} <small>(${esc(g.ref)})</small></dd></div>`).join("")}
+      </dl>
+    </section>`;
 }
 
 /* ---------- interactions for the current page ---------- */
 function bindPage(route) {
+  $("#retry")?.addEventListener("click", render);
   const search = $("#gloss-search");
   search?.addEventListener("input", () => {
     const q = search.value.trim().toLowerCase();
@@ -343,7 +569,8 @@ function bindPage(route) {
   document.querySelectorAll("[data-jump]").forEach((a) =>
     a.addEventListener("click", (e) => {
       e.preventDefault();
-      document.getElementById(a.dataset.jump)?.scrollIntoView({ behavior: "smooth", block: "start" });
+      const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+      document.getElementById(a.dataset.jump)?.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
     })
   );
   if (route.view !== "section") return;
@@ -352,7 +579,7 @@ function bindPage(route) {
     const boxes = [...document.querySelectorAll("[data-test]")];
     const n = boxes.filter((b) => b.checked).length;
     const el = $("#score");
-    if (el) el.textContent = fmt(t("testsYes"), { n, m: boxes.length });
+    if (el) el.textContent = t("testsYes", { n, m: boxes.length });
   };
   document.querySelectorAll("[data-test]").forEach((box) =>
     box.addEventListener("change", () => {
@@ -370,18 +597,32 @@ function bindPage(route) {
     if (!p.done[route.id]) delete p.done[route.id];
     saveProgress();
     btn.setAttribute("aria-pressed", String(!!p.done[route.id]));
-    btn.textContent = p.done[route.id] ? t("completed") : t("markComplete");
+    btn.querySelector("span").textContent = p.done[route.id] ? t("inLog") : t("enterLog");
   });
 }
 
 /* ---------- boot ---------- */
 async function boot() {
   applyLanguage();
-  $("#lang-select").addEventListener("change", (e) => {
-    lang = e.target.value;
+  $("#lang-plate").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-lang]");
+    if (!b || b.dataset.lang === lang) return;
+    lang = b.dataset.lang;
     store.set(LANG_KEY, lang);
     applyLanguage();
     render();
+  });
+  document.querySelectorAll("[data-theme-toggle]").forEach((b) =>
+    b.addEventListener("click", () => {
+      const next = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+      document.documentElement.dataset.theme = next;
+      store.set(THEME_KEY, next);
+      updateThemeButton();
+    })
+  );
+  $("#menu-btn").addEventListener("click", () => {
+    const open = $(".bridge").classList.toggle("open");
+    $("#menu-btn").setAttribute("aria-expanded", String(open));
   });
   $("#reset-progress").addEventListener("click", () => {
     if (confirm(t("resetConfirm"))) {
@@ -392,10 +633,11 @@ async function boot() {
   });
   window.addEventListener("hashchange", render);
   try {
-    directions = (await loadJSON("data/directions.json")).directions;
+    directions = (await loadJSON("data/directions.json")).directions.sort((a, b) => a.number - b.number);
   } catch (err) {
     console.error(err);
-    $("#main").innerHTML = `<div class="notice" role="alert">${esc(t("loadError"))}</div>`;
+    $("#main").innerHTML = renderError();
+    $("#retry")?.addEventListener("click", () => location.reload());
     return;
   }
   render();
