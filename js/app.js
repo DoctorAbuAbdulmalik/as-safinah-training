@@ -1,5 +1,6 @@
 import { LANGS, UI } from "./i18n.js";
 import { icon, shipDisc, waveRule, nameplate, wheel } from "./symbols.js";
+import { KEY, DECKS } from "./key.js";
 
 /* ---------- small helpers ---------- */
 const $ = (sel) => document.querySelector(sel);
@@ -109,6 +110,10 @@ function applyLanguage() {
   $("#skip-link").textContent = t("skip");
   $("#nav-main").textContent = t("navMain");
   $("#nav-programmes").textContent = t("navProgrammes");
+  $("#nav-voyage").textContent = t("navVoyage");
+  $("#nav-about").textContent = t("navAbout");
+  $("#nav-key").textContent = t("navKey");
+  $("#footer-key").textContent = t("navKey");
   $("#menu-btn").innerHTML = icon("menu", { label: t("menu") });
   $("#lang-plate").setAttribute("aria-label", t("language"));
   $("#lang-plate").innerHTML = LANGS.map((l) => `<button type="button" lang="${l.code}" data-lang="${l.code}" aria-pressed="${l.code === lang}" title="${esc(l.name)}">${esc(l.label)}</button>`).join("");
@@ -134,6 +139,9 @@ function updateThemeButton() {
 function parseRoute() {
   const parts = (location.hash.replace(/^#\/?/, "") || "").split("/").filter(Boolean);
   if (parts[0] === "programmes") return { view: "home", anchor: "programmes" };
+  if (parts[0] === "voyage") return { view: "voyage" };
+  if (parts[0] === "about") return { view: "about" };
+  if (parts[0] === "key") return { view: "key" };
   if (parts[0] === "d" && parts[1]) {
     if (parts[2] === "m" && parts[3]) return { view: "module", dir: parts[1], id: parts[3] };
     if (parts[2] === "s" && parts[3]) return { view: "section", dir: parts[1], id: parts[3] };
@@ -149,7 +157,8 @@ async function render() {
   const route = parseRoute();
   const main = $("#main");
   document.querySelectorAll("[data-nav]").forEach((a) => {
-    const on = (a.dataset.nav === "home" && route.view === "home" && !route.anchor) || (a.dataset.nav === "programmes" && (route.anchor || route.dir));
+    const n = a.dataset.nav;
+    const on = (n === "home" && route.view === "home" && !route.anchor) || (n === "programmes" && (route.anchor || route.dir)) || n === route.view;
     on ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current");
   });
   $(".bridge").classList.remove("open");
@@ -159,6 +168,9 @@ async function render() {
   try {
     if (route.view === "home") html = renderHome();
     else if (route.view === "notfound") html = renderNotFound();
+    else if (route.view === "voyage") html = await renderVoyage();
+    else if (route.view === "about") html = renderAbout();
+    else if (route.view === "key") html = renderKey();
     else {
       const d = directions.find((x) => x.id === route.dir);
       if (!d) html = renderNotFound();
@@ -361,11 +373,13 @@ function renderCourse(d, data) {
       </div>
     </section>
 
+    ${here ? "" : harbourPanel()}
     ${nameplate(esc(t("yourVoyage")), "log")}
     ${voyageRoute(d, data)}
 
     ${nameplate(esc(t("sixModules")), "porthole")}
     <section class="mod-grid">${modCards}</section>
+    ${courseOutline(d, data)}
     <p class="muted" style="margin-top:22px;font-size:.85rem;color:var(--muted)">${esc(data.source || "")}</p>`;
 }
 
@@ -415,6 +429,7 @@ function renderModule(d, data, id) {
       </div>
     </section>
 
+    ${moduleDone(p, m) ? `<div class="logged-panel" role="status">${icon("log")}<div><b>${esc(t("moduleLogged", { n: m.number }))}</b><span>${esc(nextM ? t("moduleLoggedText", { next: nextM.number }) : t("moduleLoggedLast"))}</span></div></div>` : ""}
     <section class="foundation"${content}>
       ${nameplate(esc(fallback ? tEn("islamicFoundation") : t("islamicFoundation")), "anchor")}
       <div class="verses">${verses}</div>
@@ -558,9 +573,184 @@ function renderGlossary(d, data) {
     </section>`;
 }
 
+/* ---------- course outline (sea chart) ---------- */
+function courseOutline(d, data) {
+  const rows = data.modules.map((m, i) => `<tr>
+      <th scope="row">${digits(m.number)}</th>
+      <td><b>${esc(m.title)}</b>${m.shared ? ` <span class="tag">${esc(t("shared"))}</span>` : ""}<br><span class="muted">${esc((m.sections.length === 1 ? m.sections[0].subsections : m.sections).map((s) => s.title).join(" · "))}</span></td>
+      <td>${digits(sectionRange(m))}</td>
+      <td>${digits(d.moduleSessions?.[i] || "")}</td>
+    </tr>`).join("");
+  return `
+    <section class="parch outline" id="outline" aria-labelledby="outline-h">
+      <div class="panel-title outline-top">${icon("chart")}<h2 id="outline-h">${esc(t("outline"))}</h2>
+        <button type="button" class="btn ghost" id="print-outline">${esc(t("downloadOutline"))}</button></div>
+      <p class="print-only"><b>${esc(L(d.title))}</b> · ${esc(t("appName"))} — ${esc(t("appSub"))}</p>
+      <p class="muted">${esc(t("outlineLead"))}</p>
+      <dl class="outline-facts">
+        <div><dt>${esc(t("outlineLength"))}</dt><dd>${esc(t("statsLine", { m: 6, s: allSections(data).length, x: d.sessions || 16 }))}</dd></div>
+        <div><dt>${esc(t("outlineFormat"))}</dt><dd>${esc(t("outlineFormatText"))}</dd></div>
+        <div><dt>${esc(t("outlineEntry"))}</dt><dd>${esc(t("outlineEntryText"))}</dd></div>
+      </dl>
+      <p class="caps">${esc(t("outlineTable"))}</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th scope="col">${esc(t("colModule"))}</th><th scope="col">${esc(t("colTitle"))}</th><th scope="col">${esc(t("colSections"))}</th><th scope="col">${esc(t("colSessions"))}</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table></div>
+      ${d.audience ? `<p><b>${esc(t("whoFor"))}:</b> ${esc(L(d.audience))}</p>` : ""}
+      ${d.produce ? `<p class="produce">${icon("lighthouse")} <span><b>${esc(t("produce"))}:</b> ${esc(L(d.produce))}</span></p>` : ""}
+    </section>`;
+}
+
+/* ---------- completed course: arriving in harbour ---------- */
+const harbourPanel = () => `
+  <section class="harbour-panel" role="status">
+    <span class="ring big">${icon("harbour")}</span>
+    <div>
+      <h2>${esc(t("harbourTitle"))}</h2>
+      <p>${esc(t("harbourText"))}</p>
+      <h3>${esc(t("volunteerTitle"))}</h3>
+      <p>${esc(t("volunteerText"))}</p>
+      <div class="btn-row">
+        <a class="btn" href="${SITE}" rel="noopener">${esc(t("volunteerBtn"))} ${arrow()}</a>
+        <a class="btn ghost" href="mailto:bilalsadik@as-safinah.org">${esc(t("writeUs"))}</a>
+      </div>
+    </div>
+  </section>`;
+
+/* ---------- My voyage: the ship's log ---------- */
+async function renderVoyage() {
+  const active = directions.filter((d) => d.status === "active");
+  const datas = await Promise.all(active.map((d) => loadDirection(d.id)));
+  let anyLogged = false;
+  const cards = active.map((d, i) => {
+    const data = datas[i];
+    const p = dirProgress(d.id);
+    const all = allSections(data);
+    const logged = all.filter(({ s }) => p.done[s.id]);
+    if (logged.length) anyLogged = true;
+    const doneSet = new Set(data.modules.map((m, k) => (moduleDone(p, m) ? k : -1)).filter((k) => k >= 0));
+    const here = nextPort(d, data);
+    return `<section class="voyage-card">
+      <a class="vc-wheel" href="#/d/${d.id}" aria-label="${esc(L(d.title))}">${progWheel(d, { done: doneSet })}</a>
+      <div class="vc-body">
+        <p class="eyebrow">${icon(d.flagship ? "pennant" : d.symbol)}${esc(t("programmeTag", { n: pad(d.number) }))}</p>
+        <h2><a href="#/d/${d.id}">${esc(L(d.title))}</a></h2>
+        <p class="caps">${esc(t("voyageCount", { n: logged.length, m: all.length }))}</p>
+        ${logged.length ? `<ul class="log-list" aria-label="${esc(t("loggedSections"))}">${logged.map(({ s }) => `<li><a href="#/d/${d.id}/s/${s.id}">${icon("log")}<span>${esc(t("section"))} ${digits(s.number)}, ${esc(s.title)}</span></a></li>`).join("")}</ul>` : ""}
+        ${here
+          ? `<a class="btn" href="#/d/${d.id}/s/${here.s.id}">${esc(logged.length ? t("continueVoyage") : t("beginVoyage"))} ${arrow()}</a>`
+          : `<p class="caps">${icon("harbour")} ${esc(t("harbourTitle"))}</p>`}
+      </div>
+    </section>`;
+  }).join("");
+  return `
+    ${crumbs([{ label: t("navMain"), href: "#/" }, { label: t("voyageTitle") }])}
+    <div class="page-head"><span class="ring big">${icon("log")}</span><div><h1>${esc(t("voyageTitle"))}</h1><p class="lead">${esc(t("voyageLead"))}</p></div></div>
+    ${anyLogged ? "" : `<div class="soon-panel">${shipDisc("lg")}<p style="margin:0">${esc(t("voyageEmpty"))} <a href="#/programmes">${esc(t("chooseProgramme"))}</a></p></div>`}
+    <div class="voyages">${cards}</div>
+    <p class="reset-row">${esc(t("resetNote"))} <button type="button" class="link-btn" id="reset-here">${esc(t("resetProgress"))}</button></p>`;
+}
+
+/* ---------- About the Ship: a cut-away of the larger vessel ---------- */
+function renderAbout() {
+  const decks = DECKS[lang] || DECKS.en;
+  const ys = [172, 199, 226];
+  const svg = `<svg class="cutaway" viewBox="0 0 400 270" role="img" aria-label="${esc(decks.map((x) => x[0]).join(", "))}">
+    <defs><clipPath id="hull"><path d="M28 155 L372 155 L342 236 Q200 254 58 236 Z"/></clipPath></defs>
+    <g class="ca-rig">
+      <path d="M200 155 V22"/><path d="M200 24 l24 7 -24 7"/>
+      <path d="M206 38 L292 140 L206 140 Z" class="ca-sail"/><path d="M194 50 L116 140 L194 140 Z" class="ca-sail"/>
+      <path d="M372 155 L398 136"/><path d="M200 30 L398 136" class="ca-stay"/><path d="M200 30 L22 150" class="ca-stay"/>
+    </g>
+    <g clip-path="url(#hull)">
+      <rect x="0" y="155" width="400" height="30" class="ca-deck ca-here"/>
+      <rect x="0" y="185" width="400" height="27" class="ca-deck"/>
+      <rect x="0" y="212" width="400" height="50" class="ca-deck ca-low"/>
+      <path d="M0 185 H400 M0 212 H400" class="ca-line"/>
+    </g>
+    <path d="M28 155 L372 155 L342 236 Q200 254 58 236 Z" class="ca-hull"/>
+    ${decks.map((x, i) => `<text x="200" y="${ys[i]}" text-anchor="middle" class="ca-label${i === 0 ? " here" : ""}">${esc(x[0])}${i === 0 ? ` · ${esc(t("youAreHere"))}` : ""}</text>`).join("")}
+    <path d="M6 258 q12-7 24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0" class="ca-wave"/>
+  </svg>`;
+  return `
+    ${crumbs([{ label: t("navMain"), href: "#/" }, { label: t("aboutTitle") }])}
+    <div class="about-grid">
+      <div>
+        <p class="eyebrow">${esc(t("heroEyebrow"))}</p>
+        <h1>${esc(t("aboutTitle"))}</h1>
+        <p class="lead">${esc(t("aboutLead"))}</p>
+        <div class="decks-list">
+          ${decks.map((x, i) => `<div class="deck-card${i === 0 ? " here" : ""}"><h2>${esc(x[0])}${i === 0 ? `<span class="caps">${esc(t("youAreHere"))}</span>` : ""}</h2><p>${esc(x[1])}</p></div>`).join("")}
+        </div>
+        <p><a class="btn ghost" href="${SITE}" rel="noopener">${esc(t("aboutMore"))} ${arrow()}</a></p>
+      </div>
+      <div class="cutaway-wrap">${svg}<p class="muted">${esc(t("motto"))}</p></div>
+    </div>`;
+}
+
+/* ---------- the Ship's Key ---------- */
+function renderKey() {
+  const rows = KEY[lang] || KEY.en;
+  return `
+    ${crumbs([{ label: t("navMain"), href: "#/" }, { label: t("keyTitle") }])}
+    <p class="eyebrow">${esc(t("keyEyebrow"))}</p>
+    <h1>${esc(t("keyTitle"))}</h1>
+    <p class="lead">${esc(t("keyLead"))}</p>
+    <dl class="key-grid">
+      ${rows.map(([sym, name, meaning, where]) => `<div class="key-card">
+        ${sym === "ship" ? shipDisc("lg") : `<span class="ring big">${icon(sym)}</span>`}
+        <div><dt>${esc(name)}</dt><dd>${esc(meaning)}<span class="caps">${esc(where)}</span></dd></div>
+      </div>`).join("")}
+    </dl>`;
+}
+
+/* ---------- Welcome aboard: shown once, on the first visit ---------- */
+const WELCOME_KEY = "safinah.welcomed";
+function maybeWelcome() {
+  if (store.get(WELCOME_KEY, false) || !window.HTMLDialogElement) return;
+  const dlg = document.createElement("dialog");
+  dlg.className = "tour";
+  dlg.setAttribute("aria-labelledby", "tour-title");
+  document.body.appendChild(dlg);
+  let step = 1;
+  const art = () =>
+    step === 1 ? shipDisc("xl")
+    : step === 2 ? wheel({ rtl: isRTL(), num: digits, done: new Set([0, 1]) })
+    : `<div class="tour-icons">${["anchor", "sounding", "lighthouse", "log"].map((s) => `<span class="ring big">${icon(s)}</span>`).join("")}</div>`;
+  const draw = () => {
+    dlg.innerHTML = `
+      <div class="tour-art">${art()}</div>
+      <p class="caps">${esc(t("tourStep", { n: step }))}</p>
+      <h2 id="tour-title">${esc(t(`tour${step}Title`))}</h2>
+      <p>${esc(t(`tour${step}Text`))}</p>
+      <div class="tour-dots" aria-hidden="true">${[1, 2, 3].map((n) => `<i class="${n === step ? "on" : ""}"></i>`).join("")}</div>
+      <div class="btn-row">
+        ${step < 3
+          ? `<button type="button" class="btn ghost" data-tour="skip">${esc(t("tourSkip"))}</button><button type="button" class="btn" data-tour="next">${esc(t("tourNext"))} ${arrow()}</button>`
+          : `<a class="btn ghost" href="#/key" data-tour="key">${esc(t("tourKey"))}</a><button type="button" class="btn" data-tour="skip">${esc(t("tourStart"))} ${arrow()}</button>`}
+      </div>`;
+    dlg.querySelector("[data-tour='next'], [data-tour='skip']:last-child")?.focus();
+  };
+  dlg.addEventListener("click", (e) => {
+    const a = e.target.closest("[data-tour]")?.dataset.tour;
+    if (a === "next") { step++; draw(); }
+    else if (a === "skip" || a === "key") dlg.close();
+  });
+  dlg.addEventListener("close", () => { store.set(WELCOME_KEY, true); dlg.remove(); });
+  draw();
+  dlg.showModal();
+}
+
 /* ---------- interactions for the current page ---------- */
 function bindPage(route) {
   $("#retry")?.addEventListener("click", render);
+  $("#reset-here")?.addEventListener("click", () => $("#reset-progress").click());
+  $("#print-outline")?.addEventListener("click", () => {
+    document.body.classList.add("print-outline");
+    window.addEventListener("afterprint", () => document.body.classList.remove("print-outline"), { once: true });
+    window.print();
+  });
   const search = $("#gloss-search");
   search?.addEventListener("input", () => {
     const q = search.value.trim().toLowerCase();
@@ -640,6 +830,7 @@ async function boot() {
     $("#retry")?.addEventListener("click", () => location.reload());
     return;
   }
-  render();
+  await render();
+  maybeWelcome();
 }
 boot();

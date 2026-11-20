@@ -33,6 +33,7 @@ css/styles.css        mobile-first styles, RTL-ready (CSS logical properties)
 js/app.js             router, views, progress (localStorage)
 js/i18n.js            interface strings (en / ar / tr)
 js/symbols.js         the Ship's Key symbols and the programme wheel (inline SVG)
+js/key.js             Ship's Key, About the Ship and Welcome aboard text (en / ar / tr)
 data/directions.json  the 7 programmes: number, flagship, symbol, status, course introduction
 data/<direction>/<lang>.json   course content; en.json is the master
 data/shared/<lang>.json        Modules 5-6, included in every direction
