@@ -3016,6 +3016,526 @@
             ],
             "exercise": "Alanınızda tekrar eden ve şu anda her seferinde muhakemeyle ele alınan bir durumu belirleyin. Birinci adımı izleyerek onun için tek sayfalık bir politika taslağı yazın: hedefi belirtin, olguları toplayın, kimlerin etkilendiğini belirleyin ve onu kimin onaylaması gerekeceğini söyleyin. Taslağı yöneticinize götürün. Tek sayfaya sığan ve gerçekten kullanılan bir politika, kimsenin açmadığı bir el kitabından değerlidir."
           }
+        },
+        {
+          "id": "s10",
+          "number": 10,
+          "title": "Yönetim Araçları: Belgeleme ve Denetim",
+          "ship": {
+            "title": "Seyir defteri ve iskandil",
+            "body": [
+              "Zıt işler yapan iki alet. Seyir defteri geminin nerede olduğunu kaydeder — dürüst, tarihli, tartışılmaz. İskandil ise rota değiştirmek için hâlâ zaman varken omurganın altındaki derinliği şu an söyler."
+            ],
+            "claim": "Mali kayıtlar bir seyir defteridir; denetimler ise iskandil. Mükemmel mali kayıtları olup hiç denetimi olmayan bir kurum, nasıl ve tam olarak ne zaman karaya oturduğunu bilir — ve bu konuda hiçbir şey yapamazdı; çünkü ölçtüğü her şey geriye bakıyordu.",
+            "question": "Ekibinizin her ay raporladığı rakamlardan hangilerinin geriye, hangilerinin ileriye baktığını işaretleyin. Çoğu ekip neredeyse hiç iskandili olmadığını görür."
+          },
+          "introBlocks": [
+            {
+              "type": "p",
+              "text": "Etkili yönetim iyi niyetten ve sıkı çalışmadan fazlasını gerektirir. Tutarlı belgelemeyi, bilginin düzenlenmesini ve ekipler ile projeler arasında eşgüdümü mümkün kılan sistemli araçlar ve süreçler gerektirir. Bu bölüm; Google Drive, Asana, Monday.com ya da diğer modern yönetim platformlarıyla uygulanabilecek, sekiz unsurlu pratik bir belge yönetim sistemini sunar. Sistem, küçük ekiplerden büyük ve dağıtık kurumlara kadar tüm projeleri ve birimleri düzenlemek için ölçeklenebilir bir yaklaşım sağlar. Her unsurun yönetim döngüsünde belirli bir amacı vardır ve hepsi birlikte planlama, uygulama, izleme ve öğrenme için kapsamlı bir sistem oluşturur. Bölüm ardından yönetim denetimlerine — bunların herhangi birinin işe yarayıp yaramadığını söyleyen küçük ölçüm setine — geçer."
+            },
+            {
+              "type": "h3",
+              "text": "Sisteme genel bakış"
+            },
+            {
+              "type": "p",
+              "text": "Sistem, her proje, ofis ya da birim için sürdürülmesi gereken sekiz temel belge unsurundan oluşur. Bu unsurlar etkili yönetim için gereken temel bilgileri kayda geçirir: planlama belgeleri, görev takibi, toplantı kayıtları, performans raporları, etkinlik takvimi, mali bilgiler, medya ve iletişim ve dış paydaşlarla ilişkiler. Bütün kurumlar bu unsurlardan yararlansa da her kurum kendi bağlamında hangilerinin temel olduğunu ve onları nasıl uygulayacağını uyarlayabilir. Örneğin büyük bir insani yardım kuruluşu sekiz unsuru da kapsamlı biçimde kullanabilir. Küçük bir hayır kurumu Eylem Planlarına, Görev Çizelgelerine ve Raporlara odaklanabilir. Bir inşaat projesi Görev Çizelgelerini, Toplantı Notlarını ve Raporları öne çıkarabilir. İlke sabittir: Sistemli belgeleme eşgüdümü, öğrenmeyi ve hesap verebilirliği mümkün kılar."
+            }
+          ],
+          "intro": [
+            "Etkili yönetim iyi niyetten ve sıkı çalışmadan fazlasını gerektirir. Tutarlı belgelemeyi, bilginin düzenlenmesini ve ekipler ile projeler arasında eşgüdümü mümkün kılan sistemli araçlar ve süreçler gerektirir. Bu bölüm; Google Drive, Asana, Monday.com ya da diğer modern yönetim platformlarıyla uygulanabilecek, sekiz unsurlu pratik bir belge yönetim sistemini sunar. Sistem, küçük ekiplerden büyük ve dağıtık kurumlara kadar tüm projeleri ve birimleri düzenlemek için ölçeklenebilir bir yaklaşım sağlar. Her unsurun yönetim döngüsünde belirli bir amacı vardır ve hepsi birlikte planlama, uygulama, izleme ve öğrenme için kapsamlı bir sistem oluşturur. Bölüm ardından yönetim denetimlerine — bunların herhangi birinin işe yarayıp yaramadığını söyleyen küçük ölçüm setine — geçer.",
+            "Sistem, her proje, ofis ya da birim için sürdürülmesi gereken sekiz temel belge unsurundan oluşur. Bu unsurlar etkili yönetim için gereken temel bilgileri kayda geçirir: planlama belgeleri, görev takibi, toplantı kayıtları, performans raporları, etkinlik takvimi, mali bilgiler, medya ve iletişim ve dış paydaşlarla ilişkiler. Bütün kurumlar bu unsurlardan yararlansa da her kurum kendi bağlamında hangilerinin temel olduğunu ve onları nasıl uygulayacağını uyarlayabilir. Örneğin büyük bir insani yardım kuruluşu sekiz unsuru da kapsamlı biçimde kullanabilir. Küçük bir hayır kurumu Eylem Planlarına, Görev Çizelgelerine ve Raporlara odaklanabilir. Bir inşaat projesi Görev Çizelgelerini, Toplantı Notlarını ve Raporları öne çıkarabilir. İlke sabittir: Sistemli belgeleme eşgüdümü, öğrenmeyi ve hesap verebilirliği mümkün kılar."
+          ],
+          "subsections": [
+            {
+              "id": "10.1",
+              "title": "Eylem Planı (Ap)",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Amaç: Eylem Planı, projenin, ofisin ya da birimin belirli bir dönemde (genellikle aylık ya da üç aylık) neyi başarmayı amaçladığını tanımlayan stratejik belgedir. Kurumun stratejisini belirli ve ölçülebilir eylemlere ve sorumluluklara dönüştürür."
+                },
+                {
+                  "type": "p",
+                  "text": "Temel içerik:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Stratejik hedefler: Bu dönemde neyi başarmaya çalışıyoruz?",
+                    "Temel faaliyetler: Hangi büyük eylemleri yapacağız?",
+                    "Sorumluluklar: Her faaliyetten kim sorumlu?",
+                    "Zaman çizelgesi: Her faaliyet ne zaman tamamlanmalı?",
+                    "Başarı ölçütleri: Başarılı olduğumuzu nasıl anlayacağız?",
+                    "Gereken kaynaklar: Hangi kaynak, bütçe ya da destek gerekiyor?",
+                    "Bağımlılıklar: Başarı için hangi dış etkenlerin ya da diğer faaliyetlerin gerçekleşmesi gerekiyor?",
+                    "Risk azaltma: Ne ters gidebilir ve bunu nasıl önleyeceğiz?"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Kullanım: Eylem Planları her proje ya da ofis için aylık hazırlanır ve ay sonunda gerçekleşen sonuçlarla karşılaştırılarak gözden geçirilir. Bu, amaçlanan ve gerçekleşen performansın karşılaştırılmasını ve uygulama açıklarının belirlenmesini sağlar. Eylem Planları kurum stratejisi ile günlük iş arasındaki köprüdür."
+                }
+              ]
+            },
+            {
+              "id": "10.2",
+              "title": "Görev Çizelgesi (Ts)",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Amaç: Görev Çizelgesi, eylem planı faaliyetlerini belirli ve yönetilebilir görevlere bölen operasyonel belgedir. Kimin neden sorumlu olduğunu, görevlerin ne zaman teslim edileceğini ve mevcut durumunu netleştirir."
+                },
+                {
+                  "type": "p",
+                  "text": "Temel içerik:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Görev tanımı: Yapılması gerekenin açık tanımı",
+                    "Görevlendirilen: Bu görevi tamamlamaktan kim sorumlu?",
+                    "Görevlendirme tarihi",
+                    "Son tarih: Görev ne zaman teslim edilmeli?",
+                    "Mevcut durum: Başlamadı, Devam Ediyor, Tamamlandı, İptal Edildi (renk kodları: tamamlanan için yeşil, iptal edilen için mavi)",
+                    "Tamamlanma tarihi",
+                    "Öncelik: Yüksek, Orta, Düşük (renk kodları: acil ve yüksek öncelik için kırmızı, acil ve orta öncelik için sarı, düşük için beyaz)",
+                    "İlgili eylem planı maddesi: Bu görev hangi eylem planı hedefini destekliyor?",
+                    "Bağımlılıklar: Bu görev tamamlanmadan önce ne olmalı?",
+                    "Notlar: Görevi tamamlamak için gereken ek bilgiler",
+                    "Tamamlanma kanıtı: Görevin gerçekten tamamlandığını ne gösterecek?"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Kullanım: Görev Çizelgeleri en az haftada bir — ekip toplantılarında ya da bire bir görüşmelerde — gözden geçirilmelidir. Görevler tamamlandıkça tamamlanma kanıtıyla birlikte tamamlandı olarak işaretlenir. Bu, ilerleme konusunda şeffaflık sağlar ve takılan ya da tamamlanamama riski taşıyan görevlerin erken fark edilmesini mümkün kılar."
+                },
+                {
+                  "type": "p",
+                  "text": "Aşağıda bir Görev Çizelgesi şablonu verilmiştir."
+                },
+                {
+                  "type": "p",
+                  "text": "No., Görev, İstenen tarih, Proje, Görevi veren, Son tarih, Tamamlanma, Bağlantı, Kişi — (1’den 6’ya numaralı satırlar)"
+                }
+              ]
+            },
+            {
+              "id": "10.3",
+              "title": "Toplantı Notları (Mn)",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Amaç: Toplantı Notları neyin tartışıldığını, hangi kararların alındığını ve hangi eylemlerin gerektiğini belgeler. Kurum kararlarının kaydıdır ve üzerinde anlaşılan eylemler için hesap verebilirlik yaratır."
+                },
+                {
+                  "type": "p",
+                  "text": "Temel içerik:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Toplantı tarihi ve katılımcılar: Ne zaman ve kimler katıldı?",
+                    "Gündem: Neyin tartışılması planlandı?",
+                    "Temel tartışmalar: Her gündem maddesinde ne tartışıldı?",
+                    "Alınan kararlar: Hangi somut kararlar üzerinde anlaşıldı?",
+                    "Eylem maddeleri: Toplantının sonucunda ne yapılması gerekiyor?",
+                    "Sorumlu kişi: Her eylem maddesinden kim sorumlu?",
+                    "Son tarih: Her eylem maddesinin son tarihi ne?",
+                    "Sonraki toplantı: Bir sonraki toplantı ne zaman?",
+                    "Dağıtım listesi: Bu notları kimlerin alması gerekiyor?"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Kullanım: Toplantı Notları toplantıdan sonra değil toplantı sırasında yazılmalı, 24 saat içinde katılımcılara dağıtılmalı ve Görev Çizelgelerinde atıfta bulunulmalıdır. Toplantılardan çıkan eylem maddeleri takibin sağlanması için Görev Çizelgelerinde izlenmelidir. Toplantı örüntüleri — tekrar tekrar tartışılıp karara bağlanmayan konular — ilgi gerektiren sistemik sorunlara işaret eder."
+                }
+              ]
+            },
+            {
+              "id": "10.4",
+              "title": "Raporlar (Rp)",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Amaç: Raporlar performansın, hedeflere doğru ilerlemenin, karşılaşılan zorlukların ve çıkarılan derslerin düzenli değerlendirmesini sağlar. Kurumsal öğrenmeyi mümkün kılar ve üst düzeylerde karar almaya bilgi sağlar."
+                },
+                {
+                  "type": "p",
+                  "text": "Türler ve temel içerik:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Aylık ilerleme raporları: eylem planı hedeflerine karşı gerçekleşen sonuçlar, açıkların analizi, karşılaşılan zorluklar, sorunların erken uyarı göstergeleri",
+                    "Mali raporlar: bütçe durumu, harcamalar, planlanan bütçeden sapma, mali görünüm",
+                    "Faaliyet raporları: yürütülen faaliyetlerin özeti, katılım ve erişim, kalite göstergeleri, yararlanıcı ya da müşteri geri bildirimi",
+                    "Üç aylık stratejik değerlendirmeler: stratejik hedeflere doğru ilerlemenin daha geniş değerlendirmesi, ortaya çıkan zorluklar, gereken stratejik ayarlamalar",
+                    "Çıkarılan dersler raporları: neyin iyi gittiği, neyin gitmediği, neden ve gelecekteki çalışmalar için öneriler"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Kullanım: Aylık raporlar belirlenen tarihlerde sunulmalı, amirler ya da yönetim ekipleri tarafından gözden geçirilmeli ve karar almada kullanılmalıdır. Raporlar kanıta dayanır; anlatılara değil Eylem Planları ve Görev Çizelgelerindeki verilere dayanır."
+                }
+              ]
+            },
+            {
+              "id": "10.5",
+              "title": "Etkinlik Takvimi (Ec)",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Amaç: Etkinlik Takvimi, kurumun tüm önemli faaliyetlerini, son tarihlerini, etkinliklerini ve önemli tarihlerini gösteren ortak bir takvimdir. Program çakışmalarını önler ve birimler arasında eşgüdümü mümkün kılar."
+                },
+                {
+                  "type": "p",
+                  "text": "Temel içerik:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Planlanan projeler ve faaliyetler: Hangi önemli işler planlandı?",
+                    "Önemli son tarihler: Kilit çıktılar ya da raporlar ne zaman teslim edilecek?",
+                    "Kurumsal etkinlikler: eğitimler, atölyeler, stratejik planlama oturumları, tüm personel toplantıları",
+                    "Dış etkinlikler: bağışçı toplantıları, kamu kurumlarıyla görüşmeler, toplumsal etkinlikler",
+                    "Önemli tarihler: mali yıl sonu, yıllık değerlendirme dönemleri, bütçe döngüleri",
+                    "Ekibin müsaitliği: yıllık izinler, uzun izinler, bilinen yokluklar",
+                    "Mevsimsel etkenler: hava kaynaklı kısıtlar, kültürel etkinlikler, bütçe döngüleri"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Kullanım: Etkinlik Takvimi kurum genelinde paylaşılır ve düzenli olarak güncellenir. Kurumun neyi başarmaya çalıştığını görünür kılar ve çakışmaları ya da darboğazları belirlemeye yardım eder. Planlama oturumlarında Etkinlik Takvimine düzenli olarak başvurmak program çakışmalarını ve gerçekçi olmayan zaman çizelgelerini önler."
+                }
+              ]
+            },
+            {
+              "id": "10.6",
+              "title": "Finans (Fn)",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Amaç: Bütçeler, harcama takibi, mali raporlar ve fon yönetimini içeren mali belgeler, kurumun mali hesap verebilirliğini güvence altına alır, mali planlamayı mümkün kılar ve dolandırıcılığı ya da kötüye kullanımı önler."
+                },
+                {
+                  "type": "p",
+                  "text": "Temel içerik:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Bütçe belgeleri: kategoriye ve döneme göre planlanan harcamalar",
+                    "Harcama kayıtları: destekleyici fiş ve onaylarla belgelenmiş harcamalar",
+                    "Bütçe-gerçekleşme raporları: planlanan ve gerçekleşen harcamaların sapma analiziyle karşılaştırılması",
+                    "Nakit akışı projeksiyonları: beklenen nakit ihtiyaçları ve mevcut nakit",
+                    "Mali denetimler: onay yetkileri, görevlerin ayrılığı, denetim izleri",
+                    "Fon kaynağı belgeleri: hangi fonların mevcut olduğu, kullanım kısıtları, raporlama gereklilikleri",
+                    "Vergi ve uyum belgeleri: vergi uyumu ve düzenleyici raporlama için gereken kayıtlar"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Kullanım: Mali belgeler sistemli biçimde tutulmalı ve düzenli olarak (ideal olarak haftalık ya da aylık) güncellenmelidir. Bütün harcamalar belgelenmeli ve kurumdaki yetki düzeylerine göre onaylanmalıdır."
+                },
+                {
+                  "type": "p",
+                  "text": "Aylık mali raporlar kurumun ilgili yönetimi tarafından gözden geçirilmelidir. Yıllık denetimler belgelerin eksiksiz ve doğru olduğunu doğrulamalıdır."
+                }
+              ]
+            },
+            {
+              "id": "10.7",
+              "title": "Medya (Md)",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Amaç: Medya belgeleri; fotoğrafları, videoları, vaka çalışmalarını, tanıklıkları ve kurumun çalışmalarına dair diğer belgeleri içerir. Etkinin kanıtını kayda geçirir, iletişimi ve raporlamayı destekler ve kurumsal belleği korur."
+                },
+                {
+                  "type": "p",
+                  "text": "Temel içerik:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Faaliyet belgeleri: programların, faaliyetlerin ve etkinliklerin fotoğraf ve videoları",
+                    "Vaka çalışmaları: belirli yararlanıcıların ya da projelerin etkiyi ve dersleri gösteren ayrıntılı hikâyeleri",
+                    "Tanıklıklar: yararlanıcılardan, çalışanlardan ve ortaklardan alıntılar ve ifadeler",
+                    "Öncesi ve sonrası belgeleri: değişimin ve etkinin görsel kanıtı",
+                    "Eğitim materyalleri: eğitim programlarında kullanılan videolar, sunumlar, notlar",
+                    "Kurumsal arşiv: kurumun gelişiminin ve dönüm noktalarının tarihsel belgeleri"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Kullanım: Medya açık açıklamalar, tarihler ve kaynak belirtimiyle sistemli biçimde düzenlenmelidir. Tutarlı adlandırma kuralları kullanın. Medya; bağışçılara etki raporlamasında, personel iletişiminde, eğitimde, dış iletişimde ve kurum tarihinin korunmasında kullanılır. Fotoğraf ya da videoda yer alan herkesin bilgilendirilmiş onamı alınmalı ve kaydedilmelidir; çocukların yer aldığı medya ek koruma onayı gerektirir."
+                }
+              ]
+            },
+            {
+              "id": "10.8",
+              "title": "Dış İlişkiler (Ex)",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Amaç: Dış ilişkiler belgeleri kurumun dış paydaşlarla — bağışçılar, kamu kurumları, toplum üyeleri, medya, ortaklar ve kamuoyu — iletişimini ve etkileşimini kaydeder."
+                },
+                {
+                  "type": "p",
+                  "text": "Temel içerik:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Bağışçı iletişimi: bağışçılarla yazışmalar, raporlama, güncellemeler",
+                    "Kamu ilişkileri: kamu kurumlarıyla iletişim, uyum belgeleri, savunuculuk çalışmaları",
+                    "Medya ilişkileri: basın bültenleri, medya bağlantıları, medyada yer alma",
+                    "Toplumla ilişkiler: toplumdan gelen geri bildirimler, anketler, toplum üyeleriyle istişareler",
+                    "Ortak ilişkileri: ortaklarla anlaşmalar, eşgüdüm kayıtları, ortaklık sonuçları",
+                    "Kamuya yönelik iletişim: web sitesi içeriği, sosyal medya paylaşımları, bültenler",
+                    "Kriz iletişimi: kurumsal kriz durumlarında nasıl iletişim kurulduğunun belgelenmesi"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Kullanım: Dış ilişkiler belirlenmiş kurum sözcüleri ya da iletişim ekipleri tarafından eşgüdümlenmelidir. Tüm önemli dış iletişimler belgelenmelidir. Dışarıdan gelen geri bildirim ve soruların örüntü analizi kurumsal iyileştirmelere bilgi sağlayabilir. Sosyal medya ve kamuya yönelik iletişim kurumun değerleri ve stratejisiyle uyumlu olmalıdır."
+                }
+              ]
+            },
+            {
+              "id": "10.9",
+              "title": "Sekiz Unsur Sistemini Uygulamak",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Sistem çeşitli platformlarla uygulanabilir. Belirli teknoloji, unsurların tutarlı biçimde uygulanmasından daha az önemlidir."
+                },
+                {
+                  "type": "p",
+                  "text": "Uygulama yaklaşımı:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Temel unsurlarla başlayın: Eylem Planı, Görev Çizelgesi ve Raporlarla başlayın — bunlar tüm kurumlar için temeldir. Kurum olgunlaştıkça diğer unsurları ekleyin.",
+                    "Bağlamınıza uyarlayın: Her kurum her unsura aynı ölçüde ihtiyaç duymaz. Bir inşaat projesi ağırlıklı olarak Görev Çizelgelerine ve Toplantı Notlarına odaklanabilir. Bir insani yardım kuruluşu Raporları ve",
+                    "Medyayı öne çıkarabilir. Sistemi ihtiyaçlarınıza uyarlayın.",
+                    "Şablonlar oluşturun: Tutarlılığı sağlamak ve belge hazırlamak için gereken süreyi azaltmak üzere her unsur için standart şablonlar hazırlayın.",
+                    "Sahiplik verin: Her unsurun sürdürülmesinden kimin sorumlu olduğunu belirleyin. Eylem Planları ve Raporlar için proje ya da ofis bazında görevlendirin. Ortak unsurlar, örneğin"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Etkinlik Takvimi ve Finans için kurum düzeyinde sorumluluk verin."
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Personeli eğitin: Her unsurun neden önemli olduğu, hangi bilgilerin yer alması gerektiği ve nasıl sürdürüleceği konusunda eğitim verin.",
+                    "Ritimler oluşturun: Bir belgeleme takvimi hazırlayın — raporların ne zaman teslim edileceği, toplantıların ne zaman yapılacağı, gözden geçirmelerin ne zaman olacağı. Tutarlılık alışkanlık yaratır.",
+                    "Gözden geçirin ve iyileştirin: Sistemin işleyip işlemediğini düzenli olarak değerlendirin. Belgeler sürdürülüyor mu? Kullanılıyor mu? Ne işe yaramıyor? Sistemi deneyime göre ayarlayın.",
+                    "Unsurları birleştirin: Unsurları birbirine bağlayın. Eylem Planları Görev Çizelgelerini doğurur; Görev Çizelgeleri toplantılarda tartışılır; toplantı sonuçları Görev Çizelgelerini günceller; görevlerin tamamlanması Raporlarda özetlenir; Medya Raporları ve iletişimi destekler."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "10.10",
+              "title": "Sekiz Unsur Sisteminin Yararları",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "Ölçeklenmeyi mümkün kılar: Sistemli belgeleme, kurumların gayriresmî sistemlerin kaldırabileceğinin ötesinde büyümesini sağlar",
+                    "Şeffaflık yaratır: Herkes neyin planlandığını, neyin yapıldığını, neyin tamamlandığını ve hangi sonuçlara ulaşıldığını anlar",
+                    "Tekrarlanan işi azaltır: Ortak belgeler insanların aynı konular üzerinde birbirinden habersiz çalışmasını önler",
+                    "Hesap verebilirliği mümkün kılar: Planların ve ilerlemenin açıkça belgelenmesi anlamlı bir hesap verebilirlik sağlar",
+                    "Bilgiyi korur: Belgeleme, insanlar ayrıldığında kaybolacak kurumsal öğrenmeyi ve bilgiyi kayda geçirir",
+                    "Eşgüdümü mümkün kılar: Birden çok proje ya da ekip sistemi kullandığında birimler arası eşgüdüm kolaylaşır",
+                    "Karar almayı destekler: Nitelikli belgeler, izlenimlere dayanmak yerine stratejik kararlar için kanıt sağlar",
+                    "Raporlamayı kolaylaştırır: Bağışçılara, kamu kurumlarına ya da paydaşlara raporlar son dakika telaşıyla değil sistemli belgelerden üretilir",
+                    "Öğrenmeyi mümkün kılar: Çıkarılan dersler raporları ve sistemli belgeleme kurumsal öğrenmeyi ve sürekli iyileştirmeyi sağlar"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Sekiz Unsur Sistemi kurumsal belgeleme ve yönetim için pratik ve ölçeklenebilir bir yaklaşım sunar. Eylem planlarını sistemli biçimde kaydederek, görevleri izleyerek, toplantıları belgeleyerek, ilerlemeyi takip ederek, programları eşgüdümleyerek, mali işleri yöneterek, medyayı koruyarak ve dış paydaşlarla ilişki kurarak kurumlar etkili yönetimin temelini atar. Sistem belirli bir araca bağlı değildir — Google Drive, Asana, Monday.com ya da başka platformlarla çalışır. Anahtar tutarlı uygulama ve düzenli kullanımdır. Bu belgeleme sistemini kurmaya yatırım yapan kurumlar kısa sürede onun vazgeçilmez olduğunu görür; daha iyi eşgüdüm, hesap verebilirlik ve öğrenme ve sonuçta daha iyi kurumsal performans ve etki sağlar."
+                }
+              ]
+            },
+            {
+              "id": "10.11",
+              "title": "Yönetim Denetimleri",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Yukarıdaki sekiz unsur kurumun ne yaptığını kaydeder. Yönetim denetimleri ise işe yarayıp yaramadığını söyler. Bunlar ayrı bir disiplindir ve orta büyüklükteki kurumların çoğu birincisinden çok fazla, ikincisinden çok az tutar."
+                },
+                {
+                  "type": "p",
+                  "text": "Yönetim denetimi, kurumun ulaşmayı amaçladığı şeye ulaşıp ulaşmadığını gösterdiği için bilerek seçilmiş bir oran, standart ya da istatistiktir. Anahtar sözcük seçilmiştir. Çoğu kurumda rakam eksik değildir; eksik olan, birinin önemli olanlar bunlar diye karar verdiği az sayıda rakamdır."
+                },
+                {
+                  "type": "p",
+                  "text": "Denetimler mali kayıtlar değildir. Defter kayıtları ve mali raporlar zaten olmuş olanı anlatır. Yönetim denetimleri ise bundan sonra olması muhtemel olanı işaret etmek için seçilir — bir sorunu olup bittikten sonra doğrulamak için değil, oluşurken görebilmeniz için vardır."
+                },
+                {
+                  "type": "p",
+                  "text": "Bir kurumun kusursuz mali kayıtları olup hiçbir denetimi olmayabilir."
+                },
+                {
+                  "type": "h3",
+                  "text": "Bir denetimi etkili kılan nedir"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Hızlı erişilebilir ve güncel tutulur. İki ay gecikmeyle üretilen bir denetim, denetim değil tarihsel bir kayıttır.",
+                    "Yorumlaması kolaydır. Her sunulduğunda açıklama gerektiriyorsa yanlış ölçüttür ya da yanlış biçimdedir.",
+                    "Hedeflere bağlıdır. Her denetim, kurumun başarmaya çalıştığını söylediği bir şeye ve performansın nasıl değerlendirildiğine geri götürülebilmelidir.",
+                    "Sayıca azdır. Her şeyi ölçme dürtüsü amacı boşa çıkarır. İnsanların gerçekten baktığı kısa bir liste, kimsenin okumadığı uzun bir listeden iyidir.",
+                    "Bir uzman olmadan ve bir haftalık hazırlık gerektirmeden sürdürülebilecek kadar basittir."
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Denetimler yetki devrini daraltmaz, genişletir. En sık kaçırılan nokta budur. Güvenilir rakamları görebilen bir yönetici her adımı denetlemek zorunda değildir; çünkü rakamların kendisi dikkatin nerede gerektiğini gösterir. İyi seçilmiş denetimler yöneticileri ayrıntılı gözetimden kurtarır ve çalışanlara kendilerinden ne beklendiğini ve nasıl gittiklerini bildirir. Kötü seçilmiş olanlar ise insanları kısıtlar, iş üretir ve dikkati sonuçlardan rapor üretimine çeker."
+                },
+                {
+                  "type": "p",
+                  "text": "Buradan çıkan sonuç, temel olmayan denetimleri belirlemenin temel olanları belirlemek kadar önemli olduğudur. Yıllar içinde birikmiş ve kimsenin yokluğunu hissetmeyeceği raporlar getirisi olmayan bir maliyettir."
+                }
+              ]
+            },
+            {
+              "id": "10.12",
+              "title": "Denetimleri Seçmek ve Uygulamaya Koymak",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Rutin raporlamadan gerçek denetime geçen kurumlar genellikle aşağıdakine benzer bir sırayı izler."
+                },
+                {
+                  "type": "ol",
+                  "items": [
+                    "Nihai sonucu netleştirin. Mümkün olduğunca sade ifade edilmiş hangi sonuç size kurumun başarılı olduğunu söylerdi? Sonra ona katkıda bulunan başlıca etkenleri önem sırasına göre belirleyin.",
+                    "Performansı neyin ölçtüğünü belirleyin — para cinsinden, personel zamanı cinsinden, sunulan hizmet birimi ya da ulaşılan yararlanıcı cinsinden.",
+                    "Ölçütleri uzun ve düz bir liste yerine birkaç ilişkili alanda toplayın: para; faaliyet ve işletme sonuçları; varlıklar ve tesisler; insanlar.",
+                    "Her biri için standartlar koyun — tatmin edici bir aralık ve eylem gerektiren bir düzey. Benzer kurumların veri yayımladığı yerlerde sektöre ait düşük, ortanca ve yüksek değerler yararlı bir referanstır.",
+                    "Bunları gerçekleşen sonuçları tahminle ve önceki dönemlerle karşılaştıracak biçimde grafikle sunun.",
+                    "Tek tek değerleri değil eğilimleri okuyun. Birkaç döneme yayılan hareketli ortalama yönü gösterir; tek bir ayın rakamı nadiren gösterir.",
+                    "Denetimlerin nasıl kullanılacağına karar verin — dönemsel raporlarda, bütçelerde ve tahminlerde ve yetki devrinin dayanağı olarak.",
+                    "Kayıtlarınızı, rakamlar her seferinde özel bir çalışmayla değil rutin muhasebeden çıkacak biçimde düzenleyin. Bir denetimi üretmek bir projeye dönüşürse üretilmez olur."
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Tek rakam sorusu. Ticari bir kurum genel sonucunu genellikle tek bir rakamla ifade edebilir — sermaye getirisi ya da satışlar üzerinden kâr. Bir hayır kurumu bunu yapamaz ve çalışmanın gerçekten zorlaştığı yer burasıdır. Eşdeğer soru şudur: Asıl hedeflerimize ne kadar etkili ulaştığımızı en iyi hangi tek ölçüt yansıtır?"
+                },
+                {
+                  "type": "p",
+                  "text": "Başka sektörler kendi cevaplarını bulmuştur. Bir eğitim kurumu öğrenci başına yıllık maliyeti; bir hastane hasta günü başına maliyeti; bir üyelik kuruluşu üye başına yıllık maliyeti; bir kooperatif üye başına net tasarrufu kullanabilir. Bir insani yardım kuruluşu ulaşılan yararlanıcı başına maliyeti ya da gelirin program uygulamasına ulaşan oranını kullanabilir — gerçi ikisi de tam tatmin edici değildir; çünkü ikisi de daha iyi değil daha ucuz iş yaparak iyileştirilebilir."
+                },
+                {
+                  "type": "p",
+                  "text": "Çoğu zaman tek bir rakam üzerinde karar kılmak mümkün değildir. Yine de denemeye değer; çünkü hangi rakamın en önemli olduğunu söyleyemeyen bir kurum genellikle neyi başarmaya çalıştığı konusunda anlaşmamıştır."
+                },
+                {
+                  "type": "p",
+                  "text": "Denetimleri yavaş yavaş getirin. Küçük bir temel ölçütler setinden başlayın ve ancak sonuçlar haklı çıkardıkça genişletin. Bir kerede kurulan bir denetim programı genellikle bir kerede terk edilir."
+                },
+                {
+                  "type": "p",
+                  "text": "Ve sınırlarını göz önünde tutun. Denetimler kendi başlarına hiçbir sorunu çözmez. Yetkin bir yöneticiye nereye bakacağını söyler; hiçbir şeye karar vermezler. Denetimlerin neyi yapıp neyi yapamayacağını anlamayan bir yönetici ya onları tamamen küçümser ya da muhakemenin yerini tutmalarını bekler; iki hata da yaygındır."
+                }
+              ]
+            },
+            {
+              "id": "10.13",
+              "title": "Denetimler ve Mütevelliler",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Kurumun nihai sorumluluğu mütevellilere aittir ve bu, yetki devriyle üzerlerinden atabilecekleri bir sorumluluk değildir. Devredebilecekleri ve devretmeleri gereken şey operasyonel ayrıntıdır — iyi denetimlerin mümkün kıldığı şey de tam olarak budur."
+                },
+                {
+                  "type": "p",
+                  "text": "Mütevelliler, onaylanmış hedeflere göre nihai sonuçlarla ilgilenmeli, bunlara ulaşmayla ilgili faaliyet ve ayrıntılarla değil. Bu ayrım ancak dört şey yerindeyse geçerli olur:"
+                },
+                {
+                  "type": "ol",
+                  "items": [
+                    "Kurul, kurumun tamamı için açık hedefler koymuştur.",
+                    "Kurul kendi işlevlerini ve yetki alanını genel müdürünkinden ayırmıştır.",
+                    "Sağlam bir örgüt yapısı onaylanmıştır.",
+                    "Her üst düzey görevin görevleri, ilişkileri, yetkisi ve hesap verebilirliği üzerinde anlaşılmış ve yazıya geçirilmiştir."
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Bu dördü eksik olduğunda kurullar operasyonel ayrıntıya kayar — kötü niyetten değil, tutunacak başka bir şey olmadığı için."
+                },
+                {
+                  "type": "p",
+                  "text": "Mütevellilere sunulan bir rapor dört soruyu cevaplamalıdır. Kurum genelinde hedeflerimize, programlarımıza ve bütçelerimize göre nasıl gidiyoruz? Hangi büyük iyileştirmeleri yapmalıyız ve ne zaman? Nereye gidiyoruz — temel eğilimlerimiz uzun vadeli hedeflerimiz ve politikalarımızla tutarlı mı? Ve kurulun bir sonraki toplantısında hangi somut kararlar ya da onaylar gerekiyor?"
+                },
+                {
+                  "type": "p",
+                  "text": "İyi denetim verilerinden yoksun kurullar, üretmesi pahalı olan ve kurumun başarılı olup olmadığı hakkında onlara çok az şey söyleyen ayrıntılı raporların altında kalır."
+                },
+                {
+                  "type": "h3",
+                  "text": "Yönetim denetimlerinize ilişkin on test"
+                },
+                {
+                  "type": "p",
+                  "text": "Her birini 1’den 5’e kadar puanlayın; 5 mükemmel, 1 eksik demektir."
+                },
+                {
+                  "type": "ol",
+                  "items": [
+                    "Kapsam. Denetimlerimiz, mütevellilerin kurumun yolunda olduğundan emin olmak için ihtiyaç duyduğu her şeyi kapsıyor mu?",
+                    "İzlenebilirlik. Her denetim, hep var olduğu için var olmak yerine belirtilmiş bir hedefe ya da standarda bağlı mı?",
+                    "Hesap verebilirlik. Her denetimden adı belirli tek bir kişi mi sorumlu, yoksa sorumluluk paylaşılmış ve dolayısıyla yok mu?",
+                    "Sıralama. Önem sırasına göre mi dizilmişler, yoksa her şey aynı derecede acil mi görünüyor?",
+                    "Sayı. Mümkün olduğunca az mı, yoksa yıllar içinde mi birikmişler?",
+                    "Sadelik. Yeni bir yönetici bunları bilgilendirme olmadan anlayabilir mi?",
+                    "Bakım. Güncel tutmaları kolay mı, yoksa biri her dönem onları derlemek için günler mi kaybediyor?",
+                    "Gözden geçirme. Son bir yıl içinde ürettiğimiz her raporun hâlâ üretilmeye değer olup olmadığını soran oldu mu?",
+                    "Maliyet. Her birini üretmenin emeği, ona sahip olmanın değerini haklı çıkarıyor mu?",
+                    "Denge. Yararlanıcıların, bağışçıların, çalışanların ve kamuoyunun çıkarlarını mı yansıtıyorlar — yoksa yalnızca birini mi?"
+                  ]
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Belgeleme sistemine ilişkin on test",
+            "tests": [
+              "Projemin ya da ofisimin bu dönem için güncel bir Eylem Planı var mı?",
+              "Geçen ayın planı gerçekleşen sonuçlarla karşılaştırılarak gözden geçirildi mi?",
+              "Görev Çizelgesi en az haftada bir gözden geçiriliyor mu?",
+              "Toplantılardan çıkan eylem maddeleri Görev Çizelgesine ulaşıyor mu?",
+              "Toplantı notları toplantı sırasında yazılıp bir gün içinde dağıtılıyor mu?",
+              "Raporlarım belgelenmiş verilere mi, yoksa hatırladıklarıma mı dayanıyor?",
+              "Yeni son tarihler üzerinde anlaşmadan önce Etkinlik Takvimine bakılıyor mu?",
+              "Harcamalar doğru yetki düzeyinde belgelenip onaylanıyor mu?",
+              "Medya, onam kaydıyla birlikte kayda geçiriliyor ve yeniden bulunabilecek biçimde saklanıyor mu?",
+              "Dış yazışmalar bir kişinin e-posta kutusu dışında herhangi bir yerde belgeleniyor mu?"
+            ],
+            "questions": [
+              "Yarın başlasak hangi üç unsur bize en çok yarar sağlardı?",
+              "Belgelerimiz nerede yalnızca birinin kafasında duruyor?",
+              "Bir bağışçı bugün üretemeyeceğimiz neyi isterdi?",
+              "Hangi unsuru sürdürüyoruz ama gerçekte hiç kullanmıyoruz ve neden hâlâ sürdürüyoruz?",
+              "Kurumumuzda her unsurun sahibi kim ve sahibi olduğunu biliyor mu?",
+              "Etkililiğimizi tek bir rakamla anlatmamız gerekseydi bu ne olurdu — ve onu üretebilir miydik?",
+              "Şu anda ürettiğimiz hangi raporun yokluğunu kimse fark etmez?"
+            ],
+            "exercise": "Yürüyen bir proje seçin. Sekiz unsurdan hangilerinin, bir meslektaşın size sormadan bulabileceği biçimde var olduğunu kontrol edin ve yokluğunu en çok hissedeceğiniz eksik unsuru kurun. Sonra alanınızın ürettiği tüm tekrarlayan raporları ve bildirimleri listeleyin. Her birinin karşısına onu kimin okuduğunu ve hangi karara bilgi sağladığını yazın. Okuyucusu ve bağlı olduğu bir karar olmayan her rapor kaldırılmaya adaydır — listeyi yöneticinize götürün."
+          }
         }
       ],
       "title": "Her Şeyi Bir Arada Tutan Sistemler",
