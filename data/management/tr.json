@@ -908,6 +908,867 @@
         ],
         "evidence": "tek sayfalık bir kaynak ve varsayım analizi, düzeye göre işaretlenmiş bir karar kaydı ve tarihli bir değişiklik içeren tamamlanmış bir altı ilke öz değerlendirmesi."
       }
+    },
+    {
+      "id": "m2",
+      "number": 2,
+      "sections": [
+        {
+          "id": "s4",
+          "number": 4,
+          "title": "Beceriler ve Nitelikler",
+          "ship": {
+            "title": "Kaptanın kendi denizciliği",
+            "body": [
+              "Bir gemi sağlam, mürettebatı istekli olabilir ve yolculuk yine de kötü gidebilir; çünkü dümendeki kişinin zamana ve güvene mal olan alışkanlıkları vardır. Yetki devri, kararlar, günün kullanımı, toplantının yönetilme biçimi — bunlar denizciliktir ve denizcilik miras alınmaz, öğrenilir."
+            ],
+            "claim": "Her şeyi kendisi yapan kaptan çalışkan değildir. Bütün geminin beklediği darboğazdır ve çoğu zaman bunu göremez; çünkü dümen köşkünden bakınca bu bağlılık gibi görünür.",
+            "question": "Bir hafta boyunca yalnızca sizin yapabileceğiniz işleri kaydedin. O listedeki diğer her şey, henüz yetiştirmediğiniz birine aitti."
+          },
+          "introBlocks": [
+            {
+              "type": "p",
+              "text": "Yöneticiler ve liderler, genellikle sert ve yumuşak beceriler olarak gruplanan bir yetkinlikler karışımına ihtiyaç duyar. Sert beceriler teknik ya da alana özgü yeteneklerdir; yumuşak beceriler ise kişiler arası ve davranışsal niteliklerdir. Ancak bazı önemli yetkinlikler kolayca sınıflandırılamaz ve yalnızca hayat tecrübesi, uyum yeteneği ve hikmetle kazanılır. Aşağıda örnekler, açıklamalar ve hayat tecrübesinin temel rolü yer alıyor."
+            },
+            {
+              "type": "h3",
+              "text": "Sert beceriler"
+            },
+            {
+              "type": "p",
+              "text": "Sert beceriler, iş performansı için gerekli olan öğretilebilir yetenekler ya da teknik bilgilerdir. Örnekler:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Finansal analiz ve bütçeleme",
+                "Proje yönetimi ve planlama",
+                "Teknik yetkinlik (mühendislik, yapı araçları, veri analitiği vb.)",
+                "Rapor yazımı ve belgeleme",
+                "Süreç tasarımı ve kalite güvencesi",
+                "Alan uzmanlığı (örneğin yapı yönetmelikleri ve mevzuata uyum)"
+              ]
+            },
+            {
+              "type": "h3",
+              "text": "Yumuşak beceriler"
+            },
+            {
+              "type": "p",
+              "text": "Yumuşak beceriler, etkili ekip çalışmasını ve liderliği mümkün kılan kişisel ve kişiler arası niteliklerdir. Örnekler:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "İletişim (açık, saygılı, etkili)",
+                "Ekip çalışması ve iş birliği",
+                "Empati ve duygusal zekâ",
+                "Liderlik ve motivasyon",
+                "Uyum yeteneği ve esneklik",
+                "Çatışma çözümü",
+                "Zaman yönetimi",
+                "Yaratıcı sorun çözme",
+                "Karar verme",
+                "Dürüstlük ve etik standartlar"
+              ]
+            },
+            {
+              "type": "h3",
+              "text": "Hayat tecrübesi"
+            },
+            {
+              "type": "p",
+              "text": "Bütün temel beceriler sert ya da yumuşak diye düzgünce sınıflandırılamaz. Sağduyu, dayanıklılık ve hikmet gibi bazı yetkinlikler; karmaşık durumlarla yüzleşerek, hata yaparak, öğrenerek ve uyum sağlayarak zamanla biçimlenir. Hayat tecrübesi yöneticilere büyük resmi görme, örüntüleri birleştirme ve beklenmedik olanla sükûnet ve basiretle başa çıkma yeteneği kazandırır. Örneğin:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Başarısız bir projeden ders çıkarıp bu dersleri sonraki işlere uygulamak",
+                "Farklı ekipleri yönetip kültürel zorluklarla karşılaştıktan sonra uyum yeteneği kazanmak",
+                "Paydaşlarla yıllar süren ilişkiler sonucunda müzakere becerisi kazanmak",
+                "Gerçek kriz durumlarında sabır ve soğukkanlılık geliştirmek",
+                "Geçmiş liderlik hatalarından dinlemenin ve tevazunun değerini öğrenmek"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Yetki devri, karar verme ya da çatışma çözümü gibi görevler çoğu zaman hem sert hem yumuşak beceri gerektirir. Örneğin etkili yetki devri, neyin devredilebileceğini bilmek için alan bilgisi (sert beceri) ve başkalarını güçlendirmek için güven inşası (yumuşak beceri) ister. Benzer biçimde başarılı zaman yönetimi de iş akışı uzmanlığını kişisel disiplin ve önceliklendirmeyle birleştirir."
+            }
+          ],
+          "intro": [
+            "Yöneticiler ve liderler, genellikle sert ve yumuşak beceriler olarak gruplanan bir yetkinlikler karışımına ihtiyaç duyar. Sert beceriler teknik ya da alana özgü yeteneklerdir; yumuşak beceriler ise kişiler arası ve davranışsal niteliklerdir. Ancak bazı önemli yetkinlikler kolayca sınıflandırılamaz ve yalnızca hayat tecrübesi, uyum yeteneği ve hikmetle kazanılır. Aşağıda örnekler, açıklamalar ve hayat tecrübesinin temel rolü yer alıyor.",
+            "Sert beceriler, iş performansı için gerekli olan öğretilebilir yetenekler ya da teknik bilgilerdir. Örnekler:",
+            "Yumuşak beceriler, etkili ekip çalışmasını ve liderliği mümkün kılan kişisel ve kişiler arası niteliklerdir. Örnekler:",
+            "Bütün temel beceriler sert ya da yumuşak diye düzgünce sınıflandırılamaz. Sağduyu, dayanıklılık ve hikmet gibi bazı yetkinlikler; karmaşık durumlarla yüzleşerek, hata yaparak, öğrenerek ve uyum sağlayarak zamanla biçimlenir. Hayat tecrübesi yöneticilere büyük resmi görme, örüntüleri birleştirme ve beklenmedik olanla sükûnet ve basiretle başa çıkma yeteneği kazandırır. Örneğin:",
+            "Yetki devri, karar verme ya da çatışma çözümü gibi görevler çoğu zaman hem sert hem yumuşak beceri gerektirir. Örneğin etkili yetki devri, neyin devredilebileceğini bilmek için alan bilgisi (sert beceri) ve başkalarını güçlendirmek için güven inşası (yumuşak beceri) ister. Benzer biçimde başarılı zaman yönetimi de iş akışı uzmanlığını kişisel disiplin ve önceliklendirmeyle birleştirir."
+          ],
+          "subsections": [
+            {
+              "id": "4.1",
+              "title": "Yetki Devri",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Bir üst yöneticiye gizlice zorluklarının ne olduğunu sorun; çoğu zaman çalışanlarına sorumluluk aldıramadığını duyarsınız. O yöneticiye bağlı kişilere sorun; farklı bir şey duyarsınız: Amirin her şeyi elinde tutmak istediğini; en zor sorunlarından birinin, amirin devretmesi gerekip de devretmediği iş olduğunu; amirin o kadar meşgul olduğunu ki gerçekten konuşulması gereken konularda kimsenin ona ulaşamadığını."
+                },
+                {
+                  "type": "p",
+                  "text": "İki anlatım da genellikle aynı anda doğrudur. Yetki devrini zorlaştıran da budur. Basit görünür — birine bir görev verin — ama yanlış gidebileceği yolların sayısı, görünen basitliğiyle hiç orantılı değildir."
+                },
+                {
+                  "type": "p",
+                  "text": "Yetki devri hem sert bir beceridir (neyin ve nasıl devredilebileceğini bilmek) hem de yumuşak bir beceridir (doğru kişiyi seçmek, açıkça iletişim kurmak ve onu kendi hâline bırakabilmenizi sağlayan güveni inşa etmek)."
+                },
+                {
+                  "type": "h3",
+                  "text": "Yetki devri neden önemlidir"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Sizi yalnızca sizin yapabileceğiniz işe serbest bırakır — işleri iyileştirmek, insanları geliştirmek ve rolünüzde hesap verdiğiniz kısımlar",
+                    "Size bağlı kişileri geliştirir; bu gelişim esas olarak onları zorlayan sorumluluklar üstlenmeleriyle olur",
+                    "Bütün ekibin kapasitesini artırır",
+                    "Güven ve gerçek sorumluluk aracılığıyla morali yükseltir",
+                    "Geleceğin liderlerini ortaya çıkarır",
+                    "Tek bir kişiye aşırı bağımlılıktan kaynaklanan darboğazları azaltır",
+                    "Dayanıklılık kazandırır; çünkü kritik işi birden fazla kişi yapabilir"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Aynı anda iki amaca hizmet eder: Sizi daha önemli işlere serbest bırakır, bu da kendi gelişiminize katkıdır; ve altınızdaki insanları geliştirmek için elinizdeki başlıca tekniktir. Yetki devretmemek ikisini de bodur bırakır."
+                },
+                {
+                  "type": "ol",
+                  "items": [
+                    "Kabul ve anlaşıldığına dair bir teyit alın. Görevin yalnızca verilmesinden değil, doğru anlaşılıp yorumlanmasından da siz sorumlusunuz. Söylemek tek başına yetmez. Kişiden, kendisinden ne istendiğini ve neyin hesabını vermeyi kabul ettiğini nasıl anladığını size tekrar etmesini isteyin. Bunu kendisi de yapabilir: “Sizi doğru anladığımdan emin olayım” deyip tekrarlayarak."
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Yazıya dökülünce önemsiz görünür ve yöneticiler bu yüzden atlar. Oysa en fazla sayıda maliyetli hatayı, yanlış anlamayı ve kırgınlığı önleyen tek tekniktir ve bir dakikadan kısa sürer."
+                },
+                {
+                  "type": "ol",
+                  "start": 2,
+                  "items": [
+                    "Ayrıntıyı tartışmadan önce nihai sonucu söyleyin. Görevi, hangi sonucu istediğinizi sade ifadelerle söyleyebilecek hâle gelene kadar düşünün — ve önce onu söyleyin. Talimatların faaliyetin ayrıntılarına öyle dolanması ki nihai sonucun hiç netleşmemesi ya da başta söylenip konuşma sırasında kaybolması son derece yaygındır. Kişi sonucu değil faaliyeti teslim eder ve iki taraf da şaşırır.",
+                    "Onu kendi hâline bırakın. Görev kabul edildiğinde, süre anlaşıldığında, ilerleme kontrol noktaları üzerinde uzlaşıldığında, performans standardı netleştiğinde ve kişi yardım için nereye başvuracağını bildiğinde — onu mümkün olduğunca kendi hâline bırakın. Her adımın denetlendiği bir yetki devri, yetki devri değildir; içinde fazladan bir kişi olan aynı iştir.",
+                    "Sonuna kadar takip edin. Performansın bedeli, hiç bitmeyen takiptir. İlk üç adım düzgün yapıldıysa bu kolaydır: İlerlemenin üzerinde anlaşılan takvim ve standartlara uyup uymadığını, görevin değişmesi gerekip gerekmediğini ve takdir ya da düzeltme zamanının gelip gelmediğini kontrol edersiniz."
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Takip etmemesiyle tanınan yöneticiler gerçek zarar verir. Çalışanları son tarihleri ciddiye almayı bırakır, görevler sürüklenir ve işler başka işlerin baskısı altında unutulur, sonra bir acil durum olarak ortaya çıkar. Gevşek takip, standartlar üzerine hiçbir konuşmanın telafi edemeyeceği hızla kayıtsızlığı öğretir."
+                },
+                {
+                  "type": "p",
+                  "text": "Yetki devri hesap verebilirliği devretmez. Görevi ve onu yerine getirme yetkisini devredebilirsiniz. Sonuçtan kendi yöneticinize karşı siz sorumlu kalırsınız. Bir başarısızlığa, görevi verdiği kişiyi göstererek karşılık veren yönetici, yetki devrederken ne yaptığını yanlış anlamıştır."
+                },
+                {
+                  "type": "h3",
+                  "text": "Yöneticiler neden daha fazla yetki devretmez"
+                },
+                {
+                  "type": "p",
+                  "text": "Çoğu yönetici gerekenden daha az yetki devreder. Küçük bir kurumda ya da küçük bir ekipte yönetici çoğu zaman işlevin kendisidir ve bir kişi daha eklemek zorunda kalma riskini alamayacağını söyler. Açıkça söylenen nedenlerin altında, nadiren yüksek sesle dile getirilen ve kendinize karşı dürüst olmaya değer başka nedenler yatar:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Başkalarının işi fazla öğrenmesini ve böylece vazgeçilmezliğini yitirmeyi istememek",
+                    "Kurum içinde ya da ekibin gözünde kendi önemini azaltmak istememek — çoğu zaman asıl neden budur",
+                    "Kendisinin daha hızlı ve daha iyi yapabileceğine inanmak; bu kısa vadede çoğu zaman doğrudur ama fark edilmeyen daha büyük sorunlar yaratır",
+                    "Bir gün yerini alabilecek kişilerin gelişiminden tehdit hissetmek"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Yetki devretmemenin etkisi iki yöne uzanır. Ayrıntıyla öyle yüklenirsiniz ki kendi gelişiminize ya da daha büyük bir rolün gerektirdiklerini edinmeye ne zamanınız ne enerjiniz kalır. Ve bütün ekibiniz gelişmeden kalır; bu da sorumlu olduğunuz her şeyin performansında kendini gösterir. Bedel yalnızca sizin aşırı yükünüz değildir; altınızdaki herkesin üzerine koyduğunuz tavandır."
+                },
+                {
+                  "type": "h3",
+                  "text": "Yaygın yetki devri hataları"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Yalnızca hoş olmayan ya da rutin işleri devretmek; insanlar kendilerine güvenildiğini değil kullanıldıklarını hisseder",
+                    "Görevin gerektirdiği kaynakları, bilgiyi ya da eğitimi sağlamamak",
+                    "Başkalarını geliştirmek yerine görevi hep en yetkin kişiye vermek",
+                    "Tepede dolaşmak; bu da üçüncü adımı bozar",
+                    "İş iyi gittiğinde övgüyü üstlenmek",
+                    "İş kötü gittiğinde, hazırlamayı ihmal ettiğiniz şeyi incelemeden yetki verdiğiniz kişiyi suçlamak"
+                  ]
+                },
+                {
+                  "type": "example",
+                  "title": "sağlıklı bir yetki devri",
+                  "text": "Bir büro müdürü mütevellilere sunulan aylık raporu hep kendisi hazırlamıştır: dört birimden rakamları toplamak, gecikenlerin peşine düşmek ve belgeyi derlemek. Bu, onun sahip olmadığı iki gününü alır. Görevi, ayrıntıya dikkat eden ama işin tamamını hiç üstlenmemiş bir idari personele devreder. Yöntemin hiçbir kısmını anlatmadan önce nihai sonucu söyler: beşinci iş gününe kadar mütevellilerin elinde, her rakamı kaynağına kadar izlenebilen eksiksiz bir rapor. Ondan neyi üstlendiğini özetlemesini ister; özet, finans rakamlarının istenmeden geleceğini varsaydığını ortaya çıkarır. İki kontrol noktası üzerinde anlaşırlar: ikinci gün veri toplama tamamlanmış, dördüncü gün tam bir taslak hazır olacak. Ona birim başkanlarına doğrudan başvurma yetkisi verir ve başkanlara da bunu bildirir. Sonra onu işiyle baş başa bırakır. İlk ay bir gün gecikir; ikinci ay gecikmez. Dördüncü aya gelindiğinde taslağı bir kez okuyup imzalar ve her ay iki günü kalıcı olarak kendisine döner."
+                }
+              ]
+            },
+            {
+              "id": "4.2",
+              "title": "Yetki Devrini Mümkün Kılan Koşullar",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Yetki devri genellikle kişisel bir beceri olarak ele alınır ve öyledir de. Ama kurumunuzda ne kadar kolay yapılabileceğini büyük ölçüde sizin üstünüzdeki koşullar — genel yönetim iklimi — belirler. İklim elverişli olduğunda etkili yetki devrini sürdürmek görece kolaydır. Olmadığında ise hem sizin hem size bağlı kişilerin neye karşı çalıştığınızı anlaması gerekir; çünkü hiçbir bireysel teknik bunu tam olarak telafi edemez."
+                },
+                {
+                  "type": "p",
+                  "text": "Altı koşul, yetki devrinin işlediği bir iklim yaratır. Bunları bir teşhis aracı olarak okuyun: “evet” diyemediğiniz yerde, burada yetki devrinin neden zor olduğunun bir kısmını bulmuşsunuz demektir."
+                },
+                {
+                  "type": "ol",
+                  "items": [
+                    "Hedefler ve politikalar. Kurumun hedeflerine dair yazılı bir beyan var mı? Genel politikaları yazıya dökülmüş mü? Mütevellilerin genel performansı değerlendirirken kullandığı ölçütler konusunda ortak bir anlayış var mı? Kurumun ve her birimin nasıl yönetileceğini düzenleyen tanımlı denetimler var mı?",
+                    "Sağlam bir yapı. Örgüt şeması iyi tasarlanmış mı ve yönetimdeki herkes tarafından aynı biçimde anlaşılıyor mu? Ekip düzeyindeki şemalar o ekiplerdeki kişilere açıklanıyor ve güncel tutuluyor mu? Raporlama hatları ve iletişim kanalları konusunda ortak bir anlayış var mı? Operasyonel ekipler ile destek işlevleri arasındaki ilişki doğru anlaşılıyor mu?",
+                    "Açık görev tanımları. Tüm kilit görevler için doğru, kısa ve eksiksiz rol tanımları var mı? Her görevin amacı açıkça belirtilmiş mi? Her kişinin kime bağlı olduğunu ve kimlerden sorumlu olduğunu açıkça söylüyorlar mı? Güncel mi?",
+                    "Performans standartları. Her görev için bir performans standardı belirlenmiş mi? Ölçütler, görevdeki kişinin kendi işini onlara göre değerlendirebileceği nitelikte mi?",
+                    "Dönemsel değerlendirme. Her yönetici ve amir kendisine bağlı kişileri sistemli biçimde değerlendiriyor mu? Bu değerlendirmelerin tutarlılığı için yeterli bir genel gözden geçirme yapılıyor mu?",
+                    "Yetki devrinin kendisi. Yetki devri, yöneticileri yalnızca kendilerinin yapabileceği işe serbest bırakmak ve insanları artan sorumlulukla geliştirmek için kullanılıyor mu? Yukarıdaki dört tekniğe gerçekten uyuluyor mu?"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Yetki devri için pratik bir plan. Fırsatçı biçimde yetki devretmek yerine bütün tabloyu tek bir sayfaya koyun: alanınızın hedefleri; her birine ulaşmak için gereken faaliyetler, önem sırasına göre; ve toplam iş yükünün ekibinize şu anda nasıl dağıldığı. Elde ettiğiniz şey, kimin ne yaptığının görsel bir düzenidir: mevcut yetki devirlerini görünür kılar, yükün nerede dengesiz olduğunu gösterir ve size istediğiniz sıklıkta gözden geçirebileceğiniz bir belge verir. Alanınızın performansını kendi yöneticinizle değerlendirirken bir tartışma kılavuzu olarak da işe yarar."
+                },
+                {
+                  "type": "p",
+                  "text": "Böyle bir şey olmadan, neyin kime devredildiğini akılda tutmak, performans gerektirdiğinde değişiklik yapmak, adil değerlendirmek ve etkilenen herkesle takibi sürdürmek gerçekten zordur."
+                }
+              ]
+            },
+            {
+              "id": "4.3",
+              "title": "Karar Verme",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Karar verme, seçenekler arasından en iyi yolu seçme sürecidir. Yöneticiler her gün sayısız karar verir — bazıları rutin, bazıları sonuçları ağır. Yönetim kararlarının kalitesi kurumun performansını, kaynak verimliliğini ve ekibin moralini doğrudan etkiler."
+                },
+                {
+                  "type": "p",
+                  "text": "Yöneticilerin verdiği karar türleri:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Uzun vadeli etkileri olan stratejik kararlar (pazara giriş, genişleme, büyük girişimler)",
+                    "Birim işleyişini etkileyen taktik kararlar (proje öncelikleri, kaynak dağılımı)",
+                    "Günlük faaliyetlere ilişkin operasyonel kararlar (planlama, görev dağılımı, anlık sorun çözme)",
+                    "Yerleşik prosedürleri izleyen programlanmış kararlar (rutin onaylar, standart süreçler)",
+                    "Muhakeme ve analiz gerektiren programlanmamış kararlar (özgün sorunlar, kriz durumları)"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Etkili bir karar verme süreci:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Sorunu ya da fırsatı açıkça tanımlayın — neye gerçekten karar verilmesi gerektiğini anlayın",
+                    "Güvenilir kaynaklardan ilgili bilgi ve verileri toplayın",
+                    "Alternatif eylem yollarını ve olası sonuçlarını belirleyin",
+                    "Her alternatifi karar ölçütlerine göre analiz edin (maliyet, süre, risk, değerlerle uyum)",
+                    "Etkilenecek ya da ilgili uzmanlığa sahip paydaşlarla istişare edin",
+                    "Kararı açıkça verin ve etkilenen taraflara iletin",
+                    "Kararı uygun kaynak ve destekle uygulayın",
+                    "Sonuçları izleyin ve karar etkisiz çıkarsa ayarlama yapın"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Karar kalitesini artıran etkenler:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Analiz için yeterli zaman (mümkün olduğunca aceleyle karar vermekten kaçınmak)",
+                    "Doğru ve zamanında bilgi ve veri",
+                    "Farklı bakış açılarına sahip kişilerden çeşitli girdiler",
+                    "Kurumun öncelikleri ve kısıtları hakkında açık bir anlayış",
+                    "Karar türüyle ilgili deneyim ve uzmanlık",
+                    "Zihin berraklığı ve duygusal önyargıdan arınmışlık",
+                    "Hem kısa hem uzun vadeli sonuçların dikkate alınması",
+                    "Kurumun değerleri ve etiğiyle uyum"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Karar vermede kaçınılması gereken tuzaklar:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Analiz felci — karar vermek yerine bitmek bilmeden bilgi toplamak",
+                    "Doğrulama yanlılığı — önceden verilmiş bir kararı destekleyen bilgiyi aramak",
+                    "Grup düşüncesi — eleştirel analiz yapmadan grubun görüşüne uymak",
+                    "Aşırı özgüven — yeterli analiz yapmadan karar vermek",
+                    "Muhalif görüşleri ya da alternatif bakış açılarını görmezden gelmek",
+                    "Stres altında duygusal ya da tepkisel kararlar vermek",
+                    "Kişisel sorumluluktan kaçmak için önemli kararları devretmek"
+                  ]
+                },
+                {
+                  "type": "example",
+                  "title": "düşünülmüş bir karar",
+                  "text": "Bir insani yardım kuruluşunun mali işler direktörü yeni bir yönetim yazılımına yatırım yapıp yapmayacağına karar vermelidir. Önde gelen üç sistem hakkında bilgi toplar (maliyet, özellikler, uygulama süresi, destek). Sistemi kullanacak birim başkanlarıyla, değişikliklerden etkilenebilecek saha personeliyle ve entegrasyon olanakları konusunda BT uzmanlarıyla istişare eder. Hangi sistemin maliyeti kurumun ihtiyaçlarıyla en iyi dengelediğini analiz eder. Uygulama süresini ve işlerin aksama riskini değerlendirir. Analizi üst yönetime sunar. Karar verilir ve bir uygulama takvimi ve destek planıyla birlikte açıkça duyurulur."
+                }
+              ]
+            },
+            {
+              "id": "4.4",
+              "title": "Zaman Yönetimi ve Başarılı Alışkanlıklar",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Zaman, yeniden doldurulamayan tek kaynaktır. Para ya da personelin aksine harcanan zaman geri alınamaz. Etkili zaman yönetimi, yöneticinin verimliliği, stresin azalması ve ekip üyelerine sağlıklı çalışma alışkanlıklarında örnek olmak için kritiktir."
+                },
+                {
+                  "type": "p",
+                  "text": "Zaman yönetiminin temel ilkeleri:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Kararlılıkla önceliklendirin — etkisi yüksek ve stratejik önemi olan görevlere odaklanın",
+                    "Aciliyeti önemden ayırın — acil görevlerin çoğu stratejik olarak önemli değildir",
+                    "Benzer görevleri bir arada yapın — e-postaları, telefonları ya da toplantıları gruplayarak bağlam değiştirmeyi azaltın",
+                    "Zaman blokları kullanın — belirli iş türlerine belirli zaman dilimleri ayırın",
+                    "Odak zamanını koruyun — stratejik düşünme ve planlama için kesintisiz bloklar planlayın",
+                    "Sınır koyun — önceliklerle uyumlu olmayan görevlere “hayır” demeyi öğrenin",
+                    "Uygun biçimde yetki devredin — başkalarının yapabileceği işi yapmayın",
+                    "Toplantıları azaltın ve amaçlı kılın — gerekli ve iyi yönetilmiş olduklarından emin olun",
+                    "Yalnızca zamanı değil enerjiyi yönetin — önemli işi en dinç olduğunuz saatlere denk getirin"
+                  ]
+                },
+                {
+                  "type": "h3",
+                  "text": "Başarılı yönetim alışkanlıkları"
+                },
+                {
+                  "type": "p",
+                  "text": "Zaman yönetimi tekniklerinin ötesinde başarılı yöneticiler, etkinliklerine katkı sağlayan tutarlı alışkanlıklar geliştirir:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Güne net önceliklerle başlamak — o gün neyin başarılması gerektiğini bilmek",
+                    "Düzenli gözden geçirme ve planlama — neyin işe yaradığı ve neyin ayarlanması gerektiği üzerine haftalık düşünme",
+                    "Hızlı karar verme — önemli kararlarda ertelemeden kaçınmak",
+                    "Ekip üyeleriyle düzenli iletişim — haberdar kalmak ve ilişki kurmak",
+                    "Sürekli öğrenme — okumak, eğitimlere katılmak, gelişmek için geri bildirim istemek",
+                    "Fiziksel ve zihinsel sağlığı korumak — egzersiz, yeterli uyku, stres yönetimi",
+                    "Derin çalışma odağı — stratejik düşünme ve önemli projeler için zaman korumak",
+                    "Düşünme ve günlük tutma — deneyimleri işlemek ve dersler çıkarmak",
+                    "İlişki kurma — paydaşlara ve önemli bağlantılara zaman ayırmak",
+                    "Seçici biçimde “hayır” demek — gerçek öncelikler için zamanı korumak"
+                  ]
+                },
+                {
+                  "type": "example",
+                  "title": "uygulamada zaman yönetimi",
+                  "text": "Bir idari müdür gününün çoğunu rutin e-postalara ve küçük taleplere harcadığını, yalnızca kendisinin yapabileceği planlama işine neredeyse hiç zaman kalmadığını fark eder. Zaman blokları uygular: 8.00–9.00 e-posta ve idari işler, 9.00–12.00 planlama ve ekip çalışması, 13.00–14.00 yine e-posta, 14.00–17.00 saha ziyaretleri ve sorun çözme. Rutin idari işleri bir asistana devreder. Sabah bloğunu toplantılardan ve kesintilerden korur ve haftalık ilerlemeyi cuma öğleden sonraları gözden geçirir. Bir ay içinde iş yükü değişmez ama çıktısı değişir; eskiden hep kayan planlama artık kaymaz."
+                }
+              ]
+            },
+            {
+              "id": "4.5",
+              "title": "İşe Yarayan Toplantılar",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Toplantılar iletişim, eşgüdüm ve karar alma için vazgeçilmezdir. Ancak birçok kurum çok fazla, etkisiz ya da niteliksiz toplantılardan muzdariptir; bunlar zamanı israf eder ve katılımcıları bıktırır. Etkili ve amaçlı toplantılar yürütebilmek kritik bir yönetim becerisidir."
+                },
+                {
+                  "type": "p",
+                  "text": "Toplantılar ne zaman gereklidir:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Kararlar birden çok bakış açısından ya da paydaştan girdi gerektirdiğinde",
+                    "Karmaşık bilgilerin tartışılıp netleştirilmesi gerektiğinde",
+                    "Ekibin uyumu ve desteği kritik olduğunda",
+                    "Beyin fırtınası ve ortak sorun çözme gerektiğinde",
+                    "Resmî duyuruların soru sorma imkânıyla yapılması gerektiğinde",
+                    "İlişki kurmak ve ekip bütünlüğü hedeflendiğinde"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Toplantılar ne zaman gerekli değildir:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Tek yönlü bilgi aktarmak (e-posta ya da yazılı güncelleme kullanın)",
+                    "Grup girdisi gerektirmeyen rutin kararlar vermek",
+                    "Yalnızca bir iki kişiyi etkileyen sorunları çözmek (bire bir görüşmeler daha iyidir)",
+                    "Önceki kararları takip etmek (yazılı güncellemeler yeterlidir)",
+                    "Gerçek bir amaç olmadan meşguliyet duygusu yaratmak"
+                  ]
+                },
+                {
+                  "type": "h3",
+                  "text": "Toplantıları etkili kılmak"
+                },
+                {
+                  "type": "p",
+                  "text": "Toplantıdan önce:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Toplantının gerçekten gerekli olup olmadığına karar verin",
+                    "Açık amacı ve istenen sonucu tanımlayın",
+                    "Gerekli katılımcıları belirleyin — yalnızca gerçekten bulunması gerekenleri davet edin",
+                    "Her konu için süre ayrılmış ayrıntılı bir gündem hazırlayın",
+                    "Gündemi ve ilgili materyalleri önceden dağıtın (en az 24 saat önce)",
+                    "Uygun bir yer ayırın ya da çevrimiçi toplantı ayrıntılarını teyit edin",
+                    "Katılımcıların çoğunun dinç olduğu uygun bir saat seçin",
+                    "Toplantıları kısa tutun (en fazla 30, 45 ya da 60 dakika)"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Toplantı sırasında:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Geç kalanlara bakmadan zamanında başlayın (bu dakikliği teşvik eder)",
+                    "Başta toplantının amacını ve gündemini söyleyin",
+                    "Tartışmayı odakta ve yolunda tutacak bir kolaylaştırıcı belirleyin",
+                    "Eşit katılımı sağlayın — baskın seslerin tartışmayı ele geçirmesini önleyin",
+                    "Zamanı sıkı yönetin — gündemdeki sürelere bağlı kalın",
+                    "Kararları açıkça verin ve açıkça teyit edin",
+                    "Her eylem maddesine bir sorumlu ve son tarih belirleyin",
+                    "Zamanında bitirin (insanlar zamanlarına saygı gösterdiğiniz için size saygı duyar)"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Toplantıdan sonra:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Kararları ve eylem maddelerini belgeleyen bir tutanak ya da özet hazırlayın",
+                    "Her eylem maddesinden kimin sorumlu olduğunu açıkça belirtin",
+                    "Tüm eylem maddeleri için son tarih koyun",
+                    "Özeti tüm katılımcılara ve ilgili paydaşlara dağıtın",
+                    "Eylem maddelerinin tamamlanması için takip edin",
+                    "Gelecek toplantıları iyileştirmek için geri bildirimden yararlanın"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Etkisiz toplantıların uyarı işaretleri:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "E-postalarını kontrol eden ya da ilgisiz görünen katılımcılar",
+                    "Belirsiz amaç ya da gündem — insanlar neden orada olduklarından emin değil",
+                    "Üst yönetimin fazla, işi yapanların az temsil edilmesi",
+                    "Karar alınamaması — tartışmanın sonuçsuz dönüp durması",
+                    "Belgelenmiş sonuç ya da eylem maddesi olmaması",
+                    "Toplantının süresini aşması — kötü planlama ya da kolaylaştırmaya işaret",
+                    "Eylem maddeleri için belli bir sorumlu olmaması ya da gevşek son tarihler",
+                    "Aynı konuların çözüme kavuşmadan tekrar tekrar tartışılması"
+                  ]
+                },
+                {
+                  "type": "example",
+                  "title": "toplantı tüzüğü",
+                  "text": "Bir birim, haftalık ekip toplantısının belirli bir bitiş noktası olmadan iki saate uzadığını ve orada alınan kararların sonradan nadiren uygulandığını fark eder. Müdür bir Toplantı Tüzüğü getirir: Her toplantı amacını önceden belirtir, gündem en az yirmi dört saat önce gönderilir, yalnızca gerçekten gerekli kişiler davet edilir, her toplantının sabit bir bitiş saati vardır ve oda boşalmadan kararları ve eylemleri kaydedecek bir kişi belirlenir. Bir ay içinde aynı liderlik toplantısı elli dakikada biter ve eylem maddeleri bir sonraki toplantıda izlenebilir hâle gelir. Çalışanlar toplantı yorgunluğunun belirgin biçimde azaldığını söyler ve başka birimler de kendilerine bir tüzük ister."
+                }
+              ]
+            },
+            {
+              "id": "4.6",
+              "title": "İdari ve Teknik Beceriler",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Kişiler arası becerilerin ötesinde yöneticiler, kendi alanlarıyla ilgili sağlam idari ve teknik becerilere sahip olmalıdır. Bu sert beceriler; kurumsal sistemlere, araçlara, süreçlere ve alana özgü bilgiye hâkimiyeti kapsar."
+                },
+                {
+                  "type": "p",
+                  "text": "Temel idari yetkinlikler:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Belge yönetimi ve düzeni — dosyalama sistemleri, bilgi mimarisi",
+                    "Veri analizi ve yorumlama — ölçütleri, raporları ve analizleri anlamak",
+                    "Temel finansal yönetim — bütçeler, maliyet analizi, kaynak dağılımı",
+                    "Proje yönetimi — planlama, takvimleme, izleme, kalite güvencesi",
+                    "Süreç tasarımı ve iyileştirme — verimsizlikleri bulmak ve iş akışlarını iyileştirmek",
+                    "Uyum ve risk yönetimi — mevzuatı anlamak ve riskleri azaltmak",
+                    "Teknoloji yetkinliği — e-posta, iş birliği araçları, veri tabanları, özel yazılımlar",
+                    "Rapor yazımı ve iletişim — açık ve özlü belgeleme",
+                    "Sunum becerileri — farklı kitlelerle etkili iletişim",
+                    "Paydaş yönetimi — önemli ilişkileri kurmak ve sürdürmek"
+                  ]
+                },
+                {
+                  "type": "h3",
+                  "text": "Alana özgü teknik beceriler"
+                },
+                {
+                  "type": "p",
+                  "text": "Genel idari becerilerin ötesinde yöneticiler, kendi alanlarının ya da sektörlerinin teknik yönlerini anlamalıdır:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Sağlık yöneticileri tıbbi terminolojiyi, hasta bakım süreçlerini ve sağlık mevzuatını anlar",
+                    "Eğitim liderleri pedagojiyi, müfredat geliştirmeyi ve eğitimde ölçme-değerlendirmeyi anlar",
+                    "İnşaat yöneticileri yapım süreçlerini, güvenlik standartlarını ve teknik şartnameleri anlar",
+                    "Finans yöneticileri muhasebe ilkelerini, finansal raporlamayı ve denetimi anlar",
+                    "Hayır kurumu ve kâr amacı gütmeyen kuruluş liderleri hibe yönetimini, bağışçı ilişkilerini ve program değerlendirmesini anlar"
+                  ]
+                },
+                {
+                  "type": "h3",
+                  "text": "Teknik becerilerde sürekli öğrenme"
+                },
+                {
+                  "type": "p",
+                  "text": "İdari ve teknik ortam sürekli değişir. Etkili yöneticiler mesleki gelişim, sertifikalar, konferanslar, okuma ve mentorluk yoluyla sürekli öğrenmeye bağlıdır. Sektördeki eğilimleri ve yeni araçları takip ederler. Öğrenmeye bu bağlılık, ekip üyelerine mesleki gelişimin değeri konusunda örnek olur."
+                }
+              ]
+            },
+            {
+              "id": "4.7",
+              "title": "Gizli Nitelikler",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Ölçülebilir becerilerin ötesinde olağanüstü yöneticiler, öğretilmesi daha zor ama etkinliklerini derinden etkileyen niteliklere sahiptir. Bu “gizli nitelikler” sıradan yöneticileri seçkin liderlerden ayırır."
+                },
+                {
+                  "type": "h3",
+                  "text": "Dürüstlük ve etik liderlik"
+                },
+                {
+                  "type": "p",
+                  "text": "Dürüst yöneticiler söylediklerini yapar. Hatalarını kabul eder. İnsanlara adil ve tutarlı davranır. Kararlarını yalnızca kolaylığa göre değil değerlere göre verir. Ekip üyeleri onlara güvenir; çünkü yöneticinin zor da olsa doğru olanı yapacağını bilirler. Dürüstlük kurum kültürünü inşa eder ve saygı duydukları yöneticilerle çalışmak isteyen yetenekli insanları çeker."
+                },
+                {
+                  "type": "h3",
+                  "text": "Duygusal zekâ"
+                },
+                {
+                  "type": "p",
+                  "text": "Duygusal zekâsı yüksek yöneticiler kendi duygularını anlar ve yönetir, başkalarının duygularını fark eder. Baskı altında sakin kalırlar. Başkası konuşurken cevaplarını planlamak yerine içtenlikle dinlerler. İletişim tarzlarını farklı kişilere göre uyarlarlar. Hedeflere doğru ilerlemeyi sürdürürken duyguları tanır ve onaylarlar. Duygusal zekâ ekip dinamiklerini ve kurum kültürünü önemli ölçüde etkiler."
+                },
+                {
+                  "type": "h3",
+                  "text": "Merak ve öğrenme yönelimi"
+                },
+                {
+                  "type": "p",
+                  "text": "Büyük yöneticiler kariyerleri boyunca meraklı kalır. Durumları derinlemesine anlamak için soru sorarlar. Doyumsuzca okurlar. Geri bildirimi savunmaya geçmeden, etkin biçimde ararlar. Başarısızlıkları ve zorlukları öğrenme fırsatı olarak görürler. Bu öğrenme yönelimi, ekip üyelerinden bekledikleri davranışa örnek olur ve kurumu uyumlu ve yenilikçi tutar."
+                },
+                {
+                  "type": "h3",
+                  "text": "Dayanıklılık ve iyimserlik"
+                },
+                {
+                  "type": "p",
+                  "text": "Kurumlar kaçınılmaz zorluk ve aksiliklerle karşılaşır. Dayanıklı yöneticiler hayal kırıklıklarından sonra toparlanır. Zor durumlarda bile olanaklar konusunda iyimser kalırlar. Bu dayanıklılık sorunları inkâr etmek değildir; zorlukları kabul ederken çözümlerin var olduğuna inancı korumaktır. Ekipler duygusal işaretlerini liderlerinden alır; dayanıklı ve iyimser yöneticiler zorluklar karşısında direnen ekipler kurar."
+                },
+                {
+                  "type": "h3",
+                  "text": "Sahicilik ve yakınlık"
+                },
+                {
+                  "type": "p",
+                  "text": "Yöneticilerin kusursuz olması gerekmez. Sahici yöneticiler belirsizlikleri kabul eder, bir şeyi bilmediklerinde bunu söyler ve gerçek bir insanlık gösterir. Ekip üyeleriyle yalnızca çıkara dayalı değil gerçek ilişkiler kurarlar. Sahici yöneticiler insanları peşlerinden sürükler; çünkü insanlar onlarla yalnızca otorite olarak değil insan olarak bağ kurar."
+                },
+                {
+                  "type": "h3",
+                  "text": "Stratejik düşünme ve büyük resme bakış"
+                },
+                {
+                  "type": "p",
+                  "text": "Taktik yöneticiler bugünün sorunlarına odaklanırken stratejik yöneticiler uzun vadeli hedefleri ve kurumun yönünü gözden kaçırmaz. Günlük faaliyetleri kurumun daha geniş misyonuna bağlarlar. Bugünkü kararların gelecekteki etkilerini düşünürler. Bu stratejik yönelim, kurumun acil krizler tarafından yutulmasını önler ve odağı nihai hedeflerde tutar."
+                },
+                {
+                  "type": "h3",
+                  "text": "Hesap verebilirlik ve sahiplenme"
+                },
+                {
+                  "type": "p",
+                  "text": "Olağanüstü yöneticiler sonuçların — hem kendilerinin hem ekiplerinin — sorumluluğunu üstlenir. Dış etkenleri ya da başka birimleri suçlamazlar. İşler ters gittiğinde neyi farklı yapabileceklerini analiz ederler. Kendilerini başkalarına uyguladıkları standartlarla ölçerler. Bu hesap verebilirlik güven inşa eder ve yaratmak istedikleri sorumluluk kültürüne örnek olur."
+                },
+                {
+                  "type": "example",
+                  "title": "baskı altında dayanıklılık",
+                  "text": "Bir inşaat proje yöneticisi, önemli bir yüklenicinin malzemeleri zamanında teslim edememesiyle proje takvimini tehlikeye atan büyük bir aksilikle karşılaşır. Yükleniciyi suçlayıp vazgeçebilirdi. Bunun yerine sakin kalır (duygu düzenleme). Sorumsuzluk varsaymak yerine kök nedeni anlamak için yükleniciyle görüşür (merak). Ekibine projenin zorluklarla karşı karşıya olduğunu dürüstçe kabul eder ama yaratıcı çözümlerin bulunabileceğine güvenini dile getirir (dayanıklılık). Ekip üyelerinin uzmanlığından yararlanarak onları sorun çözmeye dahil eder (sahicilik, duygusal zekâ). Alternatif tedarikçileri araştırır ve geçici çözümler için pazarlık yapar (hesap verebilirlik). Ekip onun soğukkanlılığına ve çözüm odaklılığına savunmaya geçerek değil yaratıcı çalışarak karşılık verir. Proje aksiliğe rağmen toparlanır. Ekibi daha kenetlenmiş ve dayanıklı hâle gelir."
+                }
+              ]
+            },
+            {
+              "id": "4.8",
+              "title": "Seyahat ve Yeni Ufuklara Açılmak",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Yalnızca tek bir kurumda çalışmış bir yöneticinin, içeriden fark edilmesi zor, kendine özgü bir körlüğü vardır. İşlerin yapılması gereken biçimi, bu yerin onları yapageldiği biçimden ayıramaz. Her yerel alışkanlık — onay yolu, hep uzayan toplantı, kimsenin açıklayamadığı form — ona yıllar önce birinin yaptığı ve hiç gözden geçirilmemiş bir seçim olarak değil, işin kendi özelliği olarak görünür. Seyahat bunun ilacıdır ve sınıfta verilemeyen nadir yönetim eğitimi biçimlerinden biridir."
+                },
+                {
+                  "type": "h3",
+                  "text": "Seyahat ne içindir"
+                },
+                {
+                  "type": "p",
+                  "text": "Amaç gezip görmek değildir. Sizin sorununuzu başkalarının çözdüğünü ve farklı çözdüğünü izlemektir. Komşu ildeki bir merkezi ziyaret edip orada otuz öğrenciyi dört dakikada kaydettiklerini, kendisinde ise bunun yirmi dakika sürdüğünü gören bir yönetici, hiçbir kursun ona öğretemeyeceği bir şey öğrenmiştir — yöntem karmaşık olduğu için değil, daha kısa yöntemin var olduğunu bilmediği için. Operasyonel iyileştirmelerin çoğu bu türdendir: icat edilmez, ödünç alınır."
+                },
+                {
+                  "type": "p",
+                  "text": "İkinci amacı adlandırmak daha zor ama daha değerlidir. Seyahat insanı varsayımları kendisininkinden farklı olan insanların arasına koyar ve hiç gerekçelendirmek zorunda kalmadığı şeyleri açıklamaya zorlar. Kurumunun bir şeyi neden yaptığını bir yabancıya açıklayamayan yönetici, genellikle bunun bir nedeni olmadığını keşfetmiştir."
+                },
+                {
+                  "type": "h3",
+                  "text": "Uzak ya da pahalı olması gerekmez"
+                },
+                {
+                  "type": "p",
+                  "text": "Bu anlamda seyahat, kilometrelerle değil alışılmış olandan uzaklıkla ölçülür. Pratik biçimleri, kabaca maliyet sırasıyla:"
+                },
+                {
+                  "type": "p",
+                  "text": "Benzer iş yapan başka bir kurumu ziyaret etmek. Doğrudan ayarlanır, bir gün sürer, belirtilmiş bir amacı ve önceden hazırlanmış soruları vardır. Bir yöneticinin bir gününden elde edebileceği en yüksek getiri budur."
+                },
+                {
+                  "type": "p",
+                  "text": "Bir konferansa, eşgüdüm toplantısına ya da sektör forumuna katılmak. Değer nadiren sunumlardadır; aralarındaki sohbetlerdedir. Katılıp kimseyle konuşmayan yönetici yolculuğunu boşa harcamıştır."
+                },
+                {
+                  "type": "p",
+                  "text": "Görevlendirme ya da değişim. Bir çalışan başka bir kurumda iki hafta geçirir ya da oradan birini ağırlar. Bu hem kişiyi geliştirir hem de uygulamayı aynı anda içeri taşır."
+                },
+                {
+                  "type": "p",
+                  "text": "Finansman elverdiğinde yurt dışı çalışma ziyaretleri. En yüksek maliyeti bunlar taşır ve kötü yönetilirse en düşük getiriyi sağlar. Cevaplanacak yazılı bir sorusu ve dönüşte yazılı bir raporu olmayan çalışma ziyareti, kuruma fatura edilmiş bir tatildir."
+                },
+                {
+                  "type": "h3",
+                  "text": "Dönüşteki yükümlülük"
+                },
+                {
+                  "type": "p",
+                  "text": "Seyahat edip hiçbir şey raporlamayan bir yönetici, kurumun pahasına kişisel bir fayda elde etmiştir. Disiplin basittir: Yola çıkmadan önce yolculuğun cevaplaması gereken üç soruyu yazın. Döndüğünüzde tek sayfa yazın — ne görüldü, burada neyin benimsenmesi gerekir ve neyin bilinçli olarak reddedildiği ve neden. Bunu bir sonraki yönetim toplantısında sunun. Dağıtılan tek bir sayfa, tek bir kafada kalan iki haftalık izlenimden daha değerlidir."
+                },
+                {
+                  "type": "p",
+                  "text": "İşinizin bir bölümünü sizden daha iyi yapan bir kurumun adını verin. Aklınıza bir isim gelmiyorsa bu, böyle bir kurumun olmadığının değil, aramadığınızın kanıtıdır. Ziyareti bu çeyrekte ayarlayın."
+                }
+              ]
+            },
+            {
+              "id": "4.9",
+              "title": "Okuma",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Okuma, bir yöneticinin kendi aklından daha iyi akıllara ulaşabileceği en ucuz yoldur. Bir kitap, bir soruna yirmi yıl vermiş bir kişinin vardığı sonuçları bir öğleden sonranın bedeline önünüze koymasıdır. Bu el kitabındaki başka hiçbir gelişim biçimi bu oranı sunmaz ve kendini çok meşgul olarak tanımlayanlar tarafından hiçbiri bu kadar ihmal edilmez."
+                },
+                {
+                  "type": "p",
+                  "text": "İtiraz hep zamandır. Nadiren doğrudur. Günde yirmi dakika, düzenli sürdürülürse yılda aşağı yukarı on beş kitap eder; bu da çoğu yöneticinin on yılda okuduğundan fazladır."
+                },
+                {
+                  "type": "h3",
+                  "text": "Ne okumalı"
+                },
+                {
+                  "type": "p",
+                  "text": "Üç tür; yalnızca birini okuyan yönetici dengesiz kalır."
+                },
+                {
+                  "type": "p",
+                  "text": "Kendi alanınızda. Gerçekte yaptığınız işin teknik ve mesleki literatürü — eğitim, insani yardım uygulaması, finans, inşaat. Bu yetkinliği güncel tutar ve çoğu yöneticinin, okuduklarında, okuduğu türdür."
+                },
+                {
+                  "type": "p",
+                  "text": "Yönetimin kendisi üzerine. Bu el kitabındaki malzeme çok daha geniş bir düşünce birikiminin özetidir; daha ileri gitmek isteyen yönetici özetlerin özetlerine değil kaynaklara gitmelidir."
+                },
+                {
+                  "type": "p",
+                  "text": "Alanınızın tamamen dışında. Tarih, biyografi, bilim, İslami gelenek, edebiyat. Beklenmedik bağlantıyı üreten okuma budur ve faydası önceden gösterilemediği için ilk bırakılan da odur. Yalnızca hemen uygulanabilecek olanı okuyan yöneticinin uygulayacağı şeyler dar bir yelpazede kalır."
+                },
+                {
+                  "type": "h3",
+                  "text": "Bir yönetici olarak nasıl okunur"
+                },
+                {
+                  "type": "p",
+                  "text": "İş için okumak, keyif için okumak değildir ve aynı biçimde denenmemelidir. Dört alışkanlık farkı yaratır:"
+                },
+                {
+                  "type": "p",
+                  "text": "Bir soruyla okuyun. Kitabı ondan bir şey isteyerek açın. Yetki devriyle uğraşan bir yönetici yetki devri üzerine bir bölüm okursa onu akılda tutar; aynı bölüm amaçsızca okunursa bir haftaya dayanmaz."
+                },
+                {
+                  "type": "p",
+                  "text": "İşaretleyin ve ayıklayın. Altını çizin, sonra önemli olan üç dört pasajı tek bir yere kopyalayın. Geri döneceğiniz şey kitap değil, o ayıklamalardır."
+                },
+                {
+                  "type": "p",
+                  "text": "Size katılmayanı okuyun. Yalnızca mevcut görüşünü doğrulayan yazarları okuyan yönetici, kendi kendine konuşmanın pahalı bir yolunu bulmuştur. İşi gören, rahatsız eden kitaptır."
+                },
+                {
+                  "type": "p",
+                  "text": "Bir şeyi değiştirin. Uygulamada hiçbir değişiklik yaratmayan bir kitap eğlence olmuştur. Bitirin ve sorun: Pazar gününden itibaren neyi farklı yapacağım? Yazın. Gerçekten yapılmış tek bir değişiklik, beğenilen bir raf dolusu kitaptan değerlidir."
+                },
+                {
+                  "type": "h3",
+                  "text": "Okuma ve ekip"
+                },
+                {
+                  "type": "p",
+                  "text": "Okuyup hiç tartışmayan yönetici faydayı kendine saklamıştır. Bir ekibin erişebileceği en ucuz gelişim faaliyeti, önceden dağıtılan bir makale ve aylık bir toplantının başında ona ayrılan yirmi dakikadır. Hiçbir maliyeti yoktur, herkesi aynı anda geliştirir ve iş üzerine düşünmenin işin bir parçası olduğunu yerleştirir."
+                },
+                {
+                  "type": "p",
+                  "text": "Alanınızdan bir kitap, alanınızın dışından bir kitap seçin. Yirmi dakikayı sabitleyin — her gün aynı yirmi dakika, ajandaya bir randevu olarak yazılmış. Boş bir an bulmaya bağlı okuma gerçekleşmez."
+                }
+              ]
+            },
+            {
+              "id": "4.10",
+              "title": "Uyum Yeteneği",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Uyum yeteneği genellikle bir mizaç olarak tanımlanır; sanki bazı insanlar esnek, bazıları katı doğar. Onu bir beceri olarak ele almak daha doğru ve çok daha faydalıdır — her beceri gibi edinilen bir beceri: daha önce yapmadığınız şeyleri tekrar tekrar yaparak ve rahatsızlığı atlatarak."
+                },
+                {
+                  "type": "p",
+                  "text": "Bu önemlidir; çünkü öbür görüş kaderci bir görüştür. Uyum yeteneğinin kendisine verilmemiş bir kişilik özelliği olduğuna inanan yönetici, kariyerinin geri kalanı için bir mazerete sahiptir. Onu bir pratik olarak anlayan yönetici ise ne yapacağını bilir."
+                },
+                {
+                  "type": "h3",
+                  "text": "Beceri nasıl inşa edilir"
+                },
+                {
+                  "type": "p",
+                  "text": "Mekanizma, bilinçli olarak aranan alışılmadıklıktır. Kişi gerçekten yeni bir şey üstlendiği her seferde iki şey olur. Belirli yetkinliği edinir — yazılımı, dili, zanaatı, alışılmadık kurulu. Daha da önemlisi, sıfırdan başlayıp yeterli hâle gelebileceğine dair kanıt edinir. Aktarılabilen, bu ikinci şeydir. Beş yılda altı kez acemi olmuş bir yönetici yedinci alışılmadık talebe bir zahmet olarak yaklaşır. Mezun olduğundan beri hiç acemi olmamış bir yönetici ise ona bir tehdit olarak yaklaşır ve buna göre davranır."
+                },
+                {
+                  "type": "p",
+                  "text": "Bu yüzden 5.4’teki pratik yöntemler — görevi genişletmek, vekâlet etmek, gölge olarak izlemek, yapılandırılmış zorlayıcı görevler — görünürde öğrettikleri becerinin ötesinde bir şey geliştirir. Asıl ürünleri, yeni işten korkmayan bir insandır."
+                },
+                {
+                  "type": "h3",
+                  "text": "Uyum yeteneği ne değildir"
+                },
+                {
+                  "type": "p",
+                  "text": "Bir duruşun yokluğu değildir. Her itildiğinde yön değiştiren yönetici uyumlu değil, demirsizdir; ekibi de bir sonraki talimatı beklemeyi öğrendiği için onun söylediği hiçbir şeye göre hareket etmez. Uyum yeteneği amaç üzerinde değil yöntem üzerinde işler. Varış yeri sabit kalır; koşullar değişince rota değişir. Fırtınadan kaçınmak için rota değiştiren kaptan limandan vazgeçmiş değildir."
+                },
+                {
+                  "type": "p",
+                  "text": "Sürekli yenilik de değildir. Sistemleri her çeyrekte değişen bir kurum uyumlu değil istikrarsızdır ve çalışanların istikrarsızlığa tepkisi hiçbir sisteme emek vermemek olur. Gereken muhakeme, neyin sabit kalması gerektiğini — standartlar, değerler, hedef — bilmektir; böylece geri kalan her şey hareket edebilir."
+                },
+                {
+                  "type": "h3",
+                  "text": "Bilinçli olarak inşa etmek"
+                },
+                {
+                  "type": "p",
+                  "text": "Her çeyrekte henüz nasıl yapılacağını bilmediğiniz bir şey üstlenin. Büyük olması da iş ile ilgili olması da gerekmez: bir dil, bir zanaat becerisi, alışılmadık bir yazılım, kaçındığınız bir konu. Eğitilen şey beceri değildir. İlk aşamaya, apaçık acemi olduğunuz ve bunu bildiğiniz döneme katlanabilme gücüdür."
+                },
+                {
+                  "type": "p",
+                  "text": "Sonra aynı yaklaşımı ekibe uygulayın. Beş yıl boyunca birebir aynı işte tutulan bir kişi aynı anda hem rahat hem kırılgan hâle getirilmiştir. Rotasyon, vekâlet ve zorlayıcı görevler yalnızca bireyin gelişimi değildir; bir kurumun bir şoku durmadan karşılayabilme kapasitesini edinme yoludur."
+                },
+                {
+                  "type": "p",
+                  "text": "Bir şeyde gerçekten acemi olduğunuz son durumu söyleyin. Bir yıldan daha önceyse, uyum yeteneğiniz şu anda bir yetenek değil, bir anıdır."
+                },
+                {
+                  "type": "h3",
+                  "text": "Beceri ve niteliklerin bütünleşmesi"
+                },
+                {
+                  "type": "p",
+                  "text": "En etkili yöneticiler tüm bu unsurları bütünleştirir. Sağlam sert becerilere ve alan uzmanlığına sahiptirler. Yetki devri ve karar verme gibi yumuşak becerilerde öne çıkarlar. Zamanlarını akıllıca yönetir ve etkili toplantılar yürütürler. Seyahat ve okuma yoluyla kendi duvarlarının ötesindeki uygulamalara açık kalır, uyum yeteneğini beklenecek değil inşa edilecek bir şey olarak görürler. Aynı derecede önemlisi, dürüstlük, duygusal zekâ, dayanıklılık ve sahicilik gibi gizli nitelikleri de taşırlar. Bu bütünleşik beceri setine sahip yöneticiler yetiştiren kurumlar mükemmellik, yenilik ve olumlu etki kültürleri oluşturur."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Yönetim becerileri ve alışkanlıklarına ilişkin on üç test",
+            "tests": [
+              "Bu ay, eskiden kendim yapacağım hangi işi devrettim?",
+              "Gelişim fırsatlarını mı devrediyorum, yoksa yalnızca rutin işleri mi?",
+              "Yetki devrederken ayrıntıyı tartışmadan önce nihai sonucu söylüyor muyum?",
+              "İnsanlardan üstlendikleri şeyi bana tekrar etmelerini istiyor muyum, yoksa söylemenin yeterli olduğunu mu varsayıyorum?",
+              "Yetki devrettikten sonra kişiyi kendi hâline bırakıyor muyum — yoksa her adımı mı denetliyorum?",
+              "Devrettiğim işi sonuna kadar takip ediyor muyum, yoksa acil hâle gelene kadar sürükleniyor mu?",
+              "Kararları hızlı mı veriyorum, yoksa kendiliğinden verilene kadar mı erteliyorum?",
+              "Güncel bir kararda kendi görüşüme ters düşen bir görüşü etkin biçimde aradım mı?",
+              "Her hafta tepki vermek yerine planlama için bir zaman bloğunu koruyor muyum?",
+              "Son üç toplantım gereklilik testinden geçer miydi?",
+              "Toplantılarımdaki eylem maddeleri yazılıyor, sahiplendiriliyor ve tarihlendiriliyor mu?",
+              "Ekibime en son ne zaman bir hatamı kabul ettim?",
+              "Kendi yöneticiliğim hakkında geri bildirim istiyor ve duyduklarıma göre davranıyor muyum?"
+            ],
+            "questions": [
+              "Buradaki yöneticileri olduğundan daha fazla yetki devretmekten alıkoyan nedir — ve söylenmeyen nedenlerden hangileri bize uyuyor?",
+              "Yetki devrini mümkün kılan altı koşuldan hangisi kurumumuzda yerinde değil?",
+              "Kurumumuzda en yaygın karar verme tuzağı hangisi?",
+              "Sıfırdan başlasaydık tekrarlayan toplantılarımızdan kaçı ayakta kalırdı?",
+              "Bizim bağlamımızda hangi gizli nitelik en önemlidir ve geliştirilebilir mi, yoksa yalnızca işe alımda mı aranabilir?",
+              "Toplantı kültürümüz yeni bir çalışana nasıl çalıştığımız hakkında ne öğretiyor?"
+            ],
+            "exercise": "Bir hafta boyunca iş gününüzü nasıl geçirdiğinizi basitçe not edin — özel bir form gerekmez, her etkinlik değiştirdiğinizde deftere bir satır. Haftanın sonunda her satırı acil ya da acil değil, önemli ya da önemli değil olarak işaretleyin. Çoğu yönetici haftasının ne kadarının “acil ama önemli değil” kutusunda olduğunu görünce şaşırır. Şimdi iki satır seçin. Ekibinizden başka birinin yapabileceği bir görevi seçin — ve bu ay onu düzgün bir görev notuyla ona devredin. Hiç yapılması gerekmeyen bir görevi seçin — ve onu yapmayı bırakın. Her biri için ne olduğunu yazın: İş standarda uygun yapıldı mı ve bırakmakla bir şey kaybedildi mi? Yapılıp gözden geçirilen iki değişiklik, bir yöneticiye hiç uygulanmayan eksiksiz bir plandan daha çok şey öğretir."
+          }
+        }
+      ],
+      "title": "Yöneticinin Kendi Uygulaması",
+      "tagline": "Kaptanın kendi denizciliği — ve bir sonraki kaptanı yetiştirmek",
+      "foundation": {
+        "verses": [
+          {
+            "ar": "وَشَاوِرْهُمْ فِي الْأَمْرِ ۖ فَإِذَا عَزَمْتَ فَتَوَكَّلْ عَلَى اللَّهِ",
+            "text": "İş konusunda onlarla istişare et. Karar verdiğinde de Allah’a tevekkül et.",
+            "ref": "Kur’ân-ı Kerîm, Âl-i İmrân Sûresi 3:159"
+          },
+          {
+            "ar": "إِنَّ اللَّهَ يُحِبُّ إِذَا عَمِلَ أَحَدُكُمْ عَمَلًا أَنْ يُتْقِنَهُ",
+            "text": "Allah, sizden biriniz bir iş yaptığında onu sağlam ve güzel yapmasını sever.",
+            "ref": "Hz. Âişe rivayet etmiştir — Beyhakî, Şuabü’l-Îmân; Elbânî hasen kabul etmiştir"
+          }
+        ],
+        "why": [
+          "Âyet sağlıklı bir kararın biçimini verir ve önemli olan sıradır: önce istişare et, sonra karar ver, sonra bağlan. Yöneticiler genellikle bu üçünden birinde başarısız olur — ya istişare etmeden karar verir, ya sonu gelmez biçimde istişare edip hiç karar vermez, ya da karar verip her hafta yeniden açar. İtkan — işi sağlam ve eksiksiz yapmak — yetki devrinin, toplantıların ve mentorluğun ortak standardıdır: kötü teslim edilen iş devredilmemiş, ortada bırakılmıştır."
+        ]
+      },
+      "outcomes": {
+        "items": [
+          "Gerçek bir görevi dört adımla — seç, bilgilendir, yetkilendir, takip et — devretmek ve yetki devri ile işi üstten atmak arasındaki farkı ortaya koymak.",
+          "Yetki devrinin mümkün olması için var olması gereken koşulları saymak ve bunlardan hangisinin şu anda ekibinde eksik olduğunu belirlemek.",
+          "Belirli bir yöntemle karar verip kaydetmek; istişare gerektiren kararları gerektirmeyenlerden ayırmak.",
+          "Kendi zamanının bir haftasını incelemek ve yalnızca kendisinin yapabileceği işi belirlemek.",
+          "Amacı, belgesi ve kararı olan bir toplantı yönetmek; toplantıyı sorumlusu ve tarihi belli eylemlerle kapatmak.",
+          "Dürüst bir öz değerlendirme yapmak ve geliştirmesi gereken gizli bir niteliği adlandırmak.",
+          "Öğretme, koçluk, mentorluk ve serbest bırakma arasındaki farkı ayırt etmek ve ekibindeki her kişinin hangi aşamada olduğunu belirlemek.",
+          "Talimat yerine açık uçlu sorularla bir koçluk görüşmesi yürütmek ve bir kişi için gelişim hedefi belirlemek."
+        ],
+        "evidence": "yazılı bir görev notuyla gerçekten devredilmiş bir görev, bir zaman incelemesi, bir öz değerlendirme ve adı belirtilen bir ekip üyesi için yazılı bir gelişim planı."
+      }
     }
   ],
   "sharedIntro": {
