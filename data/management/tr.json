@@ -1735,6 +1735,197 @@
             ],
             "exercise": "Bir hafta boyunca iş gününüzü nasıl geçirdiğinizi basitçe not edin — özel bir form gerekmez, her etkinlik değiştirdiğinizde deftere bir satır. Haftanın sonunda her satırı acil ya da acil değil, önemli ya da önemli değil olarak işaretleyin. Çoğu yönetici haftasının ne kadarının “acil ama önemli değil” kutusunda olduğunu görünce şaşırır. Şimdi iki satır seçin. Ekibinizden başka birinin yapabileceği bir görevi seçin — ve bu ay onu düzgün bir görev notuyla ona devredin. Hiç yapılması gerekmeyen bir görevi seçin — ve onu yapmayı bırakın. Her biri için ne olduğunu yazın: İş standarda uygun yapıldı mı ve bırakmakla bir şey kaybedildi mi? Yapılıp gözden geçirilen iki değişiklik, bir yöneticiye hiç uygulanmayan eksiksiz bir plandan daha çok şey öğretir."
           }
+        },
+        {
+          "id": "s5",
+          "number": 5,
+          "title": "Mentorluk ve Koçluk",
+          "ship": {
+            "title": "Bir sonraki kaptanı yetiştirmek",
+            "body": [
+              "Kuşaklar boyunca su üstünde kalan her gemi, kaptan dümenden ayrılmadan önce birine dümeni tutması öğretildiği için ayakta kaldı. Dümen ona anlatılmadı — eller geminin hissini öğrenene kadar, sakin havada, gözetim altında ona verildi."
+            ],
+            "claim": "Kimseyi yetiştirmeyen bir yönetici ekip kurmamıştır; bir bağımlılık kurmuştur ve bu bağımlılık o ayrıldığı gün sona erer. Yöneticiliğinizin ölçüsü, siz oradayken işin ne kadar iyi yürüdüğü değildir. Sizin olmadığınız ay ne kadar iyi yürüdüğüdür.",
+            "question": "Yarın sizin vardiyanızı tutabilecek kişinin adını söyleyin. Bir isim yoksa, bu modülün işi tam olarak budur."
+          },
+          "intro": [
+            "Bu el kitabında şimdiye kadar her yönetici, işi başkaları aracılığıyla yaptıran biri olarak ele alındı. Bu bölüm ise işin, çoğu yöneticinin hiçbir zaman resmî olarak öğrenmediği öbür yarısıyla ilgilidir: devraldığınız insanları, devraldığınız hâllerinden daha iyi hâle getirmek.",
+            "Bu, yönetimin ertelenmesi en kolay kısmıdır. Kimseyi yetiştirmediyseniz bu hafta kimse şikâyet etmez. Bedel sonradan gelir ve başka sorunlar gibi görünen belirtiler hâlinde gelir: İş durmadan izne çıkamazsınız, içeriden terfi ettiremezsiniz, üç yıl önce yaptığınız işleri hâlâ yapıyorsunuzdur ve aynı sorunlar size geri döner; çünkü onları çözmek için başka kimse yetiştirilmemiştir.",
+            "Kimseyi yetiştirmeyen bir yönetici ekip kurmamıştır. Bir bağımlılık kurmuştur ve bu bağımlılık o ayrıldığı gün sona erer."
+          ],
+          "subsections": [
+            {
+              "id": "5.1",
+              "title": "Öğretmek, Koçluk, Mentorluk, Serbest Bırakmak",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Bu dört sözcük çoğu kurumda birbirinin yerine kullanılır, ama aynı şey değildir. Tek bir ilerleyişin dört aşamasıdır ve yöneticilerin hatası yanlış olanı seçmek değil, birincisinde durmaktır."
+                },
+                {
+                  "type": "p",
+                  "text": "Öğretmek, birine bir görevin nasıl yapıldığını göstermek ve karşılaması gereken standardı belirtmektir. Kişi gerçekten bilmediğinde uygundur ve hızlıdır. Sınırı, gözetim altında o görevi yapabilme yeteneği dışında hiçbir şey geliştirmemesidir. Yalnızca öğreten bir yönetici iki yıl sonra da aynı kişiye aynı görevi öğretiyor olacaktır."
+                },
+                {
+                  "type": "p",
+                  "text": "Koçluk, birine cevabı vermek yerine cevabı bulmasına yardım etmektir. İlk seferde öğretmekten yavaştır, sonraki her seferde daha hızlıdır; çünkü kişinin edindiği şey cevap değil, cevaba ulaşma yöntemidir. Neredeyse tamamen sorularla belirlenir."
+                },
+                {
+                  "type": "p",
+                  "text": "Mentorluk daha uzun, daha seyrek ve kapsamı daha geniş bir ilişkidir. Koçluk genellikle bir görev ya da beceriyle ilgilidir; mentorluk ise kişinin aylar ve yıllar içindeki gelişimiyle — muhakemesi, itibarı, nereye gittiğine dair seçimleriyle — ilgilidir. Mentor çoğu zaman kişinin bağlı olduğu yönetici değildir ve bunun iyi nedenleri vardır."
+                },
+                {
+                  "type": "p",
+                  "text": "Serbest bırakmak, durduğunuz noktadır. Sorumluluğu kişi taşır, size danışılmaz yalnızca bilgi verilir ve işi denetlemek yerine sonuçları okursunuz. Yöneticiler dördünün en zorunu bu bulur ve zorluk nadiren öbür kişinin hazır oluşuyla ilgilidir. Asıl mesele, artık ona ihtiyaç duyulmazsa yöneticinin ne olacağıdır."
+                },
+                {
+                  "type": "p",
+                  "text": "Gidiş yönü her zaman serbest bırakmaya doğrudur. İki yıl sonra hâlâ deneyimli bir çalışana öğreten yönetici onu geliştirmemiştir; beklemeyi öğretmiştir."
+                }
+              ]
+            },
+            {
+              "id": "5.2",
+              "title": "Koçluk Görüşmesi",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Koçluk, kendine özgü bir disiplini olan bir görüşmedir ve bu disiplin kendini tutmaktır. Cevabı bilen ve karşısındakinin ona ulaşmasını bekleyen yönetici, zaman baskısı altında cevabı doğrudan verir — ve bunu yaptığı an görüşme koçluk olmaktan çıkar, girişi uzun bir talimata dönüşür."
+                },
+                {
+                  "type": "p",
+                  "text": "Otuz dakikalık bir koçluk görüşmesi için işe yarar bir yapı: Görüşmenin konusu üzerinde anlaşın. Tek cümle; sizden değil, ondan. Bunu ifade edemiyorsa ilk iş budur."
+                },
+                {
+                  "type": "p",
+                  "text": "Durumu onun gördüğü biçimiyle ortaya koyun. Neyin denendiğini ve ne olduğunu sorun. Yanlış olduğunu düşünseniz bile bu aşamada anlatımını düzeltmeyin; nasıl akıl yürüttüğünü öğreniyorsunuz ve araya girmek size hiçbir şey söylemez."
+                },
+                {
+                  "type": "p",
+                  "text": "Seçenekleri açın. Anahtar soru şudur: Başka ne yapabilirsin? — birden fazla kez, rahatlık noktasının ötesine geçene kadar sorulur. İlk iki cevap genellikle geldiği cevaplardır. Üçüncü ve dördüncü, koçluğun zamanını hak ettiği yerdir."
+                },
+                {
+                  "type": "p",
+                  "text": "Seçenekleri gerçekliğe karşı sınayın. Bunun maliyeti ne olur, kimin onay vermesi gerekir, ne ters gidebilir? Burada bildiklerinizle katkıda bulunabilirsiniz; çünkü bu talimat değil bilgidir."
+                },
+                {
+                  "type": "p",
+                  "text": "Bir taahhütle kapatın. Ne yapacaksın, ne zamana kadar ve bittiğinde bana ne söyleyeceksin? Yazın. Tarihli bir taahhüt olmadan yapılan koçluk görüşmesi hoş bir sohbettir."
+                },
+                {
+                  "type": "p",
+                  "text": "İki kural bütün süreci yönetir. Birincisi, belirli bir cevabı beklediğiniz belli olan bir soru soramazsınız; insanlar bunu hemen fark eder ve alıştırmayı bozar. İkincisi orantıdır: Yararlı bir ölçü, yöneticinin görüşmenin üçte birinden azında konuşmasıdır."
+                }
+              ]
+            },
+            {
+              "id": "5.3",
+              "title": "Mentorluk: Daha Uzun İlişki",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Mentorluk farklı bir ritimle işler — belki ayda bir saat, bir yıl ya da daha uzun sürer ve görevle değil kişiyle ilgilenir."
+                },
+                {
+                  "type": "p",
+                  "text": "Neyi kapsar. Kişinin nereye gittiğini ve mevcut işinin onu oraya götürüp götürmediğini. Emin olmadığı muhakeme gerektiren kararları. Başkalarının onu nasıl gördüğünü — bu çoğu zaman bir mentorun birine söyleyebileceği en değerli şeydir ve başka kimsenin söylemeyeceği şeydir. Eğitim, görevlendirme ve terfiyle ilgili seçimleri."
+                },
+                {
+                  "type": "p",
+                  "text": "Neden genellikle bağlı olunan yönetici olmamalı. Bağlı olunan yönetici değerlendirmeyi, referansı ve terfi kararını elinde tutar. İnsanın bunları elinde tutan birine söylemeyeceği şeyler vardır. Sağlıklı mentorluk düzenlemeleri kişiyi, mümkünse başka bir birimde, bir iki basamak uzaktaki bir yöneticiyle eşleştirir ve söylenenin orada kalacağına dair açık bir anlayışla yürür — yalnızca koruma ve bildirilmesi zorunlu konular hariç."
+                },
+                {
+                  "type": "p",
+                  "text": "Mentorun borcu. Hazırlık, tutulan randevular, açık sözlülük ve bir son. Bir mentorluk ilişkisi yılda bir gözden geçirilmeli ve işini tamamladığında utanmadan sona ermesine izin verilmelidir."
+                },
+                {
+                  "type": "p",
+                  "text": "Danışanın borcu. Bir gündem. Elinde hiçbir şeyle gelen danışan oturumu bir nezaket ziyaretine çevirmiştir; bunlardan üçünden sonra mentor iptal etmeye başlar."
+                }
+              ]
+            },
+            {
+              "id": "5.4",
+              "title": "İş Başında Gelişim",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Gelişimin çoğu eğitim salonunda olmaz. Bir yönetici bilinçli olarak birine daha önce yaptığından biraz öte bir iş verdiği ve düşerse tutacak kadar yakın durduğu için olur."
+                },
+                {
+                  "type": "p",
+                  "text": "Pratik yöntemler, kabaca maliyet sırasıyla: Görevi genişletmek. Aynı işi, eklenmiş yeni bir unsurla verin — verinin yanında analizi, seçeneklerin yanında öneriyi, belgenin yanında sunumu."
+                },
+                {
+                  "type": "p",
+                  "text": "Vekâlet etmek. Birini, iyi bilgilendirilmiş ve konuşma yetkisiyle yerinize gönderin. Bir yöneticinin elindeki en etkili gelişim yöntemi budur ve en sık esirgenen de odur; genellikle toplantının çok önemli olduğu gerekçesiyle — oysa birini geliştirmesinin nedeni tam da budur."
+                },
+                {
+                  "type": "p",
+                  "text": "Gölge olmak ve tersine gölge olmak. Sizi yaparken izler; sonra siz onu yaparken izlersiniz ve sonuna kadar hiçbir şey söylemezsiniz. Atlanan, ikinci yarıdır."
+                },
+                {
+                  "type": "p",
+                  "text": "Proje sahipliği. Başı, sonu ve üzerinde bir adı olan ayrı bir iş. Küçük ve bitmiş olan, büyük ve yarım bırakılmış olandan iyidir."
+                },
+                {
+                  "type": "p",
+                  "text": "Güvenlik ağıyla yapılandırılmış zorlayıcı görev. Açıkça söyleyin: Bu daha önce yaptığının ötesinde, rahatsız edici olmasını bekliyorum, şunları ben tutacağım. İnsanlar, koşullar dürüstçe söylendiğinde, her şeyin yolunda gideceği söylendiğinden çok daha fazlasını üstlenir."
+                },
+                {
+                  "type": "p",
+                  "text": "Bütün bunlarda yöneticinin yükümlülüğü, kişiyi kendisinin bilerek maruz bıraktığı bir gelişim başarısızlığının sonuçlarından korumaktır. Zorlayıcı bir görev verip sonra sonucu başkalarının önünde sahiplenmeyen yöneticiye bir daha kimsenin gelişimi emanet edilmez ve bu söz sandığından daha hızlı yayılır."
+                }
+              ]
+            },
+            {
+              "id": "5.5",
+              "title": "Gelişim Planı",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Yazıya geçirilmeyen gelişim gerçekleşmez; acil olan ne varsa onun yerini alır. Bir kişi için işe yarar bir plan tek sayfaya sığar ve beş şey içerir:"
+                },
+                {
+                  "type": "ol",
+                  "items": [
+                    "Şu anda nerede olduğu — açıkça ifade edilmiş, iki tarafın da kabul ettiği, rahatsız edici kısmı da dahil.",
+                    "Nereye gittiği — bir sonraki rol ya da bir sonraki sorumluluk düzeyi, adıyla. “Genel gelişme” bir varış yeri değildir.",
+                    "İki üç eksik — daha fazla değil. Dokuz gelişim alanı olan bir plan, kimsenin uygulamayacağı bir plandır.",
+                    "Her biri için ne yapılacağı — belirli görev, vekâlet fırsatı, kurs ya da mentorluk düzenlemesi, tarihiyle.",
+                    "Ne zaman gözden geçirileceği — üç ayda bir, şimdiden ajandaya yazılmış; “fırsat bulunca” değil."
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Yeni bir toplantı oluşturmak yerine zaten planladığınız toplantıda gözden geçirin. Ölü bir gelişim planının en yaygın nedeni, bir daha tekrarlanmayan bir etkinliğe bağlanmış olmasıdır."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Başkalarını geliştirmeye ilişkin on test",
+            "tests": [
+              "Yarın ulaşılamaz olsam bir ay boyunca sorumluluklarımı taşıyabilecek birinin adını verebilir miyim?",
+              "Son iki yılda ekibimden terfi eden oldu mu?",
+              "Bir ekip üyesine en son bir şey açıklarken sordum mu, yoksa söyledim mi?",
+              "Yönettiğim her kişi için — ya da herhangi biri için — yazılı bir gelişim planım var mı?",
+              "Birini en son ne zaman yerime bir toplantıya gönderdim?",
+              "Üç yıl önce yaptığım ve artık başkasının yapabileceği bir görevi hâlâ kendim mi yapıyorum?",
+              "Çalışanlarımın her birinin üç yıl sonra ne yapıyor olmak istediğini biliyor muyum?",
+              "Bir ekip üyesine başkalarının onu nasıl gördüğünü hiç dürüstçe söyledim mi?",
+              "Verdiğim zorlayıcı bir görev ters gittiğinde kişiyi herkesin önünde savundum mu?",
+              "Dört aşamadan — öğretmek, koçluk, mentorluk, serbest bırakmak — hangisinde takılı kaldım ve kiminle?"
+            ],
+            "questions": [
+              "Bu kurumda kim hazır olarak işe alınmak yerine burada yetiştirildi? Bu neye mal oldu ve bunu kim yaptı?",
+              "Buradaki yöneticiler neden vekâlet vermekten kaçınıyor? Söylenen nedeni değil, asıl nedeni söyleyin.",
+              "Mentor, kişinin bağlı olduğu yönetici mi olmalı? Bizim büyüklüğümüzdeki bir kurumda şu anda ne mümkün?",
+              "Burada zorlayıcı bir görev üstlenip başaramayan birine ne olur? Bu cevap izleyen herkese ne öğretir?",
+              "İnsanları geliştirmek burada kimsenin değerlendirmesinde ölçülüyor mu? Ölçülmüyorsa, neden biri buna öncelik versin?"
+            ],
+            "exercise": "Yönettiğiniz bir kişiyi seçin. Onun tek sayfalık gelişim planını yazın: şu anda nerede, nereye gidiyor, iki üç eksik, her biri için tarihleriyle ne yapılacağı ve odadan çıkmadan ajandanıza yazılmış bir gözden geçirme tarihi. Sonra görüşmeyi yapın — ve planı onun değiştirmesine izin verin."
+          }
         }
       ],
       "title": "Yöneticinin Kendi Uygulaması",
