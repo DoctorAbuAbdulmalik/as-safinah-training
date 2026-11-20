@@ -2640,6 +2640,416 @@
         ],
         "evidence": "güncel bir sorun üzerinde tamamlanmış bir yedi adımlı teşhis, yazılı bir başarısızlık değerlendirmesi ve belirtilmiş bir büyüme riskiyle birlikte tek sayfalık bir kurum tanımı."
       }
+    },
+    {
+      "id": "m4",
+      "number": 4,
+      "sections": [
+        {
+          "id": "s8",
+          "number": 8,
+          "title": "İdari Disiplin",
+          "ship": {
+            "title": "Vardiya ve çan",
+            "body": [
+              "Gemide disiplin sertlik değildir. Kimsenin canı istese de istemese de vardiyanın aynı saatte değişmesi, çanın çalınması, aynı şeylerin aynı sırayla yapılmasıdır; böylece kötü havada kimse onları düşünmek zorunda kalmaz."
+            ],
+            "claim": "Bir kurumda idari disiplin tam olarak budur: dikkat başka yerdeyken de ayakta kalan rutin. Tasarımı gereği sıkıcıdır. Amacı da budur.",
+            "question": "İşler yoğunlaştığında ekibinizin en sık aksattığı rutini seçin. O aksama baskının bir belirtisi değildir; baskıyı başarısızlığa çeviren şeydir."
+          },
+          "intro": [
+            "İdari disiplin; işi düzenlemeye, standartları korumaya ve insanları sonuçlardan sorumlu tutmaya yönelik tutarlı ve sistemli yaklaşımdır. Öngörülebilirlik yaratır, kaosu azaltır, verimliliği mümkün kılar ve insanların anlamlı işe odaklanmasını sağlar. İdari disiplin özgürleştiricidir — kısıtlayıcı bir denetim değil, etkili kurumların temelidir."
+          ],
+          "subsections": [
+            {
+              "id": "8.1",
+              "title": "İdari Disiplini Anlamak",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "İdari disiplin; açık standartlar, süreçler ve beklentiler belirlemek ve bunları kurum genelinde tutarlı biçimde sürdürmek demektir. Temel unsurları şunlardır: açık ve belgelenmiş süreçler, standartların tutarlı uygulanması, sonuçlar için hesap verebilirlik, düzenli izleme ve takip, sürekli iyileştirme, düzgün belge ve kayıtlar, zamanlılık, kalite standartları, kaynak yönetimi ve güvenilir iletişim. İdari disiplin neden önemlidir:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Büyümeyi mümkün kılar: Kurumlar büyüdükçe gayriresmî sistemler çöker. Disiplin ölçeklenebilir sistemler yaratır.",
+                    "İsrafı azaltır: Tekrarlanan işi, kötü kararları ve yanlış kaynak dağılımını ortadan kaldırır.",
+                    "Kaliteyi artırır: Açık standartlar ve tutarlı uygulama güvenilirlik ve tutarlılık sağlar.",
+                    "Hesap verebilirliği mümkün kılar: Açık beklentiler anlamlı bir hesap verebilirliği mümkün kılar.",
+                    "Öngörülebilirlik yaratır: Süreçler tutarlı olduğunda insanlar kuruma güvenir ve onu anlar.",
+                    "Bilgiyi korur: Belgelenmiş süreçler kurumsal bilgiyi bireylerin ötesinde saklar.",
+                    "Riski yönetir: Sistemli yaklaşımlar riskleri önceden belirler ve yönetir."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "8.2",
+              "title": "İdari Disiplini Yerleştirmek",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Uygulama süreci:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Mevcut durumu değerlendirin: Hangi süreçlerin var olduğunu, neyin belgelendiğini, neyin tutarlı biçimde izlendiğini ve kaosun en çok nerede olduğunu anlayın.",
+                    "Nedenini anlatın: İnsanların, disiplinin kısıtlayıcı bir denetim olarak değil, adalet, verimlilik ve öngörülebilirlik yaratarak kendilerine yarar sağladığını anlamalarına yardım edin.",
+                    "Etkisi yüksek alanlardan başlayın: Disiplin eksikliğinin en çok soruna yol açtığı yerden başlayın. Başarı ivme ve güvenilirlik kazandırır.",
+                    "Süreçleri tasarlayın ve belgeleyin: Mevcut süreçleri haritalayın, verimsizlikleri belirleyin, daha iyi bir akış için yeniden tasarlayın ve açıkça belgeleyin. İşi yapan çalışanları sürece katın.",
+                    "İletişim kurun ve eğitin: Süreçleri anlaşılır bir dille belgeleyin, geniş çapta dağıtın ve anlaşıldıklarından emin olmak için eğitim verin.",
+                    "İzleyin ve uygulayın: Süreçlere uyulup uyulmadığını düzenli izleyin, performansı standartlara göre ölçün, geri bildirim verin ve uyumsuzluğu tutarlı ve adil biçimde ele alın.",
+                    "Sürekli iyileştirin: Süreçleri geri bildirimlere ve sonuç verilerine göre düzenli gözden geçirin; verimsizlikleri gidermek ve güncel tutmak için ayarlamalar yapın."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "8.3",
+              "title": "Temel İdari Sistemler",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Çoğu kurum benzer temel sistemlere ihtiyaç duyar. İyi tasarlanmış ve tutarlı biçimde sürdürülen sistemler idari disiplinin temelini oluşturur."
+                },
+                {
+                  "type": "h3",
+                  "text": "1. Finansal yönetim"
+                },
+                {
+                  "type": "p",
+                  "text": "Bütçeleme, muhasebe uygulamaları, harcama takibi, finansal raporlama, dolandırıcılığı önleyici denetimler ve uyum mekanizmaları. Disiplin olmadan kurumlar fazla harcar, şeffaflıktan yoksun kalır, mali durumunu izleyemez ve dolandırıcılık riskiyle karşılaşır. Disiplinle birlikte bilinçli karar alma ve paydaş güveni gelir."
+                },
+                {
+                  "type": "h3",
+                  "text": "2. İnsan kaynakları yönetimi"
+                },
+                {
+                  "type": "p",
+                  "text": "Tutarlı işe alım, işe uyum, görev tanımları, performans yönetimi, ücretlendirme, eğitim ve disiplin süreçleri. Disiplin olmadan işe alım tutarsızdır, beklentiler belirsizdir ve yüksek performanslı çalışanlar ayrılır. Disiplinle kurum yetenekleri çeker ve elde tutar, adaleti korur ve yetkinlikleri geliştirir."
+                },
+                {
+                  "type": "h3",
+                  "text": "3. Belgeler ve kayıtlar"
+                },
+                {
+                  "type": "p",
+                  "text": "Düzenli dosyalama sistemleri, veri yönetimi, bilgi güvenliği, erişim denetimleri ve saklama politikaları. Disiplin olmadan bilgi kaybolur, iş tekrarlanır ve uyum belgeleri eksik kalır. Disiplinle bilgi kayda geçer, erişilebilir ve korunur hâle gelir."
+                },
+                {
+                  "type": "h3",
+                  "text": "4. Proje ve iş akışı yönetimi"
+                },
+                {
+                  "type": "p",
+                  "text": "Proje planlama, görev verme ve izleme, ara hedef yönetimi, kaynak dağılımı, kalite güvencesi ve risk yönetimi. Disiplin olmadan projeler bütçeyi ve süreyi aşar. Disiplinle projeler zamanında, bütçe dahilinde ve kabul edilebilir kalitede tamamlanır."
+                },
+                {
+                  "type": "h3",
+                  "text": "5. Kalite yönetimi"
+                },
+                {
+                  "type": "p",
+                  "text": "Kalite standartları, standartları korumak için tasarlanmış süreçler, izleme, uygunsuzluk yönetimi ve sürekli iyileştirme. Disiplin olmadan kalite tutarsızdır ve itibar zarar görür. Disiplinle tutarlı kalite ve paydaş memnuniyeti gelir."
+                },
+                {
+                  "type": "h3",
+                  "text": "6. İletişim"
+                },
+                {
+                  "type": "p",
+                  "text": "Tanımlı iletişim kanalları, düzenli toplantılar, iletişim kuralları, bilgiye erişim ve geri bildirim mekanizmaları. Disiplin olmadan yanlış anlamalar olur ve kilit bilgiler gerekli kişilere ulaşmaz. Disiplinle güvenilir bir bilgi akışı ve kurumsal uyum gelir."
+                }
+              ]
+            },
+            {
+              "id": "8.4",
+              "title": "Yaygın Engelleri Aşmak",
+              "blocks": [
+                {
+                  "type": "h3",
+                  "text": "Engel 1: Bürokrasi olarak algılanması"
+                },
+                {
+                  "type": "p",
+                  "text": "İnsanlar çoğu zaman disiplinin işleri yavaşlatan bir bürokrasi yaratacağından korkar. Gerçekte iyi tasarlanmış disiplin israfı ortadan kaldırarak daha hızlı karar almayı mümkün kılar. Çözüm: İnsanları süreç tasarımına katın, süreçleri basit ve yalın tasarlayın, disiplini yeniliği mümkün kılan bir şey olarak sunun, zaman kazandırdığını gösterin ve sürekli iyileştirme için geri bildirim mekanizmaları kurun."
+                },
+                {
+                  "type": "h3",
+                  "text": "Engel 2: Deneyimli çalışanların direnci"
+                },
+                {
+                  "type": "p",
+                  "text": "Gayriresmî sistemlere alışmış kıdemli çalışanlar çoğu zaman resmî disipline direnir. Gerçekte gayriresmî sistemler kurum büyüyene kadar işler; sonra çöker. Disiplin kurumsal bilgiyi ve adaleti korur. Çözüm: Deneyimli çalışanları disiplinin tasarımına katın, onları ilk benimseyenler ve savunucular yapın, disiplinin onların işini nasıl koruduğunu gösterin, geçiş için zaman tanıyın ve destek sağlayın."
+                },
+                {
+                  "type": "h3",
+                  "text": "Engel 3: Tutarsız uygulama"
+                },
+                {
+                  "type": "p",
+                  "text": "Bazı insanlar hesap verirken diğerleri vermediğinde güvenilirlik aşınır. Gerçekte tutarlı ve adil uygulama kesinlikle kritiktir. İnsanlar disiplini herkese eşit uygulandığında kabul eder. Çözüm: Açık beklentiler belirleyin, yöneticileri tutarlı uygulama konusunda eğitin, uyumu kendiniz izleyin, tutarsızlığı hızla ele alın, uygulama işlemlerini belgeleyin ve disiplinin herkes için geçerli olduğunu açıkça ortaya koyun."
+                },
+                {
+                  "type": "h3",
+                  "text": "Engel 4: Kaynak kısıtları"
+                },
+                {
+                  "type": "p",
+                  "text": "Kurumlar bütçeleri dar olduğunda sistemlere güçlerinin yetmediğini söyler. Gerçekte disipline en acil ihtiyaç duyan, zorlanan kurumlardır; çünkü zorlanmalarının nedeni disiplinsizliktir. Disipline yapılan yatırım, israfın ortadan kalkması ve verimliliğin artmasıyla hızla karşılığını verir. Çözüm: En etkili sistemlerle küçükten başlayın, mevcut personeli kullanın, uygun maliyetli teknolojiden yararlanın ve azalan israftan doğan tasarrufu gösterin."
+                }
+              ]
+            },
+            {
+              "id": "8.5",
+              "title": "Disiplin ile Esnekliği Dengelemek",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "İyi tasarlanmış disiplin aslında esnekliği mümkün kılar. Anahtar, uyuma olanak tanırken yapı sağlayan sistemler kurmaktır. Disiplin içinde esnekliğin temel ilkeleri: temel süreçleri (tutarlılık için kritik olanları) esnek yaklaşımlardan ayırmak; düzenli gözden geçirme ve ayarlama mekanizmaları kurmak; rutin konulardaki standartlaşmayı yaratıcı alanlardaki özerklikle dengelemek; farklı bağlamlara uygun çeşitlemelere izin vermek; insanlar bilinçli uyum sağlayabilsin diye yalnızca “nasıl”ı değil “neden”i de belgelemek; süreç iyileştirme yetkisini kurum geneline dağıtmak; ve bütün sapmaları eşit biçimde cezalandırmak yerine uyum sağlamadaki mükemmelliği takdir etmek."
+                },
+                {
+                  "type": "example",
+                  "title": "idari disiplin inşa etmek",
+                  "text": "Bir insani yardım kuruluşu büyüdükçe giderek kaotikleşir. Çalışanlar belirsiz beklentilerden ve tutarsız davranışlardan yakınır. Mali hesap verebilirlik zayıftır. Kalite büyük ölçüde değişkendir. Yönetim, en etkili alanlar olan finansal yönetim ve proje yönetimiyle başlayarak idari disiplin uygulamaya karar verir. Disiplinin neden gerektiğini anlatır, iyileştirilmiş süreçleri çalışanlarla birlikte tasarlar, prosedürleri belgeler, eğitim verir ve uyumu izlemeye başlar — mali kayıtları aylık, proje durum raporlarını haftalık gözden geçirir. Altı ay içinde çalışanlar daha az kafa karışıklığı ve daha fazla adalet olduğunu söyler. Mali kayıtlar doğrudur ve daha iyi kararlar alınmasını sağlar. Projeler daha düzenlidir ve daha kaliteli sonuçlar verir. Başta ek bürokrasi gibi görünen şey, sağladığı açıklık ve adalet için takdir edilir hâle gelir. Kurum, işi kısıtlayan değil mümkün kılan bir disiplini başarıyla uygulamıştır."
+                }
+              ]
+            },
+            {
+              "id": "8.6",
+              "title": "Sonuç",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "İdari disiplin, kurumların büyümesini, yenilik yapmasını, paydaşlara etkili hizmet sunmasını ve yetenekli insanların çalışmak isteyeceği ortamlar yaratmasını mümkün kılan temeldir. Bürokrasi, denetim ya da katılık değil, kurumsal mükemmelliğin sistemli temelidir. İdari disiplin inşa eden liderler, değişen koşullara etkili biçimde yanıt veren ve iddialı hedeflere ulaşan daha güçlü kurumlar yaratır. En başarılı kurumlar iddialı vizyonu ve yeniliği güçlü idari disiplin ve uygulamayla birleştirir. Disiplinli kurumlar disiplinsiz olanlardan sürekli olarak daha iyi performans gösterir."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "İdari disipline ilişkin on test",
+            "tests": [
+              "Alanımdaki temel süreçler, işe yeni başlayan birinin izleyebileceği biçimde belgelenmiş mi?",
+              "Bu belgeler güncel mi, yoksa eskiden nasıl çalıştığımızı mı anlatıyor?",
+              "Standartlar ben dahil herkese eşit uygulanıyor mu?",
+              "Uyumu izliyor muyum, yoksa varsayıyor muyum?",
+              "Mali kayıtlarımız bugün bir denetime dayanır mı?",
+              "Bir ay uzakta olsam başka biri alanımı belgelere bakarak yürütebilir mi?",
+              "Kayıtlarımızın nerede olduğunu ve onlara kimin erişebileceğini biliyor muyuz?",
+              "Proje son tarihlerimize uyuluyor mu, uyulmuyorsa nedenini biliyor muyuz?",
+              "İşi yapan insanları sürecin tasarımına kattım mı?",
+              "Son altı ayda geri bildirim yüzünden herhangi bir süreci değiştirdik mi?"
+            ],
+            "questions": [
+              "Disiplinsizlik bize en çok nerede pahalıya mal oluyor?",
+              "Dört engelden en çok hangisiyle karşılaşıyoruz?",
+              "Şu anda disiplin dediğimiz şeylerden herhangi biri aslında artık bir amaca hizmet etmeyen bürokrasi mi?",
+              "Altı temel idari sistemden hangisi en zayıfımız?",
+              "Temel süreçleri, çalışanların makul biçimde uyarlayabileceği süreçlerden nasıl ayırıyoruz?"
+            ],
+            "exercise": "Alanınızda en çok kafa karışıklığına yol açan süreci seçin. Onu olması gerektiği gibi değil, gerçekte olduğu gibi haritalayın. Değer katmayan bir adımı belirleyin ve onu kaldırın."
+          }
+        },
+        {
+          "id": "s9",
+          "number": 9,
+          "title": "Politika Yönetimi",
+          "ship": {
+            "title": "Daimî emirler",
+            "body": [
+              "Kaptan her saat güvertede olamaz; bu yüzden gemi daimî emirler taşır: tekrar edecek durumlarda ne yapılacağına dair sakin havada alınmış yazılı kararlar. Bunlar, sabahın üçünde vardiya zabitinin bir cevap uydurmak zorunda kalmaması ve iki zabitin iki farklı cevap uydurmaması için vardır."
+            ],
+            "claim": "Yazılı olmayan bir politika politika değildir — bir kişinin tesadüfen taşıdığı bir alışkanlıktır ve o kişi ayrılınca o da gider.",
+            "question": "Ekibinizin yazılı bir kural olmadan tekrar tekrar verdiği bir kararı bulun. Biri tahmin yürütüyor ve tahmin vardiyada kimin olduğuna göre değişiyor."
+          },
+          "intro": [
+            "Çoğu kurum politika ihtiyacını zor yoldan keşfeder: Benzer durumdaki iki kişiye farklı davranılır, biri yetkisi olmayan bir karar verir ya da on iki kez cevaplanmış bir soru on üçüncüsünde farklı cevaplanır. Politika bunu önleyen daimî cevaptır. Aynı zamanda çoğu kurumda idarenin en az gelişmiş alanıdır."
+          ],
+          "subsections": [
+            {
+              "id": "9.1",
+              "title": "Politika Nedir ve Ne İşe Yarar",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Politika, tekrar eden bir duruma verilmiş daimî bir cevaptır — bir karar her tekrarlandığında onu ilk ilkelerden yeniden akıl yürütme zahmetini ortadan kaldırır. Her kurumun zaten politikaları vardır; yazılı olmayanlar yalnızca kimsenin incelemediği politikalardır. Onları yazıya dökmek, gözden geçirilebilir kılan şeydir."
+                },
+                {
+                  "type": "table",
+                  "caption": "Politika, prosedür ve direktif",
+                  "head": [
+                    "",
+                    "Nedir",
+                    "Kapsam",
+                    "Ne zaman sona erer"
+                  ],
+                  "rows": [
+                    [
+                      "Politika",
+                      "Daimî bir karar ve arkasındaki gerekçe",
+                      "Tanımlı bir faaliyet alanı",
+                      "Geri çekildiğinde ya da değiştirildiğinde"
+                    ],
+                    [
+                      "Prosedür",
+                      "Politikanın uygulandığı adımlar",
+                      "Belirli bir görev",
+                      "Yöntem değiştiğinde"
+                    ],
+                    [
+                      "Direktif",
+                      "Belirli tek bir durum için talimat",
+                      "Tek bir vaka",
+                      "Durum çözüldüğünde"
+                    ]
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "İyi bir politika beş şey yapar: Kurumun tutumunu ortaya koyar, sınırları belirleyerek güvenle yetki devreder, bu sınırlar içinde inisiyatife alan bırakır, öngörülebilir durumları önceden çözer ve karar almada güven yaratır. Politika genellikle yöneticiler üzerinde bir kısıt olarak görülür; iyi yapıldığında asıl etkisi onları özgürleştirmektir."
+                }
+              ]
+            },
+            {
+              "id": "9.2",
+              "title": "Politikayı Kim Koyar",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Büyük politikaları mütevelliler koyar; geri kalanını yöneticiler. Kendi alanınızı yöneten politikayı siz başlatır, siz biçimlendirir ve siz güncel tutarsınız; yalnızca gerçekten mütevelli onayı gerektireni yukarı taşırsınız. Alanınızda tutarsız biçimde ele alınan tekrarlayan bir durum bir politika boşluğudur — ve onu kapatmak sizin işinizdir."
+                },
+                {
+                  "type": "p",
+                  "text": "Üç şeyi bilin: Hangi politikaların mütevelli onayı gerektirdiğini, kendi düzeyinizde neyi onaylayabileceğinizi ve hiçbir politika güncel bir kararı kapsamadığında ne yapacağınızı. Bunlar belirsiz olduğunda yöneticiler ya her şeyi yukarı taşır ya da onaylamaya yetkileri olmayan şeyleri onaylar."
+                },
+                {
+                  "type": "p",
+                  "text": "En sık yazılı politika gerektiren alanlar: koruma, finans ve harcama yetkisi, verilerin korunması, işe alım, gönüllüler, çıkar çatışmaları, şikâyetler ve iş sağlığı ve güvenliği. Bir kayıt ve bir gözden geçirme döngüsü, politikaların çoğalmasını, birbiriyle çelişmesini ve eskimesini önler."
+                }
+              ]
+            },
+            {
+              "id": "9.3",
+              "title": "Politika Yönetiminin Beş Adımı",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Politika yönetimi beş aşamaya ayrılır. Boşlukların ve çakışmaların görünür olması için her birini adı belirli bir kişiye ya da role verin."
+                },
+                {
+                  "type": "table",
+                  "caption": "Politika yönetiminin beş adımı",
+                  "head": [
+                    "Adım",
+                    "Neleri kapsar"
+                  ],
+                  "rows": [
+                    [
+                      "Biçimlendirme",
+                      "Hedefi belirler, olguları toplar ve politikadan önce bir taslak çerçeve hazırlar."
+                    ],
+                    [
+                      "Onay",
+                      "Doğruluk, kısalık ve gereklilik açısından sınar, teknik görüş alır ve doğru düzeyde onaylanır."
+                    ],
+                    [
+                      "Yayımlama",
+                      "Etkilenen herkesi belirler; onu kimin yorumlayacağını ve kimin istisnaya izin verebileceğini kararlaştırır."
+                    ],
+                    [
+                      "Yürürlüğe koyma",
+                      "Tek tip uygulanması için gereken yönlendirmeleri yayımlar."
+                    ],
+                    [
+                      "Güncel tutma",
+                      "Nerede uyulup nerede uyulmadığını raporlar ve politikayı değiştirir ya da geri çeker. İki üç yıl makul bir gözden geçirme döngüsüdür; mevzuat daha sık gözden geçirme gerektiriyorsa mevzuata uyun."
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9.4",
+              "title": "Politika Kaydı",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Kurumunuz resmî bir politika el kitabı tutsun ya da tutmasın, yürürlükteki her politikanın sahibiyle, onay tarihiyle ve bir sonraki gözden geçirme tarihiyle kaydedildiği tek bir yere ihtiyaç duyar. Dönemsel gözden geçirme her politika için şunu sorar: Hâlâ uyuluyor mu? Nerede uyulmuyor ve neden? Değişmesi gereken politika mı, yoksa uygulama mı? Olayların gerisinde mi kaldı ve geri çekilmeli mi? Kimsenin bulamadığı bir politika politika değildir."
+                }
+              ]
+            },
+            {
+              "id": "9.5",
+              "title": "Operasyonel ve Destek İşlevleri",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Birçok kurumda eksik olan bir beyan, operasyonel ekipler ile destek işlevleri arasındaki ilişkiyi düzenler. Operasyonel ekipler hizmet sunumunu yönetir ve sonuçlardan sorumludur; destek işlevleri ise sunumun içinde gerçekleştiği uzman görüşünü, sistemleri ve denetimleri sağlar. Hiçbiri öbürüne tabi değildir ve hiçbiri yasaya, mevzuata ya da onaylanmış politikaya aykırı davranamaz. Bu yazılı olmadığında, onun yerine tartışılır."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Politika yönetimine ilişkin on iki test",
+            "tests": [
+              "Alanımı yöneten politikaları sayabilir ve her birinin en son ne zaman gözden geçirildiğini söyleyebilir miyim?",
+              "Yürürlükteki politikaların kaydedildiği tek bir yer var mı ve nerede olduğunu biliyor muyum?",
+              "Belgelerimiz politikayı prosedürden ayırıyor mu, yoksa ikisini birbirine mi karıştırıyor?",
+              "Alanımda hiçbir politika kapsamadığı için tutarsız biçimde ele alınan tekrarlayan bir durum var mı?",
+              "Burada en son bir politika getirildiğinde, onaylanmadan önce etkilenenlerden birine danışıldı mı?",
+              "Kendi onay sınırımı biliyor muyum — hangi politikaları kendim karara bağlayabilirim, hangileri mütevellilere gitmeli?",
+              "Bir karar gerektiğinde ve hiçbir politika onu kapsamadığında ne yapacağımı biliyor muyum?",
+              "İnsanlar istisnaya kimin izin verebileceğini biliyor mu ve o kişi bunu biliyor mu?",
+              "Politikalarımızın ekipler arasında aynı biçimde yorumlanıp yorumlanmadığını kontrol eden oldu mu?",
+              "Hangi politikalara uygulamada uyulmadığını ve nedenini biliyor muyuz?",
+              "Kayıtlarımızda olayların gerisinde kalmış ve geri çekilmesi gereken bir politika var mı?",
+              "Operasyonel ekiplerimiz ile destek işlevlerimiz arasındaki ilişki herhangi bir yerde yazılı mı?"
+            ],
+            "questions": [
+              "Her birimiz politikayı, prosedürü, yöntemi ve direktifi nasıl tanımlarız? Cevaplarımız örtüşüyor mu?",
+              "İşimizin hangi alanları yazılı bir politikaya en çok ihtiyaç duyuyor ve bir politikası yok?",
+              "Politikaları yazıya dökmenin tehlikeleri nelerdir ve bunlardan herhangi birini yaşadık mı?",
+              "Burada politikayı gerçekte kim başlatıyor — mütevelliler mi, üst yönetim mi, yoksa işi yapan insanlar mı?",
+              "Hangi yazılı olmayan politikalarla çalışıyoruz — herkesin bildiği ama kimsenin kaydetmediği daimî cevaplar?",
+              "Kendi kurumumuzda politikayı iyileştirme fırsatları nerede?"
+            ],
+            "exercise": "Alanınızda tekrar eden ve şu anda her seferinde muhakemeyle ele alınan bir durumu belirleyin. Birinci adımı izleyerek onun için tek sayfalık bir politika taslağı yazın: hedefi belirtin, olguları toplayın, kimlerin etkilendiğini belirleyin ve onu kimin onaylaması gerekeceğini söyleyin. Taslağı yöneticinize götürün. Tek sayfaya sığan ve gerçekten kullanılan bir politika, kimsenin açmadığı bir el kitabından değerlidir."
+          }
+        }
+      ],
+      "title": "Her Şeyi Bir Arada Tutan Sistemler",
+      "tagline": "Vardiyalar, daimî emirler ve seyir defteri",
+      "foundation": {
+        "verses": [
+          {
+            "ar": "يَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا تَدَايَنتُم بِدَيْنٍ إِلَىٰ أَجَلٍ مُّسَمًّى فَاكْتُبُوهُ",
+            "text": "Ey iman edenler! Belirli bir süre için borçlandığınızda onu yazın.",
+            "ref": "Kur’ân-ı Kerîm, Bakara Sûresi 2:282"
+          },
+          {
+            "ar": "حَاسِبُوا أَنْفُسَكُمْ قَبْلَ أَنْ تُحَاسَبُوا",
+            "text": "Hesaba çekilmeden önce kendinizi hesaba çekin.",
+            "ref": "Hz. Ömer’e ait bir söz, Peygamber hadisi değildir — Tirmizî ve İbn Ebî Şeybe rivayet etmiştir"
+          }
+        ],
+        "why": [
+          "Kur’an’ın en uzun âyeti, birbirine güvenen insanlar arasında kayıt tutmakla ilgilidir — bu modülün bütün savı da budur. Belgeleme güvensizlik değildir; güveni unutkanlıktan koruyan şeydir. Hz. Ömer’in tavsiyesi ise iç denetimdir: Düzenleyiciden, bağışçıdan ya da mütevellilerden önce kendini denetleyen bir kurumun işleri düzeltmek için hâlâ zamanı vardır."
+        ]
+      },
+      "outcomes": {
+        "items": [
+          "İdari disiplinin ne olduğunu, neden sertlik olmadığını ve ekibinde baskı altında ilk hangi rutinin aksadığını açıklamak.",
+          "Bir idari sistemi kurmak ya da onarmak ve uyumun nasıl kontrol edileceğini belirtmek.",
+          "Politikayı prosedürden, kuraldan ve alışkanlıktan ayırt etmek ve şu anda birinin kafasında tutulan yazılı olmayan bir politikayı belirlemek.",
+          "Bir politikayı politika yönetiminin beş adımından geçirmek ve onu kimin koymaya yetkili olduğunu söylemek.",
+          "Bir politika kaydı tutmak ve gözden geçirmeyi neyin tetiklediğini açıklamak.",
+          "Gerçek bir işi doğru biçimde dosyalamak için sekiz unsurlu belgeleme sistemini kullanmak.",
+          "Mali kayıtları denetimlerden — seyir defterini iskandilden — ayırt etmek ve kendi alanı için ileriye dönük bir denetim tasarlamak.",
+          "Mütevellilerin neyi, hangi biçimde görmeye hakkı olduğunu açıklamak."
+        ],
+        "evidence": "kurulmuş ya da onarılmış bir sistem, beş adımın tamamından geçirilerek hazırlanmış bir politika, doldurulmuş bir politika kaydı girişi ve belirtilmiş bir eşik ve tepkiyle yeni bir denetim."
+      }
     }
   ],
   "sharedIntro": {
