@@ -2,7 +2,7 @@
 //
 //   pdftotext -layout -enc UTF-8 Handbook.pdf layout.txt
 //   pdftotext        -enc UTF-8 Handbook.pdf raw.txt
-//   node tools/extract-handbook.mjs layout.txt raw.txt <direction-id> [--shared]
+//   node tools/extract-handbook.mjs layout.txt raw.txt <direction-id> [--shared | --own-shared]
 //
 // Writes data/<direction-id>/en.json  (Modules 1-4 = Sections 1-12, plus the glossary).
 // With --shared also writes data/shared/en.json (Modules 5-6 = Sections 13-14), which are
@@ -15,7 +15,8 @@ if (!layoutFile || !rawFile || !directionId) {
   console.error("usage: node tools/extract-handbook.mjs layout.txt raw.txt <direction-id> [--shared]");
   process.exit(1);
 }
-const WITH_SHARED = flag === "--shared";
+const WITH_SHARED = flag === "--shared"; // also write data/shared (Modules 5-6)
+// --own-shared: keep this book's own Modules 5-6 inside data/<direction>/en.json
 
 // The PDF's Arabic is not extractable as clean text, so the Arabic wording is supplied here.
 // TO BE PROOF-READ against a printed mushaf / hadith collection before launch.
@@ -36,6 +37,14 @@ const ARABIC = {
   "16:78": "وَاللَّهُ أَخْرَجَكُم مِّن بُطُونِ أُمَّهَاتِكُمْ لَا تَعْلَمُونَ شَيْئًا وَجَعَلَ لَكُمُ السَّمْعَ وَالْأَبْصَارَ وَالْأَفْئِدَةَ",
   "5:2": "وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَىٰ",
   "66:6": "يَا أَيُّهَا الَّذِينَ آمَنُوا قُوا أَنفُسَكُمْ وَأَهْلِيكُمْ نَارًا",
+  "4:58": "إِنَّ اللَّهَ يَأْمُرُكُمْ أَن تُؤَدُّوا الْأَمَانَاتِ إِلَىٰ أَهْلِهَا وَإِذَا حَكَمْتُم بَيْنَ النَّاسِ أَن تَحْكُمُوا بِالْعَدْلِ",
+  "3:159": "وَشَاوِرْهُمْ فِي الْأَمْرِ ۖ فَإِذَا عَزَمْتَ فَتَوَكَّلْ عَلَى اللَّهِ",
+  "13:11": "إِنَّ اللَّهَ لَا يُغَيِّرُ مَا بِقَوْمٍ حَتَّىٰ يُغَيِّرُوا مَا بِأَنفُسِهِمْ",
+  "2:282": "يَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا تَدَايَنتُم بِدَيْنٍ إِلَىٰ أَجَلٍ مُّسَمًّى فَاكْتُبُوهُ",
+  "Muslim 1829": "كُلُّكُمْ رَاعٍ وَكُلُّكُمْ مَسْئُولٌ عَنْ رَعِيَّتِهِ",
+  "al-Albānī": "إِنَّ اللَّهَ يُحِبُّ إِذَا عَمِلَ أَحَدُكُمْ عَمَلًا أَنْ يُتْقِنَهُ",
+  "al-Tirmidhī 2517": "اعْقِلْهَا وَتَوَكَّلْ",
+  "Ibn Abī Shaybah": "حَاسِبُوا أَنْفُسَكُمْ قَبْلَ أَنْ تُحَاسَبُوا",
   "al-Bukhārī 59": "إِذَا وُسِّدَ الْأَمْرُ إِلَى غَيْرِ أَهْلِهِ فَانْتَظِرِ السَّاعَةَ",
   "al-Bukhārī 5027": "خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ",
   "Muslim 1631": "إِذَا مَاتَ الْإِنْسَانُ انْقَطَعَ عَنْهُ عَمَلُهُ إِلَّا مِنْ ثَلَاثَةٍ: إِلَّا مِنْ صَدَقَةٍ جَارِيَةٍ، أَوْ عِلْمٍ يُنْتَفَعُ بِهِ، أَوْ وَلَدٍ صَالِحٍ يَدْعُو لَهُ",
@@ -63,8 +72,9 @@ const rawLines = toLines(fs.readFileSync(rawFile, "utf8"));
 // Extraction artefacts: stray spaces after long vowels (Sū rah -> Sūrah, Ṣaḥī ḥ -> Ṣaḥīḥ)
 const fix = (s) =>
   s
-    .replace(/([ūāīŪĀĪ]) (?=[\p{Ll}’‘])/gu, "$1")
+    .replace(/([ūāīŪĀĪ]) (?!(?:and|or|of|in|the|on|by|to|is|was|who|which|from|with)\b)(?=[\p{Ll}’‘])/gu, "$1")
     .replace(/\s{2,}/g, " ")
+    .replace(/ ([,;])/g, "$1")
     .trim();
 
 const join = (arr) =>
@@ -115,8 +125,9 @@ function parseOpener(n) {
     }
     if (/^[“"]/.test(t)) {
       const buf = [t];
-      while (!/[”"]\s*$/.test(buf[buf.length - 1])) buf.push(lines[++j].trim());
-      const text = join(buf).replace(/^[“"]|[”"]$/g, "");
+      while (!isBlank(lines[j + 1])) buf.push(lines[++j].trim());
+      let text = join(buf).replace(/^[“"]/, "");
+      text = /[”"]$/.test(text) && (text.match(/[”"]/g) || []).length === 1 ? text.slice(0, -1) : text;
       while (isBlank(lines[++j]));
       const ref = fix(lines[j].trim());
       verses.push({ ar: arabicFor(ref), text, ref });
@@ -145,6 +156,7 @@ function parseOutcomes(n) {
 // ---------- blocks ----------
 const isHeading = (l, next) => {
   const t = l.trim();
+  if (indent(l) === 0 && /^\d+\.\s+[A-Z]/.test(t) && t.length < 110 && !/[.,:;?!”’]$/.test(t) && next !== undefined && !isBlank(next) && indent(next) === 0) return true;
   if (indent(l) > 2 || t.length > 58 || /[.,:;?!”’)]$/.test(t)) return false;
   if (/^\d\.\s+[A-Z]/.test(t)) return true; // "1. Uniqueness of work"
   return /^[A-Z]/.test(t) && !/^[A-Z ]+$/.test(t) && next !== undefined && !isBlank(next) && /^[A-Z“]/.test(next.trim());
@@ -191,6 +203,29 @@ function parseBlocks(body) {
     if (typeof l === "object") { flushList(); blocks.push(l); i++; continue; } // injected block (e.g. a table)
     if (l === SENT) { flushList(); pb = true; i++; continue; }
     if (isBlank(l)) { flushList(); i++; continue; }
+    const om = l.match(/^\s{0,3}(\d+)\.\s+(\S.*)$/);
+    if (om && !isHeading(l, body[i + 1])) {
+      // numbered list inside the teaching (e.g. a sequence of steps)
+      flushList();
+      const last = blocks.at(-1);
+      const items = last?.type === "ol" && last.lastBlank !== false ? last.items : null;
+      const target = items || [];
+      target.push(om[2]);
+      i++;
+      let gap = false;
+      while (i < body.length && typeof body[i] === "string") {
+        const c = body[i];
+        if (isBlank(c)) { gap = true; i++; continue; }
+        const cont = indent(c) >= 3 && !/^\s*\d+\.\s/.test(c) && (!gap || /^[a-z(“"]/.test(c.trim()));
+        if (!cont) break;
+        target[target.length - 1] += " " + c.trim();
+        gap = false;
+        i++;
+      }
+      if (!items) blocks.push(+om[1] > 1 ? { type: "ol", start: +om[1], items: target } : { type: "ol", items: target });
+      pb = false;
+      continue;
+    }
     if (indent(l) >= 3) {
       const t = l.trim();
       if (/^Practical example/.test(t)) {
@@ -225,8 +260,9 @@ function parseBlocks(body) {
     pb = false;
   }
   flushList();
+  for (const b of blocks) if (b.type === "ol") { b.items = b.items.map(fix); delete b.lastBlank; }
   // a short stand-alone line with no closing punctuation is a sub-heading
-  for (const b of blocks) if (b.type === "p" && b.text.length < 60 && !/[.,:;?!”’)]$/.test(b.text)) b.type = "h3";
+  for (const b of blocks) if (b.type === "p" && b.text.length < 60 && (!/[.,:;?!”’)]$/.test(b.text) || /^Example \d+:/.test(b.text))) b.type = "h3";
   return blocks;
 }
 
@@ -278,7 +314,7 @@ function parseSection(n, { rich = false, regions = [] } = {}) {
   let i = 1;
   const titleBuf = [];
   while (!/^\s*THE SHIP/.test(L[i])) { if (!isBlank(L[i])) titleBuf.push(L[i]); i++; }
-  const title = fix(titleBuf.join(" "));
+  const title = fix(titleBuf.join(" ")).replace(/^([A-Z]) (?=[a-z]{3,})/, "$1");
   let r = parseShip(L, i + 1, { splitClaim: !rich });
   const ship = r.ship;
   i = r.i;
@@ -287,7 +323,8 @@ function parseSection(n, { rich = false, regions = [] } = {}) {
   const isHead = (l) => typeof l === "string" && headRe.test(l.trim());
   const introLines = [];
   while (i < L.length && !isHead(L[i])) introLines.push(L[i++]);
-  const intro = parseBlocks(introLines).filter((b) => b.type === "p").map((b) => b.text);
+  const introAll = parseBlocks(introLines);
+  const intro = introAll.filter((b) => b.type === "p").map((b) => b.text);
 
   const subsections = [];
   let review = null;
@@ -311,7 +348,9 @@ function parseSection(n, { rich = false, regions = [] } = {}) {
     sub.blocks = parseBlocks(body);
     subsections.push(sub);
   }
-  return { id: "s" + n, number: n, title, ship, intro, subsections, review };
+  const sec = { id: "s" + n, number: n, title, ship, intro, subsections, review };
+  if (introAll.some((b) => b.type !== "p")) sec.introBlocks = introAll;
+  return sec;
 }
 
 function buildModule(n, sectionNumbers, opts = {}) {
@@ -340,9 +379,11 @@ function parseGlossary() {
 }
 
 // ---------- shared Modules 5-6: tables re-typed from the PDF's figures ----------
+// The shared modules carry the same text in every handbook, but their section numbers
+// depend on the book (13-14 when Modules 1-4 hold twelve sections, 11-12 in Management).
 const T = (caption, head, rows) => ({ type: "table", caption, head, rows });
-const sharedOpts = {
-  13: {
+const sharedOpts = (a, b) => ({
+  [a]: {
     rich: true,
     regions: [
       { from: /FOUR PATTERNS OF RENEWAL/, to: /The four patterns of this section, each with/, inclusive: true },
@@ -357,33 +398,139 @@ const sharedOpts = {
       },
       {
         from: /^The four patterns at a glance/,
-        to: /^13\.5 Section Review/,
+        to: new RegExp(`^${a}\\.5 Section Review`),
         block: T("The four patterns at a glance", ["Pattern", "The Ship", "The question it asks", "If it is ignored"], [
-          ["13.1 Readiness before the plan", "Waiting for the tide", "Has the team accepted the need for change, or only been told about it?", "Plans fail by attrition: agreed in the room, resisted in the corridor"],
-          ["13.2 Selecting the layers", "Not every hand for every line", "Is the right kind of person in place for the stage the work has reached?", "Founders block structure; builders arrive too early and strangle the idea"],
-          ["13.3 Contention", "Other sails on the horizon", "What does a comparable organisation show us about our own standards?", "Standards drift downward unnoticed in an uncontested position"],
-          ["13.4 The turning point", "The calm will not stay calm", "What are we treating as permanent that is only the present phase?", "Complacency in strong seasons; resignation in weak ones"],
+          [`${a}.1 Readiness before the plan`, "Waiting for the tide", "Has the team accepted the need for change, or only been told about it?", "Plans fail by attrition: agreed in the room, resisted in the corridor"],
+          [`${a}.2 Selecting the layers`, "Not every hand for every line", "Is the right kind of person in place for the stage the work has reached?", "Founders block structure; builders arrive too early and strangle the idea"],
+          [`${a}.3 Contention`, "Other sails on the horizon", "What does a comparable organisation show us about our own standards?", "Standards drift downward unnoticed in an uncontested position"],
+          [`${a}.4 The turning point`, "The calm will not stay calm", "What are we treating as permanent that is only the present phase?", "Complacency in strong seasons; resignation in weak ones"],
         ]),
       },
     ],
   },
-  14: {
+  [b]: {
     rich: true,
     regions: [
       { from: /FIRST TRIPLET · EXCELLENCE THROUGH UNIQUENESS/, to: /The Formula of Ultimate Success as a wheel/, inclusive: true },
       {
         from: /^The four triplets at a glance/,
-        to: /^14\.7 Section Review/,
+        to: new RegExp(`^${b}\\.7 Section Review`),
         block: T("The four triplets at a glance", ["Triplet", "Its three parts", "Without it…"], [
-          ["First — Excellence through uniqueness (14.1)", "Uniqueness of work · Being the best · Being first", "Collective effort produces mediocre results"],
-          ["Second — Sacrifice and risk (14.2)", "Sacrifice · Risk-taking · Building in silence", "Excellence remains aspirational"],
-          ["Third — Learning and generational stewardship (14.3)", "Knowledge and learning · Benefiting from every generation · Investing in youth and spiritual foundation", "The work ends with the people who began it"],
-          ["Fourth — Collective success (14.4)", "Work regardless of others · Team competition and excellence · Success is collective", "Learning remains academic"],
+          [`First — Excellence through uniqueness (${b}.1)`, "Uniqueness of work · Being the best · Being first", "Collective effort produces mediocre results"],
+          [`Second — Sacrifice and risk (${b}.2)`, "Sacrifice · Risk-taking · Building in silence", "Excellence remains aspirational"],
+          [`Third — Learning and generational stewardship (${b}.3)`, "Knowledge and learning · Benefiting from every generation · Investing in youth and spiritual foundation", "The work ends with the people who began it"],
+          [`Fourth — Collective success (${b}.4)`, "Work regardless of others · Team competition and excellence · Success is collective", "Learning remains academic"],
         ]),
       },
     ],
   },
+});
+
+// ---------- book-specific figures and tables in Modules 1-4 ----------
+const BOOK = {
+  management: {
+    3: {
+      regions: [
+        {
+          from: /^Principle\s+Primary question\s+Focus/,
+          to: /^The integrated management system\s*$/,
+          block: T("How the six principles work together", ["Principle", "Primary question", "Focus"], [
+            ["Planning", "Where are we going and how will we get there?", "Future direction, objectives, strategies"],
+            ["Organising", "How should we structure ourselves to achieve our plan?", "Structure, roles, relationships, procedures"],
+            ["Staffing", "Do we have the right people with the right skills?", "Recruitment, development, retention, capability"],
+            ["Direction / Leadership", "How do we guide and motivate our teams?", "Vision, motivation, decision-making, culture"],
+            ["Coordination", "How do we ensure all parts work together?", "Integration, alignment, synchronisation, communication"],
+            ["Control", "Are we achieving our objectives and staying on track?", "Measurement, monitoring, correction, accountability"],
+          ]),
+        },
+        { from: /THE SIX PRINCIPLES — ONE CONTINUOUS CYCLE/, to: /The same cycle, drawn as one of the eight roundels/, inclusive: true },
+      ],
+    },
+    6: {
+      regions: [
+        {
+          from: /^Category\s+What it looks like\s+Kind of solution/,
+          to: /^Step 3: Identify potential solutions/,
+          block: T("Root cause categories", ["Category", "What it looks like", "Kind of solution it points to"], [
+            ["People and skills", "The task is beyond current training, experience or capacity", "Training, coaching, recruitment or redistributing work"],
+            ["Process", "The steps themselves are missing, unclear or in the wrong order", "Redesign and document the process"],
+            ["Systems and tools", "Equipment, software or records do not support the work", "Repair, replace or introduce a system"],
+            ["Resources", "Not enough time, money, people or materials for what is asked", "Reprioritise, reallocate or secure resources"],
+            ["Information and communication", "People do not know what is expected or what is happening", "Define channels, owners and feedback loops"],
+            ["Structure and authority", "Nobody owns the decision, or the wrong level holds it", "Clarify roles, reporting lines and delegated authority"],
+          ]),
+        },
+        {
+          from: /^Problem\s+How it shows itself\s+What usually causes it/,
+          to: /^Each of these has the same shape/,
+          block: T("Six common administrative problems", ["Problem", "How it shows itself", "What usually causes it", "First correction"], [
+            ["Poor communication", "Decisions do not reach the people affected; rumour fills the gap", "No defined channel, or too many; one announcement treated as enough", "Name the channel for each type of message, and a person who owns it"],
+            ["Unclear roles", "Work duplicates; critical tasks fall between people", "Job descriptions absent, vague or overtaken by growth", "Map every function to a named owner; write it down and circulate it"],
+            ["Inefficient processes", "Work takes longer than it should; everyone does it differently", "Processes grew informally and were never designed or recorded", "Map what actually happens, remove needless approvals, document it"],
+            ["Weak accountability", "Standards are not met and nothing follows; the willing carry the rest", "No measurable expectations, no regular feedback, hard conversations avoided", "Set measurable goals per role and give feedback monthly, not annually"],
+            ["Overload", "Persistent overtime, falling quality, rising turnover", "Scope added without anything removed; poor prioritisation", "Review the workload before the headcount; stop or defer lower-priority work"],
+            ["Resistance to change", "New systems adopted in name; old practice continues", "The reason was never explained and those affected were never consulted", "Explain why before what, involve the people affected, pilot before rolling out"],
+          ]),
+        },
+        { from: /WHEN RESULTS ARE UNSATISFACTORY — WORK DOWN, IN ORDER/, to: /Most underperformance starts in steps 1–3/, inclusive: true },
+      ],
+    },
+    7: {
+      regions: [
+        {
+          from: /^Aspect\s+Small \(5–50\)/,
+          to: /^7\.3 Structure Models/,
+          block: T("Organisations by scale", ["Aspect", "Small (5–50)", "Medium (50–500)", "Large (500+)"], [
+            ["Structure", "Minimal hierarchy, flat", "Emerging hierarchy, departments forming", "Multiple levels, formal departments"],
+            ["Communication", "Direct, informal", "Mix of direct and formal", "Formal mechanisms, indirect"],
+            ["Processes", "Minimal, informal", "Some documentation, developing", "Comprehensive formal systems"],
+            ["Culture", "Unified, founder-driven", "Increasingly diverse by department", "Departmental variation common"],
+          ]),
+        },
+      ],
+    },
+    9: {
+      regions: [
+        {
+          from: /^Step\s+What it involves/,
+          to: /^9\.4 The Policy Register/,
+          block: T("The five steps of policy administration", ["Step", "What it involves"], [
+            ["Formulation", "Establishes the objective, gathers the facts, and drafts an outline before a policy."],
+            ["Approval", "Tests it for accuracy, brevity and necessity, takes technical advice, and is given at the right level."],
+            ["Release", "Identifies everyone affected and settles who interprets it and who may authorise an exception."],
+            ["Putting it into effect", "Issues whatever guidance is needed so that it is applied uniformly."],
+            ["Keeping it current", "Reports on where it is and is not being observed, and revises or withdraws it. Two to three years is a reasonable review cycle; where regulation requires more frequent review, follow the regulation."],
+          ]),
+        },
+        {
+          from: /^\s+What it is\s+Scope\s+When it ends/,
+          to: /^A good policy does five things/,
+          block: T("Policy, procedure and directive", ["", "What it is", "Scope", "When it ends"], [
+            ["Policy", "A standing decision and the reasoning behind it", "A defined area of operation", "When it is withdrawn or revised"],
+            ["Procedure", "The steps by which the policy is carried out", "A specific task", "When the method changes"],
+            ["Directive", "An instruction for one particular situation", "One case", "When the situation is dealt with"],
+          ]),
+        },
+      ],
+    },
+  },
 };
+
+// ---------- the book's own map of modules and sections (from its Contents page) ----------
+function readContents() {
+  const map = {};
+  let cur = null;
+  const c = find(/^Contents\s*$/);
+  for (let k = c + 1; k < lines.length; k++) {
+    const l = lines[k].trim();
+    if (/^Glossary\b/.test(l)) break;
+    let m = l.match(/^MODULE (\d) — /);
+    if (m) { cur = +m[1]; map[cur] = []; continue; }
+    m = l.match(/^(\d+)\.\s+\S.*?\s{2,}\d+$/);
+    if (m && cur) map[cur].push(+m[1]);
+  }
+  return map;
+}
 
 // ---------- assemble ----------
 const write = (file, data) => {
@@ -392,23 +539,33 @@ const write = (file, data) => {
 };
 const titleLine = lines.find((l) => /Handbook\s*$/.test(l.trim()) || /PROGRAMME\s*$/.test(l.trim()));
 const sourceFooter = (fs.readFileSync(layoutFile, "utf8").match(/As Safinah Centre for Humanitarian Excellence · ([^·]+) · (V\d+) · ([A-Za-z]+ \d{4})/) || []);
+const contents = readContents();
+const [s5] = contents[5];
+const [s6] = contents[6];
+const opts = { ...(BOOK[directionId] || {}), ...sharedOpts(s5, s6) };
+console.log("contents:", JSON.stringify(contents));
 
-const modules = [1, 2, 3, 4].map((n) => buildModule(n, [3 * n - 2, 3 * n - 1, 3 * n]));
+const OWN_SHARED = flag === "--own-shared";
+const modules = [1, 2, 3, 4].map((n) => buildModule(n, contents[n], opts));
+if (OWN_SHARED) {
+  // this book is the source the shared modules were written in; keep its own wording and numbers
+  for (const n of [5, 6]) modules.push({ ...buildModule(n, contents[n], opts), shared: true });
+}
 const out = {
   direction: directionId,
   lang: "en",
-  source: `${(sourceFooter[1] || titleLine).replace(/\s*Programme$/, "")} Handbook, Version ${(sourceFooter[2] || "").replace("V", "")}, ${sourceFooter[3] || ""} — As Safinah Centre for Humanitarian Excellence`,
+  source: `${(sourceFooter[1] || titleLine).replace(/\s*(Development\s+)?Programme$/, "")} Handbook, Version ${(sourceFooter[2] || "").replace("V", "")}, ${sourceFooter[3] || ""} — As Safinah Centre for Humanitarian Excellence`,
   modules,
-  // Section 13 opens with one sentence written for this programme; everything else in 13-14 is shared
-  sharedIntro: { s13: parseSection(13, sharedOpts[13]).intro },
   glossary: parseGlossary(),
 };
+// Section 13 opens with one sentence written for this programme; everything else in 13-14 is shared
+if (!OWN_SHARED) out.sharedIntro = { s13: parseSection(s5, opts[s5]).intro };
 write(`data/${directionId}/en.json`, out);
 const count = (ms) => `${ms.length} modules, ${ms.reduce((a, m) => a + m.sections.length, 0)} sections, ${ms.reduce((a, m) => a + m.sections.reduce((b, s) => b + s.subsections.length, 0), 0)} subsections`;
 console.log(`data/${directionId}/en.json: ${count(modules)}, ${out.glossary.length} glossary terms`);
 
 if (WITH_SHARED) {
-  const shared = [buildModule(5, [13], sharedOpts), buildModule(6, [14], sharedOpts)];
+  const shared = [buildModule(5, [s5], opts), buildModule(6, [s6], opts)];
   write("data/shared/en.json", { direction: "shared", lang: "en", modules: shared });
   console.log(`data/shared/en.json: ${count(shared)}`);
 }

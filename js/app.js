@@ -57,7 +57,7 @@ const tryJSON = (path) => loadJSON(path).catch(() => null);
 function mergeModules(enModules, trModules, shared) {
   return enModules.map((m) => {
     const tm = trModules?.find((x) => x.id === m.id);
-    const merged = { ...m, ...(tm || {}), id: m.id, number: m.number, shared };
+    const merged = { ...m, ...(tm || {}), id: m.id, number: m.number, shared: shared || !!m.shared };
     merged._translated = lang === "en" || !!tm;
     merged.sections = m.sections.map((s) => {
       const ts = tm?.sections?.find((x) => x.id === s.id);
@@ -68,13 +68,47 @@ function mergeModules(enModules, trModules, shared) {
   });
 }
 
+/**
+ * The shared Modules 5-6 are translated once (as Sections 13-14). A handbook that numbers them
+ * differently (Management: 11-12) reuses that translation with its own section numbers.
+ */
+function renumberShared(tm, enModule, map) {
+  const fixStr = (str) =>
+    str
+      .replace(/\b(13|14)(?=\.\d)/g, (n) => map[n] ?? n)
+      .replace(/\b(13|14)(?=\. Bölüm)/g, (n) => map[n] ?? n)
+      .replace(/(Section|section|القسم|Bölüm)\s+(13|14)\b/g, (x, w, n) => `${w} ${map[n] ?? n}`)
+      // in the source book these references point at its own sections
+      .replace(/دليل الإدارة \(القسم ([\d.]+)\)/g, "القسم $1")
+      .replace(/Yönetim El Kitabı \(Bölüm ([\d.]+)\)/g, "Bölüm $1");
+  const walk = (v) => (typeof v === "string" ? fixStr(v) : Array.isArray(v) ? v.map(walk) : v && typeof v === "object" ? Object.fromEntries(Object.entries(v).map(([k, x]) => [k, walk(x)])) : v);
+  const out = walk(tm);
+  out.sections = out.sections.map((ts, i) => ({ ...ts, id: enModule.sections[i]?.id ?? ts.id, number: enModule.sections[i]?.number ?? ts.number }));
+  return out;
+}
+
 /** A direction = its own modules (1-4) + the shared modules (5-6) that every As Safinah programme includes. */
 async function loadDirection(id) {
   const [en, shared] = await Promise.all([loadJSON(`data/${id}/en.json`), tryJSON("data/shared/en.json")]);
   let tr = null;
   let trShared = null;
   if (lang !== "en") [tr, trShared] = await Promise.all([tryJSON(`data/${id}/${lang}.json`), tryJSON(`data/shared/${lang}.json`)]);
-  const modules = [...mergeModules(en.modules, tr?.modules, false), ...mergeModules(shared?.modules || [], trShared?.modules, true)];
+  // a handbook may carry its own copy of Modules 5-6 (Management, where they were first written)
+  const own = new Set(en.modules.map((m) => m.id));
+  const trMods = [...(tr?.modules || [])];
+  const ownShared = en.modules.filter((x) => x.shared);
+  const map = {}; // shared translation's section numbers -> this handbook's (e.g. 13 -> 11, 14 -> 12)
+  for (const m of ownShared) {
+    trShared?.modules?.find((x) => x.id === m.id)?.sections.forEach((ts, i) => { if (m.sections[i]) map[ts.number] = m.sections[i].number; });
+  }
+  for (const m of ownShared) {
+    const ts = trShared?.modules?.find((x) => x.id === m.id);
+    if (ts && !trMods.some((x) => x.id === m.id)) trMods.push(renumberShared(ts, m, map));
+  }
+  const modules = [
+    ...mergeModules(en.modules, trMods, false),
+    ...mergeModules((shared?.modules || []).filter((m) => !own.has(m.id)), trShared?.modules, true),
+  ];
   // the opening paragraph of a shared section can be worded for this programme
   for (const s of modules.filter((m) => m.shared).flatMap((m) => m.sections)) {
     const own = s._translated && lang !== "en" ? tr?.sharedIntro?.[s.id] : en.sharedIntro?.[s.id];
@@ -94,6 +128,7 @@ const nextPort = (d, data) => {
   return all.find(({ s }) => !p.done[s.id]) || null;
 };
 const moduleDone = (p, m) => m.sections.every((s) => p.done[s.id]);
+const sectionsLabel = (m) => (m.sections.length === 1 ? `${t("section")} ${digits(m.sections[0].number)}` : t("sectionsRange", { r: sectionRange(m) }));
 const sectionRange = (m) => {
   const a = m.sections[0].number, b = m.sections[m.sections.length - 1].number;
   return a === b ? `${a}` : `${a}–${b}`;
@@ -211,7 +246,10 @@ const renderLoading = () => `<div class="loading" role="status">${icon("compass"
 const renderError = () => `<div class="state-box" role="alert">${icon("flags")}<h1>${esc(t("loadError"))}</h1><p class="lead" style="margin-inline:auto">${esc(t("loadErrorText"))}</p><button type="button" class="btn" id="retry">${esc(t("tryAgain"))}</button></div>`;
 const renderNotFound = () => `<div class="state-box">${icon("chart")}<h1>${esc(t("notFound"))}</h1><p class="lead" style="margin-inline:auto">${esc(t("notFoundText"))}</p><a class="btn" href="#/">${esc(t("backHome"))}</a></div>`;
 const notTranslated = () => `<div class="notice" role="note">${esc(t("notTranslated"))}</div>`;
-const quoteMarks = (v) => (/Narrated|رواه|Bukhārī|Muslim|Buhârî|Müslim|rivayet/.test(v.ref) ? `«${esc(v.ar)}»` : `﴿${esc(v.ar)}﴾`);
+// Qur'anic text in ornate brackets; hadith and sayings in plain guillemets
+const quoteMarks = (v) => (/Qur|القرآن|Kur/.test(v.ref) ? `﴿${esc(v.ar)}﴾` : `«${esc(v.ar)}»`);
+// a quotation may be followed by a remark after its closing mark
+const quoted = (text) => `“${esc(text)}${/[”"]/.test(text) ? "" : "”"}`;
 
 /* ---------- home: the main deck ---------- */
 function renderHome() {
@@ -295,7 +333,7 @@ function anchorBox(v, english = false) {
   const showText = v.text && !(lang === "ar" && english);
   return `<div class="anchor-box">${icon("anchor", { label: t("islamicFoundation") })}<div style="flex:1">
     ${v.ar ? `<p class="ar" lang="ar">${quoteMarks(v)}</p>` : ""}
-    ${showText ? `<blockquote${english && lang !== "en" ? ' lang="en" dir="ltr"' : ""}>“${esc(v.text)}”</blockquote>` : ""}
+    ${showText ? `<blockquote${english && lang !== "en" ? ' lang="en" dir="ltr"' : ""}>${quoted(v.text)}</blockquote>` : ""}
     <cite class="caps">${esc(v.ref)}</cite></div></div>`;
 }
 
@@ -351,7 +389,7 @@ function renderCourse(d, data) {
     return `<a class="mod-card${isDone ? " is-done" : ""}${isHere ? " is-here" : ""}" href="#/d/${d.id}/m/${m.id}">
       <span class="n">${digits(m.number)}</span>
       <h3>${esc(m.title)}</h3>
-      <span class="caps">${esc(t("sectionsRange", { r: sectionRange(m) }))}${sess ? " · " + esc(t("sessionsRange", { r: sess })) : ""}${m.shared ? " · " + esc(t("shared")) : ""}</span>
+      <span class="caps">${esc(sectionsLabel(m))}${sess ? " · " + esc(t("sessionsRange", { r: sess })) : ""}${m.shared ? " · " + esc(t("shared")) : ""}</span>
       <span class="caps state">${state}</span>
     </a>`;
   }).join("");
@@ -399,7 +437,7 @@ function renderModule(d, data, id) {
   const verses = (m.foundation?.verses || []).map((v) => `
     <figure class="verse">
       ${v.ar ? `<p class="ar" lang="ar">${quoteMarks(v)}</p>` : ""}
-      ${v.text ? `<blockquote>“${esc(v.text)}”</blockquote>` : ""}
+      ${v.text ? `<blockquote>${quoted(v.text)}</blockquote>` : ""}
       <cite>${esc(v.ref)}</cite>
     </figure>`).join("");
 
@@ -418,7 +456,7 @@ function renderModule(d, data, id) {
     <section class="mod-head">
       ${progWheel(d, { titles: data.modules.map((x) => x.title), labels: true, lit: idx, done: doneSet, hrefs: data.modules.map((x) => `#/d/${d.id}/m/${x.id}`), label: t("wheelLabel", { name: L(d.title) }) })}
       <div${content}>
-        <p class="eyebrow">${esc(t("moduleOf", { n: m.number }))} · ${esc(t("sectionsRange", { r: sectionRange(m) }))}${sess ? " · " + esc(t("sessionsRange", { r: sess })) : ""}</p>
+        <p class="eyebrow">${esc(t("moduleOf", { n: m.number }))} · ${esc(sectionsLabel(m))}${sess ? " · " + esc(t("sessionsRange", { r: sess })) : ""}</p>
         ${m.shared ? `<p class="caps" style="margin:0 0 8px">${icon("diamond")} ${esc(t("sharedModule"))}</p>` : ""}
         <h1>${esc(m.title)}</h1>
         <p class="promise">${esc(m.tagline)}</p>
@@ -456,6 +494,7 @@ function renderModule(d, data, id) {
 function renderBlock(b, ctx) {
   if (b.type === "ul") return `<ul>${b.items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul>`;
   if (b.type === "h3") return `<h3>${esc(b.text)}</h3>`;
+  if (b.type === "ol") return `<ol${b.start ? ` start="${b.start}"` : ""}>${b.items.map((i) => `<li>${esc(i)}</li>`).join("")}</ol>`;
   if (b.type === "table")
     return `<div class="table-wrap" role="region" tabindex="0" aria-label="${esc(b.caption)}"><table>
       <caption>${esc(b.caption)}</caption>
@@ -531,7 +570,7 @@ function renderSection(d, data, id) {
         <h1>${esc(s.title)}</h1>
         <div class="rule"></div>
         ${shipPanel(s.ship, lbl, false)}
-        ${s.intro.map((x) => `<p>${esc(x)}</p>`).join("")}
+        ${s.introBlocks ? s.introBlocks.map((b) => renderBlock(b, ctx)).join("") : s.intro.map((x) => `<p>${esc(x)}</p>`).join("")}
         <nav class="toc-box" aria-label="${esc(lbl("inThisSection"))}"><span class="caps">${esc(lbl("inThisSection"))}</span>
           <ul>${s.subsections.map((sub) => `<li><a href="#" data-jump="${hid(sub)}">${esc(sub.id)} ${esc(sub.title)}</a></li>`).join("")}${r ? `<li><a href="#" data-jump="rev">${esc(lbl("sectionReview"))}</a></li>` : ""}</ul>
         </nav>

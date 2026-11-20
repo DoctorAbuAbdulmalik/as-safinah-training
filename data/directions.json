@@ -5,9 +5,12 @@
       "number": 1,
       "flagship": true,
       "symbol": "pennant",
-      "status": "soon",
-      "soon": "opening",
-      "title": { "en": "Management", "ar": "الإدارة", "tr": "Yönetim" },
+      "status": "active",
+      "title": {
+        "en": "Management",
+        "ar": "الإدارة",
+        "tr": "Yönetim"
+      },
       "promise": {
         "en": "The working reality of management, not the theory of it",
         "ar": "الواقع العملي للإدارة، لا نظرياتها",
@@ -23,20 +26,16 @@
         "ar": "تحليل للموارد في صفحة واحدة، وتكليف مكتوب بالتفويض، وتشخيص من سبع خطوات، ومسودة سياسة، وخطة تطوير شخصية موقّعة.",
         "tr": "Tek sayfalık bir kaynak analizi, bir yetki devri notu, yedi adımlı bir teşhis, bir politika taslağı ve imzalı bir kişisel gelişim planı."
       },
-      "sections": 12,
       "sessions": 16,
-      "moduleSections": ["1–3", "4–5", "6–7", "8–10", "11", "12"],
-      "moduleSessions": ["1–3", "4–7", "8–9", "10–12", "13–14", "15–16"],
-      "moduleTitles": {
-        "en": ["Foundations", "The Manager's Own Practice", "Solving and Improving", "The Systems That Hold It Together", "Patterns of Renewal", "Obligation and Purpose"],
-        "ar": ["الأسس", "ممارسة المدير الذاتية", "الحل والتحسين", "الأنظمة التي تُمسك بالعمل", "أنماط التجدّد", "الالتزام والغاية"],
-        "tr": ["Temeller", "Yöneticinin Kendi Uygulaması", "Çözmek ve İyileştirmek", "Her Şeyi Bir Arada Tutan Sistemler", "Yenilenmenin Örüntüleri", "Yükümlülük ve Amaç"]
-      },
-      "foundation": {
-        "ar": "إِنَّ اللَّهَ يَأْمُرُكُمْ أَن تُؤَدُّوا الْأَمَانَاتِ إِلَىٰ أَهْلِهَا",
-        "text": { "en": "Indeed, Allah commands you to render trusts to whom they are due.", "tr": "Şüphesiz Allah, emanetleri ehline vermenizi emrediyor." },
-        "ref": { "en": "Qur’an, Sūrah an-Nisā’ 4:58", "ar": "القرآن الكريم، سورة النساء، الآية 58", "tr": "Kur’ân-ı Kerîm, Nisâ Sûresi 4:58" }
-      }
+      "moduleSessions": [
+        "1–3",
+        "4–7",
+        "8–9",
+        "10–12",
+        "13–14",
+        "15–16"
+      ],
+      "sections": 12
     },
     {
       "id": "leadership",
@@ -45,7 +44,11 @@
       "symbol": "helm",
       "status": "soon",
       "soon": "opening",
-      "title": { "en": "Leadership", "ar": "القيادة", "tr": "Liderlik" },
+      "title": {
+        "en": "Leadership",
+        "ar": "القيادة",
+        "tr": "Liderlik"
+      },
       "promise": {
         "en": "Leading people through calm water and storm, rooted in faith",
         "ar": "قيادة الناس في الماء الهادئ وفي العاصفة، بجذور راسخة في الإيمان",
@@ -58,7 +61,11 @@
       "symbol": "cog",
       "status": "soon",
       "soon": "building",
-      "title": { "en": "Engineering", "ar": "الهندسة", "tr": "Mühendislik" }
+      "title": {
+        "en": "Engineering",
+        "ar": "الهندسة",
+        "tr": "Mühendislik"
+      }
     },
     {
       "id": "it-digital",
@@ -86,14 +93,25 @@
         "tr": "Yedeklenmiş bir klasör yapısı, sorun kaydıyla birlikte bir varlık envanteri, süreklilik planıyla bir ağ şeması, küçük bir program ya da temizlenmiş bir veri seti, tek sayfalık bir proje tanımı ve imzalı bir kişisel gelişim planı."
       },
       "sessions": 16,
-      "moduleSessions": ["1–3", "4–6", "7–9", "10–12", "13–14", "15–16"]
+      "moduleSessions": [
+        "1–3",
+        "4–6",
+        "7–9",
+        "10–12",
+        "13–14",
+        "15–16"
+      ]
     },
     {
       "id": "education",
       "number": 5,
       "symbol": "book",
       "status": "active",
-      "title": { "en": "Education", "ar": "التعليم", "tr": "Eğitim" },
+      "title": {
+        "en": "Education",
+        "ar": "التعليم",
+        "tr": "Eğitim"
+      },
       "promise": {
         "en": "Teaching, curriculum, assessment, inclusion and school leadership for every learner",
         "ar": "التدريس والمناهج والتقييم والتعليم الشامل وقيادة المدرسة، لكل متعلّم",
@@ -110,7 +128,14 @@
         "tr": "Açıklamalı bir ders planı, bir müfredat haritası, bir haftalık çıkış kartları, bir öğrenci destek planı, ailelerle olumlu iletişim kaydı, kısa bir iyileştirme planı ve imzalı bir kişisel gelişim planı."
       },
       "sessions": 16,
-      "moduleSessions": ["1–3", "4–6", "7–9", "10–12", "13–14", "15–16"]
+      "moduleSessions": [
+        "1–3",
+        "4–6",
+        "7–9",
+        "10–12",
+        "13–14",
+        "15–16"
+      ]
     },
     {
       "id": "languages",
@@ -118,7 +143,11 @@
       "symbol": "speech",
       "status": "soon",
       "soon": "building",
-      "title": { "en": "Languages", "ar": "اللغات", "tr": "Diller" }
+      "title": {
+        "en": "Languages",
+        "ar": "اللغات",
+        "tr": "Diller"
+      }
     },
     {
       "id": "research",
@@ -126,7 +155,11 @@
       "symbol": "magnifier",
       "status": "soon",
       "soon": "building",
-      "title": { "en": "Research and Development", "ar": "البحث والتطوير", "tr": "Araştırma ve Geliştirme" }
+      "title": {
+        "en": "Research and Development",
+        "ar": "البحث والتطوير",
+        "tr": "Araştırma ve Geliştirme"
+      }
     }
   ]
 }

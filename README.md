@@ -3,7 +3,7 @@
 A static, multilingual (English / العربية / Türkçe) learning web app for the As Safinah Centre for Humanitarian Excellence.
 Plain HTML + CSS + JavaScript — no framework, no build step.
 
-**Current scope:** two directions are live — *IT and Digital Transformation* and *Education*. Each shows its own
+**Current scope:** three programmes are live — *01 Management* (flagship), *04 IT and Digital Transformation* and *05 Education*. Each shows its own
 Modules 1–4 (Sections 1–12) plus the shared Modules 5–6 (*Patterns of Renewal*, *Obligation and Purpose*), which are
 the same in every As Safinah handbook and are stored once in `data/shared/`. Each direction also has a searchable glossary.
 English is complete; Arabic and Turkish translations are being added as drafts (untranslated parts fall back to English).
@@ -53,6 +53,12 @@ tools/validate-content.mjs     checks translations mirror the English structure
   pdftotext -enc UTF-8 Handbook.pdf raw.txt
   node tools/extract-handbook.mjs layout.txt raw.txt <direction-id>
   ```
+
+  The converter reads the book's own Contents page, so modules may hold any number of sections. Figures and
+  tables that the PDF stores as drawings are re-typed once in `BOOK` inside the converter.
+  The Management handbook is the source the shared Modules 5-6 were written in, so it keeps its own copy:
+  `node tools/extract-handbook.mjs layout.txt raw.txt management --own-shared` (its Sections 11-12 reuse the
+  shared Arabic and Turkish translations, renumbered on the fly).
 
   Then set its `status` to `active` (and add a `desc`) in `data/directions.json`. If a module opener quotes a verse or
   hadith the converter does not know yet, it prints a warning: add the Arabic text to `ARABIC` in the converter.
