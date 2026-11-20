@@ -1960,6 +1960,686 @@
         ],
         "evidence": "yazılı bir görev notuyla gerçekten devredilmiş bir görev, bir zaman incelemesi, bir öz değerlendirme ve adı belirtilen bir ekip üyesi için yazılı bir gelişim planı."
       }
+    },
+    {
+      "id": "m3",
+      "number": 3,
+      "sections": [
+        {
+          "id": "s6",
+          "number": 6,
+          "title": "Sorun Çözme",
+          "ship": {
+            "title": "Su hattının altındaki sızıntı",
+            "body": [
+              "Denizde sorunlar iki türlüdür. Bir yanda herkesi korkutan ve genellikle atlatılabilen, gördüğünüz fırtına vardır; öbür yanda gemi suya iyice gömülene kadar kimseyi korkutmayan, su hattının altındaki yavaş sızıntı. Kurumsal başarısızlıkların çoğu fırtına değil sızıntıdır."
+            ],
+            "claim": "Bu bölümdeki yedi adımlı teşhis bir iskandildir: Güvertede durup havanın hangi kısmını suçlayacağınıza karar vermek yerine sizi bölme bölme dolaştırır.",
+            "question": "En son kötü giden şey — fırtına mıydı, sızıntı mı? Fırtına dediyseniz yeniden kontrol edin."
+          },
+          "introBlocks": [
+            {
+              "type": "p",
+              "text": "Her kurumda sorunlar kaçınılmazdır. Yöneticilerin ve liderlerin sorunlara nasıl karşılık verdiği kurumun başarısını, ekibin moralini ve uzun vadeli varlığını belirler. Sorun çözme tek bir beceri değil; analizi, yaratıcılığı, duygusal zekâyı ve hikmeti birleştiren bütünleşik bir yaklaşımdır. Bu bölüm sorun çözme yöntemini, kurumların başarısızlıklardan nasıl öğrendiğini, gelişimin ve değişim yönetiminin önemini ve yöneticilerin karşılaştığı yaygın idari zorlukları ele alır."
+            },
+            {
+              "type": "h3",
+              "text": "Sorun çözme çerçevesi ve yöntemi"
+            },
+            {
+              "type": "p",
+              "text": "Etkili sorun çözme yapılandırılmış bir yaklaşım izler; ancak süreç farklı sorun türlerine uyum sağlayacak kadar esnek kalmalıdır. Sorunlar rutin operasyonel meselelerden (bir ekipmanın arızalanması) karmaşık sistemik zorluklara (birden çok birimde düşen verimlilik) ve benzeri görülmemiş krizlere (ani pazar sarsıntısı, doğal afetler) kadar uzanır. Süreç biraz değişse de temel bir yöntem, etkili sorun çözmenin zeminini oluşturur."
+            },
+            {
+              "type": "h3",
+              "text": "Adım 1: Sorunu açıkça tanımlayın"
+            },
+            {
+              "type": "p",
+              "text": "Birçok kurum, sorunu gerçekten anlamadan çözümlere atlayarak bu kritik ilk adımda başarısız olur. Sorunu açıkça tanımlamak şu soruları sormayı gerektirir: Tam olarak ne oluyor? Ne zaman başladı? Ne kadar yaygın? Kimler etkileniyor? Etkisi ne? Neyi biliyoruz, neyi varsayıyoruz? Yöneticiler sezgiye ya da ilk izlenime dayanmak yerine veri ve kanıt toplamalıdır. Örneğin müşteri memnuniyeti puanları düşüyorsa sorun “kötü müşteri hizmeti” (belirsiz bir teşhis) değil, “son üç ayda müşteri sorularına yanıt süresi iki saatten sekiz saate çıktı ve bu, iki müşteri temsilcisinin ayrılmasıyla eş zamanlı” (açık, belirli bir sorun) şeklindedir. Sorunun açık tanımı, emeğin kök nedenler yerine belirtilere harcanmasını önler."
+            },
+            {
+              "type": "h3",
+              "text": "Adım 2: Kök nedenleri analiz edin"
+            },
+            {
+              "type": "p",
+              "text": "Sorun açıkça tanımlandıktan sonraki adım, neden var olduğunu belirlemektir. Bu, yüzeydeki belirtilerin ötesine geçmeyi gerektirir. “5 Neden” tekniği yararlıdır: Gerçek kök nedene ulaşana kadar tekrar tekrar “Neden?” diye sorun."
+            },
+            {
+              "type": "p",
+              "text": "Örneğin:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Belirti: 9. sınıfta öğrenci devamı bir dönem içinde yüzde 94’ten yüzde 81’e düştü",
+                "Neden 1: bir grup öğrenci her hafta aynı iki gün düzenli olarak devamsızlık yapıyor",
+                "Neden 2: o günlerde öğrencilerin takip etmekte en çok zorlandığı dersler var",
+                "Neden 3: öğrenciler geçen yıl bu derslerde geride kaldı ve hiç seviyeye getirilmedi",
+                "Neden 4: okulun, geride kalan bir öğrenciyi yıl sonu sınavına kadar fark etmenin hiçbir yolu yok",
+                "Neden 5: okulun ölçme sistemi notları kaydediyor ama düşen bir eğilime karşı harekete geçmekten kimse sorumlu değil"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Bu analiz, gerçek kök nedenin öğrencilerin evde kalmayı seçmesi değil, okulun geride kalan bir öğrenciyi fark edip harekete geçecek bir mekanizmasının olmaması olduğunu ortaya koyar. Kök nedeni (fark edilmeyen öğrenme açıklarını) ele almadan belirtiyi (devam için velileri aramak) ele almak, büyük olasılıkla aynı sorunun bir sonraki dönem başka bir grupla tekrarlanmasına yol açar."
+            },
+            {
+              "type": "h3",
+              "text": "Kök neden türlerini anlamak"
+            },
+            {
+              "type": "p",
+              "text": "Kök nedenler genellikle farklı çözümlere işaret eden birkaç türe ayrılır:"
+            },
+            {
+              "type": "table",
+              "caption": "Kök neden türleri",
+              "head": [
+                "Tür",
+                "Neye benzer",
+                "İşaret ettiği çözüm türü"
+              ],
+              "rows": [
+                [
+                  "İnsanlar ve beceriler",
+                  "Görev mevcut eğitimin, deneyimin ya da kapasitenin ötesinde",
+                  "Eğitim, koçluk, işe alım ya da işin yeniden dağıtılması"
+                ],
+                [
+                  "Süreç",
+                  "Adımların kendisi eksik, belirsiz ya da yanlış sırada",
+                  "Süreci yeniden tasarlamak ve belgelemek"
+                ],
+                [
+                  "Sistemler ve araçlar",
+                  "Ekipman, yazılım ya da kayıtlar işi desteklemiyor",
+                  "Onarmak, değiştirmek ya da bir sistem getirmek"
+                ],
+                [
+                  "Kaynaklar",
+                  "İstenen iş için yeterli zaman, para, insan ya da malzeme yok",
+                  "Yeniden önceliklendirmek, yeniden dağıtmak ya da kaynak sağlamak"
+                ],
+                [
+                  "Bilgi ve iletişim",
+                  "İnsanlar kendilerinden ne beklendiğini ya da neler olduğunu bilmiyor",
+                  "Kanalları, sorumluları ve geri bildirim döngülerini tanımlamak"
+                ],
+                [
+                  "Yapı ve yetki",
+                  "Kararın sahibi yok ya da kararı yanlış düzey tutuyor",
+                  "Rolleri, raporlama hatlarını ve devredilen yetkiyi netleştirmek"
+                ]
+              ]
+            },
+            {
+              "type": "h3",
+              "text": "Adım 3: Olası çözümleri belirleyin"
+            },
+            {
+              "type": "p",
+              "text": "Kök nedenler anlaşıldıktan sonraki adım olası çözümler üretmektir. Yaratıcılığın vazgeçilmez olduğu yer burasıdır. Birçok sorunun birden çok geçerli çözümü vardır ve en iyi çözüm çoğu zaman birkaç yaklaşımı düşünmekten doğar. Bu beyin fırtınası aşamasında yargıyı askıya alın ve değerlendirmeden önce geniş bir olasılıklar yelpazesi üretin. Farklı bakış açılarına sahip insanları dahil edin — soruna en yakın olanlar çoğu zaman üst yöneticilerin kaçırdığı değerli içgörülere sahiptir. Örneğin bir üretim sürecinde kalite düşüyorsa çözüm üretmeye kalite kontrolcülerini, makine operatörlerini, bakım personelini ve amirleri katın. Birlikte yetersiz bakımın, operatör eğitimindeki açıkların ve tedarikçi malzemelerindeki değişikliklerin hep birlikte katkıda bulunduğunu saptayabilirler. Olası çözümler şunları içerebilir: daha sık bakım takvimi, yeniden eğitim programı, tedarikçi değişikliği, makine ayarlarının değiştirilmesi ya da bunların bir bileşimi."
+            },
+            {
+              "type": "h3",
+              "text": "Çözüm değerlendirme ölçütleri"
+            },
+            {
+              "type": "p",
+              "text": "En iyi seçeneği belirlemek için çözümler birden çok ölçüte göre değerlendirilmelidir:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Etkililik: Kök nedeni gerçekten çözecek mi? Sorunu ne kadar kapsamlı ele alıyor?",
+                "Maliyet: Ne kadar mali yatırım gerekiyor? Bütçe dahilinde mi?",
+                "Süre: Ne kadar hızlı uygulanabilir? Süre kurumun aciliyetiyle örtüşüyor mu?",
+                "Risk: Ne ters gidebilir? İstenmeyen sonuçları var mı?",
+                "Uygulanabilirlik: Mevcut yetenekler ve kısıtlar göz önüne alındığında uygulamak pratik mi?",
+                "Sürdürülebilirlik: Kalıcı bir çözüm mü yaratacak, yoksa geçici mi?",
+                "Uyum: Kurumun stratejisi, değerleri ve kültürüyle uyumlu mu?",
+                "Destek: Kilit paydaşlar bu çözümü destekleyecek mi?"
+              ]
+            },
+            {
+              "type": "h3",
+              "text": "Adım 4: Çözümü geliştirin ve uygulayın"
+            },
+            {
+              "type": "p",
+              "text": "En iyi çözüm seçildikten sonra geliştirme ve uygulama planlaması kritik hâle gelir. Bu plan açık hedefleri ve başarı ölçütlerini, zaman çizelgesi ve ara hedefleri olan ayrıntılı bir eylem planını, sorumlulukların ve hesap verebilirliğin dağılımını, kaynak ihtiyaçlarını ve tahsisini, paydaşların anlamasını sağlayacak bir iletişim stratejisini, risk azaltma planlarını ve yedek yaklaşımları içermelidir. Birçok iyi çözüm, çözümün kendisi kusurlu olduğu için değil, kötü uygulandığı için başarısız olur. Çözümün uygulanmasından sorumlu bir kişi atayın. İlerlemeyi izlemek için kontrol noktaları belirleyin. Koşullar değişirse ya da ilk sonuçlar değişiklik gerektirirse uygulama planını ayarlamaya hazır olun."
+            },
+            {
+              "type": "h3",
+              "text": "Adım 5: İzleyin, değerlendirin ve öğrenin"
+            },
+            {
+              "type": "p",
+              "text": "Uygulamadan sonra sürekli izleme, çözümün sorunu gerçekten çözüp çözmediğini ya da ayarlama gerekip gerekmediğini belirler. Çözümün işe yaradığını gösterecek belirli ölçütler tanımlayın. Verileri düzenli toplayın. Gerçekleşen sonuçları beklenen sonuçlarla karşılaştırın. Amaçlanan sonuçlara ulaşıldı mı? Beklenmedik sonuçlar oldu mu? Sorun gerçekten çözüldü mü, yoksa kısmen mi ele alındı? Etkililiği değerlendirmek için resmî değerlendirme noktaları planlayın — belki uygulamadan 30, 90 ve 180 gün sonra. Bu aşama hem çözümleri doğrulamak hem de gelecekteki sorun çözme için dersler çıkarmak açısından kritiktir. Bu adımı atlayan kurumlar önemli öğrenme fırsatlarını kaçırır."
+            },
+            {
+              "type": "example",
+              "title": "sorun çözme süreci",
+              "text": "Bir eğitim merkezi derslerin neredeyse her gün geç başladığını fark eder. Akla ilk gelen varsayım eğitmenlerin dakik olmadığıdır. Buna göre hareket etmeden önce müdür bir hafta boyunca her oturumun başında ne olduğunu sadece izler. Üç neden ortaya çıkar; hiçbiri varsayılan neden değildir. Projektörlerin ve dağıtılacak materyallerin bulunduğu dolap kilitlidir ve anahtarı yalnızca bir çalışandadır. İki sınıf arada hiç boşluk olmadan art arda programlanmıştır; bu yüzden sonraki grup geldiğinde oda hâlâ doludur. Yoklama kapıda kâğıt üzerinde alınır ve dolu bir sınıfta altı yedi dakika sürer. Ardından üç küçük değişiklik gelir: ikinci bir anahtar yaptırılıp danışmada tutulur, bu iki odada oturumlar arasına on beş dakikalık bir boşluk konur ve yoklama kâğıdı kapıda değil ilk etkinlik sırasında dolaştırılır. Bir ay içinde dersler zamanında başlar. Müdür ilk varsayıma göre hareket etseydi suçu olmayan eğitmenleri azarlamış olacaktı ve dersler yine geç başlayacaktı."
+            }
+          ],
+          "intro": [
+            "Her kurumda sorunlar kaçınılmazdır. Yöneticilerin ve liderlerin sorunlara nasıl karşılık verdiği kurumun başarısını, ekibin moralini ve uzun vadeli varlığını belirler. Sorun çözme tek bir beceri değil; analizi, yaratıcılığı, duygusal zekâyı ve hikmeti birleştiren bütünleşik bir yaklaşımdır. Bu bölüm sorun çözme yöntemini, kurumların başarısızlıklardan nasıl öğrendiğini, gelişimin ve değişim yönetiminin önemini ve yöneticilerin karşılaştığı yaygın idari zorlukları ele alır.",
+            "Etkili sorun çözme yapılandırılmış bir yaklaşım izler; ancak süreç farklı sorun türlerine uyum sağlayacak kadar esnek kalmalıdır. Sorunlar rutin operasyonel meselelerden (bir ekipmanın arızalanması) karmaşık sistemik zorluklara (birden çok birimde düşen verimlilik) ve benzeri görülmemiş krizlere (ani pazar sarsıntısı, doğal afetler) kadar uzanır. Süreç biraz değişse de temel bir yöntem, etkili sorun çözmenin zeminini oluşturur.",
+            "Birçok kurum, sorunu gerçekten anlamadan çözümlere atlayarak bu kritik ilk adımda başarısız olur. Sorunu açıkça tanımlamak şu soruları sormayı gerektirir: Tam olarak ne oluyor? Ne zaman başladı? Ne kadar yaygın? Kimler etkileniyor? Etkisi ne? Neyi biliyoruz, neyi varsayıyoruz? Yöneticiler sezgiye ya da ilk izlenime dayanmak yerine veri ve kanıt toplamalıdır. Örneğin müşteri memnuniyeti puanları düşüyorsa sorun “kötü müşteri hizmeti” (belirsiz bir teşhis) değil, “son üç ayda müşteri sorularına yanıt süresi iki saatten sekiz saate çıktı ve bu, iki müşteri temsilcisinin ayrılmasıyla eş zamanlı” (açık, belirli bir sorun) şeklindedir. Sorunun açık tanımı, emeğin kök nedenler yerine belirtilere harcanmasını önler.",
+            "Sorun açıkça tanımlandıktan sonraki adım, neden var olduğunu belirlemektir. Bu, yüzeydeki belirtilerin ötesine geçmeyi gerektirir. “5 Neden” tekniği yararlıdır: Gerçek kök nedene ulaşana kadar tekrar tekrar “Neden?” diye sorun.",
+            "Örneğin:",
+            "Bu analiz, gerçek kök nedenin öğrencilerin evde kalmayı seçmesi değil, okulun geride kalan bir öğrenciyi fark edip harekete geçecek bir mekanizmasının olmaması olduğunu ortaya koyar. Kök nedeni (fark edilmeyen öğrenme açıklarını) ele almadan belirtiyi (devam için velileri aramak) ele almak, büyük olasılıkla aynı sorunun bir sonraki dönem başka bir grupla tekrarlanmasına yol açar.",
+            "Kök nedenler genellikle farklı çözümlere işaret eden birkaç türe ayrılır:",
+            "Kök nedenler anlaşıldıktan sonraki adım olası çözümler üretmektir. Yaratıcılığın vazgeçilmez olduğu yer burasıdır. Birçok sorunun birden çok geçerli çözümü vardır ve en iyi çözüm çoğu zaman birkaç yaklaşımı düşünmekten doğar. Bu beyin fırtınası aşamasında yargıyı askıya alın ve değerlendirmeden önce geniş bir olasılıklar yelpazesi üretin. Farklı bakış açılarına sahip insanları dahil edin — soruna en yakın olanlar çoğu zaman üst yöneticilerin kaçırdığı değerli içgörülere sahiptir. Örneğin bir üretim sürecinde kalite düşüyorsa çözüm üretmeye kalite kontrolcülerini, makine operatörlerini, bakım personelini ve amirleri katın. Birlikte yetersiz bakımın, operatör eğitimindeki açıkların ve tedarikçi malzemelerindeki değişikliklerin hep birlikte katkıda bulunduğunu saptayabilirler. Olası çözümler şunları içerebilir: daha sık bakım takvimi, yeniden eğitim programı, tedarikçi değişikliği, makine ayarlarının değiştirilmesi ya da bunların bir bileşimi.",
+            "En iyi seçeneği belirlemek için çözümler birden çok ölçüte göre değerlendirilmelidir:",
+            "En iyi çözüm seçildikten sonra geliştirme ve uygulama planlaması kritik hâle gelir. Bu plan açık hedefleri ve başarı ölçütlerini, zaman çizelgesi ve ara hedefleri olan ayrıntılı bir eylem planını, sorumlulukların ve hesap verebilirliğin dağılımını, kaynak ihtiyaçlarını ve tahsisini, paydaşların anlamasını sağlayacak bir iletişim stratejisini, risk azaltma planlarını ve yedek yaklaşımları içermelidir. Birçok iyi çözüm, çözümün kendisi kusurlu olduğu için değil, kötü uygulandığı için başarısız olur. Çözümün uygulanmasından sorumlu bir kişi atayın. İlerlemeyi izlemek için kontrol noktaları belirleyin. Koşullar değişirse ya da ilk sonuçlar değişiklik gerektirirse uygulama planını ayarlamaya hazır olun.",
+            "Uygulamadan sonra sürekli izleme, çözümün sorunu gerçekten çözüp çözmediğini ya da ayarlama gerekip gerekmediğini belirler. Çözümün işe yaradığını gösterecek belirli ölçütler tanımlayın. Verileri düzenli toplayın. Gerçekleşen sonuçları beklenen sonuçlarla karşılaştırın. Amaçlanan sonuçlara ulaşıldı mı? Beklenmedik sonuçlar oldu mu? Sorun gerçekten çözüldü mü, yoksa kısmen mi ele alındı? Etkililiği değerlendirmek için resmî değerlendirme noktaları planlayın — belki uygulamadan 30, 90 ve 180 gün sonra. Bu aşama hem çözümleri doğrulamak hem de gelecekteki sorun çözme için dersler çıkarmak açısından kritiktir. Bu adımı atlayan kurumlar önemli öğrenme fırsatlarını kaçırır."
+          ],
+          "subsections": [
+            {
+              "id": "6.1",
+              "title": "Başarısızlıklardan Öğrenmek",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Sorun çözmede öne çıkan kurumlar başarısızlıkları saklanacak ya da cezalandırılacak olaylar olarak değil, öğrenme fırsatları olarak görür. Ne yazık ki birçok kurum başarısızlıkların bildirilmesini bastırır; bu da sorunların çok geç fark edilmesi, derslerin çıkarılmaması ve aynı hataların tekrarlanması demektir. Başarısızlıkların öğrenme fırsatına dönüştüğü bir kültür kurmak, kurumun büyümesi için vazgeçilmezdir."
+                },
+                {
+                  "type": "p",
+                  "text": "Başarısızlıktan öğrenmek neden önemlidir:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Hataların kurum genelinde tekrarlanmasını önler",
+                    "Ortak deneyimden öğrenerek gelişmeyi hızlandırır",
+                    "Dayanıklılık kazandırır — küçük başarısız olan, öğrenen ve uyum sağlayan kurumlar her riskten kaçınanlardan daha iyi ayakta kalır",
+                    "Yenilikçi düşünceyi çeker — başarısızlık cezalandırılmazsa insanlar yaratıcı fikirler önermeye daha istekli olur",
+                    "Savunmacı davranışı azaltır — insanlar suçlanmaktan korktuklarında sorunları ortak çözüm için ortaya koymak yerine saklar",
+                    "Psikolojik güven yaratır — ekip üyeleri makul riskler alır ve sorunları dile getirir"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Öğrenmenin bedelinin bizzat ödenmesi gerekmez. Başka bir kurumdaki ramak kala bir olay ya da başarısızlık — basında çıkan, bir sektör ağında tartışılan ya da bir meslektaş yöneticinin gayriresmî olarak paylaştığı — aynı dersi hiç bedel ödemeden taşır. “Orada ne oldu ve burada da olabilir mi?” diye sormayı alışkanlık edinen yöneticiler, kendi kurumlarının henüz yaşamadığı riskleri yakalar."
+                },
+                {
+                  "type": "h3",
+                  "text": "Suçlamasız bir sorun analizi kültürü oluşturmak"
+                },
+                {
+                  "type": "p",
+                  "text": "Bir sorun ya da başarısızlık olduğunda birçok kurumun ilk refleksi suçlanacak kişiyi bulup cezalandırmaktır. Bu yaklaşımın felaket sonuçları vardır: İnsanlar sorunları saklar, hatalar birikir ve kurum asla öğrenmez. Bunun yerine kurumlar önemli sorunlar yaşandığında “suçlamasız olay sonrası değerlendirme” süreçleri uygulamalıdır. Bu, bireysel suçlamaya odaklanmadan neyin ve neden olduğunu analiz etmek demektir. Sorulan sorular şunlardır: Bu sonuca hangi koşullar yol açtı? Hangi sistemler, süreçler ya da kararlar katkıda bulundu? Ne öğrenebiliriz? Benzer durumları nasıl önleriz? Kimi desteklememiz gerekiyor? Bu yaklaşım, sorunların çoğunun bireysel ihmalden değil sistemik meselelerden ya da kötü süreçlerden kaynaklandığını kabul eder. Ayrıca insanların sorunları saklamak yerine erken bildirmesi için güvenli bir ortam yaratır."
+                },
+                {
+                  "type": "p",
+                  "text": "Olay sonrası değerlendirme süreci:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Zamanlama: Analizi olaydan kısa süre sonra, ayrıntılar tazeyken yapın",
+                    "Katılım: Durumda yer alan kişileri ve ilgili uzmanlığa sahip olanları dahil edin",
+                    "Psikolojik güven: Amacın suçlamak değil öğrenmek olduğunu açıkça söyleyin",
+                    "Kronolojik inceleme: Olanları kanıta dayanarak adım adım gözden geçirin",
+                    "Katkıda bulunan etkenler: Katkıda bulunan tüm etkenleri belirleyin — teknolojik, insani, sistemik, çevresel",
+                    "Kök nedenler: Yüzeydeki nedenlerde durmadan bu etkenlerin neden var olduğunu analiz edin",
+                    "Öğrenme noktaları: Belirli dersler çıkarın — bundan ne öğrenebiliriz?",
+                    "Eylem maddeleri: Tekrarı önleyecek belirli değişiklikleri belirleyin — neyi farklı yapacağız?",
+                    "Belgeleme: Kurumun başvurabilmesi ve tekrardan kaçınabilmesi için bulguları kaydedin",
+                    "Takip: Üzerinde anlaşılan değişikliklerin gerçekten uygulandığını izleyin"
+                  ]
+                },
+                {
+                  "type": "h3",
+                  "text": "Kurumsal öğrenme uygulamaları"
+                },
+                {
+                  "type": "p",
+                  "text": "Tek tek olay sonrası değerlendirmelerin ötesinde kurumlar öğrenmeyi şu yollarla sistemleştirebilir:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Düzenli geriye dönük değerlendirmeler — neyin işe yarayıp neyin yaramadığı üzerine aylık ya da üç aylık düşünme",
+                    "Çıkarılan derslerin belgelenmesi — geçmiş sorunların, çözümlerin ve sonuçların aranabilir bir veri tabanı",
+                    "İşlevler arası öğrenme oturumları — ekiplerin öğrendiklerini başka birimlerle paylaşması",
+                    "Vaka çalışmaları — önemli zorlukların, nasıl ele alındıklarının ve sonuçlarının belgelenmesi",
+                    "Uzman görüşmeleri — deneyimli yöneticilerin ve çalışanların birikimini kayda geçirmek",
+                    "Eğilim analizi — sistemik meseleleri ele almak için birden çok sorundaki örüntüleri belirlemek",
+                    "Mentorluk — deneyimli çalışanların derslerini daha yeni ya da daha az deneyimli ekip üyeleriyle paylaşması"
+                  ]
+                },
+                {
+                  "type": "example",
+                  "title": "başarısızlıktan öğrenmek",
+                  "text": "Bir merkez kışlık malzeme dağıtımı yapar ve dağıtım kötü geçer. Aileler dört saat kuyrukta bekler, bazıları gelmeleri söylendikten sonra geri çevrilir ve listedeki iki hane hiçbir şey alamaz. Kolay tepki, kuyruğu yöneten gönüllüyü suçlamaktır. Bunun yerine müdür ertesi sabah ilgili herkesle oturur ve ne olduğunu sorar; daha baştan, cezalandıracak bir kişi değil düzenlemelerdeki kusuru aradığını açıkça belirtir. Dört şey ortaya çıkar. Liste üç hafta önce hazırlanmış ve hiç güncellenmemiştir; bazı aileler çoktan taşınmıştır. Gelenleri listeyle karşılaştırma işi kimseye verilmemiştir; bu yüzden boşta kim varsa o yapmıştır. Malzemeler bir saat geç gelmiştir; çünkü kimse teslimatı önceki akşam teyit etmemiştir. Kuyruğun oluştuğunu gören iki gönüllü de bir şey söylememiştir; çünkü üst düzeyden birinin zaten bildiğini varsaymışlardır. Bunların her biri karakter kusuru değil, düzenlemelerdeki bir boşluktur. Ardından dört değişiklik gelir: Listeler dağıtım haftasında doğrulanır, kayıt masasından adı belirli tek bir kişi sorumludur, teslimatlar önceki akşam teyit edilir ve bir sorunun oluştuğunu gören her gönüllünün bunu doğrudan sorumluya söylemesi beklenir. Bir sonraki dağıtım yarı sürede tamamlanır. Olay sonrası değerlendirme ile suçlanacak birini aramak arasındaki fark budur: Birincisi dört değişiklik üretir; ikincisi bir istifa ve gelecek kış aynı başarısızlığı."
+                }
+              ]
+            },
+            {
+              "id": "6.2",
+              "title": "Gelişim",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Kurumlar etkili kalmak için sürekli evrilmelidir. Pazarlar değişir, mevzuat değişir, teknolojiler ortaya çıkar, ekiplerin bileşimi değişir ve kurumun ölçeği büyür. Sorun çözme bazen taktiktir — bugünün belirli sorununu çözmek. Ama kurumların stratejik gelişime de ihtiyacı vardır: kurumun kapasitesini ve performansını geliştiren planlı değişim. Değişimin ne zaman gerektiğini ve nasıl etkili biçimde uygulanacağını anlamak kritik bir liderlik yetkinliğidir."
+                },
+                {
+                  "type": "h3",
+                  "text": "Kurumsal değişim türleri"
+                },
+                {
+                  "type": "h3",
+                  "text": "Aşamalı değişim"
+                },
+                {
+                  "type": "p",
+                  "text": "Aşamalı değişim, mevcut sistem ve yapılar içinde süregiden iyileştirmedir. Bir süreci biraz iyileştirmek, ekipmanı yenilemek, başarılı bir programı genişletmek ya da ekibe üye eklemek bunun örnekleridir. Aşamalı değişim genellikle daha az sarsıcıdır, daha az yatırım gerektirir ve çoğu zaman hızla uygulanabilir."
+                },
+                {
+                  "type": "p",
+                  "text": "Ancak kurumlar temel kaymalarla karşılaştığında tek başına aşamalı değişim yetmez. Bir daktilo işletmesindeki aşamalı iyileştirmeler onu dijital devrime hazırlamazdı."
+                },
+                {
+                  "type": "h3",
+                  "text": "Dönüştürücü değişim"
+                },
+                {
+                  "type": "p",
+                  "text": "Dönüştürücü değişim kurumun işleyişini kökten değiştirir — işletme modellerini değiştirmek, faaliyetleri yeniden yapılandırmak, yeni pazarlara girmek ya da tamamen yeni yaklaşımlar benimsemek. Yüz yüze çalışmadan uzaktan çalışmaya geçmek, merkezî bir yapıdan dağıtık bir yapıya geçmek, yeni teknoloji platformları benimsemek ya da kurumun misyonunu yeniden tanımlamak bunun örnekleridir. Dönüştürücü değişim daha sarsıcıdır, önemli yatırım ve çaba gerektirir ve daha yüksek risk taşır. Ama bazen kurumun varlığını sürdürmesi ve önemini koruması için gereklidir. Gerekli dönüştürücü değişime direnen kurumlar sonunda demode olur."
+                },
+                {
+                  "type": "h3",
+                  "text": "Gelişim ya da değişim ne zaman gerekir"
+                },
+                {
+                  "type": "p",
+                  "text": "Yöneticiler ve liderler gelişim ve değişim gerektiğini gösteren işaretleri tanımalıdır:"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "Pazar ya da sektör kaymaları: Müşteri ihtiyaçları değişir, yeni rakipler çıkar, teknoloji sarsar, mevzuat ortamı değişir. Kurumlar uyum sağlamalı ya da önemini yitirmeyi göze almalıdır.",
+                    "İç performans sorunları: Sorun çözme çabalarına rağmen temel performans açıkları sürer. Bu, küçük ayarlamaların yetmediğini ve daha derin bir değişim gerektiğini gösterebilir.",
+                    "Kapasite kısıtları: Mevcut sistemler ya da yapılar kurumun büyümesini ya da yeni hedeflerini destekleyemez.",
+                    "Ölçek büyütmek gelişim gerektirir.",
+                    "Yetenek ve kültür sorunları: Yüksek çalışan devri, bağlılık eksikliği ya da kültür uyumsuzluğu; örgüt yapılarının, liderlik yaklaşımlarının ya da çalışma sistemlerinin yeniden tasarlanması gerektiğine işaret edebilir.",
+                    "Mali baskı: Düşen gelir ya da sürdürülebilirlik sorunları stratejik yeniden değerlendirme ve kurumsal gelişim gerektirir.",
+                    "Stratejik fırsatlar: Kurumun genişlemesini, yeni yetenekleri ya da yapısal uyumu gerektiren yeni fırsatlar doğar.",
+                    "Ekip geri bildirimi ve girdisi: Çalışanlar, yararlanıcılar ya da paydaşlar mevcut yaklaşımların yetersiz ya da eskimiş olduğunu dile getirir."
+                  ]
+                },
+                {
+                  "type": "h3",
+                  "text": "Değişim yönetimi süreci"
+                },
+                {
+                  "type": "p",
+                  "text": "Kurumsal değişimi başarıyla uygulamak yapılandırılmış bir yaklaşım gerektirir. Birçok değişim girişimi, değişimin yönü yanlış olduğu için değil, değişim süreci kötü yönetildiği için başarısız olur."
+                },
+                {
+                  "type": "h3",
+                  "text": "1. Aşama: Değişimin gerekçesini oluşturun"
+                },
+                {
+                  "type": "p",
+                  "text": "Değişimi uygulamadan önce liderler değişimin neden gerektiğine dair anlayış oluşturmalıdır. Bu; (1) mevcut durumu analiz etmeyi — neyin işe yarayıp neyin yaramadığını, (2) gelecekteki durumu tasavvur etmeyi — değişimden sonra neyin daha iyi olacağını, (3) açığı belirlemeyi — mevcuttan geleceğe geçmek için neyin değişmesi gerektiğini ve (4) aciliyeti ifade etmeyi — bu değişimin neden sonra değil şimdi gerektiğini içerir. Bu gerekçe, ekip üyelerinin değişimin arkasındaki “neden”i anlaması için açıkça ve tekrar tekrar iletilmelidir. Nedeni anlamayan insanlar değişime gereksiz bir sarsıntı olarak direnir."
+                },
+                {
+                  "type": "h3",
+                  "text": "2. Aşama: Paydaşları sürece katın"
+                },
+                {
+                  "type": "p",
+                  "text": "Değişimden etkilenenler onu şekillendirmeye katıldığında değişimin başarı şansı artar. Bu; (1) etkilenecek kilit paydaşları belirlemek, (2) onları sorunun teşhisine ve çözümün tasarımına katmak, (3) uygulama yaklaşımları hakkında görüşlerini almak ve (4) kaygılarını ve korkularını açıkça ele almak demektir. Katılım hem daha iyi çözümler (paydaşların değerli bilgisi vardır) hem de daha yüksek destek (insanlar şekillendirmesine yardım ettikleri değişiklikleri destekler) yaratır. Değişimi paydaş katılımı olmadan yukarıdan dayatan kurumlar direnç, kırgınlık ve daha düşük başarı oranlarıyla karşılaşır."
+                },
+                {
+                  "type": "h3",
+                  "text": "3. Aşama: Açık ve tekrar tekrar iletişim kurun"
+                },
+                {
+                  "type": "p",
+                  "text": "Değişim boyunca iletişim kritiktir. Mesajlar neyin ve neden değiştiğini, farklı grupları nasıl etkilediğini, zaman çizelgesini ve ara hedefleri, hangi desteğin mevcut olduğunu ve başarının neye benzediğini içermelidir. İletişim birden çok kanaldan tekrar tekrar yapılmalıdır — genel toplantılar, yazılı güncellemeler, ekip toplantıları, bire bir görüşmeler. İnsanların mesajı içselleştirmeden önce birçok kez duyması gerekeceğini bekleyin. Sorular ve kaygılar için de kanallar oluşturun; iki yönlü iletişim vazgeçilmezdir. Yanlış bilgileri ve söylentileri hızla ele alın."
+                },
+                {
+                  "type": "h3",
+                  "text": "4. Aşama: Destek sağlayın ve engelleri kaldırın"
+                },
+                {
+                  "type": "p",
+                  "text": "Değişim çoğu zaman insanların yeni beceriler öğrenmesini, yeni süreçlere ya da yapılara uyum sağlamasını gerektirir. Şunları sağlayın: (1) eğitim ve koçluk, (2) değişim için gereken kaynak ve araçlar, (3) öğrenmek ve uyum sağlamak için zaman, (4) mentorluk ve destek, (5) değişimin uygulanmasını engelleyen engellerin kaldırılması. İnsanların nasıl uyum sağladığını izleyin ve gereken yerde ek destek verin. Değişim bazı insanlar için diğerlerinden daha zordur — kişiye özel destek bu gerçeği kabul eder."
+                },
+                {
+                  "type": "h3",
+                  "text": "5. Aşama: İzleyin ve rotayı düzeltin"
+                },
+                {
+                  "type": "p",
+                  "text": "Uygulamadan sonra değişimin amaçlanan sonuçları sağlayıp sağlamadığını izleyin. Temel ölçütlere ilişkin veri toplayın. Neyin işe yarayıp neyin yaramadığına dair geri bildirim toplayın. Değişim beklendiği gibi işlemezse ya da istenmeyen sonuçlar doğarsa onu ayarlamaya hazır olun. Değişim tek seferlik bir olay değil, süregiden bir uygulama, öğrenme ve ayarlama sürecidir. İlk uygulamadan sonra katılaşan kurumlar gelişme fırsatlarını kaçırır."
+                },
+                {
+                  "type": "p",
+                  "text": "Uygulamalı örnek — kurumsal gelişim: Bir kurum tek bir merkezle başlar ve il genelinde dört merkeze büyür. Tek merkez için işleyen yapı dört merkez için artık işlemez. Her karar — bir onarım, yeni bir sınıf, yerine gelecek bir eğitmen — hâlâ merkez ofise gider ve orada bekler; merkez sorumluları da kendilerini yönetici değil bekçi olarak tanımlamaya başlamıştır. Yönetim bunun bir disiplin sorunu değil yapısal bir sorun olduğunu görür ve çözüm yetkiyi işe yaklaştırmaktır. Yeni bir yapı ilan etmek yerine altı şey yaparlar: Her merkeze şu anda hangi kararları beklediğini ve beklemenin ne kadar sürdüğünü sorarlar. Yeni düzenlemenin tasarımına sorumluları katarlar. Tek bir geçiş tarihi yerine altı aylık bir geçiş dönemi belirlerler. Sorumluları artık karar verecekleri alanlarda — küçük bütçeler, ders programı, yerel işe alım — eğitirler ve sınırları yazılı olarak belirtirler. Merkezlerin birbirinden uzaklaşmaması için dört sorumlunun katıldığı aylık bir toplantı kurarlar. Ve üç şeyi izlerler: Bir kararın artık ne kadar sürdüğünü, sorumluların kendilerine verilen yetkiyi kullanıp kullanmadığını ve standartların korunup korunmadığını. Altı ay sonra kararlar daha hızlıdır, sorumlular aktarmak yerine yönetmektedir ve merkez ofis yalnızca kendisinin yapabileceği işi yapmaktadır."
+                }
+              ]
+            },
+            {
+              "id": "6.3",
+              "title": "Yaygın İdari Sorunlar",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "İdari açıdan ters giden şeylerin çoğunu altı sorun açıklar. Aşağıda her birinin aldığı biçim, genellikle altında yatan neden ve yapılacak ilk düzeltmeyle birlikte verilmiştir. Örüntü tutarlıdır: Görünen belirti nadiren kusurun kendisidir."
+                },
+                {
+                  "type": "table",
+                  "caption": "Altı yaygın idari sorun",
+                  "head": [
+                    "Sorun",
+                    "Nasıl kendini gösterir",
+                    "Genellikle nedeni nedir",
+                    "İlk düzeltme"
+                  ],
+                  "rows": [
+                    [
+                      "Zayıf iletişim",
+                      "Kararlar etkilenen kişilere ulaşmaz; boşluğu söylenti doldurur",
+                      "Tanımlı bir kanal yok ya da çok fazla kanal var; tek bir duyuru yeterli sayılır",
+                      "Her mesaj türü için kanalı ve onun sahibi olan kişiyi belirleyin"
+                    ],
+                    [
+                      "Belirsiz roller",
+                      "İş tekrarlanır; kritik görevler insanlar arasında kaybolur",
+                      "Görev tanımları yok, belirsiz ya da büyümenin gerisinde kalmış",
+                      "Her işlevi adı belirli bir sorumluya bağlayın; yazıya geçirip dağıtın"
+                    ],
+                    [
+                      "Verimsiz süreçler",
+                      "İş olması gerekenden uzun sürer; herkes farklı yapar",
+                      "Süreçler gayriresmî olarak büyümüş, hiç tasarlanmamış ya da kaydedilmemiş",
+                      "Gerçekte olanı haritalayın, gereksiz onayları kaldırın, belgeleyin"
+                    ],
+                    [
+                      "Zayıf hesap verebilirlik",
+                      "Standartlar karşılanmaz ve ardından hiçbir şey olmaz; yükü istekliler taşır",
+                      "Ölçülebilir beklenti yok, düzenli geri bildirim yok, zor konuşmalardan kaçınılıyor",
+                      "Her rol için ölçülebilir hedefler koyun ve geri bildirimi yılda bir değil ayda bir verin"
+                    ],
+                    [
+                      "Aşırı yük",
+                      "Sürekli fazla mesai, düşen kalite, artan çalışan devri",
+                      "Hiçbir şey çıkarılmadan iş eklenmesi; zayıf önceliklendirme",
+                      "Kadro sayısından önce iş yükünü gözden geçirin; düşük öncelikli işi durdurun ya da erteleyin"
+                    ],
+                    [
+                      "Değişime direnç",
+                      "Yeni sistemler adı geçecek kadar benimsenir; eski uygulama sürer",
+                      "Neden hiç açıklanmamış, etkilenenlere hiç danışılmamış",
+                      "“Ne”den önce “neden”i açıklayın, etkilenenleri dahil edin, yaygınlaştırmadan önce deneyin"
+                    ]
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Bunların hepsi aynı biçime sahiptir. Bir şey hiç açık hâle getirilmemiştir — bir kanal, bir rol, bir süreç, bir standart, bir sınır, bir neden — ve insanlar boşluğu varsayımla doldurmuştur. Her durumda düzeltme, örtük olanı açık hâle getirmek ve sonra ona bağlı kalmaktır."
+                },
+                {
+                  "type": "example",
+                  "title": "aynı anda birkaç sorun",
+                  "text": "Bir hayır kurumu yüksek çalışan devri, tutarsız hizmet kalitesi ve tekrar tekrar kaçırılan son tarihlerle karşı karşıyadır. Bunlar üç sorun gibi görünür. İnceleme tek bir sorun gösterir: Kurum iki katına büyüdükten sonra kimin neden sorumlu olduğunu kimse yazıya geçirmemiştir. Çalışanlar beklentiler konusunda net değildir, bu yüzden kalite değişkenlik gösterir; iş roller arasında kaybolur, bu yüzden son tarihler kayar; insanlar desteksiz hisseder, bu yüzden ayrılır. Çare bir rol haritalama çalışması, yazılı görev tanımları ve her çalışan için aylık bire bir görüşme olur. Çalışan devri iki çeyrek içinde düşer. Üç belirtiyi ayrı ayrı ele almak hiçbirini çözmezdi."
+                }
+              ]
+            },
+            {
+              "id": "6.4",
+              "title": "Sonuçlar Tatmin Edici Olmadığında: Yedi Adımlı Teşhis",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Yukarıdaki sorun çözme yöntemi belirli bir sorundan başlar. Bazen belirli bir sorun yoktur — sonuçlar sadece olması gerektiği gibi değildir ve nedeni açık değildir. Bu durumda kurumun kendisinin sıralı bir incelemesi, tek bir başarısızlığı analiz etmekten daha yararlıdır."
+                },
+                {
+                  "type": "p",
+                  "text": "Bu yedi adımı sırayla uygulayın; çünkü önceki bir adımdaki kusur altındaki her şeyi etkisiz kılar. İnsanları yanlış hedefe hizmet eden bir prosedürü izlemek üzere eğitmek, daha iyi uygulanmış israftan başka bir şey üretmez."
+                },
+                {
+                  "type": "ol",
+                  "items": [
+                    "İstenen sonucu netleştirin. Gerçekte neyi başarmaya çalışıyoruz ve bu paylaşılıyor mu?"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Buradaki anlaşmazlık, zayıf performansı başka herhangi bir tek nedenden daha fazla açıklar ve biri sorana kadar nadiren görünür."
+                },
+                {
+                  "type": "ol",
+                  "start": 2,
+                  "items": [
+                    "Temel faaliyetleri belirleyin. Hangi faaliyetler bu sonuca gerçekten katkıda bulunuyor? Çoğu kurum bir zamanlar bir amacı olan ama artık olmayan işleri biriktirir. Etrafında örgütlenmeden önce neyin temel olduğunu belirleyin.",
+                    "Yapıyı tasarlayın. İşin gruplanma ve raporlanma biçimi önemli faaliyetlere uyuyor mu? Kurumun eskiden yaptığı iş için kurulmuş bir yapı, şimdi yaptığı işi engeller.",
+                    "Yönetimi geliştirin. Bu işe öncülük edenler ona öncülük edecek donanıma sahip mi? Hiç geliştirilmemiş yöneticilerin yürüttüğü yetkin bir yapı süresiz olarak beklenenin altında performans gösterir.",
+                    "Gözetimi devredin. Yetki, sorumlulukla birlikte aşağıya aktarıldı mı? Etkileyemedikleri sonuçlardan sorumlu tutulan insanlar işten kopar.",
+                    "İnsanları eğitin. İşi yapanlar onu nasıl yapacağını biliyor mu? Ancak bu noktada bireysel yetenek sınırlayıcı etken hâline gelir.",
+                    "Prosedürleri sadeleştirin. Engel yöntemlerin kendisi mi? Sadeleştirme gerçekten değerlidir — ama ilk değil son adımdır."
+                  ]
+                },
+                {
+                  "type": "p",
+                  "text": "Sıra neden önemlidir. Çoğu yönetici yedinci adımdan başlar; çünkü prosedürler değiştirilmesi en kolay şeydir ve onları değiştirmek üretken hissettirir. Zayıf performansın çoğu ise değişimin daha yavaş, daha siyasi ve daha rahatsız edici olduğu birinci ila üçüncü adımlarda doğar. Üç yılda prosedürlerini dört kez sadeleştiren bir ekip, genellikle asıl sorunun bu listenin tepesine yakın bir yerde olduğunu söylüyordur."
+                },
+                {
+                  "type": "p",
+                  "text": "Bunların hiçbiri tek başına gelişme üretmez. Değişim olmadan gelişme olmaz ve bu adımların her biri birinin karar vermesi gereken bir değişikliği belirler."
+                }
+              ]
+            },
+            {
+              "id": "6.5",
+              "title": "Kurumsal Bir Yetenek Olarak Sorun Çözme",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Sorun çözmede, başarısızlıklardan öğrenmede, gerekli değişimi uygulamada ve yaygın idari zorlukları ele almada öne çıkan kurumlar, kalıcı başarıyı mümkün kılan kurumsal yetenekler geliştirir. Sorun çözme çerçevelerine hâkim olan, sorunların dürüstçe belirlenmesi için psikolojik güven yaratan, çözümlere atlamak yerine kök nedenlere merakla yaklaşan ve sorunların hem teşhisine hem çözümüne başkalarını katan yöneticiler yüksek performanslı kurumlar inşa eder. Sorun çözme tekil bir olay değil, süregiden bir kurumsal yetenektir. Sorunları saklanacak başarısızlıklar olarak değil öğrenme ve gelişme fırsatları olarak gören kurumlar performanslarını ve uyum yeteneklerini sürekli güçlendirir. Hızla değişen bir dünyada sorunları etkili biçimde çözebilmek belki de en değerli kurumsal yetenektir."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Sorun çözme uygulamasına ilişkin on test",
+            "tests": [
+              "Bir sorun ortaya çıktığında, çözüm önermeden önce onu somut ifadelerle tanımlıyor muyum?",
+              "Belirtiyi nedenden yazılı olarak ayırıyor muyum?",
+              "Son bir ayda gerçek bir soruna “5 Neden”i uyguladım mı?",
+              "Çözüm üretmeye işe en yakın kişileri katıyor muyum?",
+              "Seçmeden önce birden fazla seçeneği değerlendiriyor muyum?",
+              "Uyguladığım her çözümün adı belirli bir sorumlusu ve bir gözden geçirme tarihi var mı?",
+              "Değerlendirme noktaları planlıyor muyum, yoksa düzeltmenin işe yaradığını mı varsayıyorum?",
+              "Ekibimden biri bana son zamanlarda bir başarısızlık bildirdi mi? Bildirmediyse neden?",
+              "Dersleri başka bir ekibin gerçekten bulabileceği bir yerde belgeliyor muyuz?",
+              "Değişim gerektiğinde kararı duyurmadan önce gerekçeyi oluşturuyor muyum?"
+            ],
+            "questions": [
+              "Birden fazla kez çözdüğümüz bir sorunun adını verin. Neden geri geldi?",
+              "Burada bir başarısızlığı bildirmek güvenli mi? İki yönde de kanıt nedir?",
+              "Altı yaygın idari sorundan hangisi şu anda kurumumuzda en canlı?",
+              "En son önemli bir şeyi değiştirdiğimizde beş değişim aşamasından hangisini atladık?",
+              "Kurumumuzda kim, yarın ayrılsa kaybedeceğimiz bir bilgiyi taşıyor?"
+            ],
+            "exercise": "Alanınızda tekrarlayan bir sorun seçin ve onu kâğıt üzerinde “5 Neden”den geçirin. Ulaştığınız kök nedeni düzeltmenin sizin yetkiniz dahilinde olup olmadığını not edin. Değilse, kimin dahil olması gerektiğini belirleyin ve onunla konuşmayı ayarlayın."
+          }
+        },
+        {
+          "id": "s7",
+          "number": 7,
+          "title": "Kurum Türleri",
+          "ship": {
+            "title": "Farklı gemiler, farklı sular",
+            "body": [
+              "Bir balıkçı teknesi, bir feribot, bir yük gemisi ve bir cankurtaran botu hepsi birer gemidir ve birini yönetmekle ilgili neredeyse hiçbir şey öbürüne olduğu gibi aktarılamaz. Amaç, ölçek ve yapı, burada iyi yönetimin neye benzediğini belirler; başka bir kurumun uygulamasını, hangi tür gemi için kurulduğunu sormadan ödünç almak, sağlam fikirlerin iyi ekipleri batırma biçimidir."
+            ],
+            "claim": "İnsanları yakalayan ölçektir. Altı kişilik mürettebatla kusursuz yönetilen tekne yirmi kişide farklı bir vardiya sistemine ihtiyaç duyar ve sistemi değiştirmeyen kaptan mürettebatı suçlar.",
+            "question": "Kurumunuz on iki ayda iki katına çıksaydı ilk neyin bozulacağını söyleyin. Şimdi inşa edilmesi gereken odur."
+          },
+          "intro": [
+            "Bir kurumsal bağlamda işe yarayan yaklaşım bir başkasında başarısız olabilir. Hangi tür kurumda çalıştığını — ve bunun kararların nasıl alındığı ve neyin başarı sayıldığı açısından ne anlama geldiğini — anlayan bir yönetici, her yerde tek bir yöntemi uygulayandan daha hızlı uyum sağlar. Bu bölüm bilerek kısa tutulmuştur: Amacı alanı taramak değil, kendi kurumunuzun yerini belirlemenize yardım etmektir."
+          ],
+          "subsections": [
+            {
+              "id": "7.1",
+              "title": "Amaca ve Mülkiyete Göre Kurumlar",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Kâr amaçlı ticari kurumlar öncelikle sahipleri ya da hissedarları için kâr üretmek üzere vardır. Kâr başarının ölçüsüdür; sahiplere döner ya da büyüme için yeniden yatırılır."
+                },
+                {
+                  "type": "p",
+                  "text": "Pazarlarda rekabet ederler ve kârlılığı uzun vadeli sürdürülebilirlikle dengelemek zorundadırlar."
+                },
+                {
+                  "type": "p",
+                  "text": "Kâr amacı gütmeyen kurumlar kâr üretmek için değil bir misyona hizmet etmek için vardır. Gelirler dağıtılmaz, misyona yeniden yatırılır. Eğitim, sağlık, insani yardım, sosyal hizmetler, doğa koruma ve sanat alanlarında çalışırlar. Adlarına rağmen faaliyetlerini sürdürebilmek için mali sürdürülebilirliği yine de sağlamak zorundadırlar."
+                },
+                {
+                  "type": "p",
+                  "text": "Devlet ve kamu sektörü kurumları kamu yararına hizmet eder ve yasanın öngördüğü hizmetleri sunar. Büyük ölçüde vergilerle finanse edilir ve seçilmiş yetkililere ve kamuya karşı hesap verirler."
+                },
+                {
+                  "type": "p",
+                  "text": "Sosyal girişimler ilk ikisinin arasında yer alır. Asıl amaçları toplumsal ya da çevresel etkidir; ama gelirlerini ticaretle kazanır ve ticari bir disiplinle çalışırlar. Kazanılan gelir ile misyonun çatışmak zorunda olmadığını gösterirler — hatta ticari gelir, misyon odaklı işi mali açıdan sürdürülebilir kılan şey olabilir."
+                }
+              ]
+            },
+            {
+              "id": "7.2",
+              "title": "Kurumsal Ölçek",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Büyüklük; yapıyı, yönetim yaklaşımını, kültürü ve yeteneği çoğu yöneticinin beklediğinden daha fazla etkiler. Beş kişilik bir ekip, bin kişilik bir kurumdan temelden farklı biçimde işler."
+                },
+                {
+                  "type": "p",
+                  "text": "Küçük (5–50 kişi). Yöneticiler bütün işleyişi görebilir. İletişim doğrudan ve sıktır; karar alma genellikle kurucu ya da liderde merkezîdir. Zorluk, büyümeye olanak tanıyacak kadar sistem kurarken o enerjiyi ve bütünlüğü korumaktır. Çok erken resmîleşen kurumlar kendilerini yavaşlatır; hiç resmîleşmeyenler ise sistemsizliğin daha fazla büyümeyi engellediği bir tavana çarpar."
+                },
+                {
+                  "type": "p",
+                  "text": "Orta (50–500 kişi). Kritik geçiş. Artık herkes aynı mesajı doğrudan duymaz. Orta düzey yöneticiler vazgeçilmez hâle gelir ama hiç yönetim eğitimi almamış olabilirler. Kurum büyüdükçe kültür değişir. Burada başarı; misyonu netleştirmeye, iletişim kanalları kurmaya, orta yönetimin yetkinliğini geliştirmeye ve kısıtlayan değil olanak tanıyan sistemler kurmaya bağlıdır. Bu geçişi başaran kurumlar büyümeye devam eder; başaramayanlar duraklar."
+                },
+                {
+                  "type": "p",
+                  "text": "Büyük (500 kişiden fazla). Yöneticiler bütün işleyişi değil işlevsel alanları yönetir ve resmî sistemler içinde çalışmak zorundadır. Gayriresmî iletişim artık herkese ulaşmaz. Temel risk, tepki verebilirliği boğan bürokrasidir. Buradaki etkili yöneticiler hem resmî yapıyı hem de işin gerçekte yürüdüğü gayriresmî ağları anlar; orta düzey yöneticiler ise stratejiyi aşağıya aktarma ve gerçekliği yukarıya taşıma yükünü taşır."
+                },
+                {
+                  "type": "table",
+                  "caption": "Ölçeğe göre kurumlar",
+                  "head": [
+                    "Yön",
+                    "Küçük (5–50)",
+                    "Orta (50–500)",
+                    "Büyük (500+)"
+                  ],
+                  "rows": [
+                    [
+                      "Yapı",
+                      "Asgari hiyerarşi, yatay",
+                      "Oluşmakta olan hiyerarşi, şekillenen birimler",
+                      "Çok sayıda düzey, resmî birimler"
+                    ],
+                    [
+                      "İletişim",
+                      "Doğrudan, gayriresmî",
+                      "Doğrudan ve resmînin karışımı",
+                      "Resmî mekanizmalar, dolaylı"
+                    ],
+                    [
+                      "Süreçler",
+                      "Asgari, gayriresmî",
+                      "Kısmen belgelenmiş, gelişmekte",
+                      "Kapsamlı resmî sistemler"
+                    ],
+                    [
+                      "Kültür",
+                      "Birleşik, kurucunun yönlendirdiği",
+                      "Birimlere göre giderek çeşitlenen",
+                      "Birimler arası farklılık yaygın"
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "7.3",
+              "title": "Yapı Modelleri",
+              "blocks": [
+                {
+                  "type": "p",
+                  "text": "Tür ve büyüklüğün ötesinde, bir kurumun nasıl düzenlendiği nasıl yönetildiğini biçimlendirir. Hiyerarşik yapılar işlev ya da coğrafya etrafında örgütlenir ve hız pahasına açık yetki hatları sağlar. Matris yapılar iki hiyerarşiyi — genellikle işlev ve proje — üst üste koyar; kaynak paylaşımını iyileştirir ama aynı insanlar üzerinde birbiriyle yarışan talepler yaratır. Dağıtık yapılar hiyerarşik düzeyleri en aza indirir ve tutarlılık pahasına kararları işe yaklaştırır. Hiçbir model soyut olarak doğru değildir; her biri bir şeyden vazgeçer."
+                }
+              ]
+            }
+          ],
+          "review": {
+            "intro": "Kurumsal uyuma ilişkin on test",
+            "tests": [
+              "Kurumumu mülkiyet, amaç, büyüklük ve yapı açısından tanımlayabilir miyim?",
+              "Burada neyin başarı sayıldığını, fon sağlayıcılarımızın ve yararlanıcılarımızın tanıyacağı ifadelerle biliyor muyum?",
+              "Farklı türde bir kurumda öğrendiğim bir yaklaşımı uyarlamadan mı uyguluyorum?",
+              "Teşviklerimiz misyonun gerçekleşmesini mi, yoksa sadece faaliyeti mi ödüllendiriyor?",
+              "Şu anki büyüklüğümüzde sistemlerimiz büyümemizin önünde mi, gerisinde mi?",
+              "Süreçlerimizden hangileri şimdikinden daha küçük bir kurum için tasarlandı?",
+              "Buradaki gayriresmî ağları resmî şema kadar iyi anlıyor muyum?",
+              "Yapımız kararları iyileştirmeden nerede yavaşlatıyor?",
+              "Yerel ya da saha ekipleri bağlamlarının gerektirdiği özerkliğe sahip mi?",
+              "Gelecek yıl iki katına çıksaydık ilk ne bozulurdu?"
+            ],
+            "questions": [
+              "Hangi ölçek bandındayız ve sırada hangi geçiş var?",
+              "Ticari yöntemler bizim ortamımızda nerede başarısız oluyor, nerede hâlâ geçerli?",
+              "Buradaki insanları gerçekte ne motive ediyor ve sistemlerimiz bunu yansıtıyor mu?",
+              "İşimizin gerektirdiğinden daha mı merkezîyiz, yoksa daha mı dağıtığız?",
+              "Büyümek için neden vazgeçmemiz gerekir ve buna değer mi?"
+            ],
+            "exercise": "Kurumunuz iki katına çıksaydı ilk bozulacak üç sistemi yazın. Her birinin düzeltilmesinin ne kadar süreceğine göre sıralayın ve en yavaş olandan başlayın."
+          }
+        }
+      ],
+      "title": "Çözmek ve İyileştirmek",
+      "tagline": "Sızıntılar, fırtınalar ve kendi geminizi tanımak",
+      "foundation": {
+        "verses": [
+          {
+            "ar": "إِنَّ اللَّهَ لَا يُغَيِّرُ مَا بِقَوْمٍ حَتَّىٰ يُغَيِّرُوا مَا بِأَنفُسِهِمْ",
+            "text": "Bir toplum kendi içindekini değiştirmedikçe Allah onların durumunu değiştirmez.",
+            "ref": "Kur’ân-ı Kerîm, Ra‘d Sûresi 13:11"
+          },
+          {
+            "ar": "اعْقِلْهَا وَتَوَكَّلْ",
+            "text": "Önce onu bağla, sonra tevekkül et.” — devesini bağlamadan bırakıp Allah’a güvendiğini söyleyen bir adama söylenmiştir.",
+            "ref": "Enes b. Mâlik rivayet etmiştir — Sünen-i Tirmizî 2517"
+          }
+        ],
+        "why": [
+          "Bu modül teşhis ve değişimle ilgilidir ve iki metin de aynı bahaneyi reddeder. Âyet, her iyileşmenin başlangıç noktasını şikâyet edilen koşullara değil ekibin içine koyar. Hadis ise her risk kaydının asıl sorduğu soruyu çözer: Allah’a tevekkül, tedbir almanın alternatifi değildir — ondan sonra gelir. Deveyi bağlamamış bir yönetici tevekkül etmiyordur, yalnızca iyimserdir."
+        ]
+      },
+      "outcomes": {
+        "items": [
+          "Doğrudan bir çareye geçmek yerine gerçek bir soruna yapılandırılmış bir sorun çözme sırası uygulamak.",
+          "Belirtiyi nedenden, fırtınayı yavaş sızıntıdan ayırt etmek.",
+          "Bir suçlu değil, bir ders ve bir değişiklik üreten bir başarısızlık değerlendirmesi yapmak.",
+          "Kendi alanındaki altı yaygın idari sorunu tanımak ve en çok hangisinin bulunduğunu söylemek.",
+          "Sonuçlar tatmin edici olmadığında yedi adımlı teşhisi uygulamak ve kanıtla desteklenen bir sonuca varmak.",
+          "İnsanların değişime neden direndiğini açıklamak ve nedeni ezip geçmek yerine onu ele alan bir değişiklik planlamak.",
+          "Kendi kurumunu amaç, ölçek ve yapı açısından tanımlamak ve büyüklüğü iki katına çıksa ilk neyin bozulacağını söylemek."
+        ],
+        "evidence": "güncel bir sorun üzerinde tamamlanmış bir yedi adımlı teşhis, yazılı bir başarısızlık değerlendirmesi ve belirtilmiş bir büyüme riskiyle birlikte tek sayfalık bir kurum tanımı."
+      }
     }
   ],
   "sharedIntro": {
