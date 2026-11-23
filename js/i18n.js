@@ -8,6 +8,9 @@ export const LANGS = [
 
 export const UI = {
   en: {
+    qaTitle: "Questions and answers",
+    ringBell: "Ring the bell: ask us",
+    aboutBandMore: "More about the Ship",
     navVoyage: "My voyage",
     navAbout: "About the Ship",
     navKey: "Ship's Key",
@@ -170,6 +173,9 @@ export const UI = {
     copyright: "© As Safinah Centre for Humanitarian Excellence",
   },
   ar: {
+    qaTitle: "أسئلة وأجوبة",
+    ringBell: "اقرع الجرس: اسألنا",
+    aboutBandMore: "المزيد عن السفينة",
     navVoyage: "رحلتي",
     navAbout: "عن السفينة",
     navKey: "مفتاح السفينة",
@@ -332,6 +338,9 @@ export const UI = {
     copyright: "© مركز السفينة للتميّز الإنساني",
   },
   tr: {
+    qaTitle: "Sorular ve cevaplar",
+    ringBell: "Çanı çalın: bize sorun",
+    aboutBandMore: "Gemi hakkında daha fazla",
     navVoyage: "Yolculuğum",
     navAbout: "Gemi hakkında",
     navKey: "Geminin anahtarı",

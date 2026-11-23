@@ -77,3 +77,54 @@ export const DECKS = {
     ["Hizmet", "Merkezin insani çalışmaları: su ve enerji, eğitim ve gençlik, davet ve Kur’an, mescitler, sponsorluk, yeniden inşa ve acil yardım; One Nation ve Sadaka Gölgesi ortaklığıyla."],
   ],
 };
+
+/** The three decks, shortened for the band on the main deck. */
+export const DECKS_SHORT = {
+  en: [
+    "Seven programmes taught at the centre and continued here.",
+    "The handbooks, study guides and reading programme behind the courses.",
+    "Water, education, Qur’an, masajid, sponsorship, rebuilding and relief.",
+  ],
+  ar: [
+    "سبعة برامج تُدرَّس في المركز وتُستكمل هنا.",
+    "الأدلة وكتيّبات الدراسة وبرنامج القراءة التي تقوم عليها الدورات.",
+    "المياه، والتعليم، والقرآن، والمساجد، والكفالة، وإعادة الإعمار، والإغاثة.",
+  ],
+  tr: [
+    "Merkezde verilen ve burada sürdürülen yedi program.",
+    "Kursların arkasındaki el kitapları, çalışma kılavuzları ve okuma programı.",
+    "Su, eğitim, Kur’an, mescitler, sponsorluk, yeniden inşa ve yardım.",
+  ],
+};
+
+/**
+ * Questions and answers on the main deck. Only facts the centre has already stated are answered;
+ * where the centre has not yet decided (fees, certificates, taught language) the answer says so.
+ * Replace these answers with the centre's own wording when it is supplied.
+ */
+export const QA = {
+  en: [
+    ["Is the course free, or is there a fee?", "Every lesson on this site is free and open to all. Fees and intake dates for the taught course at the centre have not been announced yet; they will be published here once the centre confirms them."],
+    ["Do I receive a certificate?", "The centre has not yet published its certificate arrangements. Ring the bell below and we will tell you what applies to your course."],
+    ["Can I study online only?", "Yes. You can work through every section here online, at your own pace. The full course is taught in person at the centre in Aqrabat, and this site is its companion."],
+    ["Which language is the course taught in?", "The lessons on this site are available in English, Arabic and Turkish; parts still being translated are shown in English until then. The language of the taught sessions will be confirmed by the centre."],
+    ["Do I need to apply to use the online lessons?", "No. The online lessons are open to everyone without registration. An application is only needed for a place on the taught course."],
+    ["Is my progress saved?", "Yes, on the device you are using. The sections you enter in the ship’s log are kept in this browser; they do not move to another phone or computer."],
+  ],
+  ar: [
+    ["هل الدورة مجانية، أم هناك رسوم؟", "كل الدروس على هذا الموقع مجانية ومتاحة للجميع. أما رسوم الدورة الحضورية في المركز ومواعيد التسجيل فلم تُعلن بعد، وستُنشر هنا حين يؤكّدها المركز."],
+    ["هل أحصل على شهادة؟", "لم ينشر المركز بعد ترتيبات الشهادات. اقرع الجرس أدناه وسنخبرك بما ينطبق على دورتك."],
+    ["هل يمكنني الدراسة عبر الإنترنت فقط؟", "نعم. يمكنك أن تدرس كل قسم هنا عبر الإنترنت بالسرعة التي تناسبك. وتُدرَّس الدورة كاملة حضوريًا في المركز في عقربات، وهذا الموقع رفيقها."],
+    ["بأي لغة تُدرَّس الدورة؟", "الدروس على هذا الموقع متاحة بالإنجليزية والعربية والتركية، وما زال بعضها قيد الترجمة فيُعرض بالإنجليزية حتى ذلك الحين. وسيؤكّد المركز لغة الجلسات الحضورية."],
+    ["هل أحتاج إلى التقديم لأستخدم الدروس عبر الإنترنت؟", "لا. الدروس عبر الإنترنت متاحة للجميع دون تسجيل. ولا يلزم التقديم إلا لحجز مكان في الدورة الحضورية."],
+    ["هل يُحفظ تقدّمي؟", "نعم، على الجهاز الذي تستخدمه. فالأقسام التي تسجّلها في سجل السفينة تُحفظ في هذا المتصفح، ولا تنتقل إلى هاتف أو حاسوب آخر."],
+  ],
+  tr: [
+    ["Kurs ücretsiz mi, yoksa bir ücreti var mı?", "Bu sitedeki bütün dersler ücretsizdir ve herkese açıktır. Merkezdeki yüz yüze kursun ücretleri ve kayıt tarihleri henüz açıklanmadı; merkez teyit ettiğinde burada yayımlanacak."],
+    ["Sertifika alacak mıyım?", "Merkez sertifika düzenlemelerini henüz yayımlamadı. Aşağıdaki çanı çalın, kursunuz için neyin geçerli olduğunu size bildirelim."],
+    ["Yalnızca çevrimiçi okuyabilir miyim?", "Evet. Buradaki her bölümü kendi hızınızda çevrimiçi çalışabilirsiniz. Kursun tamamı Akrabat’taki merkezde yüz yüze verilir; bu site onun yol arkadaşıdır."],
+    ["Kurs hangi dilde veriliyor?", "Bu sitedeki dersler İngilizce, Arapça ve Türkçe olarak sunuluyor; hâlâ çevrilen bölümler o zamana kadar İngilizce gösteriliyor. Yüz yüze derslerin dili merkez tarafından teyit edilecek."],
+    ["Çevrimiçi dersleri kullanmak için başvurmam gerekiyor mu?", "Hayır. Çevrimiçi dersler kayıt olmadan herkese açıktır. Başvuru yalnızca yüz yüze kursta yer almak için gereklidir."],
+    ["İlerlemem kaydediliyor mu?", "Evet, kullandığınız cihazda. Seyir defterine işlediğiniz bölümler bu tarayıcıda saklanır; başka bir telefona ya da bilgisayara geçmez."],
+  ],
+};

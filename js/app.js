@@ -1,6 +1,6 @@
 import { LANGS, UI } from "./i18n.js";
 import { icon, shipDisc, waveRule, nameplate, wheel } from "./symbols.js";
-import { KEY, DECKS } from "./key.js";
+import { KEY, DECKS, DECKS_SHORT, QA } from "./key.js";
 
 /* ---------- small helpers ---------- */
 const $ = (sel) => document.querySelector(sel);
@@ -310,7 +310,27 @@ function renderHome() {
     <section class="flagships" aria-label="${esc(t("flagship"))}">${flagCards}</section>
 
     ${nameplate(esc(t("specialist")))}
-    <section class="specials" aria-label="${esc(t("specialist"))}">${specCards}</section>`;
+    <section class="specials" aria-label="${esc(t("specialist"))}">${specCards}</section>
+
+    <div class="home-band">
+      <section aria-labelledby="band-about">
+        ${nameplate(`<span id="band-about">${esc(t("aboutTitle"))}</span>`)}
+        <p>${esc(t("aboutLead"))}</p>
+        <div class="band-decks">
+          ${(DECKS[lang] || DECKS.en).map(([name], i) => `<a class="band-deck${i === 0 ? " here" : ""}${i === 2 ? " wide" : ""}" href="#/about">
+            <h3>${esc(name)}${i === 0 ? `<span class="caps">${esc(t("youAreHere"))}</span>` : ""}</h3>
+            <p>${esc((DECKS_SHORT[lang] || DECKS_SHORT.en)[i])}</p></a>`).join("")}
+        </div>
+        <p><a href="#/about" class="more-link">${esc(t("aboutBandMore"))} ${arrow()}</a></p>
+      </section>
+      <section aria-labelledby="band-qa">
+        ${nameplate(`<span id="band-qa">${esc(t("qaTitle"))}</span>`, "bell")}
+        <div class="qa">
+          ${(QA[lang] || QA.en).map(([q, ans]) => `<details><summary>${esc(q)}</summary><p>${esc(ans)}</p></details>`).join("")}
+        </div>
+        <a class="btn ghost" href="mailto:bilalsadik@as-safinah.org">${icon("bell")} ${esc(t("ringBell"))}</a>
+      </section>
+    </div>`;
 }
 
 /* ---------- course screen ---------- */

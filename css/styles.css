@@ -561,3 +561,23 @@ a.aside-card:hover { border-color: var(--gold); }
   body.print-outline .print-only { display: block; }
   .tour { display: none; }
 }
+
+/* main deck: About the Ship band and Questions and answers */
+.home-band { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0 40px; }
+@media (min-width: 900px) { .home-band { grid-template-columns: 1fr 1fr; } }
+.band-decks { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.band-deck { display: block; background: var(--card); border: 1px solid var(--card-line); border-radius: var(--radius); padding: 14px 16px; color: var(--text); text-decoration: none; }
+.band-deck:hover { border-color: var(--gold); }
+.band-deck.here { background: var(--navy); color: #ece4d3; border-top: 2px solid var(--gold); }
+.band-deck.wide { grid-column: 1 / -1; }
+.band-deck h3 { margin: 0 0 4px; font-size: 1.15rem; font-weight: 400; display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+.band-deck h3 .caps { font-size: .66rem; color: #d4b894; }
+.band-deck p { margin: 0; font-size: .9rem; color: inherit; opacity: .85; }
+.more-link { display: inline-flex; gap: 6px; align-items: center; margin-top: 14px; font-size: .95rem; }
+.qa { margin-bottom: 18px; }
+.qa details { border-bottom: 1px solid var(--card-line); }
+.qa summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 16px; padding: 14px 2px; }
+.qa summary::-webkit-details-marker { display: none; }
+.qa summary::after { content: "+"; color: var(--gold); font-size: 1.2rem; line-height: 1; flex: none; }
+.qa details[open] summary::after { content: "\2212"; }
+.qa details p { margin: 0 0 14px; color: var(--muted); }
