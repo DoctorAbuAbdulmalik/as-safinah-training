@@ -662,3 +662,4 @@ a.aside-card:hover { border-color: var(--gold); }
   .sc-text { align-items: center; }
 }
 .front-page .book-cover p { max-width: none; }
+.front-page .toc-list li { max-width: none; }
