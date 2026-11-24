@@ -664,3 +664,5 @@ a.aside-card:hover { border-color: var(--gold); }
 .front-page .book-cover p { max-width: none; }
 .front-page .toc-list li { max-width: none; }
 .toc-list b { min-width: 2.4em; text-align: end; flex: none; }
+.how-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 520px) { .how-cards { grid-template-columns: minmax(0, 1fr); } }
