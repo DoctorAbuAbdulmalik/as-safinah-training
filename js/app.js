@@ -561,7 +561,7 @@ function renderBlock(b, ctx) {
       <tbody>${b.rows.map((r) => `<tr>${r.map((c, i) => (i === 0 ? `<th scope="row">${esc(c)}</th>` : `<td>${esc(c)}</td>`)).join("")}</tr>`).join("")}</tbody>
     </table></div>`;
   if (b.type === "figure") {
-    const ft = figText[b.src] || {};
+    const ft = figText[b.src.split("/").pop()] || {};
     const cap = ft.caption ?? b.caption;
     return `<figure class="book-fig"><img src="${esc(b.src.includes("/") ? b.src : `${assetBase}/${b.src}`)}" width="${b.w}" height="${b.h}" alt="${esc(ft.alt ?? b.alt)}" loading="lazy">${cap ? `<figcaption>${esc(cap)}</figcaption>` : ""}</figure>`;
   }

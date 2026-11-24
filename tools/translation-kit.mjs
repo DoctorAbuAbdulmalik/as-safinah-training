@@ -28,6 +28,7 @@ function walkShip(sh, fn) {
   return { title: fn(sh.title), body: sh.body.map(fn), claim: sh.claim ? fn(sh.claim) : "", question: fn(sh.question) };
 }
 function walkBlock(bl, fn) {
+  if (bl.type === "figure") return { ...bl }; // pictures are language-independent; their captions live in <lang>.json "figures"
   const o = { type: bl.type };
   if (bl.start) o.start = bl.start;
   if (bl.type === "p" || bl.type === "h3") o.text = fn(bl.text);

@@ -6,7 +6,7 @@ Plain HTML + CSS + JavaScript — no framework, no build step.
 **Current scope:** three programmes are live — *01 Management* (flagship), *04 IT and Digital Transformation* and *05 Education*. Each shows its own
 Modules 1–4 (Sections 1–12) plus the shared Modules 5–6 (*Patterns of Renewal*, *Obligation and Purpose*), which are
 the same in every As Safinah handbook and are stored once in `data/shared/`. Each direction also has a searchable glossary.
-English is complete; Arabic, Turkish and Russian translations are being added as drafts (untranslated parts fall back to English). Russian currently covers the interface, home page and the handbook's opening pages; course modules are still English.
+English is complete; Arabic, Turkish and Russian translations are being added as drafts (untranslated parts fall back to English). Russian covers the interface, home page, the handbook's opening pages, Modules 1–2 (Sections 1–5) and the glossary; the rest is still English.
 The other five directions are placeholders ("Coming soon").
 
 ## Run locally
