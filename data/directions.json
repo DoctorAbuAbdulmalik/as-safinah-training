@@ -9,22 +9,26 @@
       "title": {
         "en": "Management",
         "ar": "الإدارة",
-        "tr": "Yönetim"
+        "tr": "Yönetim",
+        "ru": "Менеджмент"
       },
       "promise": {
         "en": "The working reality of management, not the theory of it",
         "ar": "الواقع العملي للإدارة، لا نظرياتها",
-        "tr": "Kuramı değil, yönetimin sahadaki gerçeği"
+        "tr": "Kuramı değil, yönetimin sahadaki gerçeği",
+        "ru": "Рабочая реальность управления, а не его теория"
       },
       "audience": {
         "en": "New managers, team leaders, administrators, trustees and students. No prior study is assumed.",
         "ar": "المديرون الجدد، وقادة الفرق، والإداريون، وأعضاء مجالس الأمناء، والطلاب. لا يُشترط أي دراسة سابقة.",
-        "tr": "Yeni yöneticiler, ekip liderleri, idari personel, mütevelliler ve öğrenciler. Ön bilgi gerekmez."
+        "tr": "Yeni yöneticiler, ekip liderleri, idari personel, mütevelliler ve öğrenciler. Ön bilgi gerekmez.",
+        "ru": "Новые руководители, лидеры команд, администраторы, попечители и студенты. Предварительная подготовка не предполагается."
       },
       "produce": {
         "en": "A one-page resource analysis, a delegation brief, a seven-step diagnostic, a draft policy and a signed personal development plan.",
         "ar": "تحليل للموارد في صفحة واحدة، وتكليف مكتوب بالتفويض، وتشخيص من سبع خطوات، ومسودة سياسة، وخطة تطوير شخصية موقّعة.",
-        "tr": "Tek sayfalık bir kaynak analizi, bir yetki devri notu, yedi adımlı bir teşhis, bir politika taslağı ve imzalı bir kişisel gelişim planı."
+        "tr": "Tek sayfalık bir kaynak analizi, bir yetki devri notu, yedi adımlı bir teşhis, bir politika taslağı ve imzalı bir kişisel gelişim planı.",
+        "ru": "Анализ ресурсов на одной странице, поручение о делегировании, диагностика из семи шагов, проект политики и подписанный личный план развития."
       },
       "sessions": 16,
       "moduleSessions": [
@@ -47,12 +51,14 @@
       "title": {
         "en": "Leadership",
         "ar": "القيادة",
-        "tr": "Liderlik"
+        "tr": "Liderlik",
+        "ru": "Лидерство"
       },
       "promise": {
         "en": "Leading people through calm water and storm, rooted in faith",
         "ar": "قيادة الناس في الماء الهادئ وفي العاصفة، بجذور راسخة في الإيمان",
-        "tr": "İnsanlara sakin suda da fırtınada da, imana dayanarak öncülük etmek"
+        "tr": "İnsanlara sakin suda da fırtınada da, imana dayanarak öncülük etmek",
+        "ru": "Вести людей и в тихой воде, и в шторм, опираясь на веру"
       }
     },
     {
@@ -64,7 +70,8 @@
       "title": {
         "en": "Engineering",
         "ar": "الهندسة",
-        "tr": "Mühendislik"
+        "tr": "Mühendislik",
+        "ru": "Инженерия"
       }
     },
     {
@@ -75,22 +82,26 @@
       "title": {
         "en": "IT and Digital Transformation",
         "ar": "تقنية المعلومات والتحول الرقمي",
-        "tr": "Bilişim ve Dijital Dönüşüm"
+        "tr": "Bilişim ve Dijital Dönüşüm",
+        "ru": "ИТ и цифровая трансформация"
       },
       "promise": {
         "en": "Digital skills, security, software, data and AI, from everyday use to leading change",
         "ar": "المهارات الرقمية والأمن والبرمجيات والبيانات والذكاء الاصطناعي، من الاستخدام اليومي إلى قيادة التغيير",
-        "tr": "Gündelik kullanımdan değişime öncülük etmeye: dijital beceriler, güvenlik, yazılım, veri ve yapay zekâ"
+        "tr": "Gündelik kullanımdan değişime öncülük etmeye: dijital beceriler, güvenlik, yazılım, veri ve yapay zekâ",
+        "ru": "Цифровые навыки, безопасность, программное обеспечение, данные и ИИ — от повседневного использования до руководства переменами"
       },
       "audience": {
         "en": "First-time users, office staff, IT support volunteers, aspiring developers and analysts, small business owners, charity workers and managers leading digital change. No technical qualification is assumed.",
         "ar": "المستخدمون الجدد، وموظفو المكاتب، ومتطوعو الدعم التقني، والمطوّرون والمحلّلون الطامحون، وأصحاب المشروعات الصغيرة، والعاملون في الجمعيات، والمديرون الذين يقودون التحول الرقمي. لا يُشترط أي مؤهل تقني.",
-        "tr": "İlk kez kullananlar, ofis çalışanları, BT destek gönüllüleri, geliştirici ve analist adayları, küçük işletme sahipleri, hayır kurumu çalışanları ve dijital değişime öncülük eden yöneticiler. Teknik bir yeterlilik gerekmez."
+        "tr": "İlk kez kullananlar, ofis çalışanları, BT destek gönüllüleri, geliştirici ve analist adayları, küçük işletme sahipleri, hayır kurumu çalışanları ve dijital değişime öncülük eden yöneticiler. Teknik bir yeterlilik gerekmez.",
+        "ru": "Новички, офисные сотрудники, волонтёры ИТ-поддержки, начинающие разработчики и аналитики, владельцы малого бизнеса, сотрудники благотворительных организаций и руководители цифровых перемен. Технической квалификации не требуется."
       },
       "produce": {
         "en": "A backed-up folder structure, an asset register with a problem log, a network diagram with a continuity plan, a small program or cleaned dataset, a one-page project definition and a signed personal development plan.",
         "ar": "هيكل مجلدات له نسخ احتياطية، وسجل أصول مع سجل للمشكلات، ومخطط شبكة مع خطة استمرارية، وبرنامج صغير أو مجموعة بيانات منقّحة، وتعريف مشروع في صفحة واحدة، وخطة تطوير شخصية موقّعة.",
-        "tr": "Yedeklenmiş bir klasör yapısı, sorun kaydıyla birlikte bir varlık envanteri, süreklilik planıyla bir ağ şeması, küçük bir program ya da temizlenmiş bir veri seti, tek sayfalık bir proje tanımı ve imzalı bir kişisel gelişim planı."
+        "tr": "Yedeklenmiş bir klasör yapısı, sorun kaydıyla birlikte bir varlık envanteri, süreklilik planıyla bir ağ şeması, küçük bir program ya da temizlenmiş bir veri seti, tek sayfalık bir proje tanımı ve imzalı bir kişisel gelişim planı.",
+        "ru": "Резервируемая структура папок, реестр активов с журналом проблем, схема сети с планом непрерывности, небольшая программа или очищенный набор данных, одностраничное описание проекта и подписанный личный план развития."
       },
       "sessions": 16,
       "moduleSessions": [
@@ -110,22 +121,26 @@
       "title": {
         "en": "Education",
         "ar": "التعليم",
-        "tr": "Eğitim"
+        "tr": "Eğitim",
+        "ru": "Образование"
       },
       "promise": {
         "en": "Teaching, curriculum, assessment, inclusion and school leadership for every learner",
         "ar": "التدريس والمناهج والتقييم والتعليم الشامل وقيادة المدرسة، لكل متعلّم",
-        "tr": "Her öğrenci için öğretim, müfredat, ölçme-değerlendirme, kapsayıcı eğitim ve okul yönetimi"
+        "tr": "Her öğrenci için öğretim, müfredat, ölçme-değerlendirme, kapsayıcı eğitim ve okul yönetimi",
+        "ru": "Преподавание, учебный план, оценивание, инклюзия и школьное руководство — для каждого ученика"
       },
       "audience": {
         "en": "New and experienced teachers, teaching assistants, early years practitioners, supplementary and weekend school teachers, school leaders, trainers and youth workers. No formal teaching qualification is assumed.",
         "ar": "المعلمون الجدد وذوو الخبرة، ومساعدو التدريس، والعاملون في الطفولة المبكرة، ومعلمو المدارس التكميلية ومدارس نهاية الأسبوع، وقادة المدارس، والمدرّبون، والعاملون مع الشباب. لا يُشترط مؤهل تربوي رسمي.",
-        "tr": "Yeni ve deneyimli öğretmenler, öğretmen yardımcıları, okul öncesi eğitimciler, tamamlayıcı ve hafta sonu okulu öğretmenleri, okul yöneticileri, eğitmenler ve gençlik çalışanları. Resmî bir öğretmenlik yeterliliği gerekmez."
+        "tr": "Yeni ve deneyimli öğretmenler, öğretmen yardımcıları, okul öncesi eğitimciler, tamamlayıcı ve hafta sonu okulu öğretmenleri, okul yöneticileri, eğitmenler ve gençlik çalışanları. Resmî bir öğretmenlik yeterliliği gerekmez.",
+        "ru": "Начинающие и опытные учителя, ассистенты, специалисты раннего возраста, учителя дополнительных и воскресных школ, школьные руководители, тренеры и работники с молодёжью. Формальной педагогической квалификации не требуется."
       },
       "produce": {
         "en": "An annotated lesson plan, a curriculum map, a week of exit tickets, a learner support plan, a record of positive contact with families, a short improvement plan and a signed personal development plan.",
         "ar": "خطة درس مشروحة، وخريطة منهج، وبطاقات خروج لأسبوع، وخطة لدعم متعلّم، وسجل تواصل إيجابي مع الأسر، وخطة تحسين قصيرة، وخطة تطوير شخصية موقّعة.",
-        "tr": "Açıklamalı bir ders planı, bir müfredat haritası, bir haftalık çıkış kartları, bir öğrenci destek planı, ailelerle olumlu iletişim kaydı, kısa bir iyileştirme planı ve imzalı bir kişisel gelişim planı."
+        "tr": "Açıklamalı bir ders planı, bir müfredat haritası, bir haftalık çıkış kartları, bir öğrenci destek planı, ailelerle olumlu iletişim kaydı, kısa bir iyileştirme planı ve imzalı bir kişisel gelişim planı.",
+        "ru": "Размеченный план урока, карта учебного плана, неделя «билетов на выход», план поддержки ученика, запись о позитивном контакте с семьями, краткий план улучшений и подписанный личный план развития."
       },
       "sessions": 16,
       "moduleSessions": [
@@ -146,7 +161,8 @@
       "title": {
         "en": "Languages",
         "ar": "اللغات",
-        "tr": "Diller"
+        "tr": "Diller",
+        "ru": "Языки"
       }
     },
     {
@@ -158,7 +174,8 @@
       "title": {
         "en": "Research and Development",
         "ar": "البحث والتطوير",
-        "tr": "Araştırma ve Geliştirme"
+        "tr": "Araştırma ve Geliştirme",
+        "ru": "Исследования и разработки"
       }
     }
   ]

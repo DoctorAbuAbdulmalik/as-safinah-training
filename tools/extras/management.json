@@ -1,0 +1,371 @@
+{
+  "assets": "assets/book/management",
+  "front": {
+    "cover": {
+      "org": "As Safinah Centre for Humanitarian Excellence",
+      "orgAr": "مؤسسة السفينة للتميز الإنساني",
+      "title": "Management Handbook",
+      "subtitle": "Participant text for the Management Development Programme",
+      "version": "Version 2 · November 2026",
+      "includes": "Includes the shared Modules 5 and 6 — Patterns of Renewal, and Obligation and Purpose"
+    },
+    "contents": {
+      "title": "Contents"
+    },
+    "pages": {
+      "how": 2,
+      "who": 3,
+      "taught": 4,
+      "ship": 5,
+      "room": 6,
+      "s1": 9,
+      "s2": 14,
+      "s3": 19,
+      "lo1": 27,
+      "s4": 29,
+      "s5": 44,
+      "lo2": 48,
+      "s6": 50,
+      "s7": 61,
+      "lo3": 64,
+      "s8": 66,
+      "s9": 71,
+      "s10": 74,
+      "lo4": 84,
+      "s11": 86,
+      "lo5": 95,
+      "s12": 97,
+      "lo6": 102,
+      "glossary": 103
+    },
+    "how": {
+      "title": "How to Use This Handbook",
+      "intro": [
+        "This handbook is written to be worked through, not only read. It is organised into twelve sections, each covering one area of management practice, and each ending with a Section Review made up of three parts.",
+        "A section read and not reviewed will change very little."
+      ],
+      "cards": [
+        {
+          "title": "The Ship",
+          "text": "A short panel opening each section, putting it in a ship’s terms, with one question to take back to your own work."
+        },
+        {
+          "title": "Ten tests",
+          "text": "Self-tests at the end of every section. A “no” is more useful than a “yes”."
+        },
+        {
+          "title": "Questions for discussion",
+          "text": "For the group session, or for a colleague."
+        },
+        {
+          "title": "Practical exercise",
+          "text": "One task to carry back into real work before the next session."
+        }
+      ]
+    },
+    "who": {
+      "title": "Who This Handbook Is For",
+      "intro": "It is written for anyone who is answerable for work that other people do, or who is about to be. No prior study of management is assumed and no qualification is needed to use it. The examples are drawn from charity, education and administrative settings, but the principles are not sector-specific.",
+      "head": [
+        "Reader",
+        "What this handbook gives them"
+      ],
+      "rows": [
+        [
+          "New and first-time managers",
+          "A complete first grounding — what the job actually consists of, and what to do in the first months"
+        ],
+        [
+          "Experienced managers with no formal training",
+          "A structure and a vocabulary for what they already do by instinct, and the gaps made visible"
+        ],
+        [
+          "Office administrators and support staff",
+          "The systems half of the work: documentation, control, discipline and policy"
+        ],
+        [
+          "Team leaders and supervisors",
+          "Delegation, decisions, meetings, mentoring and handling poor performance"
+        ],
+        [
+          "Senior managers and directors",
+          "Policy, levels of authority, and organisational structure"
+        ],
+        [
+          "Trustees and board members",
+          "What to expect of the managers they appoint, and where the board’s own line falls"
+        ],
+        [
+          "Teachers, trainers and facilitators",
+          "A ready participant text for a sixteen-session course, with self-tests and exercises"
+        ],
+        [
+          "University students and new graduates",
+          "The working reality of management, rather than the theory of it, before the first post"
+        ],
+        [
+          "Volunteers and volunteer coordinators",
+          "How responsibility, authority and accountability work in an unpaid setting"
+        ]
+      ],
+      "outro": "It will be of least use to anyone looking for a quick reference to dip into. The sections are cumulative: each assumes the one before it."
+    },
+    "taught": {
+      "title": "As a Taught Course",
+      "intro": "The handbook is also the participant text for a sixteen-session management development programme, grouped into six modules:",
+      "head": [
+        "Module",
+        "Sections",
+        "Sessions",
+        "Covering"
+      ],
+      "rows": [
+        [
+          "1. Foundations",
+          "1–3",
+          "1–3",
+          "What management is, how the organisation is arranged, the six principles"
+        ],
+        [
+          "2. The Manager’s Own Practice",
+          "4–5",
+          "4–7",
+          "Delegation, decisions, time, meetings, honest stock-taking, mentoring and coaching"
+        ],
+        [
+          "3. Solving and Improving",
+          "6–7",
+          "8–9",
+          "Problems, failure, change, diagnosing poor results, organisational context"
+        ],
+        [
+          "4. The Systems That Hold It Together",
+          "8–10",
+          "10–12",
+          "Administrative discipline, policy, documentation and control"
+        ],
+        [
+          "5. Patterns of Renewal",
+          "11",
+          "13–14",
+          "Readiness, the stages a team passes through, contention, and preparing for a change in fortune"
+        ],
+        [
+          "6. Obligation and Purpose",
+          "12",
+          "15–16",
+          "What the work is for, and building organisations that last"
+        ]
+      ],
+      "sessions": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          15,
+          16
+        ]
+      ],
+      "figure": {
+        "title": "The voyage — sixteen sessions, six modules",
+        "module": "Module",
+        "note": "Modules 1–4 are this room’s own twelve pathways. Modules 5 and 6 — Patterns of Renewal, and Obligation and Purpose — are shared by every As Safinah programme.",
+        "own": "Room-specific session",
+        "shared": "Shared session",
+        "caption": "Figure 1. The course at a glance: four modules for this room, then the two shared modules."
+      }
+    },
+    "ship": {
+      "title": "The Ship",
+      "card": {
+        "ar": "السفينة",
+        "title": "The Ship",
+        "caption": "A vessel that carries people who could not make the crossing alone."
+      },
+      "paras": [
+        "The programme is built around one image, and it is the one the centre is named for. As Safinah — السفينة — is the ship.",
+        "A ship is the oldest working example of what this handbook is about: a group of people, a finite store of resources, a hostile environment, a destination, and one person answerable for whether they arrive. Everything management does has a counterpart on board. Planning is charting a course. Structure is the ship’s company. Discipline is the watch and the bell. Policy is standing orders. Control is the sounding line.",
+        "Every section opens with a short panel called The Ship, which puts that section’s subject in these terms and ends with one question to take back to your own vessel. The panels are not decoration. If you can explain a section to somebody in the ship’s terms, you have understood it; if you cannot, go back.",
+        "The image carries one more thing. A ship is a vessel that carries people who could not make the crossing alone. That is the work."
+      ]
+    },
+    "room": {
+      "title": "The Management Room: Twelve Pathways",
+      "paras": [
+        "This wheel hangs in the Management room at As Safinah. It shows the twelve pathways — the courses, practice and support — offered in the room, from Foundations at the top, reading clockwise.",
+        "The pathways draw on the sections of this handbook throughout: Foundations on Section 1, Planning and Priorities on Section 3, Delegation on Section 4, Coaching and Supervision on Section 5, and so on. Use the wheel to find your way into the handbook from the room, and the handbook to go deeper than any one session can."
+      ],
+      "alt": "The Management wheel: twelve pathways read clockwise from Foundations at the top",
+      "caption": "The Management wheel as it hangs in the room — twelve pathways, read clockwise from the top.",
+      "finding": {
+        "title": "Finding each pathway in this handbook",
+        "head": [
+          "On the wheel",
+          "Pathway",
+          "Where it is taught",
+          "Module"
+        ],
+        "rows": [
+          [
+            "1",
+            "Foundations",
+            "Sections 1–2",
+            "Module 1 — Foundations"
+          ],
+          [
+            "2",
+            "Leading People",
+            "Section 3.4",
+            "Module 1 — Foundations"
+          ],
+          [
+            "3",
+            "Team Development",
+            "Sections 3.3, 5",
+            "Module 1 — Foundations"
+          ],
+          [
+            "4",
+            "Delegation",
+            "Sections 4.1–4.2",
+            "Module 2 — The Manager’s Own Practice"
+          ],
+          [
+            "5",
+            "Communication",
+            "Sections 3.5, 4.5",
+            "Module 2 — The Manager’s Own Practice"
+          ],
+          [
+            "6",
+            "Performance",
+            "Sections 3.6, 10.11",
+            "Module 4 — The Systems That Hold It Together"
+          ],
+          [
+            "7",
+            "Decision Making",
+            "Section 4.3",
+            "Module 2 — The Manager’s Own Practice"
+          ],
+          [
+            "8",
+            "Managing Change",
+            "Sections 6.2, 11.1",
+            "Module 3 — Solving and Improving"
+          ],
+          [
+            "9",
+            "Conflict Resolution",
+            "Sections 3.4–3.5, 6.1",
+            "Module 3 — Solving and Improving"
+          ],
+          [
+            "10",
+            "Planning & Priorities",
+            "Sections 3.1, 4.4",
+            "Module 1 — Foundations"
+          ],
+          [
+            "11",
+            "Budgets & Resources",
+            "Sections 1.2, 8.3, 10.6",
+            "Module 4 — The Systems That Hold It Together"
+          ],
+          [
+            "12",
+            "Coaching & Supervision",
+            "Section 5",
+            "Module 2 — The Manager’s Own Practice"
+          ]
+        ],
+        "note": "The Management wheel names the twelve pathways offered in the room. The handbook’s sections are arranged as a course, so a pathway may draw on more than one section."
+      }
+    }
+  },
+  "figures": [
+    {
+      "section": "s3",
+      "sub": "3.7",
+      "at": "end",
+      "src": "fig-cycle.webp",
+      "w": 1289,
+      "h": 980,
+      "alt": "The six principles as one continuous cycle: planning, organising, staffing, direction and leadership, coordination, control, around an integrated management system",
+      "caption": "The same cycle, drawn as one of the eight roundels prepared for the wall at As Safinah."
+    },
+    {
+      "section": "s6",
+      "sub": "6.4",
+      "at": 1,
+      "src": "fig-steps.webp",
+      "w": 1289,
+      "h": 671,
+      "alt": "When results are unsatisfactory, work down in order: clarify the desired result, determine the essential activities, design the structure, develop the management, delegate the supervision, train the people, simplify the procedures",
+      "caption": ""
+    },
+    {
+      "section": "s11",
+      "intro": true,
+      "src": "fig-patterns.webp",
+      "w": 1006,
+      "h": 645,
+      "alt": "Four patterns of renewal: readiness, layers, contention and the turning point, around the question what the charts do not show",
+      "caption": "The four patterns of this section, each with its Ship panel and the question it asks."
+    },
+    {
+      "section": "s11",
+      "sub": "11.2",
+      "at": "beforeTable",
+      "src": "fig-layers.webp",
+      "w": 1289,
+      "h": 389,
+      "alt": "Three layers, three temperaments: the starting layer, the driving layer and the building layer",
+      "caption": ""
+    },
+    {
+      "section": "s12",
+      "intro": true,
+      "src": "fig-formula.webp",
+      "w": 812,
+      "h": 812,
+      "alt": "The Formula of Ultimate Success as a wheel: four triplets, twelve parts",
+      "caption": "The Formula of Ultimate Success as a wheel: four triplets, twelve parts — drawn to hang beside the room’s own porthole."
+    }
+  ],
+  "taskSheet": {
+    "section": "s10",
+    "sub": "10.2",
+    "replaceParagraphStartingWith": "No. Task Required date",
+    "caption": "Task Sheet template",
+    "head": [
+      "No.",
+      "Task",
+      "Required date",
+      "Project",
+      "Ordered by",
+      "Deadline",
+      "Completion",
+      "Link",
+      "Person"
+    ],
+    "rows": 6
+  }
+}

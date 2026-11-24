@@ -1,3 +1,4 @@
+import { KEY_RU, DECKS_RU, DECKS_SHORT_RU, QA_RU } from "./i18n-ru.js";
 // Stage-2 interface text: the Ship's Key, About the Ship and the Welcome aboard tour.
 // Kept apart from i18n.js because it is longer prose. Ship words lead, plain words stay beside them.
 
@@ -128,3 +129,7 @@ export const QA = {
     ["İlerlemem kaydediliyor mu?", "Evet, kullandığınız cihazda. Seyir defterine işlediğiniz bölümler bu tarayıcıda saklanır; başka bir telefona ya da bilgisayara geçmez."],
   ],
 };
+KEY.ru = KEY_RU;
+DECKS.ru = DECKS_RU;
+DECKS_SHORT.ru = DECKS_SHORT_RU;
+QA.ru = QA_RU;

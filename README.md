@@ -6,7 +6,7 @@ Plain HTML + CSS + JavaScript — no framework, no build step.
 **Current scope:** three programmes are live — *01 Management* (flagship), *04 IT and Digital Transformation* and *05 Education*. Each shows its own
 Modules 1–4 (Sections 1–12) plus the shared Modules 5–6 (*Patterns of Renewal*, *Obligation and Purpose*), which are
 the same in every As Safinah handbook and are stored once in `data/shared/`. Each direction also has a searchable glossary.
-English is complete; Arabic and Turkish translations are being added as drafts (untranslated parts fall back to English).
+English is complete; Arabic, Turkish and Russian translations are being added as drafts (untranslated parts fall back to English). Russian currently covers the interface, home page and the handbook's opening pages; course modules are still English.
 The other five directions are placeholders ("Coming soon").
 
 ## Run locally
@@ -68,3 +68,9 @@ tools/validate-content.mjs     checks translations mirror the English structure
 
 * Arabic Qur'anic text in `en.json` (`verses[].ar`) was supplied separately (the PDF's Arabic is not machine-readable) — proof-read against a printed mushaf.
 * Arabic and Turkish translations of Module 1 are first drafts — have a native reviewer check them.
+
+## The handbook's opening pages, the book's art and sound
+
+* `data/management/en.json` carries `front` (Contents, How to Use This Handbook, Who This Handbook Is For, As a Taught Course, The Ship, The Management Room) in the order of the printed book; they open at `#/d/management/f/<id>` and lead on into Section 1. Source text lives in `tools/extras/management.json`; `node tools/extract-handbook.mjs …` then `node tools/book-extras.mjs management` regenerate `en.json`, and `node tools/front-translations.mjs` writes the Arabic, Turkish and Russian versions.
+* `assets/book/management/` holds the book's own figures and icons, extracted from the PDF. `assets/ship-book.webp` is the book's ship (page 5) and is the only ship drawing used in the app (header, wheels, favicon, About the Ship).
+* `js/sound.js` makes the sea and gull sounds with the Web Audio API (no audio files). They play on the main buttons; the speaker button in the header turns them off.

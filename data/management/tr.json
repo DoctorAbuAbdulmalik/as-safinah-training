@@ -3116,8 +3116,87 @@
                   "text": "Aşağıda bir Görev Çizelgesi şablonu verilmiştir."
                 },
                 {
-                  "type": "p",
-                  "text": "No., Görev, İstenen tarih, Proje, Görevi veren, Son tarih, Tamamlanma, Bağlantı, Kişi — (1’den 6’ya numaralı satırlar)"
+                  "type": "table",
+                  "caption": "Görev Çizelgesi şablonu",
+                  "head": [
+                    "No.",
+                    "Görev",
+                    "İstenen tarih",
+                    "Proje",
+                    "Görevi veren",
+                    "Son tarih",
+                    "Tamamlanma",
+                    "Bağlantı",
+                    "Kişi"
+                  ],
+                  "rows": [
+                    [
+                      "1",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ],
+                    [
+                      "2",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ],
+                    [
+                      "3",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ],
+                    [
+                      "4",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ],
+                    [
+                      "5",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ],
+                    [
+                      "6",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  ]
                 }
               ]
             },
@@ -3577,5 +3656,325 @@
       "1’den 10’a kadar olan bölümler bir kurumu iyi yönetmekle ilgilidir: onu planlamak, kadrolamak, denetlemek ve belgelemek. Bu gereklidir, ama resmin tamamı değildir. Mekanizmaların altında her kurum ve içindeki her çaba, daha az görünür bir dizi örüntüden geçer: İşi taşıyan insanlar harekete geçmeye gerçekten hazır mı, işin ulaştığı aşama için doğru türden kişi yerinde mi, aynı alanda yarışan diğerleri işi nasıl şekillendiriyor ve iş kendi talihinin dönmesine hazır mı? Bu örüntüler uygulanacak ek teknikler değildir; tekniklerin içinde işlediği koşullardır — ve kâğıt üzerinde doğru görünen planların, kadro kararlarının ve stratejilerin bazen yine de başarısız olmasının nedeni bunları ihmal etmektir.",
       "Onları anlamak, ardından gelecek olana da bir köprüdür. 12. Bölümdeki Nihai Başarı Formülü, kalıcı mükemmelliğin dışarıdan nasıl göründüğünü anlatır. Bu bölüm ise oraya ulaşmak için içinden geçilmesi gereken “iç havanın” bir kısmını anlatır."
     ]
+  },
+  "front": {
+    "cover": {
+      "org": "As Safinah Centre for Humanitarian Excellence",
+      "orgAr": "مؤسسة السفينة للتميز الإنساني",
+      "title": "Yönetim El Kitabı",
+      "subtitle": "Yönetim Geliştirme Programı katılımcı metni",
+      "version": "Sürüm 2 · Kasım 2026",
+      "includes": "Ortak 5. ve 6. modülleri içerir — Yenilenmenin Örüntüleri ile Yükümlülük ve Amaç"
+    },
+    "contents": {
+      "title": "İçindekiler"
+    },
+    "pages": {
+      "how": 2,
+      "who": 3,
+      "taught": 4,
+      "ship": 5,
+      "room": 6,
+      "s1": 9,
+      "s2": 14,
+      "s3": 19,
+      "lo1": 27,
+      "s4": 29,
+      "s5": 44,
+      "lo2": 48,
+      "s6": 50,
+      "s7": 61,
+      "lo3": 64,
+      "s8": 66,
+      "s9": 71,
+      "s10": 74,
+      "lo4": 84,
+      "s11": 86,
+      "lo5": 95,
+      "s12": 97,
+      "lo6": 102,
+      "glossary": 103
+    },
+    "how": {
+      "title": "Bu El Kitabı Nasıl Kullanılır",
+      "intro": [
+        "Bu el kitabı yalnızca okunmak için değil, üzerinde çalışılmak için yazıldı. Her biri yönetim pratiğinin bir alanını ele alan on iki bölümden oluşur ve her bölüm üç parçalı bir Bölüm Değerlendirmesiyle biter.",
+        "Okunup değerlendirilmeyen bir bölüm çok az şey değiştirir."
+      ],
+      "cards": [
+        {
+          "title": "Gemi",
+          "text": "Her bölümü açan kısa bir pano: konuyu geminin diliyle anlatır ve kendi işinize götüreceğiniz tek bir soruyla biter."
+        },
+        {
+          "title": "On sınama",
+          "text": "Her bölümün sonunda öz sınamalar. Bir “hayır”, bir “evet”ten daha yararlıdır."
+        },
+        {
+          "title": "Tartışma soruları",
+          "text": "Grup oturumu ya da bir iş arkadaşı için."
+        },
+        {
+          "title": "Uygulamalı alıştırma",
+          "text": "Bir sonraki oturumdan önce gerçek işe taşıyacağınız tek bir görev."
+        }
+      ]
+    },
+    "who": {
+      "title": "Bu El Kitabı Kimler İçin",
+      "intro": "Başkalarının yaptığı işten sorumlu olan ya da yakında olacak herkes için yazıldı. Önceden yönetim eğitimi almış olmak gerekmez, kullanmak için herhangi bir yeterlilik aranmaz. Örnekler hayır kurumu, eğitim ve idari ortamlardan alınmıştır, ancak ilkeler belirli bir sektöre özgü değildir.",
+      "head": [
+        "Okur",
+        "Bu el kitabı onlara ne sağlar"
+      ],
+      "rows": [
+        [
+          "Yeni ve ilk kez yönetici olanlar",
+          "Eksiksiz bir ilk temel — işin gerçekte nelerden oluştuğu ve ilk aylarda neler yapılacağı"
+        ],
+        [
+          "Resmî eğitimi olmayan deneyimli yöneticiler",
+          "Zaten içgüdüyle yaptıkları şey için bir yapı ve bir söz dağarcığı; eksikler de görünür olur"
+        ],
+        [
+          "Ofis yöneticileri ve destek personeli",
+          "İşin sistemler yarısı: belgeleme, denetim, disiplin ve politika"
+        ],
+        [
+          "Ekip liderleri ve süpervizörler",
+          "Yetki devri, kararlar, toplantılar, mentorluk ve zayıf performansla başa çıkma"
+        ],
+        [
+          "Üst düzey yöneticiler ve direktörler",
+          "Politika, yetki düzeyleri ve kurumsal yapı"
+        ],
+        [
+          "Mütevelli ve yönetim kurulu üyeleri",
+          "Atadıkları yöneticilerden ne bekleyecekleri ve kurulun kendi çizgisinin nerede olduğu"
+        ],
+        [
+          "Öğretmenler, eğitmenler ve kolaylaştırıcılar",
+          "On altı oturumluk bir kurs için hazır katılımcı metni; öz sınamalar ve alıştırmalarla"
+        ],
+        [
+          "Üniversite öğrencileri ve yeni mezunlar",
+          "İlk göreve başlamadan önce yönetimin kuramı değil, çalışma gerçekliği"
+        ],
+        [
+          "Gönüllüler ve gönüllü koordinatörleri",
+          "Sorumluluk, yetki ve hesap verebilirliğin ücretsiz bir ortamda nasıl işlediği"
+        ]
+      ],
+      "outro": "Bakıp geçmek için hızlı bir başvuru kaynağı arayanlara en az yarar sağlar. Bölümler birikimlidir: her biri bir öncekini varsayar."
+    },
+    "taught": {
+      "title": "Bir Kurs Olarak",
+      "intro": "El kitabı aynı zamanda on altı oturumluk bir yönetim geliştirme programının katılımcı metnidir ve altı modül olarak gruplanmıştır:",
+      "head": [
+        "Modül",
+        "Bölümler",
+        "Oturumlar",
+        "Kapsam"
+      ],
+      "rows": [
+        [
+          "1. Temeller",
+          "1–3",
+          "1–3",
+          "Yönetim nedir, kurum nasıl düzenlenir, altı ilke"
+        ],
+        [
+          "2. Yöneticinin Kendi Uygulaması",
+          "4–5",
+          "4–7",
+          "Yetki devri, kararlar, zaman, toplantılar, dürüst bir durum değerlendirmesi, mentorluk ve koçluk"
+        ],
+        [
+          "3. Çözmek ve İyileştirmek",
+          "6–7",
+          "8–9",
+          "Sorunlar, başarısızlık, değişim, kötü sonuçların teşhisi, kurumsal bağlam"
+        ],
+        [
+          "4. Her Şeyi Bir Arada Tutan Sistemler",
+          "8–10",
+          "10–12",
+          "İdari disiplin, politika, belgeleme ve denetim"
+        ],
+        [
+          "5. Yenilenmenin Örüntüleri",
+          "11",
+          "13–14",
+          "Hazırlık, bir ekibin geçtiği aşamalar, çekişme ve talih değişimine hazırlanma"
+        ],
+        [
+          "6. Yükümlülük ve Amaç",
+          "12",
+          "15–16",
+          "İşin ne için olduğu ve kalıcı kurumlar inşa etmek"
+        ]
+      ],
+      "sessions": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          15,
+          16
+        ]
+      ],
+      "figure": {
+        "title": "Yolculuk — on altı oturum, altı modül",
+        "module": "Modül",
+        "note": "1–4. modüller bu odanın kendi on iki yoludur. 5 ve 6. modüller — Yenilenmenin Örüntüleri ile Yükümlülük ve Amaç — As Safinah’ın tüm programlarında ortaktır.",
+        "own": "Odaya özgü oturum",
+        "shared": "Ortak oturum",
+        "caption": "Şekil 1. Kursa bir bakış: bu oda için dört modül, ardından iki ortak modül."
+      }
+    },
+    "ship": {
+      "title": "Gemi",
+      "card": {
+        "ar": "السفينة",
+        "title": "Gemi",
+        "caption": "Tek başına karşıya geçemeyecek insanları taşıyan bir tekne."
+      },
+      "paras": [
+        "Program tek bir imge etrafında kurulmuştur ve merkez de adını ondan alır. As Safinah — السفينة — gemidir.",
+        "Gemi, bu el kitabının konusunun en eski çalışan örneğidir: bir grup insan, sınırlı bir kaynak stoku, düşmanca bir ortam, bir varış noktası ve varıp varamayacaklarından sorumlu tek bir kişi. Yönetimin yaptığı her şeyin gemide bir karşılığı vardır. Planlama, rota çizmektir. Yapı, geminin tayfasıdır. Disiplin, nöbet ve çandır. Politika, sürekli emirlerdir. Denetim, iskandil halatıdır.",
+        "Her bölüm Gemi adlı kısa bir panoyla açılır; pano bölümün konusunu bu terimlerle ifade eder ve kendi geminize götüreceğiniz tek bir soruyla biter. Panolar süs değildir. Bir bölümü birine geminin diliyle anlatabiliyorsanız anlamışsınız demektir; anlatamıyorsanız geri dönün.",
+        "İmge bir şey daha taşır. Gemi, tek başına karşıya geçemeyecek insanları taşıyan bir teknedir. İş budur."
+      ]
+    },
+    "room": {
+      "title": "Yönetim Odası: On İki Yol",
+      "paras": [
+        "Bu çark, As Safinah’taki Yönetim odasında asılıdır. Odada sunulan on iki yolu — kursları, uygulamayı ve desteği — saat yönünde okunmak üzere, en üstteki Temeller’den başlayarak gösterir.",
+        "Yollar baştan sona bu el kitabının bölümlerinden beslenir: Temeller 1. Bölümden, Planlama ve Öncelikler 3. Bölümden, Yetki Devri 4. Bölümden, Koçluk ve Gözetim 5. Bölümden ve böyle devam eder. Odadan el kitabına yol bulmak için çarkı, tek bir oturumun gidebileceğinden daha derine inmek için el kitabını kullanın."
+      ],
+      "alt": "Yönetim çarkı: en üstte Temeller’den başlayarak saat yönünde okunan on iki yol",
+      "caption": "Yönetim çarkı, odada asıldığı hâliyle — saat yönünde, üstten başlayarak okunan on iki yol.",
+      "finding": {
+        "title": "Her yolu bu el kitabında bulmak",
+        "head": [
+          "Çarktaki sıra",
+          "Yol",
+          "Nerede işlenir",
+          "Modül"
+        ],
+        "rows": [
+          [
+            "1",
+            "Temeller",
+            "Bölümler 1–2",
+            "Modül 1 — Temeller"
+          ],
+          [
+            "2",
+            "İnsanları Yönetmek",
+            "Bölüm 3.4",
+            "Modül 1 — Temeller"
+          ],
+          [
+            "3",
+            "Ekip Geliştirme",
+            "Bölümler 3.3, 5",
+            "Modül 1 — Temeller"
+          ],
+          [
+            "4",
+            "Yetki Devri",
+            "Bölümler 4.1–4.2",
+            "Modül 2 — Yöneticinin Kendi Uygulaması"
+          ],
+          [
+            "5",
+            "İletişim",
+            "Bölümler 3.5, 4.5",
+            "Modül 2 — Yöneticinin Kendi Uygulaması"
+          ],
+          [
+            "6",
+            "Performans",
+            "Bölümler 3.6, 10.11",
+            "Modül 4 — Her Şeyi Bir Arada Tutan Sistemler"
+          ],
+          [
+            "7",
+            "Karar Verme",
+            "Bölüm 4.3",
+            "Modül 2 — Yöneticinin Kendi Uygulaması"
+          ],
+          [
+            "8",
+            "Değişimi Yönetmek",
+            "Bölümler 6.2, 11.1",
+            "Modül 3 — Çözmek ve İyileştirmek"
+          ],
+          [
+            "9",
+            "Çatışma Çözümü",
+            "Bölümler 3.4–3.5, 6.1",
+            "Modül 3 — Çözmek ve İyileştirmek"
+          ],
+          [
+            "10",
+            "Planlama ve Öncelikler",
+            "Bölümler 3.1, 4.4",
+            "Modül 1 — Temeller"
+          ],
+          [
+            "11",
+            "Bütçeler ve Kaynaklar",
+            "Bölümler 1.2, 8.3, 10.6",
+            "Modül 4 — Her Şeyi Bir Arada Tutan Sistemler"
+          ],
+          [
+            "12",
+            "Koçluk ve Gözetim",
+            "Bölüm 5",
+            "Modül 2 — Yöneticinin Kendi Uygulaması"
+          ]
+        ],
+        "note": "Yönetim çarkı, odada sunulan on iki yolu adlandırır. El kitabının bölümleri bir kurs olarak düzenlenmiştir; bu yüzden bir yol birden fazla bölümden yararlanabilir."
+      }
+    }
+  },
+  "figures": {
+    "fig-cycle.webp": {
+      "alt": "Tek bir sürekli döngü olarak altı ilke: planlama, örgütleme, kadrolama, yönlendirme ve liderlik, eşgüdüm, denetim; bütünleşik bir yönetim sisteminin çevresinde",
+      "caption": "Aynı döngü, As Safinah’ın duvarı için hazırlanan sekiz madalyondan biri olarak çizilmiş."
+    },
+    "fig-steps.webp": {
+      "alt": "Sonuçlar tatmin edici olmadığında sırayla ilerleyin: istenen sonucu açıklığa kavuşturun, temel faaliyetleri belirleyin, yapıyı tasarlayın, yönetimi geliştirin, gözetimi devredin, insanları eğitin, işlemleri sadeleştirin"
+    },
+    "fig-patterns.webp": {
+      "alt": "Yenilenmenin dört örüntüsü: hazırlık, katmanlar, çekişme ve dönüm noktası; çizelgelerin göstermediği şey sorusunun çevresinde",
+      "caption": "Bu bölümün dört örüntüsü; her birinin Gemi panosu ve sorduğu soruyla."
+    },
+    "fig-layers.webp": {
+      "alt": "Üç katman, üç mizaç: başlatan katman, sürükleyen katman ve inşa eden katman"
+    },
+    "fig-formula.webp": {
+      "alt": "Nihai Başarı Formülü bir çark olarak: dört üçlü, on iki parça",
+      "caption": "Nihai Başarı Formülü bir çark olarak: dört üçlü, on iki parça — odanın kendi lombasının yanına asılmak üzere çizilmiştir."
+    }
   }
 }

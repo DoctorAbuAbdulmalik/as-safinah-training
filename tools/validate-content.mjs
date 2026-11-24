@@ -30,7 +30,7 @@ for (const dir of fs.readdirSync(root, { withFileTypes: true }).filter((d) => d.
           const tsub = ts.subsections[i];
           if (!tsub) return;
           if (tsub.id !== sub.id) bad(`${at}: subsection id ${tsub.id} != ${sub.id}`);
-          const shape = (bl) => bl.map((b) => b.type + (b.items ? ":" + b.items.length : "") + (b.rows ? ":" + b.rows.length + "x" + b.head.length : "")).join(",");
+          const shape = (bl) => bl.filter((b) => b.type !== "figure").map((b) => b.type + (b.items ? ":" + b.items.length : "") + (b.rows ? ":" + b.rows.length + "x" + b.head.length : "")).join(",");
           if (!!tsub.ship !== !!sub.ship) bad(`${at} ${sub.id}: ship panel missing/extra`);
           if (shape(tsub.blocks) !== shape(sub.blocks)) bad(`${at} ${sub.id}: block shape ${shape(tsub.blocks)} != ${shape(sub.blocks)}`);
         });

@@ -1,11 +1,19 @@
 import { LANGS, UI } from "./i18n.js";
 import { icon, shipDisc, waveRule, nameplate, wheel } from "./symbols.js";
 import { KEY, DECKS, DECKS_SHORT, QA } from "./key.js";
+import { renderFront, frontCards, shipCard } from "./front.js";
+import { playSea, soundEnabled, setSoundEnabled } from "./sound.js";
 
 /* ---------- small helpers ---------- */
 const $ = (sel) => document.querySelector(sel);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-const fmt = (str, vars) => str.replace(/\{(\w+)\}/g, (_, k) => vars[k]);
+const plural = (n, [one, few, many]) => {
+  const x = Math.abs(parseInt(n, 10));
+  if (Number.isNaN(x) || String(n).length > 6) return many;
+  return x % 10 === 1 && x % 100 !== 11 ? one : x % 10 >= 2 && x % 10 <= 4 && (x % 100 < 10 || x % 100 >= 20) ? few : many;
+};
+// {n} -> value; {n|one|few|many} -> the Russian plural form for n
+const fmt = (str, vars) => str.replace(/\{(\w+)(?:\|([^}]*))?\}/g, (_, k, forms) => (forms ? plural(vars[k], forms.split("|")) : vars[k]));
 
 const store = {
   get(key, fallback) {
@@ -53,6 +61,14 @@ async function loadJSON(path) {
 }
 const tryJSON = (path) => loadJSON(path).catch(() => null);
 
+/** Pictures are the same in every language: a translated subsection gets the English figure blocks back, in place. */
+function keepFigures(enSub, sub) {
+  if (!enSub || !sub || sub.blocks.some((b) => b.type === "figure")) return sub;
+  const blocks = sub.blocks.slice();
+  enSub.blocks.forEach((b, i) => { if (b.type === "figure") blocks.splice(Math.min(i, blocks.length), 0, b); });
+  return blocks.length === sub.blocks.length ? sub : { ...sub, blocks };
+}
+
 /** English is the master; a translated file may override any module/section (matched by id). */
 function mergeModules(enModules, trModules, shared) {
   return enModules.map((m) => {
@@ -61,7 +77,9 @@ function mergeModules(enModules, trModules, shared) {
     merged._translated = lang === "en" || !!tm;
     merged.sections = m.sections.map((s) => {
       const ts = tm?.sections?.find((x) => x.id === s.id);
-      return { ...s, ...(ts || {}), id: s.id, number: s.number, _translated: lang === "en" || !!ts };
+      const out = { ...s, ...(ts || {}), id: s.id, number: s.number, _translated: lang === "en" || !!ts };
+      if (ts) out.subsections = out.subsections.map((sub, i) => keepFigures(s.subsections[i], sub));
+      return out;
     });
     if (!tm?.outcomes) merged.outcomes = m.outcomes;
     return merged;
@@ -88,6 +106,8 @@ function renumberShared(tm, enModule, map) {
 }
 
 /** A direction = its own modules (1-4) + the shared modules (5-6) that every As Safinah programme includes. */
+let assetBase = "";
+let figText = {};
 async function loadDirection(id) {
   const [en, shared] = await Promise.all([loadJSON(`data/${id}/en.json`), tryJSON("data/shared/en.json")]);
   let tr = null;
@@ -115,7 +135,11 @@ async function loadDirection(id) {
     if (own && (lang === "en" || !s._translated || tr?.sharedIntro?.[s.id])) s.intro = own;
   }
   const glossaryTr = lang !== "en" && tr?.glossary?.length ? tr.glossary : null;
-  return { ...en, modules, glossary: glossaryTr || en.glossary || [], _glossaryTranslated: lang === "en" || !!glossaryTr };
+  assetBase = en.assets || "";
+  figText = (lang !== "en" && tr?.figures) || {};
+  const frontTr = lang !== "en" && tr?.front?.how ? tr.front : null;
+  const front = en.front ? { ...en.front, ...(frontTr || {}), pages: en.front.pages, cover: { ...en.front.cover, ...(frontTr?.cover || {}) } } : null;
+  return { ...en, front, _frontTranslated: lang === "en" || !!frontTr, modules, glossary: glossaryTr || en.glossary || [], _glossaryTranslated: lang === "en" || !!glossaryTr };
 }
 
 /* ---------- progress ---------- */
@@ -150,8 +174,10 @@ function applyLanguage() {
   $("#nav-key").textContent = t("navKey");
   $("#footer-key").textContent = t("navKey");
   $("#menu-btn").innerHTML = icon("menu", { label: t("menu") });
-  $("#lang-plate").setAttribute("aria-label", t("language"));
-  $("#lang-plate").innerHTML = LANGS.map((l) => `<button type="button" lang="${l.code}" data-lang="${l.code}" aria-pressed="${l.code === lang}" title="${esc(l.name)}">${esc(l.label)}</button>`).join("");
+  const here = LANGS.find((l) => l.code === lang);
+  $("#lang-plate").innerHTML = `<button type="button" class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false" aria-controls="lang-list" aria-label="${esc(t("language"))}: ${esc(here.name)}" title="${esc(t("language"))}">${icon("globe")}<span lang="${here.code}">${esc(here.label)}</span>${icon("chevron")}</button>
+    <ul class="lang-list" id="lang-list" role="list" hidden>${LANGS.map((l) => `<li><button type="button" lang="${l.code}" data-lang="${l.code}" aria-current="${l.code === lang}">${esc(l.name)}</button></li>`).join("")}</ul>`;
+  updateSoundButton();
   updateThemeButton();
   $("#wave-top").innerHTML = waveRule();
   $("#wave-bottom").innerHTML = waveRule();
@@ -159,6 +185,16 @@ function applyLanguage() {
   $("#part-of-links").innerHTML = ["learn", "volunteer", "partner", "support"].map((k) => `<a href="${SITE}" rel="noopener">${esc(t(k))}</a>`).join("");
   $("#copyright").textContent = t("copyright");
   $("#reset-progress").textContent = t("resetProgress");
+}
+
+function updateSoundButton() {
+  const on = soundEnabled();
+  const b = $("#sound-btn");
+  if (!b) return;
+  b.innerHTML = icon(on ? "volume" : "mute");
+  b.setAttribute("aria-pressed", String(on));
+  b.setAttribute("aria-label", t(on ? "soundOn" : "soundOff"));
+  b.title = t(on ? "soundOn" : "soundOff");
 }
 
 function updateThemeButton() {
@@ -181,6 +217,7 @@ function parseRoute() {
     if (parts[2] === "m" && parts[3]) return { view: "module", dir: parts[1], id: parts[3] };
     if (parts[2] === "s" && parts[3]) return { view: "section", dir: parts[1], id: parts[3] };
     if (parts[2] === "glossary") return { view: "glossary", dir: parts[1] };
+    if (parts[2] === "f" && parts[3]) return { view: "front", dir: parts[1], id: parts[3] };
     return { view: "course", dir: parts[1] };
   }
   return parts.length ? { view: "notfound" } : { view: "home" };
@@ -215,6 +252,7 @@ async function render() {
         if (route.view === "course") html = renderCourse(d, data);
         else if (route.view === "module") html = renderModule(d, data, route.id) || renderNotFound();
         else if (route.view === "glossary") html = renderGlossary(d, data);
+        else if (route.view === "front") html = renderFront({ esc, t, crumbs, arrow, digits, L }, d, data, route.id) || renderNotFound();
         else html = renderSection(d, data, route.id) || renderNotFound();
       }
     }
@@ -335,7 +373,7 @@ function renderHome() {
 
 /* ---------- course screen ---------- */
 function courseIntro(d, { sections, sessions }) {
-  const chips = [t("chipModules", { n: 6 }), sections && t("chipSections", { n: sections }), sessions && t("chipSessions", { n: sessions }), "English · العربية · Türkçe"].filter(Boolean);
+  const chips = [t("chipModules", { n: 6 }), sections && t("chipSections", { n: sections }), sessions && t("chipSessions", { n: sessions }), "English · العربية · Türkçe · Русский"].filter(Boolean);
   return `
     <p class="eyebrow">${icon(d.flagship ? "pennant" : d.symbol)}${esc(d.flagship ? t("flagshipTag", { n: pad(d.number) }) : t("programmeTag", { n: pad(d.number) }))}</p>
     <h1>${esc(L(d.title))}</h1>
@@ -432,6 +470,7 @@ function renderCourse(d, data) {
     </section>
 
     ${here ? "" : harbourPanel()}
+    ${data.front ? nameplate(esc(t("handbook")), "log") + frontCards({ esc, t, digits }, d, data) : ""}
     ${nameplate(esc(t("yourVoyage")), "log")}
     ${voyageRoute(d, data)}
 
@@ -521,6 +560,11 @@ function renderBlock(b, ctx) {
       <thead><tr>${b.head.map((h) => `<th scope="col">${esc(h)}</th>`).join("")}</tr></thead>
       <tbody>${b.rows.map((r) => `<tr>${r.map((c, i) => (i === 0 ? `<th scope="row">${esc(c)}</th>` : `<td>${esc(c)}</td>`)).join("")}</tr>`).join("")}</tbody>
     </table></div>`;
+  if (b.type === "figure") {
+    const ft = figText[b.src] || {};
+    const cap = ft.caption ?? b.caption;
+    return `<figure class="book-fig"><img src="${esc(b.src.includes("/") ? b.src : `${assetBase}/${b.src}`)}" width="${b.w}" height="${b.h}" alt="${esc(ft.alt ?? b.alt)}" loading="lazy">${cap ? `<figcaption>${esc(cap)}</figcaption>` : ""}</figure>`;
+  }
   if (b.type === "example") return `<aside class="example"><b>${esc(ctx.lbl("example"))} — ${esc(b.title)}</b>${esc(b.text)}</aside>`;
   return `<p>${esc(b.text)}</p>`;
 }
@@ -590,7 +634,7 @@ function renderSection(d, data, id) {
         <h1>${esc(s.title)}</h1>
         <div class="rule"></div>
         ${shipPanel(s.ship, lbl, false)}
-        ${s.introBlocks ? s.introBlocks.map((b) => renderBlock(b, ctx)).join("") : s.intro.map((x) => `<p>${esc(x)}</p>`).join("")}
+        ${s.introBlocks ? (() => { let k = 0; return s.introBlocks.map((b) => (b.type === "p" ? `<p>${esc(s.intro[k++] ?? b.text)}</p>` : renderBlock(b, ctx))).join(""); })() : s.intro.map((x) => `<p>${esc(x)}</p>`).join("")}
         <nav class="toc-box" aria-label="${esc(lbl("inThisSection"))}"><span class="caps">${esc(lbl("inThisSection"))}</span>
           <ul>${s.subsections.map((sub) => `<li><a href="#" data-jump="${hid(sub)}">${esc(sub.id)} ${esc(sub.title)}</a></li>`).join("")}${r ? `<li><a href="#" data-jump="rev">${esc(lbl("sectionReview"))}</a></li>` : ""}</ul>
         </nav>
@@ -610,7 +654,8 @@ function renderSection(d, data, id) {
       </aside>
     </div>
     <nav class="pager" aria-label="${esc(t("prevPort"))} / ${esc(t("nextPortBtn"))}">
-      ${prev ? `<a class="prev" href="#/d/${d.id}/s/${prev.s.id}"><small>${esc(t("prevPort"))}</small>${esc(t("section"))} ${digits(prev.s.number)}, ${esc(prev.s.title)}</a>` : "<span></span>"}
+      ${!prev && data.front ? `<a class="prev" href="#/d/${d.id}/f/room"><small>${esc(t("prevPort"))}</small>${esc(data.front.room.title)}</a>` : ""}
+      ${prev ? `<a class="prev" href="#/d/${d.id}/s/${prev.s.id}"><small>${esc(t("prevPort"))}</small>${esc(t("section"))} ${digits(prev.s.number)}, ${esc(prev.s.title)}</a>` : ""}
       ${next ? `<a class="next" href="#/d/${d.id}/s/${next.s.id}"><small>${esc(t("nextPortBtn"))}</small>${esc(t("section"))} ${digits(next.s.number)}, ${esc(next.s.title)}</a>` : ""}
     </nav>`;
 }
@@ -714,24 +759,7 @@ async function renderVoyage() {
 /* ---------- About the Ship: a cut-away of the larger vessel ---------- */
 function renderAbout() {
   const decks = DECKS[lang] || DECKS.en;
-  const ys = [172, 199, 226];
-  const svg = `<svg class="cutaway" viewBox="0 0 400 270" role="img" aria-label="${esc(decks.map((x) => x[0]).join(", "))}">
-    <defs><clipPath id="hull"><path d="M28 155 L372 155 L342 236 Q200 254 58 236 Z"/></clipPath></defs>
-    <g class="ca-rig">
-      <path d="M200 155 V22"/><path d="M200 24 l24 7 -24 7"/>
-      <path d="M206 38 L292 140 L206 140 Z" class="ca-sail"/><path d="M194 50 L116 140 L194 140 Z" class="ca-sail"/>
-      <path d="M372 155 L398 136"/><path d="M200 30 L398 136" class="ca-stay"/><path d="M200 30 L22 150" class="ca-stay"/>
-    </g>
-    <g clip-path="url(#hull)">
-      <rect x="0" y="155" width="400" height="30" class="ca-deck ca-here"/>
-      <rect x="0" y="185" width="400" height="27" class="ca-deck"/>
-      <rect x="0" y="212" width="400" height="50" class="ca-deck ca-low"/>
-      <path d="M0 185 H400 M0 212 H400" class="ca-line"/>
-    </g>
-    <path d="M28 155 L372 155 L342 236 Q200 254 58 236 Z" class="ca-hull"/>
-    ${decks.map((x, i) => `<text x="200" y="${ys[i]}" text-anchor="middle" class="ca-label${i === 0 ? " here" : ""}">${esc(x[0])}${i === 0 ? ` · ${esc(t("youAreHere"))}` : ""}</text>`).join("")}
-    <path d="M6 258 q12-7 24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0" class="ca-wave"/>
-  </svg>`;
+  const svg = shipCard(esc, { ar: "السفينة", title: t("appName"), caption: t("motto") });
   return `
     ${crumbs([{ label: t("navMain"), href: "#/" }, { label: t("aboutTitle") }])}
     <div class="about-grid">
@@ -744,7 +772,7 @@ function renderAbout() {
         </div>
         <p><a class="btn ghost" href="${SITE}" rel="noopener">${esc(t("aboutMore"))} ${arrow()}</a></p>
       </div>
-      <div class="cutaway-wrap">${svg}<p class="muted">${esc(t("motto"))}</p></div>
+      <div class="cutaway-wrap">${svg}</div>
     </div>`;
 }
 
@@ -853,13 +881,36 @@ function bindPage(route) {
 /* ---------- boot ---------- */
 async function boot() {
   applyLanguage();
+  const closeLang = () => {
+    $("#lang-list").hidden = true;
+    $("#lang-btn").setAttribute("aria-expanded", "false");
+  };
   $("#lang-plate").addEventListener("click", (e) => {
+    if (e.target.closest("#lang-btn")) {
+      const open = $("#lang-list").hidden;
+      $("#lang-list").hidden = !open;
+      $("#lang-btn").setAttribute("aria-expanded", String(open));
+      if (open) $("#lang-list [aria-current=true]")?.focus();
+      return;
+    }
     const b = e.target.closest("[data-lang]");
-    if (!b || b.dataset.lang === lang) return;
+    if (!b) return;
+    if (b.dataset.lang === lang) { closeLang(); $("#lang-btn").focus(); return; }
     lang = b.dataset.lang;
     store.set(LANG_KEY, lang);
     applyLanguage();
     render();
+  });
+  document.addEventListener("click", (e) => { if ($("#lang-list") && !e.target.closest("#lang-plate")) closeLang(); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && $("#lang-list") && !$("#lang-list").hidden) { closeLang(); $("#lang-btn").focus(); } });
+  $("#sound-btn").addEventListener("click", () => {
+    setSoundEnabled(!soundEnabled());
+    updateSoundButton();
+    if (soundEnabled()) playSea();
+  });
+  // a short sea scene for the main buttons: the sound of being aboard
+  document.addEventListener("click", (e) => {
+    if (e.target.closest("a.btn, button.btn, .spec-card, .flag-card, a.mod-card, .front-card")) playSea();
   });
   document.querySelectorAll("[data-theme-toggle]").forEach((b) =>
     b.addEventListener("click", () => {

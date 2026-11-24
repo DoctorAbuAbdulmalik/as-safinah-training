@@ -1,9 +1,11 @@
+import { ru } from "./i18n-ru.js";
 // Interface strings (not course content). Course content lives in data/<direction>/<lang>.json
 // Ship words lead; plain words stay beside them. Arabic and Turkish ship terms to be checked by a fluent reader.
 export const LANGS = [
   { code: "en", label: "EN", name: "English", dir: "ltr" },
   { code: "ar", label: "العربية", name: "العربية", dir: "rtl" },
   { code: "tr", label: "TR", name: "Türkçe", dir: "ltr" },
+  { code: "ru", label: "RU", name: "Русский", dir: "ltr" },
 ];
 
 export const UI = {
@@ -64,6 +66,11 @@ export const UI = {
     appSub: "Management Training Centre",
     skip: "Skip to content",
     language: "Language",
+    handbook: "The handbook",
+    handbookKicker: "The handbook",
+    pageNo: "p. {n}",
+    soundOn: "Sea sounds on — press to turn off",
+    soundOff: "Sea sounds off — press to turn on",
     menu: "Menu",
     navMain: "Main deck",
     navProgrammes: "Programmes",
@@ -229,6 +236,11 @@ export const UI = {
     appSub: "مركز التدريب الإداري",
     skip: "انتقل إلى المحتوى",
     language: "اللغة",
+    handbook: "الكتيّب",
+    handbookKicker: "الكتيّب",
+    pageNo: "ص {n}",
+    soundOn: "أصوات البحر مفعّلة — اضغط للإيقاف",
+    soundOff: "أصوات البحر متوقفة — اضغط للتشغيل",
     menu: "القائمة",
     navMain: "السطح الرئيسي",
     navProgrammes: "البرامج",
@@ -394,6 +406,11 @@ export const UI = {
     appSub: "Yönetim Eğitim Merkezi",
     skip: "İçeriğe geç",
     language: "Dil",
+    handbook: "El kitabı",
+    handbookKicker: "El kitabı",
+    pageNo: "s. {n}",
+    soundOn: "Deniz sesleri açık — kapatmak için dokunun",
+    soundOff: "Deniz sesleri kapalı — açmak için dokunun",
     menu: "Menü",
     navMain: "Ana güverte",
     navProgrammes: "Programlar",
@@ -502,4 +519,5 @@ export const UI = {
     resetConfirm: "Bu cihazda kayıtlı tüm ilerleme silinsin mi?",
     copyright: "© As Safinah İnsani Mükemmeliyet Merkezi",
   },
+  ru,
 };

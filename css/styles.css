@@ -490,19 +490,6 @@ a.aside-card:hover { border-color: var(--gold); }
 .deck-card h2 .caps { color: #d4b894; }
 .deck-card p { margin: 0; color: inherit; opacity: .9; }
 .cutaway-wrap { text-align: center; }
-.cutaway { width: 100%; max-width: 520px; color: var(--gold); }
-.cutaway .ca-rig path { fill: none; stroke: var(--gold); stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
-.cutaway .ca-rig .ca-sail { fill: rgb(242 233 216 / 10%); }
-.cutaway .ca-rig .ca-stay { stroke-width: .6; opacity: .6; }
-.cutaway .ca-deck { fill: var(--surface); }
-.cutaway .ca-deck.ca-low { fill: var(--surface-2); }
-.cutaway .ca-deck.ca-here { fill: var(--wedge-done); }
-.cutaway .ca-line { stroke: var(--gold); stroke-width: .8; fill: none; }
-.cutaway .ca-hull { fill: none; stroke: var(--gold); stroke-width: 2; }
-.cutaway .ca-label { font-family: var(--caps); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; fill: #ece4d3; }
-.cutaway .ca-label.here { fill: #17213a; }
-:lang(ar) .cutaway .ca-label { font-family: var(--arabic); letter-spacing: 0; font-size: 12px; font-weight: 700; }
-.cutaway .ca-wave { fill: none; stroke: var(--gold); stroke-width: 1.2; opacity: .8; }
 
 /* ship's key */
 .key-grid { display: grid; gap: 12px; margin: 22px 0 0; }
@@ -581,3 +568,95 @@ a.aside-card:hover { border-color: var(--gold); }
 .qa summary::after { content: "+"; color: var(--gold); font-size: 1.2rem; line-height: 1; flex: none; }
 .qa details[open] summary::after { content: "\2212"; }
 .qa details p { margin: 0 0 14px; color: var(--muted); }
+
+/* ---------- language menu and sound ---------- */
+.lang-plate { position: relative; display: block; border: 0; overflow: visible; }
+.lang-plate .lang-btn { display: inline-flex; align-items: center; gap: 6px; border: 1px solid rgb(181 139 60 / 60%); border-radius: 2px; padding: 0 8px; min-height: 38px; color: var(--gold-soft); background: transparent; font-family: var(--caps); font-size: .78rem; letter-spacing: .08em; cursor: pointer; }
+.lang-plate .lang-btn .ico { width: 18px; height: 18px; }
+.lang-plate .lang-btn[lang="ar"], .lang-btn span[lang="ar"] { font-family: var(--arabic); letter-spacing: 0; }
+.lang-list { position: absolute; inset-inline-end: 0; top: calc(100% + 6px); z-index: 30; min-width: 150px; margin: 0; padding: 4px; list-style: none; background: var(--navy); border: 1px solid var(--gold); border-radius: 2px; box-shadow: 0 8px 24px rgb(0 0 0 / 40%); }
+.lang-list[hidden] { display: none; }
+.lang-list button { width: 100%; text-align: start; padding: 9px 12px; background: transparent; border: 0; color: #ece4d3; font-family: var(--serif); font-size: 1rem; cursor: pointer; min-height: 40px; }
+.lang-list button[lang="ar"] { font-family: var(--arabic); }
+.lang-list button:hover, .lang-list button:focus-visible { background: rgb(181 139 60 / 22%); }
+.lang-list button[aria-current="true"] { background: var(--gold); color: var(--navy); }
+.lang-plate button[aria-pressed] { background: transparent; }
+#sound-btn .ico { width: 20px; height: 20px; }
+
+/* ---------- the book's ship ---------- */
+.ship-card { display: grid; grid-template-columns: minmax(140px, 220px) 1fr; align-items: center; gap: 22px; margin: 18px auto 24px; padding: 18px 22px; background: #f6efdf; border: 1px solid var(--gold); color: var(--ink); max-width: 640px; }
+.ship-card .sc-art img { display: block; width: 100%; height: auto; }
+.sc-text { display: flex; flex-direction: column; gap: 6px; }
+.sc-text .sc-ar { font-family: var(--quran); font-size: 1.9rem; color: var(--gold-ink); line-height: 1.2; }
+.sc-text b { font-family: var(--serif); font-size: 1.5rem; color: #1b2a4a; }
+.sc-text .sc-rule { display: block; width: 56px; border-top: 2px solid var(--gold); margin: 2px 0; }
+.sc-text em { font-style: italic; color: #4a4030; }
+.cutaway-wrap .ship-card { grid-template-columns: 1fr; text-align: center; justify-items: center; }
+.cutaway-wrap .ship-card .sc-art { width: min(300px, 70%); }
+.cutaway-wrap .sc-text { align-items: center; }
+.ship-card + p { margin-top: 0; }
+
+/* ---------- opening pages of the handbook ---------- */
+.front-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; }
+.front-card { display: flex; align-items: center; gap: 12px; padding: 12px 14px; background: var(--navy); border: 1px solid rgb(181 139 60 / 40%); border-radius: var(--radius); color: #ece4d3; text-decoration: none; }
+.front-card:hover { border-color: var(--gold); }
+.front-card b { display: block; font-family: var(--serif); font-weight: 600; font-size: 1rem; line-height: 1.25; }
+.front-card .caps { color: var(--gold-soft); font-size: .66rem; }
+.front-page { max-width: 820px; margin-inline: auto; }
+.front-page h1 { color: #1b2a4a; font-size: clamp(1.8rem, 3vw + .8rem, 2.6rem); }
+.front-page .rule { border-top: 2px solid var(--gold); margin: 6px 0 14px; }
+.front-page li, .front-page p { max-width: 70ch; }
+.book-h2 { margin-top: 1.8em; }
+.finding-note { font-style: italic; color: #4a4030; }
+.how-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; margin: 16px 0; }
+.how-card { background: #fbf7ef; border: 1px solid rgb(36 29 20 / 18%); border-top: 3px solid var(--gold); padding: 14px 16px; }
+.how-card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+.how-card p { margin: 0; font-size: .95rem; }
+.book-cover { text-align: center; padding: 22px 12px 26px; margin-bottom: 20px; background: var(--navy); color: #ece4d3; border-radius: 2px; }
+.book-cover p { margin: 4px 0; }
+.book-cover .cv-org { font-family: var(--caps); text-transform: uppercase; letter-spacing: .16em; font-size: .78rem; color: var(--gold-soft); }
+.book-cover .cv-ar { font-family: var(--arabic); color: var(--gold-soft); }
+.book-cover h2 { color: #fff; margin: 12px 0 8px; }
+.book-cover .cv-rule { display: block; width: 72px; border-top: 2px solid var(--gold); margin: 0 auto 10px; }
+.book-cover .cv-ver, .book-cover .cv-inc { font-size: .9rem; color: #cfc6b2; }
+.toc-list { list-style: none; margin: 0; padding: 0; }
+.toc-list li a { display: flex; align-items: baseline; gap: 8px; padding: 5px 0; color: var(--ink); text-decoration: none; }
+.toc-list li a:hover span { text-decoration: underline; }
+.toc-list .dots { flex: 1; border-bottom: 1px dotted rgb(36 29 20 / 45%); transform: translateY(-3px); min-width: 12px; }
+.toc-list b { font-weight: 500; font-variant-numeric: tabular-nums; color: var(--gold-ink); }
+.toc-list .toc-top { font-weight: 600; }
+.toc-list .toc-mod a { margin-top: 12px; padding: 6px 10px; background: var(--parch-2); font-family: var(--caps); text-transform: uppercase; letter-spacing: .08em; font-size: .8rem; color: #1b2a4a; }
+.toc-list li:not(.toc-mod):not(.toc-top) a { padding-inline-start: 14px; font-weight: 400; }
+.toc-list .toc-lo a { font-style: italic; }
+.front-room .table-wrap table, .front-who .table-wrap table { min-width: 0; }
+.book-fig, .room-wheel { margin: 1.4em 0; text-align: center; }
+.book-fig img, .room-wheel img { max-width: 100%; height: auto; border: 1px solid rgb(36 29 20 / 16%); background: #fff; }
+.room-wheel img { width: min(100%, 520px); border-radius: 50%; border: 0; }
+.book-fig figcaption, .room-wheel figcaption, .voyage-fig figcaption { font-size: .88rem; color: #4a4030; font-style: italic; margin-top: 8px; }
+
+/* Figure 1 — drawn in SVG so its words follow the language */
+.voyage-fig { margin: 1.6em 0; }
+.vf-panel { background: var(--navy); color: #ece4d3; padding: 14px 14px 12px; border-radius: 2px; }
+.vf-title { margin: 0 0 6px; font-family: var(--caps); text-transform: uppercase; letter-spacing: .12em; font-size: .8rem; color: var(--gold-soft); }
+.voyage-fig svg { display: block; width: 100%; height: auto; min-width: 560px; }
+.vf-panel { overflow-x: auto; }
+.vf-box { fill: rgb(255 255 255 / 5%); stroke: var(--gold); stroke-width: 1.2; }
+.vf-box.vf-shared { stroke-dasharray: 5 3; }
+.vf-mod { font-family: var(--caps); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; fill: var(--gold-soft); }
+.vf-t { font-family: var(--serif); font-size: 12.5px; fill: #ece4d3; }
+.vf-drop { stroke: rgb(212 184 148 / 45%); stroke-width: 1; }
+.vf-line { fill: none; stroke: var(--gold); stroke-width: 2; }
+.vf-dot { fill: var(--gold); }
+.vf-dot.vf-shared { fill: #ece4d3; }
+.vf-n { font-family: var(--caps); font-size: 12px; fill: var(--navy); font-weight: 600; }
+.vf-note, .vf-legend { margin: 8px 0 0; font-size: .85rem; color: #d9d0bc; }
+.vf-legend { display: flex; gap: 18px; flex-wrap: wrap; }
+.vf-key { display: inline-block; width: 11px; height: 11px; border-radius: 50%; background: var(--gold); margin-inline-end: 6px; vertical-align: -1px; }
+.vf-key.vf-shared { background: #ece4d3; }
+
+@media (max-width: 560px) {
+  .ship-card { grid-template-columns: 1fr; text-align: center; justify-items: center; }
+  .ship-card .sc-art { width: 60%; }
+  .sc-text { align-items: center; }
+}
+.front-page .book-cover p { max-width: none; }
